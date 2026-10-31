@@ -1,18 +1,31 @@
 import { canSpeak, speak } from '../lib/speech'
+import { Icon } from '../ui/Icon'
 
-export function SpeakButton({ text, lang, slow = false, big = false }: { text: string; lang?: string; slow?: boolean; big?: boolean }) {
+export function SpeakButton({
+  text,
+  lang,
+  slow = false,
+  tonal = false,
+  small = false,
+}: {
+  text: string
+  lang?: string
+  slow?: boolean
+  tonal?: boolean
+  small?: boolean
+}) {
   if (!lang || !canSpeak) return null
   return (
     <button
       type="button"
-      className={`speak${big ? ' big' : ''}`}
-      aria-label={slow ? `Hear "${text}" slowly` : `Hear "${text}"`}
+      className={`icon-btn uy-state${tonal ? ' tonal' : ''}${small ? ' sm' : ''}`}
+      aria-label={slow ? `Hear “${text}” slowly` : `Hear “${text}”`}
       onClick={(e) => {
         e.stopPropagation()
         speak(text, lang, slow)
       }}
     >
-      {slow ? '🐢' : '🔊'}
+      <Icon name={slow ? 'slow_motion_video' : 'volume_up'} />
     </button>
   )
 }

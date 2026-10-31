@@ -27,32 +27,30 @@ export function Nudges({ decks }: { decks: Deck[] }) {
   }
 
   return (
-    <section>
-      <h2>Sent to you</h2>
-      <ul className="decks">
-        {visible.map(({ n, deck, card }) => (
-          <li key={n.id} className="nudge">
-            <span className="meta">
-              {nameOf(n.from_user)} sent you this to try{n.message ? `: “${n.message}”` : ''}
-            </span>
-            <span className="nudge-card">
-              <span>
-                <strong className="prompt">{card.prompt}</strong>
-                <span className="answer">{card.answer}</span>
-              </span>
-              <SpeakButton text={card.prompt} lang={deck.speechLang} />
-            </span>
-            <span className="row">
-              <a className="primary small" href={`#deck/${deck.id}`} onClick={() => dismiss(n.id)}>
-                Open {deck.title}
-              </a>
-              <button type="button" className="ghost small" onClick={() => dismiss(n.id)}>
-                Got it
-              </button>
-            </span>
-          </li>
-        ))}
-      </ul>
+    <section className="stack">
+      <h2 className="h-section">Sent to you</h2>
+      {visible.map(({ n, deck, card }) => (
+        <article key={n.id} className="uy-card uy-card--warm">
+          <div className="uy-card__eyebrow">
+            {nameOf(n.from_user)} sent you this to try{n.message ? `: “${n.message}”` : ''}
+          </div>
+          <div className="row nowrap-center">
+            <div className="grow stack-tight">
+              <p className="nudge-phrase">{card.prompt}</p>
+              <p className="nudge-answer">{card.answer}</p>
+            </div>
+            <SpeakButton text={card.prompt} lang={deck.speechLang} />
+          </div>
+          <div className="uy-card__actions">
+            <a className="uy-btn uy-state uy-btn--filled" href={`#deck/${deck.id}`} onClick={() => dismiss(n.id)}>
+              Open {deck.title}
+            </a>
+            <button type="button" className="uy-btn uy-state uy-btn--text" onClick={() => dismiss(n.id)}>
+              Got it
+            </button>
+          </div>
+        </article>
+      ))}
     </section>
   )
 }

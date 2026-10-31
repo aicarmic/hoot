@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useAccount } from '../lib/account'
+import { Icon } from '../ui/Icon'
 import { familySummary, timeAgo, type MemberSummary } from '../lib/family'
 
 export function Family() {
@@ -18,9 +19,11 @@ export function Family() {
   if (!acct.session || !acct.family)
     return (
       <>
-        <h1>Family</h1>
-        <p className="lede">See what everyone has been practising, and send each other phrases to try.</p>
-        <a className="primary" href="#me">
+        <div className="stack">
+          <h1 className="h-page">Family</h1>
+          <p className="lede">See what everyone has been practising, and send each other phrases to try.</p>
+        </div>
+        <a className="uy-btn uy-state uy-btn--filled start" href="#me">
           {acct.session ? 'Join or start a family' : 'Sign in to get started'}
         </a>
       </>
@@ -28,35 +31,52 @@ export function Family() {
 
   return (
     <>
-      <h1>{acct.family.name}</h1>
-      <p className="lede">What everyone has been practising this week.</p>
-      {error && <p className="error">{error}</p>}
+      <div className="stack">
+        <h1 className="h-page">{acct.family.name}</h1>
+        <p className="lede">What everyone has been practising this week.</p>
+      </div>
+      {error && (
+        <p className="error">
+          <Icon name="error" />
+          {error}
+        </p>
+      )}
       {!rows && !error && <p className="meta">Loading…</p>}
-      <ul className="decks">
-        {rows?.map((m) => {
-          const me = m.user_id === acct.session?.user.id
-          return (
-            <li key={m.user_id} className="deck member">
-              <span className="avatar" aria-hidden>
-                {m.display_name.slice(0, 1).toUpperCase()}
-              </span>
-              <span className="member-body">
-                <span className="deck-title">
-                  {m.display_name}
-                  {me ? ' (you)' : ''}
-                  {m.today_cards > 0 && <span className="today"> · practised today</span>}
+      {rows && (
+        <div className="stack">
+          {rows.map((m) => {
+            const me = m.user_id === acct.session?.user.id
+            return (
+              <div key={m.user_id} className="member">
+                <span className="avatar" aria-hidden="true">
+                  {m.display_name.slice(0, 1).toUpperCase()}
                 </span>
-                <span className="meta">
-                  {m.week_cards} cards this week · {m.known_cards} known · {m.learning_cards} learning
+                <span className="grow member-body">
+                  <span className="row">
+                    <span className="title-m">
+                      {m.display_name}
+                      {me ? ' (you)' : ''}
+                    </span>
+                    {m.today_cards > 0 && (
+                      <span className="today">
+                        <Icon name="check" />
+                        Practised today
+                      </span>
+                    )}
+                  </span>
+                  <span className="meta">
+                    {m.week_cards} cards this week · {m.known_cards} known · {m.learning_cards} learning
+                  </span>
+                  <span className="meta">Last practised {timeAgo(m.last_practised)}</span>
                 </span>
-                <span className="meta">Last practised {timeAgo(m.last_practised)}</span>
-              </span>
-            </li>
-          )
-        })}
-      </ul>
-      <p className="meta" style={{ marginTop: 16 }}>
-        Tip: open any deck and tap 📨 on a card to send it to someone.
+              </div>
+            )
+          })}
+        </div>
+      )}
+      <p className="meta with-icon">
+        <Icon name="send" />
+        <span>Open any deck and tap send on a card to share it with someone.</span>
       </p>
     </>
   )
