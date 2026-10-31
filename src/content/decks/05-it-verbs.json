@@ -1,0 +1,99 @@
+{
+  "id": "it-verbs",
+  "title": "Everyday verbs",
+  "subject": "Italian",
+  "level": "A1",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "essere",
+      "prompt": "essere — sono",
+      "answer": "to be — I am",
+      "example": "Sono italiana."
+    },
+    {
+      "id": "avere",
+      "prompt": "avere — ho",
+      "answer": "to have — I have",
+      "example": "Ho due figli."
+    },
+    {
+      "id": "andare",
+      "prompt": "andare — vado",
+      "answer": "to go — I go",
+      "example": "Vado al mercato."
+    },
+    {
+      "id": "fare",
+      "prompt": "fare — faccio",
+      "answer": "to do / make — I do",
+      "example": "Faccio colazione."
+    },
+    {
+      "id": "volere",
+      "prompt": "volere — voglio",
+      "answer": "to want — I want"
+    },
+    {
+      "id": "potere",
+      "prompt": "potere — posso",
+      "answer": "to be able — I can",
+      "example": "Posso entrare?"
+    },
+    {
+      "id": "mangiare",
+      "prompt": "mangiare — mangio",
+      "answer": "to eat — I eat"
+    },
+    {
+      "id": "bere",
+      "prompt": "bere — bevo",
+      "answer": "to drink — I drink"
+    },
+    {
+      "id": "parlare",
+      "prompt": "parlare — parlo",
+      "answer": "to speak — I speak",
+      "example": "Parlo un po' di italiano."
+    },
+    {
+      "id": "capire",
+      "prompt": "capire — capisco",
+      "answer": "to understand — I understand"
+    },
+    {
+      "id": "vivere",
+      "prompt": "vivere — vivo",
+      "answer": "to live — I live"
+    },
+    {
+      "id": "lavorare",
+      "prompt": "lavorare — lavoro",
+      "answer": "to work — I work"
+    },
+    {
+      "id": "dormire",
+      "prompt": "dormire — dormo",
+      "answer": "to sleep — I sleep"
+    },
+    {
+      "id": "leggere",
+      "prompt": "leggere — leggo",
+      "answer": "to read — I read"
+    },
+    {
+      "id": "venire",
+      "prompt": "venire — vengo",
+      "answer": "to come — I come",
+      "example": "Vengo anch'io!"
+    },
+    {
+      "id": "sapere",
+      "prompt": "sapere — so",
+      "answer": "to know (a fact) — I know",
+      "example": "Non lo so."
+    }
+  ]
+}

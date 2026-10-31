@@ -1,0 +1,118 @@
+{
+  "id": "it-numbers",
+  "title": "Numbers 0–100",
+  "subject": "Italian",
+  "level": "A1",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "zero",
+      "prompt": "zero",
+      "answer": "zero"
+    },
+    {
+      "id": "uno",
+      "prompt": "uno",
+      "answer": "one"
+    },
+    {
+      "id": "due",
+      "prompt": "due",
+      "answer": "two"
+    },
+    {
+      "id": "tre",
+      "prompt": "tre",
+      "answer": "three"
+    },
+    {
+      "id": "quattro",
+      "prompt": "quattro",
+      "answer": "four"
+    },
+    {
+      "id": "cinque",
+      "prompt": "cinque",
+      "answer": "five"
+    },
+    {
+      "id": "sei",
+      "prompt": "sei",
+      "answer": "six"
+    },
+    {
+      "id": "sette",
+      "prompt": "sette",
+      "answer": "seven"
+    },
+    {
+      "id": "otto",
+      "prompt": "otto",
+      "answer": "eight"
+    },
+    {
+      "id": "nove",
+      "prompt": "nove",
+      "answer": "nine"
+    },
+    {
+      "id": "dieci",
+      "prompt": "dieci",
+      "answer": "ten"
+    },
+    {
+      "id": "undici",
+      "prompt": "undici",
+      "answer": "eleven"
+    },
+    {
+      "id": "dodici",
+      "prompt": "dodici",
+      "answer": "twelve"
+    },
+    {
+      "id": "quindici",
+      "prompt": "quindici",
+      "answer": "fifteen"
+    },
+    {
+      "id": "venti",
+      "prompt": "venti",
+      "answer": "twenty"
+    },
+    {
+      "id": "ventuno",
+      "prompt": "ventuno",
+      "answer": "twenty-one",
+      "notes": "Venti drops its final vowel before uno and otto: ventuno, ventotto."
+    },
+    {
+      "id": "trenta",
+      "prompt": "trenta",
+      "answer": "thirty"
+    },
+    {
+      "id": "quaranta",
+      "prompt": "quaranta",
+      "answer": "forty"
+    },
+    {
+      "id": "cinquanta",
+      "prompt": "cinquanta",
+      "answer": "fifty"
+    },
+    {
+      "id": "cento",
+      "prompt": "cento",
+      "answer": "one hundred"
+    },
+    {
+      "id": "quanto-costa",
+      "prompt": "Quanto costa?",
+      "answer": "How much does it cost?",
+      "example": "Quanto costa questo?"
+    }
+  ]
+}

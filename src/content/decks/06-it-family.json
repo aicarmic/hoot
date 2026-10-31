@@ -1,0 +1,94 @@
+{
+  "id": "it-family",
+  "title": "Family & people",
+  "subject": "Italian",
+  "level": "A1",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "famiglia",
+      "prompt": "la famiglia",
+      "answer": "the family"
+    },
+    {
+      "id": "madre",
+      "prompt": "la madre / la mamma",
+      "answer": "mother / mum"
+    },
+    {
+      "id": "padre",
+      "prompt": "il padre / il papà",
+      "answer": "father / dad"
+    },
+    {
+      "id": "figlio",
+      "prompt": "il figlio",
+      "answer": "son"
+    },
+    {
+      "id": "figlia",
+      "prompt": "la figlia",
+      "answer": "daughter"
+    },
+    {
+      "id": "figli",
+      "prompt": "i figli",
+      "answer": "children (sons and daughters)"
+    },
+    {
+      "id": "fratello",
+      "prompt": "il fratello",
+      "answer": "brother"
+    },
+    {
+      "id": "sorella",
+      "prompt": "la sorella",
+      "answer": "sister"
+    },
+    {
+      "id": "marito",
+      "prompt": "il marito",
+      "answer": "husband"
+    },
+    {
+      "id": "moglie",
+      "prompt": "la moglie",
+      "answer": "wife"
+    },
+    {
+      "id": "nonno",
+      "prompt": "il nonno / la nonna",
+      "answer": "grandfather / grandmother"
+    },
+    {
+      "id": "amico",
+      "prompt": "l'amico / l'amica",
+      "answer": "friend (m / f)"
+    },
+    {
+      "id": "ragazzo",
+      "prompt": "il ragazzo / la ragazza",
+      "answer": "boy / girl (or boyfriend / girlfriend)"
+    },
+    {
+      "id": "quanti-anni",
+      "prompt": "Quanti anni hai?",
+      "answer": "How old are you?",
+      "example": "Ho quarant'anni."
+    },
+    {
+      "id": "di-dove-sei",
+      "prompt": "Di dove sei?",
+      "answer": "Where are you from?",
+      "example": "Sono di Londra."
+    },
+    {
+      "id": "ti-voglio-bene",
+      "prompt": "Ti voglio bene",
+      "answer": "I love you (family / friends)",
+      "notes": "'Ti amo' is for romantic love."
+    }
+  ]
+}

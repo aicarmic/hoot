@@ -1,0 +1,102 @@
+{
+  "id": "it-time",
+  "title": "Days & time",
+  "subject": "Italian",
+  "level": "A1",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "lunedi",
+      "prompt": "lunedì",
+      "answer": "Monday"
+    },
+    {
+      "id": "martedi",
+      "prompt": "martedì",
+      "answer": "Tuesday"
+    },
+    {
+      "id": "mercoledi",
+      "prompt": "mercoledì",
+      "answer": "Wednesday"
+    },
+    {
+      "id": "giovedi",
+      "prompt": "giovedì",
+      "answer": "Thursday"
+    },
+    {
+      "id": "venerdi",
+      "prompt": "venerdì",
+      "answer": "Friday"
+    },
+    {
+      "id": "sabato",
+      "prompt": "sabato",
+      "answer": "Saturday"
+    },
+    {
+      "id": "domenica",
+      "prompt": "domenica",
+      "answer": "Sunday"
+    },
+    {
+      "id": "oggi",
+      "prompt": "oggi",
+      "answer": "today"
+    },
+    {
+      "id": "domani",
+      "prompt": "domani",
+      "answer": "tomorrow"
+    },
+    {
+      "id": "ieri",
+      "prompt": "ieri",
+      "answer": "yesterday"
+    },
+    {
+      "id": "che-ore-sono",
+      "prompt": "Che ore sono?",
+      "answer": "What time is it?",
+      "example": "Sono le tre."
+    },
+    {
+      "id": "mattina",
+      "prompt": "la mattina",
+      "answer": "the morning"
+    },
+    {
+      "id": "pomeriggio",
+      "prompt": "il pomeriggio",
+      "answer": "the afternoon"
+    },
+    {
+      "id": "sera",
+      "prompt": "la sera",
+      "answer": "the evening"
+    },
+    {
+      "id": "settimana",
+      "prompt": "la settimana",
+      "answer": "the week"
+    },
+    {
+      "id": "adesso",
+      "prompt": "adesso",
+      "answer": "now"
+    },
+    {
+      "id": "a-presto",
+      "prompt": "A presto!",
+      "answer": "See you soon!"
+    },
+    {
+      "id": "a-domani",
+      "prompt": "A domani!",
+      "answer": "See you tomorrow!"
+    }
+  ]
+}
