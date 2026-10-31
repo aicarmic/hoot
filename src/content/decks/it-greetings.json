@@ -7,7 +7,7 @@
   "promptLabel": "Italian",
   "answerLabel": "English",
   "cards": [
-    { "id": "ciao", "prompt": "Ciao", "answer": "Hi / Bye (informal)", "example": "Ciao, Natasha!" },
+    { "id": "ciao", "prompt": "Ciao", "answer": "Hi / Bye (informal)", "example": "Ciao, Marco!" },
     { "id": "buongiorno", "prompt": "Buongiorno", "answer": "Good morning / Hello", "notes": "Used until early afternoon." },
     { "id": "buonasera", "prompt": "Buonasera", "answer": "Good evening", "notes": "From mid-afternoon onwards." },
     { "id": "buonanotte", "prompt": "Buonanotte", "answer": "Good night" },
@@ -18,7 +18,7 @@
     { "id": "scusi", "prompt": "Mi scusi", "answer": "Excuse me (formal)" },
     { "id": "come-stai", "prompt": "Come stai?", "answer": "How are you? (informal)" },
     { "id": "sto-bene", "prompt": "Sto bene, grazie", "answer": "I'm well, thanks" },
-    { "id": "mi-chiamo", "prompt": "Mi chiamo…", "answer": "My name is…", "example": "Mi chiamo Tony." },
+    { "id": "mi-chiamo", "prompt": "Mi chiamo…", "answer": "My name is…", "example": "Mi chiamo Giulia." },
     { "id": "piacere", "prompt": "Piacere", "answer": "Nice to meet you" },
     { "id": "si-no", "prompt": "Sì / No", "answer": "Yes / No" }
   ]

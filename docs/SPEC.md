@@ -1,14 +1,10 @@
 # Hoot: v1.0 spec
 
-Hoot is a calm, family learning app. It started as "Duolingo without the gamification" so Natasha can keep learning Italian. It is built so that later it can show any study material, for example the flashcards and quizzes we make for Niko with Gemini.
+Hoot is a calm, family learning app. It started as "Duolingo without the gamification" so the family can keep learning Italian. It is built so that later it can show any study material, for example flashcards and quizzes made with Gemini for school study.
 
 ## Who it's for
 
-| Person  | Device  | First use                     |
-|---------|---------|-------------------------------|
-| Natasha | Android | Italian, continuing learner   |
-| Tony    | Android | Italian (and testing)         |
-| Niko    | iPhone  | School study decks, later     |
+A small family group: mostly Android phones, one iPhone. First uses are Italian (a continuing learner) and, later, school study decks.
 
 We build for Android Chrome first. iPhone must still work, but features it can't support (mainly speech recognition) should hide quietly instead of breaking.
 
@@ -80,7 +76,7 @@ The starter Italian material is written for Hoot (A1 to A2: greetings, numbers, 
 1. **Spec and setup (this PR):** spec, deck format, app shell, sample deck, PWA install, Pages deploy.
 2. **Core for one learner:** the three modes, spaced repetition, local progress, the full starter Italian content, and deck import.
 3. **Family layer:** Supabase auth, sync, the family page, sending a phrase.
-4. **Ship:** install on everyone's phones, then a week of Natasha testing it and fixes.
+4. **Ship:** install on everyone's phones, then a week of real family use and fixes.
 
 ## Out of scope for v1.0
 
