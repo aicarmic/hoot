@@ -1,31 +1,51 @@
 import type { Card, Deck } from '../content/types'
 
-/** Decks the family imported (e.g. from Gemini). Stored on this device; synced in step 3. */
-const KEY = 'hoot.userDecks.v1'
+/**
+ * Imported decks (e.g. from Gemini). `hoot.userDecks.v1` holds decks imported on
+ * this device that haven't been shared yet; `hoot.familyDecks.v1` caches the
+ * family's shared decks from Supabase. lib/sync.ts moves the first into the second.
+ */
+const LOCAL_KEY = 'hoot.userDecks.v1'
+const FAMILY_KEY = 'hoot.familyDecks.v1'
 
-export function loadUserDecks(): Deck[] {
+function readList(key: string): Deck[] {
   try {
-    const v = JSON.parse(localStorage.getItem(KEY) ?? '[]')
+    const v = JSON.parse(localStorage.getItem(key) ?? '[]')
     return Array.isArray(v) ? v : []
   } catch {
     return []
   }
 }
 
-function save(decks: Deck[]) {
+function writeList(key: string, decks: Deck[]) {
   try {
-    localStorage.setItem(KEY, JSON.stringify(decks))
+    localStorage.setItem(key, JSON.stringify(decks))
   } catch {
     /* ignore */
   }
 }
 
-export function saveUserDeck(deck: Deck) {
-  save([...loadUserDecks().filter((d) => d.id !== deck.id), deck])
+export const localOnlyDecks = () => readList(LOCAL_KEY)
+export const setLocalOnlyDecks = (d: Deck[]) => writeList(LOCAL_KEY, d)
+export const setFamilyDecks = (d: Deck[]) => writeList(FAMILY_KEY, d)
+
+/** Family decks plus any not yet shared, without duplicates. */
+export function loadUserDecks(): Deck[] {
+  const byId = new Map<string, Deck>()
+  for (const d of [...readList(FAMILY_KEY), ...readList(LOCAL_KEY)]) byId.set(d.id, d)
+  return [...byId.values()]
 }
 
-export function deleteUserDeck(id: string) {
-  save(loadUserDecks().filter((d) => d.id !== id))
+export function saveUserDeck(deck: Deck) {
+  writeList(LOCAL_KEY, [...readList(LOCAL_KEY).filter((d) => d.id !== deck.id), deck])
+}
+
+/** Removes locally; returns true if it was a shared family deck (sync deletes it remotely). */
+export function deleteUserDeck(id: string): boolean {
+  writeList(LOCAL_KEY, readList(LOCAL_KEY).filter((d) => d.id !== id))
+  const fam = readList(FAMILY_KEY)
+  writeList(FAMILY_KEY, fam.filter((d) => d.id !== id))
+  return fam.some((d) => d.id === id)
 }
 
 const slug = (s: string) =>

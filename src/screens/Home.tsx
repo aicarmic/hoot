@@ -2,6 +2,7 @@ import { decksBySubject } from '../content'
 import type { Deck } from '../content/types'
 import { deckStats, today } from '../lib/srs'
 import { store } from '../lib/store'
+import { Nudges } from './Nudges'
 
 function weekCount(): number {
   const a = store.activity()
@@ -17,6 +18,7 @@ export function Home({ decks }: { decks: Deck[] }) {
       <p className="lede">
         {week ? `You’ve practised ${week} cards this week.` : 'Pick something to practise. No points, no pressure.'}
       </p>
+      <Nudges decks={decks} />
       {[...decksBySubject(decks)].map(([subject, list]) => (
         <section key={subject}>
           <h2>{subject}</h2>

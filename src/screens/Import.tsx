@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useAccount } from '../lib/account'
+import { syncNow } from '../lib/sync'
 import { parseDeck, saveUserDeck } from '../lib/userDecks'
 
 const LANGS = [
@@ -16,6 +18,7 @@ export function Import() {
   const [subject, setSubject] = useState('')
   const [lang, setLang] = useState('')
   const [error, setError] = useState('')
+  const acct = useAccount()
 
   return (
     <>
@@ -36,6 +39,7 @@ export function Import() {
           try {
             const deck = parseDeck(text, { title, subject, speechLang: lang || undefined })
             saveUserDeck(deck)
+            void syncNow()
             location.hash = `deck/${deck.id}`
           } catch (err) {
             setError((err as Error).message)
@@ -67,6 +71,9 @@ export function Import() {
           </select>
         </label>
         {error && <p className="error">{error}</p>}
+        <p className="meta">
+          {acct.family ? `It’ll be shared with ${acct.family.name}.` : 'It’s saved on this device. Join a family to share it.'}
+        </p>
         <button type="submit" className="primary">
           Add deck
         </button>
