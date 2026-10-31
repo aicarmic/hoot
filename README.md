@@ -13,11 +13,12 @@ npm install
 npm run dev      # http://localhost:5173/hoot/
 npm run build    # production build into dist/
 npm run lint
+npm test         # unit tests (scheduling, answer matching, import)
 ```
 
 ## Add content
 
-Drop a deck JSON file into `src/content/decks/`. The format is described in the spec and in `src/content/types.ts`.
+Drop a deck JSON file into `src/content/decks/` (the file name prefix sets the order), or use **Import a deck** in the app. The format is described in the spec and in `src/content/types.ts`.
 
 ## Deploy
 

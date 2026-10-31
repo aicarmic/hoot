@@ -1,0 +1,100 @@
+{
+  "id": "it-travel",
+  "title": "Travel & directions",
+  "subject": "Italian",
+  "level": "A1",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "dove",
+      "prompt": "Dov'è…?",
+      "answer": "Where is…?",
+      "example": "Dov'è la stazione?"
+    },
+    {
+      "id": "stazione",
+      "prompt": "la stazione",
+      "answer": "the station"
+    },
+    {
+      "id": "binario",
+      "prompt": "il binario",
+      "answer": "the platform (train)"
+    },
+    {
+      "id": "biglietto",
+      "prompt": "il biglietto",
+      "answer": "the ticket",
+      "example": "Un biglietto per Roma, per favore."
+    },
+    {
+      "id": "andata-ritorno",
+      "prompt": "andata e ritorno",
+      "answer": "return (round trip)"
+    },
+    {
+      "id": "bagno",
+      "prompt": "il bagno",
+      "answer": "the bathroom",
+      "example": "Scusi, dov'è il bagno?"
+    },
+    {
+      "id": "albergo",
+      "prompt": "l'albergo",
+      "answer": "the hotel"
+    },
+    {
+      "id": "aeroporto",
+      "prompt": "l'aeroporto",
+      "answer": "the airport"
+    },
+    {
+      "id": "destra",
+      "prompt": "a destra",
+      "answer": "to the right"
+    },
+    {
+      "id": "sinistra",
+      "prompt": "a sinistra",
+      "answer": "to the left"
+    },
+    {
+      "id": "dritto",
+      "prompt": "sempre dritto",
+      "answer": "straight ahead"
+    },
+    {
+      "id": "vicino",
+      "prompt": "vicino",
+      "answer": "near"
+    },
+    {
+      "id": "lontano",
+      "prompt": "lontano",
+      "answer": "far",
+      "example": "È lontano?"
+    },
+    {
+      "id": "a-che-ora",
+      "prompt": "A che ora parte?",
+      "answer": "What time does it leave?"
+    },
+    {
+      "id": "non-capisco",
+      "prompt": "Non capisco",
+      "answer": "I don't understand"
+    },
+    {
+      "id": "piu-lentamente",
+      "prompt": "Può parlare più lentamente?",
+      "answer": "Can you speak more slowly?"
+    },
+    {
+      "id": "parla-inglese",
+      "prompt": "Parla inglese?",
+      "answer": "Do you speak English?"
+    }
+  ]
+}

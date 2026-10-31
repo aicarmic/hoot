@@ -1,0 +1,114 @@
+{
+  "id": "it-cafe-food",
+  "title": "Café & food",
+  "subject": "Italian",
+  "level": "A1",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "un-caffe",
+      "prompt": "un caffè",
+      "answer": "an espresso",
+      "example": "Un caffè, per favore.",
+      "notes": "In Italy a 'caffè' is an espresso by default."
+    },
+    {
+      "id": "cappuccino",
+      "prompt": "un cappuccino",
+      "answer": "a cappuccino",
+      "notes": "Traditionally a morning drink."
+    },
+    {
+      "id": "acqua",
+      "prompt": "l'acqua",
+      "answer": "water",
+      "example": "Un'acqua naturale o frizzante?"
+    },
+    {
+      "id": "naturale-frizzante",
+      "prompt": "naturale / frizzante",
+      "answer": "still / sparkling"
+    },
+    {
+      "id": "vino",
+      "prompt": "il vino",
+      "answer": "wine",
+      "example": "Un bicchiere di vino rosso."
+    },
+    {
+      "id": "birra",
+      "prompt": "la birra",
+      "answer": "beer"
+    },
+    {
+      "id": "pane",
+      "prompt": "il pane",
+      "answer": "bread"
+    },
+    {
+      "id": "formaggio",
+      "prompt": "il formaggio",
+      "answer": "cheese"
+    },
+    {
+      "id": "pomodoro",
+      "prompt": "il pomodoro",
+      "answer": "tomato"
+    },
+    {
+      "id": "gelato",
+      "prompt": "il gelato",
+      "answer": "ice cream"
+    },
+    {
+      "id": "vorrei",
+      "prompt": "Vorrei…",
+      "answer": "I would like…",
+      "example": "Vorrei una pizza margherita.",
+      "notes": "The polite way to order."
+    },
+    {
+      "id": "il-conto",
+      "prompt": "Il conto, per favore",
+      "answer": "The bill, please"
+    },
+    {
+      "id": "buono",
+      "prompt": "È buono!",
+      "answer": "It's good / tasty!"
+    },
+    {
+      "id": "colazione",
+      "prompt": "la colazione",
+      "answer": "breakfast"
+    },
+    {
+      "id": "pranzo",
+      "prompt": "il pranzo",
+      "answer": "lunch"
+    },
+    {
+      "id": "cena",
+      "prompt": "la cena",
+      "answer": "dinner"
+    },
+    {
+      "id": "ho-fame",
+      "prompt": "Ho fame",
+      "answer": "I'm hungry",
+      "example": "Literally 'I have hunger'."
+    },
+    {
+      "id": "ho-sete",
+      "prompt": "Ho sete",
+      "answer": "I'm thirsty"
+    },
+    {
+      "id": "tavolo-per-due",
+      "prompt": "Un tavolo per due",
+      "answer": "A table for two"
+    }
+  ]
+}
