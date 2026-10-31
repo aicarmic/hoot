@@ -1,0 +1,62 @@
+:root {
+  --bg: #fbf8f3;
+  --surface: #ffffff;
+  --text: #2b2620;
+  --muted: #7a7064;
+  --accent: #5b7f4e;
+  --accent-soft: #e7efe1;
+  --border: #e8e1d6;
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.45;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1a17;
+    --surface: #262320;
+    --text: #f1ebe2;
+    --muted: #a99f92;
+    --accent: #9cc28a;
+    --accent-soft: #2f3a2a;
+    --border: #3a352f;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; }
+
+.app { max-width: 560px; margin: 0 auto; padding: 0 16px 48px; }
+.top { position: sticky; top: 0; background: var(--bg); padding: 14px 0; z-index: 1; }
+.brand { font-weight: 700; font-size: 1.35rem; display: inline-flex; gap: 8px; align-items: center; }
+.owl { font-size: 1.6rem; }
+h1 { margin: 8px 0 4px; font-size: 1.6rem; }
+h2 { font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin: 24px 0 8px; }
+.lede { color: var(--muted); margin: 4px 0 8px; }
+.meta { color: var(--muted); font-size: .9rem; }
+.soon { background: var(--accent-soft); border-radius: 10px; padding: 10px 12px; font-size: .9rem; }
+.back { color: var(--accent); font-weight: 600; display: inline-block; padding: 6px 0; }
+
+ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.deck {
+  display: flex; flex-direction: column; gap: 2px; padding: 16px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+}
+.deck:active { transform: scale(.99); }
+.deck-title { font-weight: 600; font-size: 1.1rem; }
+
+.cards { margin-top: 14px; }
+.card { display: flex; gap: 8px; align-items: stretch; }
+.reveal {
+  flex: 1; text-align: left; padding: 14px 16px; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.prompt { font-size: 1.15rem; font-weight: 600; }
+.answer { color: var(--accent); display: flex; flex-direction: column; gap: 4px; }
+.example { color: var(--text); font-style: italic; }
+.notes { color: var(--muted); }
+.speak {
+  width: 52px; border-radius: 14px; border: 1px solid var(--border);
+  background: var(--accent-soft); font-size: 1.3rem; cursor: pointer;
+}
