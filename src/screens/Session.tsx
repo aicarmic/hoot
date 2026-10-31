@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import type { Card, Deck } from '../content/types'
 import { Flashcards } from '../modes/Flashcards'
 import { ListenSpeak } from '../modes/ListenSpeak'
@@ -6,6 +6,7 @@ import { Quiz } from '../modes/Quiz'
 import { MODES, type ModeId } from '../modes/types'
 import { pickSession, schedule, type Grade } from '../lib/srs'
 import { store } from '../lib/store'
+import { syncNow } from '../lib/sync'
 
 const COMPONENTS = { flashcards: Flashcards, quiz: Quiz, speak: ListenSpeak }
 
@@ -16,6 +17,10 @@ export function Session({ deck, mode }: { deck: Deck; mode: ModeId }) {
   const [retried, setRetried] = useState<Set<string>>(new Set())
 
   const card = queue[index]
+  const finished = queue.length > 0 && !card
+  useEffect(() => {
+    if (finished) void syncNow()
+  }, [finished])
   const Mode = COMPONENTS[mode]
   const name = MODES.find((m) => m.id === mode)?.name
 

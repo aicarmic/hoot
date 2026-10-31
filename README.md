@@ -4,6 +4,7 @@ A calm family learning app. It's like Duolingo without the gamification, startin
 
 - **Live app:** https://aicarmic.github.io/hoot/ (after GitHub Pages is turned on)
 - **Spec and roadmap:** [docs/SPEC.md](docs/SPEC.md)
+- **Supabase setup (family accounts and sync):** [docs/SETUP-supabase.md](docs/SETUP-supabase.md)
 - **Make a deck with Gemini:** [docs/gemini-prompt.md](docs/gemini-prompt.md)
 
 ## Develop
