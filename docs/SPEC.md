@@ -31,7 +31,7 @@ We build for Android Chrome first. iPhone must still work, but features it can't
 
 - **Frontend:** Vite + React + TypeScript, with `vite-plugin-pwa` for the service worker and manifest.
 - **Hosting:** GitHub Pages, deployed by GitHub Actions on every push to `main`. It's served under `/hoot/`.
-- **Backend (step 3):** Supabase free tier for auth (magic link email), progress sync and the family feed. Code talks to a small `ProgressStore` interface, so the app could later move to a self-hosted backend (for example PocketBase on the Synology) without a rewrite.
+- **Backend (step 3):** Supabase free tier for auth (email + password, which works inside an installed app), progress sync, shared family decks and the family page. Setup: [`docs/SETUP-supabase.md`](SETUP-supabase.md). Code talks to a small `ProgressStore` interface, so the app could later move to a self-hosted backend (for example PocketBase on the Synology) without a rewrite.
 - **Local storage:** `localStorage` for v1, behind the same interface. It moves to IndexedDB if it grows.
 
 ## Deck format

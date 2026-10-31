@@ -6,7 +6,10 @@ import { MODES, type ModeId } from '../modes/types'
 import { canListen, canSpeak } from '../lib/speech'
 import { deckStats, statusOf } from '../lib/srs'
 import { store } from '../lib/store'
+import { useAccount } from '../lib/account'
+import { forgetFamilyDeck } from '../lib/sync'
 import { deleteUserDeck } from '../lib/userDecks'
+import { SendDialog } from './SendDialog'
 
 const PREF = 'hoot.mode'
 
@@ -20,6 +23,9 @@ function preferredMode(): ModeId {
 
 export function DeckPage({ deck }: { deck: Deck }) {
   const [open, setOpen] = useState<string | null>(null)
+  const [sending, setSending] = useState<string | null>(null)
+  const acct = useAccount()
+  const canSend = !!acct.family && acct.members.length > 1
   const s = deckStats(deck, store)
   const progress = store.deck(deck.id)
   const modes = MODES.filter((m) => !m.needsSpeech || (deck.speechLang && canSpeak))
@@ -74,17 +80,26 @@ export function DeckPage({ deck }: { deck: Deck }) {
               )}
             </button>
             <SpeakButton text={c.prompt} lang={deck.speechLang} />
+            {canSend && (
+              <button type="button" className="speak" aria-label={`Send "${c.prompt}" to someone`} onClick={() => setSending(c.id)}>
+                📨
+              </button>
+            )}
           </li>
         ))}
       </ul>
+
+      {sending && (
+        <SendDialog deck={deck} card={deck.cards.find((c) => c.id === sending)!} onClose={() => setSending(null)} />
+      )}
 
       {isUserDeck(deck) && (
         <button
           type="button"
           className="ghost danger"
           onClick={() => {
-            if (confirm(`Remove “${deck.title}” from this device?`)) {
-              deleteUserDeck(deck.id)
+            if (confirm(acct.family ? `Remove “${deck.title}” for the whole family?` : `Remove “${deck.title}” from this device?`)) {
+              if (deleteUserDeck(deck.id)) forgetFamilyDeck(deck.id)
               location.hash = ''
             }
           }}
