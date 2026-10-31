@@ -1,0 +1,25 @@
+{
+  "id": "it-greetings",
+  "title": "Greetings & basics",
+  "subject": "Italian",
+  "level": "A1",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    { "id": "ciao", "prompt": "Ciao", "answer": "Hi / Bye (informal)", "example": "Ciao, Natasha!" },
+    { "id": "buongiorno", "prompt": "Buongiorno", "answer": "Good morning / Hello", "notes": "Used until early afternoon." },
+    { "id": "buonasera", "prompt": "Buonasera", "answer": "Good evening", "notes": "From mid-afternoon onwards." },
+    { "id": "buonanotte", "prompt": "Buonanotte", "answer": "Good night" },
+    { "id": "arrivederci", "prompt": "Arrivederci", "answer": "Goodbye" },
+    { "id": "per-favore", "prompt": "Per favore", "answer": "Please" },
+    { "id": "grazie", "prompt": "Grazie", "answer": "Thank you", "example": "Grazie mille!" },
+    { "id": "prego", "prompt": "Prego", "answer": "You're welcome", "notes": "Also: 'go ahead' or 'after you'." },
+    { "id": "scusi", "prompt": "Mi scusi", "answer": "Excuse me (formal)" },
+    { "id": "come-stai", "prompt": "Come stai?", "answer": "How are you? (informal)" },
+    { "id": "sto-bene", "prompt": "Sto bene, grazie", "answer": "I'm well, thanks" },
+    { "id": "mi-chiamo", "prompt": "Mi chiamo…", "answer": "My name is…", "example": "Mi chiamo Tony." },
+    { "id": "piacere", "prompt": "Piacere", "answer": "Nice to meet you" },
+    { "id": "si-no", "prompt": "Sì / No", "answer": "Yes / No" }
+  ]
+}
