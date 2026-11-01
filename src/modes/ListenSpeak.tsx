@@ -3,6 +3,7 @@ import { check, type MatchResult } from '../lib/match'
 import { canListen, canSpeak, listen, speak } from '../lib/speech'
 import { Extra } from './Extra'
 import { Feedback } from './Quiz'
+import { Icon } from '../ui/Icon'
 import { SpeakButton } from './SpeakButton'
 import type { ModeProps } from './types'
 
@@ -53,13 +54,13 @@ export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
 
   return (
     <div className="mode">
-      <div className="prompt-card">
+      <div className="prompt-card tall">
         <span className="label">Say this</span>
         <span className="big-text">{card.prompt}</span>
         <span className="answer-text">{card.answer}</span>
-        <div className="row center">
-          <SpeakButton text={card.prompt} lang={deck.speechLang} />
-          <SpeakButton text={card.prompt} lang={deck.speechLang} slow />
+        <div className="row center" style={{ marginTop: 8 }}>
+          <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
+          <SpeakButton text={card.prompt} lang={deck.speechLang} slow tonal />
         </div>
       </div>
 
@@ -68,19 +69,25 @@ export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
           {state !== 'done' || !passed ? (
             <button
               type="button"
-              className={`mic${state === 'listening' ? ' on' : ''}`}
+              className={`mic uy-state${state === 'listening' ? ' on' : ''}`}
               onClick={state === 'listening' ? () => stopRef.current() : start}
               aria-label={state === 'listening' ? 'Stop listening' : 'Tap and speak'}
             >
-              🎙️
+              <Icon name="mic" />
               <span>{state === 'listening' ? 'Listening…' : tries ? 'Try again' : 'Tap and speak'}</span>
             </button>
           ) : null}
-          {error && <p className="error">{error}</p>}
+          {error && (
+            <p className="error">
+              <Icon name="error" />
+              {error}
+            </p>
+          )}
           {state === 'done' && result && (
             <Feedback
               ok={passed}
-              text={result === 'exact' ? 'Bellissimo! That sounded right.' : result === 'close' ? 'Nearly there!' : 'Not quite yet.'}
+              icon={result === 'exact' ? 'check_circle' : result === 'close' ? 'hearing' : 'replay'}
+              text={result === 'exact' ? 'Bellissimo. That sounded right.' : result === 'close' ? 'Nearly there.' : 'Not quite yet.'}
             >
               <p className="heard">
                 I heard: <q>{heard || '…'}</q>
@@ -88,16 +95,16 @@ export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
               <Extra card={card} />
               <div className="row">
                 {passed ? (
-                  <button type="button" className="primary" autoFocus onClick={() => onAnswer(result === 'exact' ? 'good' : 'hard')}>
+                  <button type="button" className="uy-btn uy-state uy-btn--filled" autoFocus onClick={() => onAnswer(result === 'exact' ? 'good' : 'hard')}>
                     Next
                   </button>
                 ) : (
                   <>
-                    <button type="button" className="ghost" onClick={() => onAnswer('good')}>
+                    <button type="button" className="uy-btn uy-state uy-btn--outlined" onClick={() => onAnswer('good')}>
                       I said it right
                     </button>
                     {tries >= 2 && (
-                      <button type="button" className="ghost" onClick={() => onAnswer('again')}>
+                      <button type="button" className="uy-btn uy-state uy-btn--text" onClick={() => onAnswer('again')}>
                         Skip for now
                       </button>
                     )}
@@ -108,20 +115,21 @@ export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
           )}
         </>
       ) : (
-        <div className="feedback miss">
-          <strong>
-            {canSpeak ? 'This browser can’t listen yet, so say it out loud and rate yourself.' : 'Speech isn’t available in this browser.'}
-          </strong>
+        <Feedback
+          ok={false}
+          icon={null}
+          text={canSpeak ? 'This browser can’t listen yet, so say it out loud and rate yourself.' : 'Speech isn’t available in this browser.'}
+        >
           <Extra card={card} />
           <div className="row">
-            <button type="button" className="ghost" onClick={() => onAnswer('again')}>
+            <button type="button" className="uy-btn uy-state uy-btn--outlined" onClick={() => onAnswer('again')}>
               Need practice
             </button>
-            <button type="button" className="primary" onClick={() => onAnswer('good')}>
+            <button type="button" className="uy-btn uy-state uy-btn--filled" onClick={() => onAnswer('good')}>
               Got it
             </button>
           </div>
-        </div>
+        </Feedback>
       )}
     </div>
   )

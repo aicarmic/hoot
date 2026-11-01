@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { Grade } from '../lib/srs'
+import { nextReviewLabel, type Grade } from '../lib/srs'
 import { Extra } from './Extra'
 import { SpeakButton } from './SpeakButton'
 import type { ModeProps } from './types'
@@ -11,7 +11,7 @@ const GRADES: { g: Grade; label: string }[] = [
   { g: 'easy', label: 'Easy' },
 ]
 
-export function Flashcards({ deck, card, onAnswer }: ModeProps) {
+export function Flashcards({ deck, card, progress, onAnswer }: ModeProps) {
   const [flipped, setFlipped] = useState(false)
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export function Flashcards({ deck, card, onAnswer }: ModeProps) {
 
   return (
     <div className="mode">
-      <button type="button" className={`flip${flipped ? ' flipped' : ''}`} onClick={() => setFlipped(true)}>
+      <button type="button" className="flip uy-state" onClick={() => setFlipped(true)}>
         <span className="label">{deck.promptLabel ?? 'Prompt'}</span>
         <span className="big-text">{card.prompt}</span>
         {flipped ? (
@@ -40,21 +40,31 @@ export function Flashcards({ deck, card, onAnswer }: ModeProps) {
         )}
       </button>
       <div className="row center">
-        <SpeakButton text={card.prompt} lang={deck.speechLang} />
-        <SpeakButton text={card.prompt} lang={deck.speechLang} slow />
+        <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
+        <SpeakButton text={card.prompt} lang={deck.speechLang} slow tonal />
       </div>
       {flipped && (
-        <>
+        <div className="stack-3">
           <Extra card={card} />
           <p className="ask">How well did you know it?</p>
           <div className="grades">
-            {GRADES.map(({ g, label }) => (
-              <button key={g} type="button" className={`grade ${g}`} onClick={() => onAnswer(g)}>
-                {label}
-              </button>
-            ))}
+            {GRADES.map(({ g, label }) => {
+              const when = nextReviewLabel(progress, g)
+              return (
+                <button
+                  key={g}
+                  type="button"
+                  className={`grade ${g} uy-state`}
+                  aria-label={`${label}, comes back ${when === 'today' ? 'today' : `in ${when}`}`}
+                  onClick={() => onAnswer(g)}
+                >
+                  {label}
+                  <small aria-hidden="true">{when}</small>
+                </button>
+              )
+            })}
           </div>
-        </>
+        </div>
       )}
     </div>
   )

@@ -7,6 +7,7 @@ import { MODES, type ModeId } from '../modes/types'
 import { pickSession, schedule, type Grade } from '../lib/srs'
 import { store } from '../lib/store'
 import { syncNow } from '../lib/sync'
+import { Icon } from '../ui/Icon'
 
 const COMPONENTS = { flashcards: Flashcards, quiz: Quiz, speak: ListenSpeak }
 
@@ -47,55 +48,79 @@ export function Session({ deck, mode }: { deck: Deck; mode: ModeId }) {
     setRetried(new Set())
   }
 
+  const top = (label: string, count: string, pct: number, closeLabel: string) => (
+    <>
+      <div className="session-top">
+        <a href={`#deck/${deck.id}`} className="icon-btn uy-state" aria-label={closeLabel}>
+          <Icon name="close" />
+        </a>
+        <span className="t">{label}</span>
+        <span className="count">{count}</span>
+      </div>
+      <div className="bar" aria-hidden="true">
+        <span style={{ width: `${pct}%` }} />
+      </div>
+    </>
+  )
+
   if (!queue.length) {
     return (
-      <div className="done">
-        <p>This deck has no cards yet.</p>
-        <a className="primary" href={`#deck/${deck.id}`}>Back</a>
-      </div>
+      <main className="done">
+        <p className="lede">This deck has no cards yet.</p>
+        <a className="uy-btn uy-state uy-btn--filled" href={`#deck/${deck.id}`}>
+          Back
+        </a>
+      </main>
     )
   }
 
   if (!card) {
     const grades = Object.values(results)
     const solid = grades.filter((g) => g === 'good' || g === 'easy').length
+    const sooner = grades.length - solid
     return (
-      <div className="done">
-        <div className="owl-big" aria-hidden>🦉</div>
-        <h1>Nice work</h1>
-        <p>
-          You practised <strong>{grades.length}</strong> cards. {solid} felt solid
-          {grades.length - solid ? `, and ${grades.length - solid} will come back sooner` : ''}.
-        </p>
-        <div className="row center">
-          <button type="button" className="primary" onClick={restart}>
-            Another round
-          </button>
-          <a className="ghost" href={`#deck/${deck.id}`}>
-            Done
-          </a>
-        </div>
-      </div>
+      <>
+        {top(deck.title, '', 100, 'Back to deck')}
+        <main className="done">
+          <div className="done-mark" aria-hidden="true">
+            <Icon name="nights_stay" />
+          </div>
+          <h1 className="h-page">Nice work</h1>
+          <p className="lede">
+            You practised <strong>{grades.length}</strong> cards. {solid} felt solid
+            {sooner ? `, and ${sooner} will come back sooner` : ''}.
+          </p>
+          <div className="tally">
+            <div className="stat">
+              <b>{solid}</b>
+              <span className="label">Felt solid</span>
+            </div>
+            <div className="stat">
+              <b>{sooner}</b>
+              <span className="label">Coming back sooner</span>
+            </div>
+          </div>
+          <div className="row center">
+            <button type="button" className="uy-btn uy-state uy-btn--filled uy-btn--with-icon" onClick={restart}>
+              <Icon name="replay" />
+              Another round
+            </button>
+            <a className="uy-btn uy-state uy-btn--outlined" href={`#deck/${deck.id}`}>
+              Done
+            </a>
+          </div>
+        </main>
+      </>
     )
   }
 
+  const progress = store.get(deck.id, card.id)
   return (
-    <div className="session">
-      <div className="session-top">
-        <a href={`#deck/${deck.id}`} className="back" aria-label="End session">
-          ✕
-        </a>
-        <span className="meta">
-          {deck.title} · {name}
-        </span>
-        <span className="meta">
-          {Math.min(index + 1, queue.length)}/{queue.length}
-        </span>
-      </div>
-      <div className="bar" aria-hidden>
-        <span style={{ width: `${(index / queue.length) * 100}%` }} />
-      </div>
-      <Mode key={`${card.id}-${index}`} deck={deck} card={card} reps={store.get(deck.id, card.id)?.reps ?? 0} onAnswer={onAnswer} />
-    </div>
+    <>
+      {top(`${deck.title} · ${name}`, `${Math.min(index + 1, queue.length)}/${queue.length}`, (index / queue.length) * 100, 'End session')}
+      <main className="session-main">
+        <Mode key={`${card.id}-${index}`} deck={deck} card={card} reps={progress?.reps ?? 0} progress={progress} onAnswer={onAnswer} />
+      </main>
+    </>
   )
 }

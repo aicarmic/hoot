@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { check, variants } from '../match'
-import { schedule, today } from '../srs'
+import { nextReviewLabel, schedule, today } from '../srs'
 import { parseDeck } from '../userDecks'
 
 describe('check', () => {
@@ -49,5 +49,17 @@ describe('parseDeck', () => {
   it('explains what is wrong', () => {
     expect(() => parseDeck('{oops', { title: 'x', subject: '' })).toThrow(/didn't parse/)
     expect(() => parseDeck('just one,line', { title: 'x', subject: '' })).toThrow(/at least two/)
+  })
+})
+
+describe('nextReviewLabel', () => {
+  it('follows schedule() for each grade', () => {
+    expect(nextReviewLabel(undefined, 'again')).toBe('today')
+    expect(nextReviewLabel(undefined, 'hard')).toBe('1 day')
+    expect(nextReviewLabel(undefined, 'good')).toBe('1 day')
+    expect(nextReviewLabel(undefined, 'easy')).toBe('2 days')
+    const seen = schedule(schedule(undefined, 'good'), 'good')
+    expect(nextReviewLabel(seen, 'good')).toBe(`${schedule(seen, 'good').intervalDays} days`)
+    expect(nextReviewLabel({ ...seen, intervalDays: 50, reps: 5 }, 'easy')).toMatch(/months$/)
   })
 })

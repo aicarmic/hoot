@@ -36,6 +36,15 @@ export function schedule(prev: CardProgress | undefined, grade: Grade): CardProg
   return { ease, intervalDays: interval, reps, due: today(interval), lastSeen: new Date().toISOString() }
 }
 
+/** When a card comes back if answered with `grade` now: "today", "1 day", "3 days", "2 months". */
+export function nextReviewLabel(prev: CardProgress | undefined, grade: Grade): string {
+  const days = schedule(prev, grade).intervalDays
+  if (days <= 0) return 'today'
+  if (days === 1) return '1 day'
+  if (days < 60) return `${days} days`
+  return `${Math.round(days / 30)} months`
+}
+
 export type CardStatus = 'new' | 'learning' | 'known'
 
 export function statusOf(p: CardProgress | undefined): CardStatus {

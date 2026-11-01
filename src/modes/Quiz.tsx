@@ -2,6 +2,9 @@ import { useMemo, useRef, useState } from 'react'
 import { check, normalize, type MatchResult } from '../lib/match'
 import { shuffle } from '../lib/srs'
 import { Extra } from './Extra'
+import { Icon } from '../ui/Icon'
+import type { IconName } from '../ui/icons'
+import { TextField } from '../ui/TextField'
 import { SpeakButton } from './SpeakButton'
 import type { ModeProps } from './types'
 
@@ -27,26 +30,32 @@ function Choose({ deck, card, onAnswer }: ModeProps) {
       <div className="prompt-card">
         <span className="label">{deck.promptLabel ?? 'Prompt'}</span>
         <span className="big-text">{card.prompt}</span>
-        <SpeakButton text={card.prompt} lang={deck.speechLang} />
+        <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
       </div>
       <p className="ask">Which one means this?</p>
       <div className="choices">
-        {options.map((o) => (
-          <button
-            key={o}
-            type="button"
-            disabled={picked !== null}
-            className={`choice${picked && o === card.answer ? ' correct' : ''}${picked === o && !right ? ' wrong' : ''}`}
-            onClick={() => setPicked(o)}
-          >
-            {o}
-          </button>
-        ))}
+        {options.map((o) => {
+          const isRight = o === card.answer
+          const wrongPick = picked === o && !right
+          return (
+            <button
+              key={o}
+              type="button"
+              disabled={picked !== null}
+              className={`choice uy-state${picked && isRight ? ' correct' : ''}${wrongPick ? ' wrong' : ''}`}
+              onClick={() => setPicked(o)}
+            >
+              {o}
+              {picked && isRight && <Icon name="check_circle" />}
+              {wrongPick && <Icon name="replay" />}
+            </button>
+          )
+        })}
       </div>
       {picked && (
-        <Feedback ok={right} text={right ? 'Yes, that’s it.' : `It’s “${card.answer}”.`}>
+        <Feedback ok={right} text={right ? 'Yes, that’s it.' : `It’s “${card.answer}”. It will come back sooner.`}>
           <Extra card={card} />
-          <button type="button" className="primary" autoFocus onClick={() => onAnswer(right ? 'good' : 'again')}>
+          <button type="button" className="uy-btn uy-state uy-btn--filled block" autoFocus onClick={() => onAnswer(right ? 'good' : 'again')}>
             Next
           </button>
         </Feedback>
@@ -66,7 +75,7 @@ function TypeIt({ deck, card, onAnswer }: ModeProps) {
 
   const messages: Record<MatchResult, string> = {
     exact: 'Perfect.',
-    accent: `Right! Watch the accents: “${expected}”.`,
+    accent: `Right. Watch the accents: “${expected}”.`,
     close: `So close. It’s “${expected}”.`,
     wrong: `It’s “${expected}”.`,
   }
@@ -79,15 +88,15 @@ function TypeIt({ deck, card, onAnswer }: ModeProps) {
         <span className="big-text">{shown}</span>
       </div>
       <form
-        className="type-form"
+        className="stack-3"
         onSubmit={(e) => {
           e.preventDefault()
           if (result) onAnswer(grade)
           else if (value.trim()) setResult(check(value, expected))
         }}
       >
-        <p className="ask">Type it{reverse && deck.promptLabel ? ` in ${deck.promptLabel}` : ''}:</p>
-        <input
+        <TextField
+          label={`Type it${reverse && deck.promptLabel ? ` in ${deck.promptLabel}` : ''}`}
           ref={input}
           autoFocus
           value={value}
@@ -95,16 +104,16 @@ function TypeIt({ deck, card, onAnswer }: ModeProps) {
           onChange={(e) => setValue(e.target.value)}
           autoCapitalize="off"
           autoCorrect="off"
+          autoComplete="off"
           spellCheck={false}
           lang={reverse ? deck.speechLang : undefined}
-          className={result ? (result === 'wrong' ? 'wrong' : 'correct') : ''}
         />
         {!result && (
           <div className="row">
-            <button type="submit" className="primary">
+            <button type="submit" className="uy-btn uy-state uy-btn--filled">
               Check
             </button>
-            <button type="button" className="ghost" onClick={() => setResult('wrong')}>
+            <button type="button" className="uy-btn uy-state uy-btn--outlined" onClick={() => setResult('wrong')}>
               Show me
             </button>
           </div>
@@ -115,7 +124,7 @@ function TypeIt({ deck, card, onAnswer }: ModeProps) {
               <SpeakButton text={card.prompt} lang={deck.speechLang} />
             </div>
             <Extra card={card} />
-            <button type="submit" className="primary">
+            <button type="submit" className="uy-btn uy-state uy-btn--filled block">
               Next
             </button>
           </Feedback>
@@ -125,10 +134,23 @@ function TypeIt({ deck, card, onAnswer }: ModeProps) {
   )
 }
 
-export function Feedback({ ok, text, children }: { ok: boolean; text: string; children?: React.ReactNode }) {
+export function Feedback({
+  ok,
+  text,
+  icon = ok ? 'check_circle' : 'replay',
+  children,
+}: {
+  ok: boolean
+  text: string
+  icon?: IconName | null
+  children?: React.ReactNode
+}) {
   return (
     <div className={`feedback ${ok ? 'ok' : 'miss'}`} role="status">
-      <strong>{text}</strong>
+      <span className="head">
+        {icon && <Icon name={icon} />}
+        {text}
+      </span>
       {children}
     </div>
   )
