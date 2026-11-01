@@ -22,3 +22,10 @@ export function decksBySubject(list: Deck[]): Map<string, Deck[]> {
   for (const d of list) out.set(d.subject, [...(out.get(d.subject) ?? []), d])
   return out
 }
+
+/** Decks split by level, in the order each level first appears. Decks without a level group under "". */
+export function groupByLevel(list: Deck[]): [string, Deck[]][] {
+  const out = new Map<string, Deck[]>()
+  for (const d of list) out.set(d.level ?? '', [...(out.get(d.level ?? '') ?? []), d])
+  return [...out]
+}

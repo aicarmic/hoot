@@ -34,6 +34,7 @@ Rules:
 - `choices` are three believable but wrong answers.
 - Number the card ids "1", "2", "3", and so on.
 - For a language deck, add `"speechLang": "it-IT"` (or the right code) so Hoot can read cards aloud.
+- For conversation practice, add `"kind": "dialogue"`. Then each `prompt` is something a person says (in the language being learnt), each `answer` is a natural short reply in the same language, and `notes` gives the English for both.
 
 ---
 

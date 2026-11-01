@@ -1,0 +1,88 @@
+{
+  "id": "ru-alphabet-2",
+  "title": "Letters that fool you",
+  "subject": "Russian",
+  "level": "Alphabet",
+  "unit": "Step 2",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "net",
+      "prompt": "нет",
+      "answer": "no (nyet)",
+      "hint": "Н = n, not h"
+    },
+    {
+      "id": "vot",
+      "prompt": "вот",
+      "answer": "here is (vot)",
+      "hint": "В = v, not b"
+    },
+    {
+      "id": "nos",
+      "prompt": "нос",
+      "answer": "nose (nos)",
+      "hint": "С = s, not k"
+    },
+    {
+      "id": "son",
+      "prompt": "сон",
+      "answer": "sleep / dream (son)"
+    },
+    {
+      "id": "rot",
+      "prompt": "рот",
+      "answer": "mouth (rot)",
+      "hint": "Р = a rolled r, not p"
+    },
+    {
+      "id": "sok",
+      "prompt": "сок",
+      "answer": "juice (sok)"
+    },
+    {
+      "id": "utro",
+      "prompt": "у́тро",
+      "answer": "morning (utro)",
+      "hint": "У = oo, not y"
+    },
+    {
+      "id": "khor",
+      "prompt": "хор",
+      "answer": "choir (khor)",
+      "hint": "Х = kh, as in Scottish loch"
+    },
+    {
+      "id": "ukho",
+      "prompt": "у́хо",
+      "answer": "ear (ukho)"
+    },
+    {
+      "id": "sakhar",
+      "prompt": "са́хар",
+      "answer": "sugar (sakhar)"
+    },
+    {
+      "id": "sestra",
+      "prompt": "сестра́",
+      "answer": "sister (sestra)"
+    },
+    {
+      "id": "strana",
+      "prompt": "страна́",
+      "answer": "country (strana)"
+    },
+    {
+      "id": "metro",
+      "prompt": "метро́",
+      "answer": "metro (metro)"
+    },
+    {
+      "id": "restoran",
+      "prompt": "рестора́н",
+      "answer": "restaurant (restoran)"
+    }
+  ]
+}

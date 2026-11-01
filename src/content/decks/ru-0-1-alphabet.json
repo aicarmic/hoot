@@ -1,0 +1,68 @@
+{
+  "id": "ru-alphabet-1",
+  "title": "Letters you already know",
+  "subject": "Russian",
+  "level": "Alphabet",
+  "unit": "Step 1",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "a",
+      "prompt": "а",
+      "answer": "and / but (a)",
+      "hint": "А = a, as in father"
+    },
+    {
+      "id": "tam",
+      "prompt": "там",
+      "answer": "there (tam)",
+      "hint": "Т = t, М = m"
+    },
+    {
+      "id": "kot",
+      "prompt": "кот",
+      "answer": "cat (kot)",
+      "hint": "К = k, О = o"
+    },
+    {
+      "id": "tak",
+      "prompt": "так",
+      "answer": "so / like this (tak)"
+    },
+    {
+      "id": "mama",
+      "prompt": "ма́ма",
+      "answer": "mum (mama)",
+      "notes": "The mark over a vowel shows the stressed syllable. Hoot adds it to help you; Russian books leave it out."
+    },
+    {
+      "id": "mak",
+      "prompt": "мак",
+      "answer": "poppy (mak)"
+    },
+    {
+      "id": "tot",
+      "prompt": "тот",
+      "answer": "that one (tot)"
+    },
+    {
+      "id": "kto",
+      "prompt": "кто",
+      "answer": "who (kto)"
+    },
+    {
+      "id": "atom",
+      "prompt": "а́том",
+      "answer": "atom (atom)"
+    },
+    {
+      "id": "tema",
+      "prompt": "те́ма",
+      "answer": "topic (tyema)",
+      "hint": "Е = ye",
+      "notes": "Е sounds like ye and softens the consonant before it."
+    }
+  ]
+}

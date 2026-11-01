@@ -2,11 +2,17 @@
 
 export type MatchResult = 'exact' | 'accent' | 'close' | 'wrong'
 
-const stripAccents = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '')
+/** Drops accents from Latin letters only, so Cyrillic й and ё survive. */
+const stripAccents = (s: string) =>
+  s.replace(/\p{Script=Latin}/gu, (ch) => ch.normalize('NFD').replace(/[\u0300-\u036f]/g, ''))
+
+/** Russian stress marks (a combining acute after a Cyrillic vowel). Learner aids, never required. */
+export const stripStress = (s: string) => s.normalize('NFC').replace(/(?<=\p{Script=Cyrillic})\u0301/gu, '')
 
 export function normalize(s: string, keepAccents = true): string {
-  const base = s
+  const base = stripStress(s)
     .toLowerCase()
+    .replace(/ё/g, 'е')
     .replace(/\(.*?\)/g, ' ')
     .replace(/[’']/g, "'")
     .replace(/[^\p{L}\p{N}' ]+/gu, ' ')

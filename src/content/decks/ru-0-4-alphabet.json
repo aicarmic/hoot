@@ -1,0 +1,100 @@
+{
+  "id": "ru-alphabet-4",
+  "title": "New letters, part 2",
+  "subject": "Russian",
+  "level": "Alphabet",
+  "unit": "Step 4",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "zhena",
+      "prompt": "жена́",
+      "answer": "wife (zhena)",
+      "hint": "Ж = zh, like the s in pleasure"
+    },
+    {
+      "id": "tsentr",
+      "prompt": "центр",
+      "answer": "centre (tsentr)",
+      "hint": "Ц = ts"
+    },
+    {
+      "id": "chay",
+      "prompt": "чай",
+      "answer": "tea (chay)",
+      "hint": "Ч = ch"
+    },
+    {
+      "id": "shkola",
+      "prompt": "шко́ла",
+      "answer": "school (shkola)",
+      "hint": "Ш = sh"
+    },
+    {
+      "id": "borshch",
+      "prompt": "борщ",
+      "answer": "borscht (borshch)",
+      "hint": "Щ = a long, soft shch"
+    },
+    {
+      "id": "ty",
+      "prompt": "ты",
+      "answer": "you, informal (ty)",
+      "hint": "Ы: say i with your tongue pulled back",
+      "notes": "Ы has no English match. Try saying i while smiling less and pulling your tongue back."
+    },
+    {
+      "id": "syr",
+      "prompt": "сыр",
+      "answer": "cheese (syr)"
+    },
+    {
+      "id": "eto",
+      "prompt": "э́то",
+      "answer": "this is (eto)",
+      "hint": "Э = e, as in end"
+    },
+    {
+      "id": "yug",
+      "prompt": "юг",
+      "answer": "south (yug)",
+      "hint": "Ю = yu"
+    },
+    {
+      "id": "ya",
+      "prompt": "я",
+      "answer": "I (ya)",
+      "hint": "Я = ya"
+    },
+    {
+      "id": "dyadya",
+      "prompt": "дя́дя",
+      "answer": "uncle (dyadya)"
+    },
+    {
+      "id": "yozh",
+      "prompt": "ёж",
+      "answer": "hedgehog (yozh)",
+      "hint": "Ё = yo, and it is always stressed"
+    },
+    {
+      "id": "eshchyo",
+      "prompt": "ещё",
+      "answer": "more / still (yeshchyo)"
+    },
+    {
+      "id": "chto",
+      "prompt": "что",
+      "answer": "what (shto)",
+      "notes": "Spelled with Ч, but said shto."
+    },
+    {
+      "id": "khorosho",
+      "prompt": "хорошо́",
+      "answer": "good / well (khorosho)",
+      "notes": "Unstressed О sounds like a, so you hear kharasho."
+    }
+  ]
+}

@@ -199,6 +199,14 @@ form { margin: 0; }
   background: var(--surface-container-low); color: var(--on-surface); }
 .deck .body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .chev { color: var(--on-surface-variant); font-size: 24px; }
+.deck .unit { font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px; color: var(--on-surface-variant); }
+.level > summary { list-style: none; display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-4);
+  border-radius: var(--shape-md); cursor: pointer; }
+.level > summary::-webkit-details-marker { display: none; }
+.level > summary .body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.level > summary .chev { transition: transform 150ms ease; }
+.level[open] > summary .chev { transform: rotate(180deg); }
+.level > .stack-3 { padding-top: var(--space-2); }
 .due { color: var(--tertiary); font-weight: 500; }
 .progress { display: flex; height: 4px; border-radius: var(--shape-full); overflow: hidden; margin-top: var(--space-2);
   background: var(--surface-container-highest); }
