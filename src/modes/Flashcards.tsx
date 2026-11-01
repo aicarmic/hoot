@@ -42,6 +42,7 @@ export function Flashcards({ deck, card, progress, onAnswer }: ModeProps) {
       <div className="row center">
         <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
         <SpeakButton text={card.prompt} lang={deck.speechLang} slow tonal />
+        {flipped && deck.kind === 'dialogue' && <SpeakButton text={card.answer} lang={deck.speechLang} />}
       </div>
       {flipped && (
         <div className="stack-3">

@@ -13,8 +13,15 @@ const ERRORS: Record<string, string> = {
   network: 'Speech recognition needs an internet connection.',
 }
 
+/** A word of praise in the language being learnt, when we have one. */
+const PRAISE: Record<string, string> = { it: 'Bellissimo.', ru: 'Отлично.', es: 'Muy bien.', fr: 'Très bien.', de: 'Sehr gut.' }
+
 export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
   const lang = deck.speechLang ?? 'en-US'
+  // Dialogue decks: Hoot says their line, you say your reply. Otherwise you repeat the phrase.
+  const dialogue = deck.kind === 'dialogue'
+  const target = dialogue ? card.answer : card.prompt
+  const [showReply, setShowReply] = useState(false)
   const [state, setState] = useState<'idle' | 'listening' | 'done'>('idle')
   const [heard, setHeard] = useState('')
   const [result, setResult] = useState<MatchResult | null>(null)
@@ -37,7 +44,7 @@ export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
     stopRef.current = stop
     try {
       const alts = await p
-      const scored = alts.map((a) => ({ a, r: check(a, card.prompt) }))
+      const scored = alts.map((a) => ({ a, r: check(a, target) }))
       const rank: MatchResult[] = ['exact', 'accent', 'close', 'wrong']
       const best = scored.sort((x, y) => rank.indexOf(x.r) - rank.indexOf(y.r))[0]
       setHeard(best?.a ?? '')
@@ -54,15 +61,39 @@ export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
 
   return (
     <div className="mode">
-      <div className="prompt-card tall">
-        <span className="label">Say this</span>
-        <span className="big-text">{card.prompt}</span>
-        <span className="answer-text">{card.answer}</span>
-        <div className="row center" style={{ marginTop: 8 }}>
-          <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
-          <SpeakButton text={card.prompt} lang={deck.speechLang} slow tonal />
+      {dialogue ? (
+        <div className="prompt-card tall">
+          <span className="label">{deck.promptLabel ?? 'They say'}</span>
+          <span className="big-text">{card.prompt}</span>
+          <div className="row center" style={{ marginTop: 8 }}>
+            <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
+            <SpeakButton text={card.prompt} lang={deck.speechLang} slow tonal />
+          </div>
+          {showReply || state === 'done' ? (
+            <>
+              <span className="label" style={{ marginTop: 8 }}>
+                {deck.answerLabel ?? 'You say'}
+              </span>
+              <span className="answer-text">{card.answer}</span>
+              <SpeakButton text={card.answer} lang={deck.speechLang} small />
+            </>
+          ) : (
+            <button type="button" className="uy-btn uy-state uy-btn--text" onClick={() => setShowReply(true)}>
+              Show a reply
+            </button>
+          )}
         </div>
-      </div>
+      ) : (
+        <div className="prompt-card tall">
+          <span className="label">Say this</span>
+          <span className="big-text">{card.prompt}</span>
+          <span className="answer-text">{card.answer}</span>
+          <div className="row center" style={{ marginTop: 8 }}>
+            <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
+            <SpeakButton text={card.prompt} lang={deck.speechLang} slow tonal />
+          </div>
+        </div>
+      )}
 
       {canListen ? (
         <>
@@ -87,7 +118,7 @@ export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
             <Feedback
               ok={passed}
               icon={result === 'exact' ? 'check_circle' : result === 'close' ? 'hearing' : 'replay'}
-              text={result === 'exact' ? 'Bellissimo. That sounded right.' : result === 'close' ? 'Nearly there.' : 'Not quite yet.'}
+              text={result === 'exact' ? `${PRAISE[lang.slice(0, 2)] ?? ''} That sounded right.`.trim() : result === 'close' ? 'Nearly there.' : 'Not quite yet.'}
             >
               <p className="heard">
                 I heard: <q>{heard || '…'}</q>
@@ -118,7 +149,7 @@ export function ListenSpeak({ deck, card, onAnswer }: ModeProps) {
         <Feedback
           ok={false}
           icon={null}
-          text={canSpeak ? 'This browser can’t listen yet, so say it out loud and rate yourself.' : 'Speech isn’t available in this browser.'}
+          text={canSpeak ? (dialogue ? 'This browser can’t listen yet, so answer out loud, then check the reply and rate yourself.' : 'This browser can’t listen yet, so say it out loud and rate yourself.') : 'Speech isn’t available in this browser.'}
         >
           <Extra card={card} />
           <div className="row">

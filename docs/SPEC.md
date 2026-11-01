@@ -56,12 +56,20 @@ Decks are JSON files that match `src/content/types.ts`. Built-in decks live in `
 | Field | Required | Notes |
 |---|---|---|
 | `id`, `title`, `subject`, `cards` | yes | `subject` groups decks on the home screen ("Italian", "Biology"). |
-| `level` | no | Free text, for example `A1` or `Year 8`. |
+| `level` | no | Free text, for example `A1` or `Year 8`. When a subject has more than one level, the home screen groups its decks into collapsible levels. |
+| `unit` | no | A label for the deck's place in a course, for example `Unit 3 · Café and food`. Shown above the deck title. |
+| `kind` | no | `"dialogue"` for conversation decks: `prompt` is a line someone says to you and `answer` is a natural reply, both in the target language. Listen & speak plays their line and checks your reply; Quiz stays multiple choice. Put the English in `notes`. |
 | `speechLang` | no | BCP-47 code. If present, it turns on audio and Listen & speak. |
 | `promptLabel` / `answerLabel` | no | Labels for each side. They default to "Prompt" / "Answer". |
 | card `prompt`, `answer`, `id` | yes | `id` must be stable, because progress is keyed on it. |
-| card `example`, `hint`, `notes`, `tags` | no | Extra context shown after answering. |
+| card `example`, `hint`, `notes`, `tags` | no | Extra context shown after answering. `hint` shows before flipping a flashcard. |
 | card `choices` | no | Hand-written wrong answers for Quiz. Without them, Quiz picks from other cards. |
+
+### Language conventions
+
+- Built-in deck files are named `<lang>-<level>-<unit><part>-<topic>.json` (for example `it-a1-03b-cafe-talk.json`), because decks show in file-name order.
+- Russian prompts carry stress marks: a combining acute (U+0301) after the stressed vowel of every word with two or more syllables. Hoot strips them before reading aloud and ignores them when checking answers. It also treats ё and е as the same letter.
+- Early Russian decks put the transliteration in brackets at the end of the answer, for example `cat (kot)`. Brackets are ignored when checking typed answers.
 
 ### Gemini to Hoot
 

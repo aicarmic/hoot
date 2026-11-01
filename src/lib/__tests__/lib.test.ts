@@ -13,6 +13,14 @@ describe('check', () => {
     expect(check('arrivederchi', 'Arrivederci')).toBe('close')
     expect(check('grazie', 'Prego')).toBe('wrong')
   })
+  it('ignores Russian stress marks and ё, but keeps й', () => {
+    expect(check('молоко', 'молоко\u0301')).toBe('exact')
+    expect(check('Ещё', 'ещё')).toBe('exact')
+    expect(check('еще', 'ещё')).toBe('exact')
+    expect(check('мои', 'мой')).not.toBe('exact')
+    expect(check('мои', 'мой')).not.toBe('accent')
+    expect(check('пожалуйста', 'пожа\u0301луйста')).toBe('exact')
+  })
 })
 
 describe('schedule', () => {
