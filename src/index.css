@@ -55,7 +55,9 @@
 
 /* Base */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+/* The root background too, so whatever the browser shows past the page (overscroll, the area
+   behind an edge-to-edge navigation bar) matches the theme. */
+html { -webkit-text-size-adjust: 100%; background: var(--surface); }
 body { margin: 0; background: var(--surface); color: var(--on-surface); font-family: var(--font-sans);
   font-size: 16px; line-height: 24px; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }

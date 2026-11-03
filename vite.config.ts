@@ -37,6 +37,13 @@ export default defineConfig({
         description: 'Calm family language learning',
         theme_color: '#faf6f0',
         background_color: '#faf6f0',
+        // Dark-mode colours for the installed app's system bars and splash screen. Android Chrome
+        // otherwise paints the navigation bar with the light colours above, even in dark mode.
+        // Keep in step with --surface in src/index.css and the theme-color tags in index.html.
+        // @ts-expect-error not in vite-plugin-pwa's manifest type yet
+        user_preferences: {
+          color_scheme_dark: { theme_color: '#171411', background_color: '#171411' },
+        },
         display: 'standalone',
         start_url: base,
         scope: base,
