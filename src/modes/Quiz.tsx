@@ -10,9 +10,15 @@ import type { ModeProps } from './types'
 
 /** Multiple choice for newer cards; typing once a card has been seen twice. */
 export function Quiz(props: ModeProps) {
-  // Dialogue replies are whole sentences with many right answers, so they stay multiple choice.
-  const canType = props.deck.kind !== 'dialogue'
+  // Dialogue replies have many right answers, and problem answers like "(−4, −6)" are fiddly
+  // to type and to match, so both stay multiple choice.
+  const canType = !props.deck.kind
   return canType && props.reps >= 2 && props.deck.cards.length > 1 ? <TypeIt {...props} /> : <Choose {...props} />
+}
+
+const ASK: Record<string, string> = {
+  dialogue: 'What could you say back?',
+  problem: 'Work it out, then pick the answer.',
 }
 
 function Choose({ deck, card, onAnswer }: ModeProps) {
@@ -31,10 +37,10 @@ function Choose({ deck, card, onAnswer }: ModeProps) {
     <div className="mode">
       <div className="prompt-card">
         <span className="label">{deck.promptLabel ?? 'Prompt'}</span>
-        <span className="big-text">{card.prompt}</span>
+        <span className={deck.kind === 'problem' ? 'big-text problem' : 'big-text'}>{card.prompt}</span>
         <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
       </div>
-      <p className="ask">{deck.kind === 'dialogue' ? 'What could you say back?' : 'Which one means this?'}</p>
+      <p className="ask">{ASK[deck.kind ?? ''] ?? 'Which one means this?'}</p>
       <div className="choices">
         {options.map((o) => {
           const isRight = o === card.answer

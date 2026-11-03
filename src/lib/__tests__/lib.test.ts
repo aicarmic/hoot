@@ -54,6 +54,23 @@ describe('parseDeck', () => {
     expect(bare.cards[0]).toMatchObject({ prompt: 'cane', answer: 'dog' })
     expect(bare.speechLang).toBe('it-IT')
   })
+  it('keeps problem decks and their worked steps', () => {
+    const json = JSON.stringify({
+      title: 'Systems',
+      subject: 'Math',
+      kind: 'problem',
+      cards: [
+        { prompt: 'y = x + 1\ny = 2x − 1', answer: '(2, 3)', steps: ['x + 1 = 2x − 1', 'x = 2', ''], choices: ['(3, 2)'] },
+        { prompt: '3x − y = 12\n2x + y = 8', answer: '(4, 0)' },
+      ],
+    })
+    const deck = parseDeck(json, { title: '', subject: '' })
+    expect(deck.kind).toBe('problem')
+    expect(deck.cards[0].prompt).toContain('\n')
+    expect(deck.cards[0].steps).toEqual(['x + 1 = 2x − 1', 'x = 2'])
+    expect(deck.cards[1].steps).toBeUndefined()
+  })
+
   it('explains what is wrong', () => {
     expect(() => parseDeck('{oops', { title: 'x', subject: '' })).toThrow(/didn't parse/)
     expect(() => parseDeck('just one,line', { title: 'x', subject: '' })).toThrow(/at least two/)

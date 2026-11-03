@@ -149,6 +149,7 @@ export function parseDeck(text: string, meta: ImportMeta): Deck {
     if (seen.has(id)) id = `${id}-${i}`
     seen.add(id)
     const choices = Array.isArray(o.choices) ? o.choices.filter((x): x is string => typeof x === 'string') : undefined
+    const steps = Array.isArray(o.steps) ? o.steps.filter((x): x is string => typeof x === 'string' && !!x.trim()) : undefined
     return [
       {
         id,
@@ -158,6 +159,7 @@ export function parseDeck(text: string, meta: ImportMeta): Deck {
         hint: str(o.hint),
         notes: str(o.notes),
         choices: choices?.length ? choices : undefined,
+        steps: steps?.length ? steps : undefined,
       },
     ]
   })
@@ -171,7 +173,7 @@ export function parseDeck(text: string, meta: ImportMeta): Deck {
     subject: str(deck.subject) ?? (meta.subject.trim() || 'My decks'),
     level: str(deck.level),
     unit: str(deck.unit),
-    kind: deck.kind === 'dialogue' ? 'dialogue' : undefined,
+    kind: deck.kind === 'dialogue' || deck.kind === 'problem' ? deck.kind : undefined,
     speechLang: str(deck.speechLang) ?? meta.speechLang,
     promptLabel: str(deck.promptLabel),
     answerLabel: str(deck.answerLabel),

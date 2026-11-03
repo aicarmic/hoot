@@ -13,6 +13,7 @@ const GRADES: { g: Grade; label: string }[] = [
 
 export function Flashcards({ deck, card, progress, onAnswer }: ModeProps) {
   const [flipped, setFlipped] = useState(false)
+  const problem = deck.kind === 'problem'
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -29,14 +30,17 @@ export function Flashcards({ deck, card, progress, onAnswer }: ModeProps) {
     <div className="mode">
       <button type="button" className="flip uy-state" onClick={() => setFlipped(true)}>
         <span className="label">{deck.promptLabel ?? 'Prompt'}</span>
-        <span className="big-text">{card.prompt}</span>
+        <span className={problem ? 'big-text problem' : 'big-text'}>{card.prompt}</span>
         {flipped ? (
           <span className="reveal-answer">
             <span className="label">{deck.answerLabel ?? 'Answer'}</span>
             <span className="answer-text">{card.answer}</span>
           </span>
         ) : (
-          <span className="tap">{card.hint ? `Hint: ${card.hint} · ` : ''}Tap to flip</span>
+          <span className="tap">
+            {card.hint ? `Hint: ${card.hint} · ` : ''}
+            {problem ? 'Work it out, then tap to check' : 'Tap to flip'}
+          </span>
         )}
       </button>
       <div className="row center">
