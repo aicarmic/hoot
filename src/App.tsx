@@ -6,7 +6,7 @@ import { onSynced } from './lib/sync'
 import { MODES, type ModeId } from './modes/types'
 import { DeckPage } from './screens/DeckPage'
 import { Family } from './screens/Family'
-import { Home, SubjectPage } from './screens/Home'
+import { ClassPage, Home } from './screens/Home'
 import { Import } from './screens/Import'
 import { Me } from './screens/Me'
 import { Session } from './screens/Session'
@@ -38,7 +38,7 @@ export default function App() {
   const validMode = MODES.some((m) => m.id === mode) ? (mode as ModeId) : undefined
   const inSession = !!(deck && validMode)
   const bySubject = decksBySubject(decks)
-  const subject = view === 'learn' && id ? subjectFromSlug(id, bySubject.keys()) : undefined
+  const subject = view === 'class' && id ? subjectFromSlug(id, bySubject.keys()) : undefined
 
   let body
   if (view === 'import') body = <Import />
@@ -46,13 +46,13 @@ export default function App() {
   else if (view === 'me') body = <Me />
   else if (deck && validMode) body = <Session key={`${deck.id}-${validMode}`} deck={deck} mode={validMode} />
   else if (deck) body = <DeckPage deck={deck} />
-  else if (subject) body = <SubjectPage subject={subject} decks={bySubject.get(subject) ?? []} />
+  else if (subject) body = <ClassPage subject={subject} decks={bySubject.get(subject) ?? []} />
   else body = <Home decks={decks} />
 
   const tab = view === 'family' ? 'family' : view === 'me' ? 'me' : 'learn'
-  // Subject, deck and import pages get a back link instead of the wordmark.
-  // A deck goes back to its subject; everything else goes back to Learn.
-  const back = deck ? { href: `#learn/${subjectSlug(deck.subject)}`, label: deck.subject } : { href: '#', label: 'Learn' }
+  // Class, deck and import pages get a back link instead of the wordmark.
+  // A deck goes back to its class; everything else goes back to Learn.
+  const back = deck ? { href: `#class/${subjectSlug(deck.subject)}`, label: deck.subject } : { href: '#', label: 'Learn' }
   const backHeader = view === 'import' || !!subject || !!deck
 
   if (inSession) return <div className="app">{body}</div>
