@@ -82,6 +82,24 @@ function csvRow(line: string, sep: string): string[] {
   return out.map((s) => s.trim())
 }
 
+/**
+ * Gemini and NotebookLM often wrap the JSON in a sentence or a code fence. If the text
+ * isn't JSON already but contains a JSON object, return just that object.
+ */
+function extractJson(raw: string): string | undefined {
+  if (raw.startsWith('{') || raw.startsWith('[')) return undefined
+  const start = raw.indexOf('{')
+  const end = raw.lastIndexOf('}')
+  if (start < 0 || end <= start) return undefined
+  const inner = raw.slice(start, end + 1)
+  try {
+    JSON.parse(inner)
+    return inner
+  } catch {
+    return undefined
+  }
+}
+
 export interface ImportMeta {
   title: string
   subject: string
@@ -93,8 +111,9 @@ export interface ImportMeta {
  * Throws an Error with a friendly message if it can't.
  */
 export function parseDeck(text: string, meta: ImportMeta): Deck {
-  const raw = text.trim().replace(/^```(?:json|csv)?\s*/i, '').replace(/```\s*$/, '').trim()
+  let raw = text.trim().replace(/^```(?:json|csv)?\s*/i, '').replace(/```\s*$/, '').trim()
   if (!raw) throw new Error('Paste a deck first.')
+  raw = extractJson(raw) ?? raw
 
   let deck: Omit<Partial<Deck>, "cards"> & { cards?: unknown[] }
   if (raw.startsWith('{') || raw.startsWith('[')) {

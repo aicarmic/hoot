@@ -58,6 +58,23 @@ describe('parseDeck', () => {
     expect(() => parseDeck('{oops', { title: 'x', subject: '' })).toThrow(/didn't parse/)
     expect(() => parseDeck('just one,line', { title: 'x', subject: '' })).toThrow(/at least two/)
   })
+
+  it('finds the JSON when Gemini wraps it in text', () => {
+    const json = JSON.stringify({
+      title: 'Cells',
+      subject: 'Biology',
+      unit: 'Unit 1',
+      cards: [
+        { id: '1', prompt: 'Controls the cell?', answer: 'Nucleus', example: 'e.g. in a cheek cell' },
+        { id: '2', prompt: 'Releases energy?', answer: 'Mitochondria' },
+      ],
+    })
+    const deck = parseDeck(`Here is your deck:\n\n\`\`\`json\n${json}\n\`\`\`\nLet me know!`, { title: '', subject: '' })
+    expect(deck.title).toBe('Cells')
+    expect(deck.subject).toBe('Biology')
+    expect(deck.unit).toBe('Unit 1')
+    expect(deck.cards[0].example).toBe('e.g. in a cheek cell')
+  })
 })
 
 describe('nextReviewLabel', () => {
