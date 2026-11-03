@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useState } from 'react'
 import { allDecks, decksBySubject } from './content'
-import { subjectFromSlug, subjectSlug } from './content/subjects'
+import { isLanguage, subjectFromSlug, subjectSlug } from './content/subjects'
 import { useAccount } from './lib/account'
 import { onSynced } from './lib/sync'
 import { MODES, type ModeId } from './modes/types'
@@ -52,7 +52,9 @@ export default function App() {
   const tab = view === 'family' ? 'family' : view === 'me' ? 'me' : 'learn'
   // Class, deck and import pages get a back link instead of the wordmark.
   // A deck goes back to its class; everything else goes back to Learn.
-  const back = deck ? { href: `#class/${subjectSlug(deck.subject)}`, label: deck.subject } : { href: '#', label: 'Learn' }
+  // Language decks live in a class page; other subjects' decks sit straight on Learn.
+  const deckInClass = !!deck && isLanguage(bySubject.get(deck.subject) ?? [])
+  const back = deckInClass ? { href: `#class/${subjectSlug(deck.subject)}`, label: deck.subject } : { href: '#', label: 'Learn' }
   const backHeader = view === 'import' || !!subject || !!deck
 
   if (inSession) return <div className="app">{body}</div>
