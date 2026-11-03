@@ -1,0 +1,577 @@
+{
+  "id": "math-alg1-unit4-systems",
+  "title": "Unit 4 review: systems of equations",
+  "subject": "Math",
+  "level": "Algebra 1",
+  "kind": "problem",
+  "promptLabel": "Problem",
+  "answerLabel": "Answer",
+  "cards": [
+    {
+      "id": "idea-solution",
+      "prompt": "What is the solution of a system of two linear equations, on a graph?",
+      "answer": "The point where the two lines cross",
+      "choices": [
+        "Where each line crosses the y-axis",
+        "The slope of the two lines",
+        "Where each line crosses the x-axis"
+      ],
+      "hint": "It has to work in both equations.",
+      "steps": [
+        "A point on a line makes that equation true.",
+        "The crossing point is on both lines, so it makes both equations true."
+      ]
+    },
+    {
+      "id": "idea-parallel",
+      "prompt": "Two lines have the same slope and different y-intercepts.\nHow many solutions does the system have?",
+      "answer": "No solution",
+      "choices": [
+        "One solution",
+        "Infinitely many solutions",
+        "Two solutions"
+      ],
+      "hint": "Picture the two lines.",
+      "steps": [
+        "Same slope, different intercepts: the lines are parallel.",
+        "Parallel lines never cross, so there is no solution."
+      ]
+    },
+    {
+      "id": "idea-zero",
+      "prompt": "You solve a system and end up with 0 = 0.\nWhat does that tell you?",
+      "answer": "Infinitely many solutions",
+      "choices": [
+        "No solution",
+        "The solution is (0, 0)",
+        "You made a mistake"
+      ],
+      "hint": "Is 0 = 0 ever false?",
+      "steps": [
+        "0 = 0 is always true, whatever x and y are.",
+        "Both equations are the same line, so every point on it works."
+      ]
+    },
+    {
+      "id": "idea-false",
+      "prompt": "You solve a system and end up with 0 = −10.\nWhat does that tell you?",
+      "answer": "No solution",
+      "choices": [
+        "Infinitely many solutions",
+        "x = −10",
+        "The solution is (0, −10)"
+      ],
+      "hint": "Can 0 ever equal −10?",
+      "steps": [
+        "0 = −10 is never true.",
+        "The lines are parallel, so there is no solution."
+      ]
+    },
+    {
+      "id": "graph-1",
+      "prompt": "Solve by graphing:\ny = 3x − 1\ny = x − 3",
+      "answer": "(−1, −4)",
+      "choices": [
+        "(1, 2)",
+        "(−4, −1)",
+        "(−1, −2)"
+      ],
+      "hint": "Both start with \"y =\", so where are they equal?",
+      "steps": [
+        "Set them equal: 3x − 1 = x − 3",
+        "2x = −2, so x = −1",
+        "y = (−1) − 3 = −4",
+        "Check: 3(−1) − 1 = −4 ✓"
+      ]
+    },
+    {
+      "id": "graph-2",
+      "prompt": "Solve by graphing:\ny = −½x − 2\ny = x − 5",
+      "answer": "(2, −3)",
+      "choices": [
+        "(−3, 2)",
+        "(2, 3)",
+        "(−2, −1)"
+      ],
+      "hint": "Start each line at its y-intercept, then use the slope.",
+      "steps": [
+        "Set them equal: −½x − 2 = x − 5",
+        "Add 5 and ½x to both sides: 3 = 1.5x",
+        "x = 2",
+        "y = 2 − 5 = −3",
+        "On the graph the lines cross at (2, −3)."
+      ]
+    },
+    {
+      "id": "sub-1",
+      "prompt": "Solve by substitution:\ny = x + 1\ny = 2x − 1",
+      "answer": "(2, 3)",
+      "choices": [
+        "(3, 2)",
+        "(2, 1)",
+        "(0, 1)"
+      ],
+      "hint": "Replace y in one equation with what the other says it equals.",
+      "steps": [
+        "x + 1 = 2x − 1",
+        "2 = x",
+        "y = 2 + 1 = 3",
+        "Answer as (x, y): (2, 3)"
+      ]
+    },
+    {
+      "id": "sub-2",
+      "prompt": "Solve by substitution:\nx = 5 + 2y\n3x − 2y = −1",
+      "answer": "(−3, −4)",
+      "choices": [
+        "(−3, 4)",
+        "(13, 4)",
+        "(−4, −3)"
+      ],
+      "hint": "Put 5 + 2y in place of x.",
+      "steps": [
+        "3(5 + 2y) − 2y = −1",
+        "15 + 6y − 2y = −1",
+        "4y = −16, so y = −4",
+        "x = 5 + 2(−4) = −3"
+      ]
+    },
+    {
+      "id": "sub-3",
+      "prompt": "Solve by substitution:\ny = x − 2\n−2x + 4y = −16",
+      "answer": "(−4, −6)",
+      "choices": [
+        "(12, 10)",
+        "(4, 2)",
+        "(−6, −4)"
+      ],
+      "hint": "Careful with the sign when you move −8.",
+      "steps": [
+        "−2x + 4(x − 2) = −16",
+        "−2x + 4x − 8 = −16",
+        "2x − 8 = −16",
+        "2x = −8 (add 8, don’t subtract it), so x = −4",
+        "y = −4 − 2 = −6"
+      ],
+      "notes": "A common slip is getting 2x = 24, which leads to (12, 10). Check by putting your answer back into both equations."
+    },
+    {
+      "id": "sub-4",
+      "prompt": "Solve by substitution:\ny = 4x + 11\n−3x + 4y = 18",
+      "answer": "(−2, 3)",
+      "choices": [
+        "(2, 19)",
+        "(−2, −3)",
+        "(3, −2)"
+      ],
+      "hint": "Put 4x + 11 in place of y.",
+      "steps": [
+        "−3x + 4(4x + 11) = 18",
+        "−3x + 16x + 44 = 18",
+        "13x = −26, so x = −2",
+        "y = 4(−2) + 11 = 3"
+      ]
+    },
+    {
+      "id": "elim-1",
+      "prompt": "Solve by elimination:\n3x − y = 12\n2x + y = 8",
+      "answer": "(4, 0)",
+      "choices": [
+        "(0, 4)",
+        "(4, −2)",
+        "(2, 4)"
+      ],
+      "hint": "The y terms are already opposites.",
+      "steps": [
+        "Add the equations: 5x = 20",
+        "x = 4",
+        "2(4) + y = 8, so y = 0"
+      ]
+    },
+    {
+      "id": "elim-2",
+      "prompt": "Solve by elimination:\n2x + 3y = 1\n4x + 5y = −5",
+      "answer": "(−10, 7)",
+      "choices": [
+        "(10, −7)",
+        "(7, −10)",
+        "(−10, −7)"
+      ],
+      "hint": "Multiply the first equation by −2.",
+      "steps": [
+        "−2(2x + 3y = 1) gives −4x − 6y = −2",
+        "Add to 4x + 5y = −5: −y = −7, so y = 7",
+        "2x + 3(7) = 1, so 2x = −20",
+        "x = −10"
+      ]
+    },
+    {
+      "id": "elim-3",
+      "prompt": "Solve by elimination:\n−4x + 3y = 11\n4x − y = −9",
+      "answer": "(−2, 1)",
+      "choices": [
+        "(2, 1)",
+        "(−2, −1)",
+        "(1, −2)"
+      ],
+      "hint": "The x terms cancel when you add.",
+      "steps": [
+        "Add the equations: 2y = 2, so y = 1",
+        "4x − 1 = −9",
+        "4x = −8, so x = −2"
+      ]
+    },
+    {
+      "id": "elim-4",
+      "prompt": "Solve by elimination:\n3x + 4y = 11\n5x − 6y = 31",
+      "answer": "(5, −1)",
+      "choices": [
+        "(5, 1)",
+        "(−1, 5)",
+        "(1, 2)"
+      ],
+      "hint": "Make the y terms 12y and −12y.",
+      "steps": [
+        "3 × first: 9x + 12y = 33",
+        "2 × second: 10x − 12y = 62",
+        "Add: 19x = 95, so x = 5",
+        "3(5) + 4y = 11, so 4y = −4 and y = −1"
+      ]
+    },
+    {
+      "id": "elim-5",
+      "prompt": "Solve by elimination:\n2x + 4y = 8\n5x + 7y = −7",
+      "answer": "(−14, 9)",
+      "choices": [
+        "(14, −9)",
+        "(−14, −9)",
+        "(9, −14)"
+      ],
+      "hint": "Make the x terms −10x and 10x.",
+      "steps": [
+        "−5 × first: −10x − 20y = −40",
+        "2 × second: 10x + 14y = −14",
+        "Add: −6y = −54, so y = 9",
+        "2x + 4(9) = 8, so 2x = −28 and x = −14"
+      ]
+    },
+    {
+      "id": "special-none",
+      "prompt": "Solve:\n4x + 2y = 0\n2x + y = 5",
+      "answer": "No solution",
+      "choices": [
+        "Infinitely many solutions",
+        "(0, 0)",
+        "(5, −10)"
+      ],
+      "hint": "Multiply the second equation by −2.",
+      "steps": [
+        "−2(2x + y = 5) gives −4x − 2y = −10",
+        "Add to 4x + 2y = 0: 0 = −10",
+        "That is never true, so there is no solution (parallel lines)."
+      ]
+    },
+    {
+      "id": "special-inf",
+      "prompt": "Solve:\n4x − 3y = 12\n−12x + 9y = −36",
+      "answer": "Infinitely many solutions",
+      "choices": [
+        "No solution",
+        "(0, 0)",
+        "(−3, 0)"
+      ],
+      "hint": "Compare the second equation with the first one times −3.",
+      "steps": [
+        "3 × first: 12x − 9y = 36",
+        "Add to −12x + 9y = −36: 0 = 0",
+        "Always true: both equations are the same line."
+      ]
+    },
+    {
+      "id": "word-swim",
+      "prompt": "A swim team used vans and cars to get to a meet. Each van carried 7 swimmers and each car carried 3. They took 66 swimmers in 10 vehicles.\nHow many vans and how many cars?",
+      "answer": "9 vans and 1 car",
+      "choices": [
+        "1 van and 9 cars",
+        "6 vans and 4 cars",
+        "8 vans and 2 cars"
+      ],
+      "hint": "One equation counts vehicles, the other counts swimmers.",
+      "steps": [
+        "Let v = vans, c = cars",
+        "v + c = 10",
+        "7v + 3c = 66",
+        "−3 × first: −3v − 3c = −30; add: 4v = 36, so v = 9",
+        "c = 10 − 9 = 1"
+      ]
+    },
+    {
+      "id": "word-band",
+      "prompt": "A school band used vans and buses. Each bus carried 20 band members and each van carried 6. They took 94 band members in 11 vehicles.\nHow many buses and how many vans?",
+      "answer": "2 buses and 9 vans",
+      "choices": [
+        "9 buses and 2 vans",
+        "3 buses and 8 vans",
+        "4 buses and 7 vans"
+      ],
+      "hint": "Write one equation for vehicles and one for people.",
+      "steps": [
+        "Let b = buses, v = vans",
+        "b + v = 11",
+        "20b + 6v = 94",
+        "v = 11 − b, so 20b + 66 − 6b = 94",
+        "14b = 28, so b = 2 and v = 9"
+      ]
+    },
+    {
+      "id": "word-coins",
+      "prompt": "You have 29 coins, all nickels and dimes, worth $2.15 in total.\nHow many of each?",
+      "answer": "14 dimes and 15 nickels",
+      "choices": [
+        "15 dimes and 14 nickels",
+        "13 dimes and 16 nickels",
+        "19 dimes and 10 nickels"
+      ],
+      "hint": "Count the coins in one equation and the cents in the other.",
+      "steps": [
+        "Let d = dimes, n = nickels",
+        "d + n = 29",
+        "10d + 5n = 215 (in cents)",
+        "−5 × first: −5d − 5n = −145; add: 5d = 70, so d = 14",
+        "n = 29 − 14 = 15"
+      ]
+    },
+    {
+      "id": "word-drinks",
+      "prompt": "A family bought 13 gallons of drinks for camping. Sports drink costs $4 a gallon and tea costs $3 a gallon. They spent $47.\nHow many gallons of each?",
+      "answer": "8 gallons of sports drink and 5 of tea",
+      "choices": [
+        "5 gallons of sports drink and 8 of tea",
+        "7 gallons of sports drink and 6 of tea",
+        "9 gallons of sports drink and 4 of tea"
+      ],
+      "hint": "Gallons in one equation, dollars in the other.",
+      "steps": [
+        "Let s = sports drink, t = tea",
+        "s + t = 13",
+        "4s + 3t = 47",
+        "−3 × first: −3s − 3t = −39; add: s = 8",
+        "t = 13 − 8 = 5"
+      ]
+    },
+    {
+      "id": "word-burgers",
+      "prompt": "Cheeseburgers take 6 minutes to make and sell for $5. Hamburgers take 5 minutes and sell for $4. An order cost $44 and took 54 minutes.\nHow many of each?",
+      "answer": "4 cheeseburgers and 6 hamburgers",
+      "choices": [
+        "6 cheeseburgers and 4 hamburgers",
+        "5 cheeseburgers and 5 hamburgers",
+        "8 cheeseburgers and 1 hamburger"
+      ],
+      "hint": "One equation for minutes, one for dollars.",
+      "steps": [
+        "Let c = cheeseburgers, h = hamburgers",
+        "6c + 5h = 54 and 5c + 4h = 44",
+        "5 × first: 30c + 25h = 270",
+        "−6 × second: −30c − 24h = −264",
+        "Add: h = 6, then 5c + 24 = 44, so c = 4"
+      ]
+    },
+    {
+      "id": "word-birds",
+      "prompt": "A neighbor has 31 birds, all chickens and roosters. The number of chickens is 10 more than twice the number of roosters.\nHow many chickens?",
+      "answer": "24 chickens",
+      "choices": [
+        "7 chickens",
+        "21 chickens",
+        "17 chickens"
+      ],
+      "hint": "Write \"10 more than twice the roosters\" as an equation.",
+      "steps": [
+        "Let c = chickens, r = roosters",
+        "c + r = 31 and c = 2r + 10",
+        "(2r + 10) + r = 31, so 3r = 21 and r = 7",
+        "c = 2(7) + 10 = 24"
+      ],
+      "notes": "7 is the number of roosters, not chickens. Re-read what the question asks for."
+    },
+    {
+      "id": "word-rectangle",
+      "prompt": "A rectangle’s length is 4 more than twice its width. Its perimeter is 44 cm.\nWhat are its width and length?",
+      "answer": "6 cm wide and 16 cm long",
+      "choices": [
+        "4 cm wide and 12 cm long",
+        "7 cm wide and 15 cm long",
+        "8 cm wide and 14 cm long"
+      ],
+      "hint": "Perimeter: P = 2W + 2L. Length: L = 2W + 4.",
+      "steps": [
+        "L = 2W + 4 and 2W + 2L = 44",
+        "2W + 2(2W + 4) = 44",
+        "6W + 8 = 44, so W = 6",
+        "L = 2(6) + 4 = 16"
+      ]
+    },
+    {
+      "id": "word-triangle",
+      "prompt": "In a right triangle, the two acute angles are x° and y°. x is two less than three times y.\nFind x and y.",
+      "answer": "x = 67° and y = 23°",
+      "choices": [
+        "x = 23° and y = 67°",
+        "x = 68° and y = 22°",
+        "x = 61° and y = 29°"
+      ],
+      "hint": "In a right triangle the other two angles add up to 90°.",
+      "steps": [
+        "x + y = 90 and x = 3y − 2",
+        "(3y − 2) + y = 90",
+        "4y = 92, so y = 23",
+        "x = 3(23) − 2 = 67"
+      ]
+    },
+    {
+      "id": "word-bracelet",
+      "prompt": "Shop A charges $23 per charm plus $13 for the bracelet. Shop B charges $15 per charm plus $29 for the bracelet.\nFor how many charms is the cost the same, and what is that cost?",
+      "answer": "2 charms, $59",
+      "choices": [
+        "2 charms, $46",
+        "3 charms, $82",
+        "1 charm, $36"
+      ],
+      "hint": "Write a cost equation for each shop and set them equal.",
+      "steps": [
+        "A: y = 23x + 13 and B: y = 15x + 29",
+        "23x + 13 = 15x + 29",
+        "8x = 16, so x = 2",
+        "y = 23(2) + 13 = 59"
+      ]
+    },
+    {
+      "id": "ineq-boundary",
+      "prompt": "When you graph y ≥ 4x + 2, what kind of boundary line do you draw, and where do you shade?",
+      "answer": "Solid line, shade above",
+      "choices": [
+        "Dashed line, shade above",
+        "Solid line, shade below",
+        "Dashed line, shade below"
+      ],
+      "hint": "\"Or equal to\" decides the line. \"Greater than\" decides the side.",
+      "steps": [
+        "≥ includes the line itself, so it is solid. (> or < would be dashed.)",
+        "y is greater than the line, so shade above it."
+      ]
+    },
+    {
+      "id": "ineq-flip",
+      "prompt": "Solve for y:\n3x − 4y < 12",
+      "answer": "y > ¾x − 3",
+      "choices": [
+        "y < ¾x − 3",
+        "y > −¾x + 3",
+        "y < −¾x + 3"
+      ],
+      "hint": "Dividing by a negative number flips the inequality sign.",
+      "steps": [
+        "Subtract 3x: −4y < −3x + 12",
+        "Divide by −4 and flip the sign: y > ¾x − 3"
+      ]
+    },
+    {
+      "id": "ineq-point",
+      "prompt": "Which point is in the solution region of this system?\ny > 2x + 1\ny ≤ −x + 7",
+      "answer": "(1, 4)",
+      "choices": [
+        "(3, 5)",
+        "(0, 0)",
+        "(2, 6)"
+      ],
+      "hint": "Test each point in both inequalities.",
+      "steps": [
+        "(1, 4): 4 > 2(1) + 1 = 3 ✓ and 4 ≤ −1 + 7 = 6 ✓",
+        "(2, 6) passes the first but fails the second: 6 ≤ 5 is false.",
+        "A point is a solution only if it makes both true."
+      ]
+    },
+    {
+      "id": "fit-slope",
+      "prompt": "Snowpack on a mountain over winter is modeled by y = 1.9x + 35, where x is days and y is inches.\nWhat does 1.9 tell you?",
+      "answer": "The snowpack grows about 1.9 inches per day",
+      "choices": [
+        "There were 1.9 inches of snow on day 0",
+        "It snows for 1.9 days",
+        "The snowpack shrinks 1.9 inches per day"
+      ],
+      "hint": "Slope is the change in y for each 1 step in x.",
+      "steps": [
+        "Slope = change in y ÷ change in x.",
+        "Here that is inches per day, and it is positive, so the snowpack grows.",
+        "The y-intercept, 35, is the snowpack on day 0."
+      ]
+    },
+    {
+      "id": "fit-predict",
+      "prompt": "Using y = 1.9x + 35 (x in days, y in inches of snowpack), estimate the snowpack 25 days into winter.",
+      "answer": "About 82.5 inches",
+      "choices": [
+        "About 47.5 inches",
+        "About 25 inches",
+        "About 1,700 inches"
+      ],
+      "hint": "Put 25 in for x.",
+      "steps": [
+        "y = 1.9(25) + 35",
+        "y = 47.5 + 35 = 82.5"
+      ]
+    },
+    {
+      "id": "fit-zero",
+      "prompt": "In spring, snowpack is modeled by y = −1.6x + 156 (x in days, y in inches).\nAbout how many days until the snowpack is gone?",
+      "answer": "About 98 days",
+      "choices": [
+        "About 156 days",
+        "About 36 days",
+        "About 250 days"
+      ],
+      "hint": "Gone means y = 0.",
+      "steps": [
+        "0 = −1.6x + 156",
+        "1.6x = 156",
+        "x = 156 ÷ 1.6 = 97.5, so about 98 days"
+      ]
+    },
+    {
+      "id": "fit-correlation",
+      "prompt": "A car drives toward a city. Its distance from the city is modeled by y = −2x + 197 (x in minutes, y in miles).\nWhat does the slope tell you, and what kind of correlation is it?",
+      "answer": "It gets 2 miles closer each minute: negative correlation",
+      "choices": [
+        "It gets 2 miles farther each minute: positive correlation",
+        "It started 2 miles away: negative correlation",
+        "It drives 197 miles per minute: positive correlation"
+      ],
+      "hint": "As time goes up, does distance go up or down?",
+      "steps": [
+        "Slope = −2 miles per minute, so the distance drops by 2 every minute.",
+        "One value goes up while the other goes down: that is a negative correlation.",
+        "The y-intercept, 197, is roughly how far away it started."
+      ]
+    },
+    {
+      "id": "challenge-3var",
+      "prompt": "Challenge: solve the system.\nx + y + z = 41\nx − y + z = 15\n3x − z = 4",
+      "answer": "(8, 13, 20)",
+      "choices": [
+        "(13, 8, 20)",
+        "(8, 13, 24)",
+        "(7, 13, 21)"
+      ],
+      "hint": "Subtract the second equation from the first.",
+      "steps": [
+        "First − second: 2y = 26, so y = 13",
+        "Then x + z = 28",
+        "Add to 3x − z = 4: 4x = 32, so x = 8",
+        "z = 28 − 8 = 20",
+        "Check: 8 + 13 + 20 = 41 ✓"
+      ]
+    }
+  ]
+}

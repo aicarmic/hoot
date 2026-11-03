@@ -58,12 +58,13 @@ Decks are JSON files that match `src/content/types.ts`. Built-in decks live in `
 | `id`, `title`, `subject`, `cards` | yes | `subject` groups decks on the home screen ("Italian", "Biology"). |
 | `level` | no | Free text, for example `A1` or `Year 8`. When a subject has more than one level, the home screen groups its decks into collapsible levels. |
 | `unit` | no | A label for the deck's place in a course, for example `Unit 3 · Café and food`. Shown above the deck title. |
-| `kind` | no | `"dialogue"` for conversation decks: `prompt` is a line someone says to you and `answer` is a natural reply, both in the target language. Listen & speak plays their line and checks your reply; Quiz stays multiple choice. Put the English in `notes`. |
+| `kind` | no | `"dialogue"` for conversation decks: `prompt` is a line someone says to you and `answer` is a natural reply, both in the target language. Listen & speak plays their line and checks your reply; Quiz stays multiple choice. Put the English in `notes`. `"problem"` for math and other worked problems: line breaks in `prompt` are kept, Quiz stays multiple choice (use common mistakes as `choices`), and `steps` show the worked solution. |
 | `speechLang` | no | BCP-47 code. If present, it turns on audio and Listen & speak. |
 | `promptLabel` / `answerLabel` | no | Labels for each side. They default to "Prompt" / "Answer". |
 | card `prompt`, `answer`, `id` | yes | `id` must be stable, because progress is keyed on it. |
 | card `example`, `hint`, `notes`, `tags` | no | Extra context shown after answering. `hint` shows before flipping a flashcard. |
 | card `choices` | no | Hand-written wrong answers for Quiz. Without them, Quiz picks from other cards. |
+| card `steps` | no | Worked solution, one short step per item. Shown after answering. |
 
 ### Language conventions
 
