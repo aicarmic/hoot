@@ -200,20 +200,34 @@ form { margin: 0; }
 .deck .body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .chev { color: var(--on-surface-variant); font-size: 24px; }
 .deck .unit { font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px; color: var(--on-surface-variant); }
-.level > summary { list-style: none; display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-4);
-  border-radius: var(--shape-md); cursor: pointer; }
-.level > summary::-webkit-details-marker { display: none; }
-.level > summary .body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
-.level > summary .chev { transition: transform 150ms ease; }
-.level[open] > summary .chev { transform: rotate(180deg); }
-.level > .stack-3 { padding-top: var(--space-2); }
 .due { color: var(--tertiary); font-weight: 500; }
 .progress { display: flex; height: 4px; border-radius: var(--shape-full); overflow: hidden; margin-top: var(--space-2);
   background: var(--surface-container-highest); }
 .progress .k { background: var(--primary); }
 .progress .l { background: var(--inverse-primary); }
-.deck.subject .body { gap: var(--space-1); }
-.deck.soon { background: transparent; border: 1px dashed var(--outline-variant); color: var(--on-surface-variant); }
+
+/* Learn: class grid */
+.classes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
+.class-card { display: flex; flex-direction: column; gap: var(--space-3); min-height: 184px; padding: var(--space-4);
+  border-radius: var(--shape-lg); background: var(--surface-container-low); color: var(--on-surface); }
+.class-card .head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); }
+.flag { flex: none; display: block; width: 40px; height: 28px; border-radius: 6px; overflow: hidden; border: 1px solid var(--outline-variant); }
+.flag svg { display: block; width: 100%; height: 100%; }
+.subj-icon { flex: none; width: 40px; height: 40px; border-radius: var(--shape-full); display: grid; place-items: center;
+  background: var(--secondary-container); color: var(--on-secondary-container); }
+.subj-icon .uy-icon { font-size: 24px; }
+.class-name { margin: 0; font-family: var(--font-serif); font-size: 22px; line-height: 28px; font-weight: 500; }
+.class-card .foot { margin-top: auto; display: flex; flex-direction: column; gap: var(--space-1); }
+.pct { font-size: 14px; line-height: 20px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.class-card .progress { margin-top: 0; }
+.class-card.add { align-items: center; justify-content: center; text-align: center; gap: var(--space-2); background: transparent;
+  border: 1px dashed var(--outline); color: var(--primary); font-size: 14px; font-weight: 500; }
+.class-card.add .uy-icon { font-size: 28px; }
+.class-card.soon { background: transparent; border: 1px dashed var(--outline-variant); color: var(--on-surface-variant); }
+.due-pill { flex: none; display: inline-flex; align-items: center; height: 24px; padding: 0 var(--space-2); border-radius: var(--shape-full);
+  background: var(--tertiary-container); color: var(--on-tertiary-container); font-size: 12px; line-height: 16px; font-weight: 500; }
+.class-title { display: flex; align-items: center; gap: var(--space-3); }
+.class-title .flag { width: 48px; height: 34px; }
 .add-row { display: flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 56px; padding: 0 var(--space-4);
   border-radius: var(--shape-md); border: 1px dashed var(--outline); color: var(--primary); font-size: 14px; font-weight: 500; text-align: center; }
 
