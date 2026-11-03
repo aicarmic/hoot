@@ -10,7 +10,7 @@ We build for Android Chrome first. iPhone must still work, but features it can't
 
 ## Principles
 
-- **No gamification.** No points, gems, leagues, lives or streak-loss guilt. Progress is shown as plain facts: words known, minutes practised, last practice.
+- **No gamification.** No points, gems, leagues, lives or streak-loss guilt. Progress is shown as plain facts: words known, minutes practiced, last practice.
 - **Short sessions.** A session is 5 to 10 cards and can be stopped any time without losing anything.
 - **Works on the go.** It installs to the home screen and works offline. Progress syncs when it's back online.
 - **Content is data.** Every subject is a *deck* in one shared format. Italian is just the first subject.
@@ -24,7 +24,7 @@ We build for Android Chrome first. iPhone must still work, but features it can't
    - **Quiz:** multiple choice and type-the-answer. Wrong options are taken from the same deck.
    - **Listen & speak:** the app says the phrase with text-to-speech. You repeat it, speech recognition hears you, and you get a gentle close/exact match. Only offered for decks with a `speechLang`, and only on browsers that support it.
 4. **Pronunciation:** a play button on every card in a deck that has a `speechLang`, with a slow-playback option.
-5. **Family:** each person signs in. A shared family page shows what everyone practised this week, and you can send someone a phrase to try.
+5. **Family:** each person signs in. A shared family page shows what everyone practiced this week, and you can send someone a phrase to try.
 6. **Fun and interactive:** quick feedback, light animation, the owl, and no pressure.
 
 ## Architecture

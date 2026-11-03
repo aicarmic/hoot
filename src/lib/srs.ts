@@ -70,7 +70,7 @@ export function deckStats(deck: Deck, store: ProgressStore) {
 
 /**
  * Pick cards for a session: due reviews first, then a few new cards.
- * If nothing is due or new, practise the cards seen longest ago.
+ * If nothing is due or new, practice the cards seen longest ago.
  */
 export function pickSession(deck: Deck, store: ProgressStore, size = 10, maxNew = 5): Card[] {
   const progress = store.deck(deck.id)

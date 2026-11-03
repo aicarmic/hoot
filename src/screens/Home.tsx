@@ -2,6 +2,7 @@ import { decksBySubject, groupByLevel } from '../content'
 import type { Deck } from '../content/types'
 import { deckStats, today } from '../lib/srs'
 import { store } from '../lib/store'
+import { COMING_SOON, subjectDescription, subjectSlug } from '../content/subjects'
 import { Icon } from '../ui/Icon'
 import { Nudges } from './Nudges'
 
@@ -17,25 +18,80 @@ export function Home({ decks }: { decks: Deck[] }) {
   return (
     <>
       <p className="lede">
-        {week ? `You’ve practised ${week} cards this week.` : 'Pick something to practise. No points, no pressure.'}
+        {week ? `You’ve practiced ${week} cards this week.` : 'Pick something to practice. No points, no pressure.'}
       </p>
       <Nudges decks={decks} />
-      {[...decksBySubject(decks)].map(([subject, list]) => (
-        <section key={subject} className="stack">
-          <h2 className="h-section">{subject}</h2>
-          {groupByLevel(list).map(([level, group], i, all) =>
-            level && all.length > 1 ? (
-              <LevelGroup key={level} level={level} decks={group} openByDefault={shouldOpen(all, i)} />
-            ) : (
-              group.map((d) => <DeckRow key={d.id} deck={d} />)
-            ),
-          )}
-        </section>
-      ))}
+      <section className="stack">
+        <h2 className="h-section">Subjects</h2>
+        {[...decksBySubject(decks)].map(([subject, list]) => (
+          <SubjectCard key={subject} subject={subject} decks={list} />
+        ))}
+        {COMING_SOON.map((s) => (
+          <div key={s.name} className="deck subject soon" aria-disabled="true">
+            <span className="body">
+              <span className="unit">Coming soon</span>
+              <span className="title-m">{s.name}</span>
+              <span className="meta">{s.description}</span>
+            </span>
+          </div>
+        ))}
+      </section>
       <a href="#import" className="add-row uy-state">
         <Icon name="add" />
         Import a deck (from Gemini, a spreadsheet…)
       </a>
+    </>
+  )
+}
+
+function SubjectCard({ subject, decks }: { subject: string; decks: Deck[] }) {
+  const stats = decks.map((d) => deckStats(d, store))
+  const total = stats.reduce((n, s) => n + s.total, 0)
+  const known = stats.reduce((n, s) => n + s.known, 0)
+  const due = stats.reduce((n, s) => n + s.due, 0)
+  return (
+    <a href={`#learn/${subjectSlug(subject)}`} className="deck subject uy-state">
+      <span className="body">
+        <span className="title-m">{subject}</span>
+        <span className="meta">{subjectDescription(subject, decks)}</span>
+        <span className="meta">
+          {decks.length} decks · {known ? `${known} of ${total} known` : `${total} cards`}
+          {due > 0 && (
+            <>
+              {' · '}
+              <span className="due">{due} to review</span>
+            </>
+          )}
+        </span>
+        {known > 0 && (
+          <span className="progress" aria-hidden="true">
+            <span className="k" style={{ width: `${(known / total) * 100}%` }} />
+          </span>
+        )}
+      </span>
+      <Icon name="chevron_right" className="chev" />
+    </a>
+  )
+}
+
+/** One subject's curriculum: its levels and decks. */
+export function SubjectPage({ subject, decks }: { subject: string; decks: Deck[] }) {
+  const levels = groupByLevel(decks)
+  return (
+    <>
+      <div className="stack">
+        <h1 className="h-page">{subject}</h1>
+        <p className="lede">{subjectDescription(subject, decks)}</p>
+      </div>
+      <section className="stack">
+        {levels.map(([level, group], i, all) =>
+          level && all.length > 1 ? (
+            <LevelGroup key={level} level={level} decks={group} openByDefault={shouldOpen(all, i)} />
+          ) : (
+            group.map((d) => <DeckRow key={d.id} deck={d} />)
+          ),
+        )}
+      </section>
     </>
   )
 }

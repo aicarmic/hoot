@@ -61,7 +61,7 @@ export function DeckPage({ deck }: { deck: Deck }) {
       </div>
 
       <section className="stack">
-        <h2 className="h-section">Practise</h2>
+        <h2 className="h-section">Practice</h2>
         {modes.map((m) => (
           <a
             key={m.id}
