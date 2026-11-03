@@ -1,0 +1,94 @@
+{
+  "id": "it-a2-imperfect",
+  "title": "When I was young: key phrases",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 8 · When I was young",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "da-bambina-abitavo-in",
+      "prompt": "Da bambina abitavo in campagna.",
+      "answer": "As a child I lived in the countryside.",
+      "notes": "The imperfect describes how things used to be."
+    },
+    {
+      "id": "ogni-estate-andavamo-al",
+      "prompt": "Ogni estate andavamo al mare.",
+      "answer": "Every summer we went to the seaside."
+    },
+    {
+      "id": "mio-nonno-raccontava-sempre",
+      "prompt": "Mio nonno raccontava sempre storie.",
+      "answer": "My grandfather was always telling stories."
+    },
+    {
+      "id": "ero-molto-timida",
+      "prompt": "Ero molto timida.",
+      "answer": "I was very shy."
+    },
+    {
+      "id": "non-mi-piaceva-la",
+      "prompt": "Non mi piaceva la scuola.",
+      "answer": "I didn't like school."
+    },
+    {
+      "id": "avevo-un-cane-che",
+      "prompt": "Avevo un cane che si chiamava Fido.",
+      "answer": "I had a dog called Fido."
+    },
+    {
+      "id": "giocavamo-in-strada-fino",
+      "prompt": "Giocavamo in strada fino a sera.",
+      "answer": "We played in the street until evening."
+    },
+    {
+      "id": "la-casa-era-piccola",
+      "prompt": "La casa era piccola ma accogliente.",
+      "answer": "The house was small but cosy."
+    },
+    {
+      "id": "d-inverno-faceva-molto",
+      "prompt": "D'inverno faceva molto freddo.",
+      "answer": "In winter it was very cold."
+    },
+    {
+      "id": "mentre-cucinavo-ascoltavo-la",
+      "prompt": "Mentre cucinavo, ascoltavo la radio.",
+      "answer": "While I was cooking, I listened to the radio."
+    },
+    {
+      "id": "da-piccola-volevo-fare",
+      "prompt": "Da piccola volevo fare la veterinaria.",
+      "answer": "When I was little I wanted to be a vet."
+    },
+    {
+      "id": "mia-madre-lavorava-in",
+      "prompt": "Mia madre lavorava in un negozio.",
+      "answer": "My mother worked in a shop."
+    },
+    {
+      "id": "c-era-una-volta",
+      "prompt": "C'era una volta…",
+      "answer": "Once upon a time…"
+    },
+    {
+      "id": "di-solito-ci-alzavamo",
+      "prompt": "Di solito ci alzavamo presto.",
+      "answer": "We usually got up early."
+    },
+    {
+      "id": "mentre-dormivo-e-suonato",
+      "prompt": "Mentre dormivo, è suonato il telefono.",
+      "answer": "While I was sleeping, the phone rang.",
+      "notes": "Imperfect for the background, passato prossimo for what happened."
+    },
+    {
+      "id": "non-lo-sapevo",
+      "prompt": "Non lo sapevo.",
+      "answer": "I didn't know that."
+    }
+  ]
+}

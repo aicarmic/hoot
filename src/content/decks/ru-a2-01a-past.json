@@ -1,0 +1,88 @@
+{
+  "id": "ru-a2-past",
+  "title": "The past tense: key phrases",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 1 · What happened",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "ya-byl-ya-byla",
+      "prompt": "я был / я была́",
+      "answer": "I was (man / woman)",
+      "notes": "Past tense ends in -л for a man, -ла for a woman, -ли for plural."
+    },
+    {
+      "id": "my-byli",
+      "prompt": "мы бы́ли",
+      "answer": "we were"
+    },
+    {
+      "id": "ya-rabotal",
+      "prompt": "я рабо́тал",
+      "answer": "I worked / I was working"
+    },
+    {
+      "id": "vchera-ya-khodil-v",
+      "prompt": "вчера́ я ходи́л в кино́",
+      "answer": "yesterday I went to the cinema"
+    },
+    {
+      "id": "my-ezdili-na-more",
+      "prompt": "мы е́здили на мо́ре",
+      "answer": "we went to the seaside"
+    },
+    {
+      "id": "ya-zabyl",
+      "prompt": "я забы́л",
+      "answer": "I forgot"
+    },
+    {
+      "id": "ya-ponyal",
+      "prompt": "я по́нял",
+      "answer": "I understood / I see"
+    },
+    {
+      "id": "ona-skazala",
+      "prompt": "она́ сказа́ла",
+      "answer": "she said"
+    },
+    {
+      "id": "chto-sluchilos",
+      "prompt": "что случи́лось?",
+      "answer": "what happened?"
+    },
+    {
+      "id": "ya-ne-spal-vsyu",
+      "prompt": "я не спал всю ночь",
+      "answer": "I didn't sleep all night"
+    },
+    {
+      "id": "my-smotreli-film",
+      "prompt": "мы смотре́ли фильм",
+      "answer": "we watched a film"
+    },
+    {
+      "id": "ya-tam-nikogda-ne",
+      "prompt": "я там никогда́ не́ был",
+      "answer": "I've never been there"
+    },
+    {
+      "id": "bylo-kholodno",
+      "prompt": "бы́ло хо́лодно",
+      "answer": "it was cold"
+    },
+    {
+      "id": "u-menya-byl-kot",
+      "prompt": "у меня́ был кот",
+      "answer": "I had a cat"
+    },
+    {
+      "id": "ya-kupil-podarok",
+      "prompt": "я купи́л пода́рок",
+      "answer": "I bought a present"
+    }
+  ]
+}

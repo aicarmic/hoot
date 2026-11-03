@@ -1,0 +1,79 @@
+{
+  "id": "ru-a1-verbs-talk",
+  "title": "Everyday chat",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 9 · Everyday verbs",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "chto-ty-delaesh",
+      "prompt": "Что ты де́лаешь?",
+      "answer": "Гото́влю у́жин.",
+      "notes": "What are you doing? / I'm making dinner."
+    },
+    {
+      "id": "kuda-ty-idyosh",
+      "prompt": "Куда́ ты идёшь?",
+      "answer": "В магази́н, за хле́бом.",
+      "notes": "Where are you going? / To the shop, for bread."
+    },
+    {
+      "id": "ty-lyubish-gotovit",
+      "prompt": "Ты лю́бишь гото́вить?",
+      "answer": "Да, о́чень люблю́.",
+      "notes": "Do you like cooking? / Yes, I love it."
+    },
+    {
+      "id": "ty-menya-ponimaesh",
+      "prompt": "Ты меня́ понима́ешь?",
+      "answer": "Да, но говори́ ме́дленнее.",
+      "notes": "Do you understand me? / Yes, but speak more slowly."
+    },
+    {
+      "id": "chto-vy-chitaete",
+      "prompt": "Что вы чита́ете?",
+      "answer": "Детекти́в.",
+      "notes": "What are you reading? / A detective novel."
+    },
+    {
+      "id": "ty-mozhesh-mne-pomoch",
+      "prompt": "Ты мо́жешь мне помо́чь?",
+      "answer": "Коне́чно, что ну́жно?",
+      "notes": "Can you help me? / Of course, what do you need?"
+    },
+    {
+      "id": "ty-ne-znaesh-gde",
+      "prompt": "Ты не зна́ешь, где мои́ очки́?",
+      "answer": "На столе́.",
+      "notes": "Do you know where my glasses are? / On the table."
+    },
+    {
+      "id": "khochesh-chayu",
+      "prompt": "Хо́чешь ча́ю?",
+      "answer": "Да, с удово́льствием.",
+      "notes": "Would you like some tea? / Yes, I'd love some."
+    },
+    {
+      "id": "gde-ty-rabotaesh",
+      "prompt": "Где ты рабо́таешь?",
+      "answer": "В большо́й компа́нии.",
+      "notes": "Where do you work? / At a big company."
+    },
+    {
+      "id": "kak-ty-dumaesh-budet",
+      "prompt": "Как ты ду́маешь, бу́дет дождь?",
+      "answer": "Ду́маю, нет.",
+      "notes": "Do you think it will rain? / I don't think so."
+    },
+    {
+      "id": "chto-ty-pyosh",
+      "prompt": "Что ты пьёшь?",
+      "answer": "Во́ду, я за рулём.",
+      "notes": "What are you drinking? / Water, I'm driving."
+    }
+  ]
+}

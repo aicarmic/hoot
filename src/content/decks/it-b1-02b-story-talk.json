@@ -1,0 +1,85 @@
+{
+  "id": "it-b1-story-talk",
+  "title": "What happened?",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 2 · Telling a story",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "allora-com-e-andato",
+      "prompt": "Allora, com'è andato il viaggio?",
+      "answer": "Un disastro: il volo è stato cancellato.",
+      "notes": "So, how was the trip? / A disaster: the flight was cancelled."
+    },
+    {
+      "id": "davvero-e-cosa-avete",
+      "prompt": "Davvero? E cosa avete fatto?",
+      "answer": "Abbiamo dormito in un albergo vicino all'aeroporto.",
+      "notes": "Really? And what did you do? / We slept in a hotel near the airport."
+    },
+    {
+      "id": "come-vi-siete-conosciuti",
+      "prompt": "Come vi siete conosciuti?",
+      "answer": "Eravamo a una festa di amici comuni.",
+      "notes": "How did you meet? / We were at a party of mutual friends."
+    },
+    {
+      "id": "cosa-stavi-facendo-quando",
+      "prompt": "Cosa stavi facendo quando è successo?",
+      "answer": "Stavo tornando a casa in bici.",
+      "notes": "What were you doing when it happened? / I was cycling home."
+    },
+    {
+      "id": "e-poi",
+      "prompt": "E poi?",
+      "answer": "E poi, all'improvviso, ha cominciato a piovere.",
+      "notes": "And then? / And then, all of a sudden, it started to rain."
+    },
+    {
+      "id": "ti-sei-spaventata",
+      "prompt": "Ti sei spaventata?",
+      "answer": "Un po', ma per fortuna non è successo niente.",
+      "notes": "Were you scared? / A bit, but luckily nothing happened."
+    },
+    {
+      "id": "perche-non-sei-venuta",
+      "prompt": "Perché non sei venuta ieri?",
+      "answer": "Quando sono uscita, l'autobus era già passato.",
+      "notes": "Why didn't you come yesterday? / When I left, the bus had already gone."
+    },
+    {
+      "id": "com-era-la-citta",
+      "prompt": "Com'era la città?",
+      "answer": "Bellissima, c'erano luci dappertutto.",
+      "notes": "What was the city like? / Beautiful, there were lights everywhere."
+    },
+    {
+      "id": "ti-ricordi-la-prima",
+      "prompt": "Ti ricordi la prima volta che sei stata in Italia?",
+      "answer": "Sì, avevo vent'anni ed ero con mia sorella.",
+      "notes": "Do you remember the first time you were in Italy? / Yes, I was twenty and I was with my sister."
+    },
+    {
+      "id": "che-cosa-ti-ha",
+      "prompt": "Che cosa ti ha colpito di più?",
+      "answer": "La gentilezza delle persone.",
+      "notes": "What struck you most? / How kind people were."
+    },
+    {
+      "id": "com-e-finita",
+      "prompt": "Com'è finita?",
+      "answer": "Alla fine abbiamo riso tutti.",
+      "notes": "How did it end? / In the end we all laughed."
+    },
+    {
+      "id": "non-ci-credo",
+      "prompt": "Non ci credo.",
+      "answer": "Eppure è vero, te lo giuro.",
+      "notes": "I don't believe it. / And yet it's true, I swear."
+    }
+  ]
+}

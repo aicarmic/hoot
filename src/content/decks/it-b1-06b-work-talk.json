@@ -1,0 +1,85 @@
+{
+  "id": "it-b1-work-talk",
+  "title": "Work and news: conversation",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 6 · Work and the news",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "come-va-il-lavoro",
+      "prompt": "Come va il lavoro?",
+      "answer": "Bene, ma questo mese siamo pieni di scadenze.",
+      "notes": "How's work? / Good, but this month we're full of deadlines."
+    },
+    {
+      "id": "lavori-da-casa",
+      "prompt": "Lavori da casa?",
+      "answer": "Due giorni alla settimana, gli altri in ufficio.",
+      "notes": "Do you work from home? / Two days a week, the rest in the office."
+    },
+    {
+      "id": "come-sono-i-colleghi",
+      "prompt": "Come sono i colleghi?",
+      "answer": "Simpatici, andiamo spesso a pranzo insieme.",
+      "notes": "What are your colleagues like? / Nice, we often have lunch together."
+    },
+    {
+      "id": "quando-vai-in-ferie",
+      "prompt": "Quando vai in ferie?",
+      "answer": "Ad agosto, come tutti.",
+      "notes": "When are you going on holiday? / In August, like everyone."
+    },
+    {
+      "id": "com-e-andato-il",
+      "prompt": "Com'è andato il colloquio?",
+      "answer": "Credo bene, mi richiameranno la settimana prossima.",
+      "notes": "How did the interview go? / I think well, they'll call me back next week."
+    },
+    {
+      "id": "hai-sentito-dello-sciopero",
+      "prompt": "Hai sentito dello sciopero?",
+      "answer": "Sì, domani niente treni. Prenderò la macchina.",
+      "notes": "Did you hear about the strike? / Yes, no trains tomorrow. I'll take the car."
+    },
+    {
+      "id": "hai-visto-il-telegiornale",
+      "prompt": "Hai visto il telegiornale?",
+      "answer": "No, cos'è successo?",
+      "notes": "Did you see the news? / No, what happened?"
+    },
+    {
+      "id": "pare-che-aumentino-i",
+      "prompt": "Pare che aumentino i prezzi della benzina.",
+      "answer": "Ancora? Non è possibile.",
+      "notes": "It seems petrol prices are going up. / Again? I don't believe it."
+    },
+    {
+      "id": "che-lavoro-faresti-se",
+      "prompt": "Che lavoro faresti se potessi scegliere?",
+      "answer": "Farei la guida turistica.",
+      "notes": "What job would you do if you could choose? / I'd be a tour guide."
+    },
+    {
+      "id": "tuo-padre-lavora-ancora",
+      "prompt": "Tuo padre lavora ancora?",
+      "answer": "No, è andato in pensione l'anno scorso.",
+      "notes": "Does your father still work? / No, he retired last year."
+    },
+    {
+      "id": "ci-vediamo-alla-riunione",
+      "prompt": "Ci vediamo alla riunione?",
+      "answer": "Sì, alle tre in sala grande.",
+      "notes": "See you at the meeting? / Yes, at three in the big room."
+    },
+    {
+      "id": "sei-stanca",
+      "prompt": "Sei stanca?",
+      "answer": "Sì, è stata una settimana pesante.",
+      "notes": "Are you tired? / Yes, it's been a heavy week."
+    }
+  ]
+}

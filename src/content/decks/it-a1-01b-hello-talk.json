@@ -1,0 +1,91 @@
+{
+  "id": "it-hello-talk",
+  "title": "Meeting people: conversation",
+  "subject": "Italian",
+  "level": "A1",
+  "unit": "Unit 1 · Hello",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "ciao-come-stai",
+      "prompt": "Ciao, come stai?",
+      "answer": "Bene, grazie, e tu?",
+      "notes": "Hi, how are you? / Fine, thanks, and you?"
+    },
+    {
+      "id": "buongiorno-come-sta",
+      "prompt": "Buongiorno, come sta?",
+      "answer": "Bene, grazie, e lei?",
+      "notes": "Good morning, how are you? (formal) / Fine, thanks, and you? Use lei with strangers and older people."
+    },
+    {
+      "id": "come-va",
+      "prompt": "Come va?",
+      "answer": "Non c'è male.",
+      "notes": "How's it going? / Not bad."
+    },
+    {
+      "id": "come-ti-chiami",
+      "prompt": "Come ti chiami?",
+      "answer": "Mi chiamo Anna, piacere.",
+      "notes": "What's your name? / My name's Anna, nice to meet you. Use your own name."
+    },
+    {
+      "id": "piacere",
+      "prompt": "Piacere.",
+      "answer": "Piacere mio.",
+      "notes": "Nice to meet you. / The pleasure is mine."
+    },
+    {
+      "id": "di-dove-sei",
+      "prompt": "Di dove sei?",
+      "answer": "Sono inglese, ma abito qui da un anno.",
+      "notes": "Where are you from? / I'm English, but I've lived here for a year. Swap in your own: americana, australiana, canadese…"
+    },
+    {
+      "id": "parli-italiano",
+      "prompt": "Parli italiano?",
+      "answer": "Sì, un po'. Sto imparando.",
+      "notes": "Do you speak Italian? / Yes, a little. I'm learning."
+    },
+    {
+      "id": "da-quanto-tempo-studi",
+      "prompt": "Da quanto tempo studi l'italiano?",
+      "answer": "Da circa due anni.",
+      "notes": "How long have you been studying Italian? / For about two years."
+    },
+    {
+      "id": "che-lavoro-fai",
+      "prompt": "Che lavoro fai?",
+      "answer": "Faccio l'insegnante.",
+      "notes": "What do you do for work? / I'm a teacher. Fare + l'/il/la + job: faccio l'infermiera, faccio il medico."
+    },
+    {
+      "id": "abito-in-via-garibaldi",
+      "prompt": "Abito in via Garibaldi, al numero dodici.",
+      "answer": "Scusi, può ripetere più lentamente?",
+      "notes": "I live at number twelve, Via Garibaldi. / Sorry, could you repeat that more slowly?"
+    },
+    {
+      "id": "sei-qui-in-vacanza",
+      "prompt": "Sei qui in vacanza?",
+      "answer": "Sì, per una settimana.",
+      "notes": "Are you here on holiday? / Yes, for a week."
+    },
+    {
+      "id": "ci-vediamo-domani",
+      "prompt": "Ci vediamo domani?",
+      "answer": "Sì, a domani.",
+      "notes": "See you tomorrow? / Yes, see you tomorrow."
+    },
+    {
+      "id": "buona-serata",
+      "prompt": "Buona serata.",
+      "answer": "Grazie, anche a te.",
+      "notes": "Have a nice evening. / Thanks, you too."
+    }
+  ]
+}

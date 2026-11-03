@@ -1,0 +1,83 @@
+{
+  "id": "ru-a2-hobbies",
+  "title": "Hobbies",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 9 · Hobbies",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "khobbi",
+      "prompt": "хо́бби",
+      "answer": "hobby"
+    },
+    {
+      "id": "risovat",
+      "prompt": "рисова́ть",
+      "answer": "to draw"
+    },
+    {
+      "id": "igrat-v-shakhmaty",
+      "prompt": "игра́ть в ша́хматы",
+      "answer": "to play chess",
+      "notes": "игра'ть в for games, игра'ть на for instruments."
+    },
+    {
+      "id": "igrat-na-gitare",
+      "prompt": "игра́ть на гита́ре",
+      "answer": "to play the guitar"
+    },
+    {
+      "id": "gulyat",
+      "prompt": "гуля́ть",
+      "answer": "to go for a walk"
+    },
+    {
+      "id": "plavat",
+      "prompt": "пла́вать",
+      "answer": "to swim"
+    },
+    {
+      "id": "rybalka",
+      "prompt": "рыба́лка",
+      "answer": "fishing"
+    },
+    {
+      "id": "fotografirovat",
+      "prompt": "фотографи́ровать",
+      "answer": "to take photos"
+    },
+    {
+      "id": "slushat-muzyku",
+      "prompt": "слу́шать му́зыку",
+      "answer": "to listen to music"
+    },
+    {
+      "id": "khodit-v-pokhody",
+      "prompt": "ходи́ть в похо́ды",
+      "answer": "to go hiking"
+    },
+    {
+      "id": "ya-uvlekayus",
+      "prompt": "я увлека́юсь…",
+      "answer": "I'm into…"
+    },
+    {
+      "id": "v-svobodnoe-vremya",
+      "prompt": "в свобо́дное вре́мя",
+      "answer": "in my free time"
+    },
+    {
+      "id": "mne-nravitsya-gotovit",
+      "prompt": "мне нра́вится гото́вить",
+      "answer": "I like cooking"
+    },
+    {
+      "id": "sygraem",
+      "prompt": "сыгра́ем?",
+      "answer": "shall we play?"
+    }
+  ]
+}

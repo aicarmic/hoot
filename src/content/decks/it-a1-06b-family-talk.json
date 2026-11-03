@@ -1,0 +1,85 @@
+{
+  "id": "it-family-talk",
+  "title": "Talking about family",
+  "subject": "Italian",
+  "level": "A1",
+  "unit": "Unit 6 · Family",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "hai-fratelli-o-sorelle",
+      "prompt": "Hai fratelli o sorelle?",
+      "answer": "Sì, ho un fratello più grande.",
+      "notes": "Do you have brothers or sisters? / Yes, I have an older brother."
+    },
+    {
+      "id": "sei-sposata",
+      "prompt": "Sei sposata?",
+      "answer": "Sì, da quindici anni.",
+      "notes": "Are you married? / Yes, for fifteen years. A man is sposato."
+    },
+    {
+      "id": "hai-figli",
+      "prompt": "Hai figli?",
+      "answer": "Sì, due: un maschio e una femmina.",
+      "notes": "Do you have children? / Yes, two: a boy and a girl."
+    },
+    {
+      "id": "quanti-anni-hanno",
+      "prompt": "Quanti anni hanno?",
+      "answer": "Dodici e quindici.",
+      "notes": "How old are they? / Twelve and fifteen."
+    },
+    {
+      "id": "come-si-chiama-tuo",
+      "prompt": "Come si chiama tuo marito?",
+      "answer": "Si chiama Marco.",
+      "notes": "What's your husband's name? / His name is Marco."
+    },
+    {
+      "id": "vivi-vicino-ai-tuoi",
+      "prompt": "Vivi vicino ai tuoi genitori?",
+      "answer": "No, abitano in un'altra città.",
+      "notes": "Do you live near your parents? / No, they live in another city."
+    },
+    {
+      "id": "a-chi-assomigli",
+      "prompt": "A chi assomigli?",
+      "answer": "Assomiglio a mia madre.",
+      "notes": "Who do you look like? / I look like my mother."
+    },
+    {
+      "id": "che-bella-foto-chi",
+      "prompt": "Che bella foto. Chi è?",
+      "answer": "È mia nonna, da giovane.",
+      "notes": "What a lovely photo. Who is it? / It's my grandmother, when she was young."
+    },
+    {
+      "id": "avete-animali",
+      "prompt": "Avete animali?",
+      "answer": "Sì, abbiamo un cane.",
+      "notes": "Do you have any pets? / Yes, we have a dog."
+    },
+    {
+      "id": "come-sta-la-tua",
+      "prompt": "Come sta la tua famiglia?",
+      "answer": "Stanno tutti bene, grazie.",
+      "notes": "How's your family? / They're all well, thanks."
+    },
+    {
+      "id": "tua-figlia-va-ancora",
+      "prompt": "Tua figlia va ancora a scuola?",
+      "answer": "Sì, ma l'anno prossimo va all'università.",
+      "notes": "Is your daughter still at school? / Yes, but next year she's going to university."
+    },
+    {
+      "id": "passate-le-feste-insieme",
+      "prompt": "Passate le feste insieme?",
+      "answer": "Sì, a Natale siamo sempre tutti insieme.",
+      "notes": "Do you spend the holidays together? / Yes, at Christmas we're always all together."
+    }
+  ]
+}

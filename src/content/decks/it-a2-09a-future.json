@@ -1,0 +1,94 @@
+{
+  "id": "it-a2-future",
+  "title": "Plans and the future: key phrases",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 9 · Plans",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "domani-andro-dal-dentista",
+      "prompt": "Domani andrò dal dentista.",
+      "answer": "Tomorrow I'll go to the dentist."
+    },
+    {
+      "id": "partiremo-venerdi-mattina",
+      "prompt": "Partiremo venerdì mattina.",
+      "answer": "We'll leave on Friday morning."
+    },
+    {
+      "id": "che-cosa-farai-quest",
+      "prompt": "Che cosa farai quest'estate?",
+      "answer": "What will you do this summer?"
+    },
+    {
+      "id": "ti-chiamero-stasera",
+      "prompt": "Ti chiamerò stasera.",
+      "answer": "I'll call you tonight."
+    },
+    {
+      "id": "quando-arriverai-mandami-un",
+      "prompt": "Quando arriverai, mandami un messaggio.",
+      "answer": "When you arrive, send me a message.",
+      "notes": "Italian uses the future after quando when English uses the present."
+    },
+    {
+      "id": "ho-intenzione-di-cambiare",
+      "prompt": "Ho intenzione di cambiare lavoro.",
+      "answer": "I'm planning to change jobs."
+    },
+    {
+      "id": "stiamo-pensando-di-andare",
+      "prompt": "Stiamo pensando di andare in Toscana.",
+      "answer": "We're thinking of going to Tuscany."
+    },
+    {
+      "id": "forse-verro-anch-io",
+      "prompt": "Forse verrò anch'io.",
+      "answer": "Maybe I'll come too."
+    },
+    {
+      "id": "dipende-dal-tempo",
+      "prompt": "Dipende dal tempo.",
+      "answer": "It depends on the weather."
+    },
+    {
+      "id": "sara-vero",
+      "prompt": "Sarà vero?",
+      "answer": "I wonder if it's true.",
+      "notes": "The future can also express a guess."
+    },
+    {
+      "id": "saranno-le-dieci",
+      "prompt": "Saranno le dieci.",
+      "answer": "It must be about ten o'clock."
+    },
+    {
+      "id": "fra-due-settimane",
+      "prompt": "fra due settimane",
+      "answer": "in two weeks' time"
+    },
+    {
+      "id": "il-mese-prossimo",
+      "prompt": "il mese prossimo",
+      "answer": "next month"
+    },
+    {
+      "id": "ci-vediamo-la-settimana",
+      "prompt": "Ci vediamo la settimana prossima.",
+      "answer": "See you next week."
+    },
+    {
+      "id": "speriamo-che-faccia-bel",
+      "prompt": "Speriamo che faccia bel tempo.",
+      "answer": "Let's hope the weather is good."
+    },
+    {
+      "id": "non-vedo-l-ora",
+      "prompt": "Non vedo l'ora.",
+      "answer": "I can't wait."
+    }
+  ]
+}

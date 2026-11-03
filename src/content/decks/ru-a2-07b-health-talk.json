@@ -1,0 +1,79 @@
+{
+  "id": "ru-a2-health-talk",
+  "title": "At the doctor",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 7 · Health",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "chto-s-toboy",
+      "prompt": "Что с тобо́й?",
+      "answer": "Голова́ боли́т.",
+      "notes": "What's wrong? / I have a headache."
+    },
+    {
+      "id": "na-chto-zhaluetes",
+      "prompt": "На что жа́луетесь?",
+      "answer": "У меня́ боли́т го́рло и ка́шель.",
+      "notes": "What seems to be the problem? / I have a sore throat and a cough."
+    },
+    {
+      "id": "temperatura-est",
+      "prompt": "Температу́ра есть?",
+      "answer": "Да, три́дцать во́семь.",
+      "notes": "Do you have a temperature? / Yes, thirty-eight."
+    },
+    {
+      "id": "kak-vy-sebya-chuvstvuete",
+      "prompt": "Как вы себя́ чу́вствуете?",
+      "answer": "Уже́ лу́чше, спаси́бо.",
+      "notes": "How are you feeling? / Better already, thanks."
+    },
+    {
+      "id": "gde-bolit",
+      "prompt": "Где боли́т?",
+      "answer": "Вот здесь, в спине́.",
+      "notes": "Where does it hurt? / Right here, in my back."
+    },
+    {
+      "id": "vam-nuzhen-retsept",
+      "prompt": "Вам ну́жен реце́пт.",
+      "answer": "Хорошо́. Где ближа́йшая апте́ка?",
+      "notes": "You need a prescription. / Okay. Where's the nearest pharmacy?"
+    },
+    {
+      "id": "prinimayte-po-odnoy-tabletke",
+      "prompt": "Принима́йте по одно́й табле́тке три ра́за в день.",
+      "answer": "До еды́ и́ли по́сле?",
+      "notes": "Take one tablet three times a day. / Before or after meals?"
+    },
+    {
+      "id": "apchkhi",
+      "prompt": "Апчхи́.",
+      "answer": "Будь здоро́в.",
+      "notes": "Atchoo. / Bless you."
+    },
+    {
+      "id": "ty-zabolel",
+      "prompt": "Ты заболе́л?",
+      "answer": "Да, просту́дился.",
+      "notes": "Are you ill? / Yes, I've caught a cold."
+    },
+    {
+      "id": "vyzdoravlivay",
+      "prompt": "Выздора́вливай.",
+      "answer": "Спаси́бо, постара́юсь.",
+      "notes": "Get well soon. / Thanks, I'll try."
+    },
+    {
+      "id": "tebe-luchshe",
+      "prompt": "Тебе́ лу́чше?",
+      "answer": "Да, намно́го.",
+      "notes": "Are you feeling better? / Yes, much."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "it-b1-idioms-talk",
+  "title": "Idioms in conversation",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 5 · Everyday idioms",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "domani-ho-l-esame",
+      "prompt": "Domani ho l'esame di guida.",
+      "answer": "In bocca al lupo.",
+      "notes": "Tomorrow is my driving test. / Good luck."
+    },
+    {
+      "id": "in-bocca-al-lupo",
+      "prompt": "In bocca al lupo.",
+      "answer": "Crepi, grazie.",
+      "notes": "Good luck. / Thanks. Never reply grazie on its own: say crepi."
+    },
+    {
+      "id": "vieni-a-cena-con",
+      "prompt": "Vieni a cena con noi?",
+      "answer": "Non posso, sono al verde questo mese.",
+      "notes": "Are you coming to dinner with us? / I can't, I'm broke this month."
+    },
+    {
+      "id": "quanto-l-hai-pagata",
+      "prompt": "Quanto l'hai pagata quella borsa?",
+      "answer": "Lascia stare, un occhio della testa.",
+      "notes": "How much did you pay for that bag? / Don't ask, an arm and a leg."
+    },
+    {
+      "id": "ti-ho-portato-un",
+      "prompt": "Ti ho portato un regalo.",
+      "answer": "Ma dai, non dovevi.",
+      "notes": "I brought you a present. / Oh come on, you shouldn't have."
+    },
+    {
+      "id": "grazie-mille-per-l",
+      "prompt": "Grazie mille per l'aiuto.",
+      "answer": "Ci mancherebbe.",
+      "notes": "Thanks so much for the help. / Don't mention it."
+    },
+    {
+      "id": "dov-e-finito-marco",
+      "prompt": "Dov'è finito Marco?",
+      "answer": "Boh, non l'ho visto.",
+      "notes": "Where's Marco got to? / No idea, I haven't seen him."
+    },
+    {
+      "id": "vi-vedete-spesso",
+      "prompt": "Vi vedete spesso?",
+      "answer": "No, ogni morte di papa.",
+      "notes": "Do you see each other often? / No, once in a blue moon."
+    },
+    {
+      "id": "non-dirlo-a-nessuno",
+      "prompt": "Non dirlo a nessuno.",
+      "answer": "Tranquilla, acqua in bocca.",
+      "notes": "Don't tell anyone. / Don't worry, my lips are sealed."
+    },
+    {
+      "id": "lunedi-e-festa-fai",
+      "prompt": "Lunedì è festa. Fai il ponte?",
+      "answer": "Sì, ci prendiamo quattro giorni.",
+      "notes": "Monday is a holiday. Are you taking the long weekend? / Yes, we're taking four days."
+    },
+    {
+      "id": "finalmente-sei-arrivata",
+      "prompt": "Finalmente sei arrivata.",
+      "answer": "Scusa, meglio tardi che mai.",
+      "notes": "You're finally here. / Sorry, better late than never."
+    },
+    {
+      "id": "usciamo",
+      "prompt": "Usciamo?",
+      "answer": "Con questo tempo? Piove a catinelle.",
+      "notes": "Shall we go out? / In this weather? It's pouring."
+    }
+  ]
+}

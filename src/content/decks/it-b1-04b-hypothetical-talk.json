@@ -1,0 +1,85 @@
+{
+  "id": "it-b1-hypothetical-talk",
+  "title": "What would you do?",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 4 · What if",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "cosa-faresti-se-vincessi",
+      "prompt": "Cosa faresti se vincessi un milione?",
+      "answer": "Comprerei una casa in campagna.",
+      "notes": "What would you do if you won a million? / I'd buy a house in the country."
+    },
+    {
+      "id": "dove-andresti-se-potessi",
+      "prompt": "Dove andresti se potessi partire domani?",
+      "answer": "Andrei in Sicilia, senza dubbio.",
+      "notes": "Where would you go if you could leave tomorrow? / I'd go to Sicily, without a doubt."
+    },
+    {
+      "id": "se-avessi-piu-tempo",
+      "prompt": "Se avessi più tempo, cosa faresti?",
+      "answer": "Imparerei a suonare il pianoforte.",
+      "notes": "If you had more time, what would you do? / I'd learn to play the piano."
+    },
+    {
+      "id": "accetteresti-quel-lavoro",
+      "prompt": "Accetteresti quel lavoro?",
+      "answer": "Se fossi in te, ci penserei bene.",
+      "notes": "Would you take that job? / If I were you, I'd think hard about it."
+    },
+    {
+      "id": "vieni-al-mare-domenica",
+      "prompt": "Vieni al mare domenica?",
+      "answer": "Sì, se non piove.",
+      "notes": "Are you coming to the seaside on Sunday? / Yes, if it doesn't rain."
+    },
+    {
+      "id": "perche-non-me-l",
+      "prompt": "Perché non me l'hai detto?",
+      "answer": "Se l'avessi saputo, te l'avrei detto.",
+      "notes": "Why didn't you tell me? / If I'd known, I would have told you."
+    },
+    {
+      "id": "ti-piacerebbe-vivere-all",
+      "prompt": "Ti piacerebbe vivere all'estero?",
+      "answer": "Magari, ma la famiglia mi mancherebbe troppo.",
+      "notes": "Would you like to live abroad? / I wish, but I'd miss my family too much."
+    },
+    {
+      "id": "se-fossi-un-animale",
+      "prompt": "Se fossi un animale, quale saresti?",
+      "answer": "Sarei un gatto: dormirei tutto il giorno.",
+      "notes": "If you were an animal, which would you be? / I'd be a cat: I'd sleep all day."
+    },
+    {
+      "id": "cosa-faresti-se-perdessi",
+      "prompt": "Cosa faresti se perdessi il passaporto?",
+      "answer": "Andrei subito al consolato.",
+      "notes": "What would you do if you lost your passport? / I'd go straight to the consulate."
+    },
+    {
+      "id": "usciamo-stasera",
+      "prompt": "Usciamo stasera?",
+      "answer": "Volentieri, a meno che non sia troppo stanca.",
+      "notes": "Shall we go out tonight? / Gladly, unless I'm too tired."
+    },
+    {
+      "id": "sarebbe-stato-meglio-prendere",
+      "prompt": "Sarebbe stato meglio prendere il treno?",
+      "answer": "Sì, saremmo già arrivati.",
+      "notes": "Would it have been better to take the train? / Yes, we'd already be there."
+    },
+    {
+      "id": "se-fosse-per-te",
+      "prompt": "Se fosse per te, dove andremmo in vacanza?",
+      "answer": "In montagna, lontano da tutti.",
+      "notes": "If it were up to you, where would we go on holiday? / To the mountains, far from everyone."
+    }
+  ]
+}

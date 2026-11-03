@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-hotel-talk",
+  "title": "Checking in and out",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 6 · Hotels",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "buonasera-desidera",
+      "prompt": "Buonasera, desidera?",
+      "answer": "Ho una prenotazione a nome Rossi.",
+      "notes": "Good evening, can I help you? / I have a booking under Rossi."
+    },
+    {
+      "id": "mi-serve-un-documento",
+      "prompt": "Mi serve un documento, per favore.",
+      "answer": "Ecco il passaporto.",
+      "notes": "I need some ID, please. / Here's my passport."
+    },
+    {
+      "id": "per-quante-notti",
+      "prompt": "Per quante notti?",
+      "answer": "Tre notti, fino a domenica.",
+      "notes": "For how many nights? / Three nights, until Sunday."
+    },
+    {
+      "id": "abbiamo-solo-una-matrimoniale",
+      "prompt": "Abbiamo solo una matrimoniale.",
+      "answer": "Va bene. Quanto costa a notte?",
+      "notes": "We only have a double room. / That's fine. How much is it per night?"
+    },
+    {
+      "id": "centoventi-euro-colazione-inclusa",
+      "prompt": "Centoventi euro, colazione inclusa.",
+      "answer": "Perfetto, la prendo.",
+      "notes": "A hundred and twenty euros, breakfast included. / Perfect, I'll take it."
+    },
+    {
+      "id": "la-sua-camera-e",
+      "prompt": "La sua camera è al quarto piano.",
+      "answer": "C'è l'ascensore?",
+      "notes": "Your room is on the fourth floor. / Is there a lift?"
+    },
+    {
+      "id": "la-colazione-e-dalle",
+      "prompt": "La colazione è dalle sette alle dieci.",
+      "answer": "E dove si fa?",
+      "notes": "Breakfast is from seven to ten. / And where is it served?"
+    },
+    {
+      "id": "ha-bisogno-di-altro",
+      "prompt": "Ha bisogno di altro?",
+      "answer": "Sì, qual è la password del wifi?",
+      "notes": "Do you need anything else? / Yes, what's the wifi password?"
+    },
+    {
+      "id": "tutto-bene-con-la",
+      "prompt": "Tutto bene con la camera?",
+      "answer": "Non proprio, l'aria condizionata non funziona.",
+      "notes": "Is everything all right with the room? / Not really, the air conditioning doesn't work."
+    },
+    {
+      "id": "mi-dispiace-mando-subito",
+      "prompt": "Mi dispiace, mando subito qualcuno.",
+      "answer": "Grazie, molto gentile.",
+      "notes": "I'm sorry, I'll send someone right away. / Thanks, that's very kind."
+    },
+    {
+      "id": "il-check-out-e",
+      "prompt": "Il check-out è entro le undici.",
+      "answer": "Possiamo lasciare le valigie fino al pomeriggio?",
+      "notes": "Check-out is by eleven. / Can we leave our bags until the afternoon?"
+    },
+    {
+      "id": "com-e-stato-il",
+      "prompt": "Com'è stato il soggiorno?",
+      "answer": "Molto piacevole, grazie di tutto.",
+      "notes": "How was your stay? / Very pleasant, thanks for everything."
+    }
+  ]
+}

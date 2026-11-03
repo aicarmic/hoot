@@ -1,0 +1,85 @@
+{
+  "id": "it-b1-opinions-talk",
+  "title": "Saying what you think",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 3 · Opinions and feelings",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "cosa-ne-pensi-del",
+      "prompt": "Cosa ne pensi del film?",
+      "answer": "Secondo me è un po' lento, ma bello.",
+      "notes": "What do you think of the film? / I think it's a bit slow, but good."
+    },
+    {
+      "id": "ti-piace-vivere-in",
+      "prompt": "Ti piace vivere in città?",
+      "answer": "Sì, anche se a volte c'è troppo traffico.",
+      "notes": "Do you like living in the city? / Yes, although sometimes there's too much traffic."
+    },
+    {
+      "id": "pensi-che-piovera-domani",
+      "prompt": "Pensi che pioverà domani?",
+      "answer": "Spero di no, abbiamo organizzato un picnic.",
+      "notes": "Do you think it will rain tomorrow? / I hope not, we've planned a picnic."
+    },
+    {
+      "id": "sei-d-accordo-con",
+      "prompt": "Sei d'accordo con me?",
+      "answer": "Non del tutto. Credo che ci siano altre soluzioni.",
+      "notes": "Do you agree with me? / Not completely. I think there are other solutions."
+    },
+    {
+      "id": "come-ti-senti",
+      "prompt": "Come ti senti?",
+      "answer": "Sono un po' preoccupata per l'esame.",
+      "notes": "How are you feeling? / I'm a bit worried about the exam."
+    },
+    {
+      "id": "ho-trovato-lavoro",
+      "prompt": "Ho trovato lavoro.",
+      "answer": "Che bello, sono proprio contenta per te.",
+      "notes": "I've found a job. / How lovely, I'm really happy for you."
+    },
+    {
+      "id": "non-posso-venire-stasera",
+      "prompt": "Non posso venire stasera.",
+      "answer": "Che peccato, mi dispiace che tu non ci sia.",
+      "notes": "I can't come tonight. / What a shame, I'm sorry you won't be there."
+    },
+    {
+      "id": "cosa-ti-da-piu",
+      "prompt": "Cosa ti dà più fastidio?",
+      "answer": "Le persone che parlano al telefono ad alta voce.",
+      "notes": "What bothers you most? / People who talk loudly on the phone."
+    },
+    {
+      "id": "e-meglio-il-treno",
+      "prompt": "È meglio il treno o la macchina?",
+      "answer": "Dipende, ma per me il treno è più rilassante.",
+      "notes": "Is the train or the car better? / It depends, but for me the train is more relaxing."
+    },
+    {
+      "id": "credi-che-sia-vero",
+      "prompt": "Credi che sia vero?",
+      "answer": "Mi sembra difficile da credere.",
+      "notes": "Do you think it's true? / It seems hard to believe."
+    },
+    {
+      "id": "perche-sei-cosi-arrabbiata",
+      "prompt": "Perché sei così arrabbiata?",
+      "answer": "Perché nessuno mi ascolta.",
+      "notes": "Why are you so angry? / Because nobody listens to me."
+    },
+    {
+      "id": "ti-e-piaciuta-la",
+      "prompt": "Ti è piaciuta la cena?",
+      "answer": "Moltissimo. Sei bravissima a cucinare.",
+      "notes": "Did you enjoy dinner? / Very much. You're a great cook."
+    }
+  ]
+}

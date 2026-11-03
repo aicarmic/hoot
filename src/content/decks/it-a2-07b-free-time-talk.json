@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-free-time-talk",
+  "title": "Hobbies: conversation",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 7 · Free time",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "cosa-ti-piace-fare",
+      "prompt": "Cosa ti piace fare nel tempo libero?",
+      "answer": "Mi piace leggere e andare in bici.",
+      "notes": "What do you like doing in your free time? / I like reading and cycling."
+    },
+    {
+      "id": "fai-sport",
+      "prompt": "Fai sport?",
+      "answer": "Sì, vado in palestra due volte alla settimana.",
+      "notes": "Do you do any sport? / Yes, I go to the gym twice a week."
+    },
+    {
+      "id": "suoni-qualche-strumento",
+      "prompt": "Suoni qualche strumento?",
+      "answer": "Suonavo il pianoforte, ma ho smesso.",
+      "notes": "Do you play an instrument? / I used to play the piano, but I stopped."
+    },
+    {
+      "id": "hai-visto-la-partita",
+      "prompt": "Hai visto la partita ieri?",
+      "answer": "No, il calcio non mi interessa molto.",
+      "notes": "Did you see the match yesterday? / No, I'm not very interested in football."
+    },
+    {
+      "id": "che-genere-di-libri",
+      "prompt": "Che genere di libri leggi?",
+      "answer": "Soprattutto gialli.",
+      "notes": "What kind of books do you read? / Mostly crime novels. Crime fiction is called giallo after the yellow covers of an old series."
+    },
+    {
+      "id": "ti-va-di-fare",
+      "prompt": "Ti va di fare una passeggiata?",
+      "answer": "Sì, volentieri, è una bella giornata.",
+      "notes": "Do you fancy going for a walk? / Yes, I'd love to, it's a lovely day."
+    },
+    {
+      "id": "ti-piace-cucinare",
+      "prompt": "Ti piace cucinare?",
+      "answer": "Sì, soprattutto i piatti italiani.",
+      "notes": "Do you like cooking? / Yes, especially Italian dishes."
+    },
+    {
+      "id": "da-quanto-tempo-fai",
+      "prompt": "Da quanto tempo fai yoga?",
+      "answer": "Da circa un anno.",
+      "notes": "How long have you been doing yoga? / For about a year."
+    },
+    {
+      "id": "andiamo-al-cinema-sabato",
+      "prompt": "Andiamo al cinema sabato?",
+      "answer": "Buona idea. Cosa danno?",
+      "notes": "Shall we go to the cinema on Saturday? / Good idea. What's on?"
+    },
+    {
+      "id": "cosa-fai-la-domenica",
+      "prompt": "Cosa fai la domenica?",
+      "answer": "Di solito dormo fino a tardi.",
+      "notes": "What do you do on Sundays? / I usually sleep in."
+    },
+    {
+      "id": "balli",
+      "prompt": "Balli?",
+      "answer": "Male, ma mi diverto.",
+      "notes": "Do you dance? / Badly, but I enjoy it."
+    },
+    {
+      "id": "vuoi-giocare-a-carte",
+      "prompt": "Vuoi giocare a carte?",
+      "answer": "Sì, ma devi spiegarmi le regole.",
+      "notes": "Do you want to play cards? / Yes, but you'll have to explain the rules."
+    }
+  ]
+}

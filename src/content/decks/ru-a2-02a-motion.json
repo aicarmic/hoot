@@ -1,0 +1,83 @@
+{
+  "id": "ru-a2-motion",
+  "title": "Verbs of motion: key phrases",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 2 · Going places",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "idti-khodit",
+      "prompt": "идти́ / ходи́ть",
+      "answer": "to go on foot (now / regularly)",
+      "notes": "идти' is one trip in progress; ходи'ть is regular or there-and-back."
+    },
+    {
+      "id": "ekhat-ezdit",
+      "prompt": "е́хать / е́здить",
+      "answer": "to go by transport (now / regularly)"
+    },
+    {
+      "id": "ya-idu-domoy",
+      "prompt": "я иду́ домо́й",
+      "answer": "I'm walking home"
+    },
+    {
+      "id": "ya-khozhu-v-sportzal",
+      "prompt": "я хожу́ в спортза́л",
+      "answer": "I go to the gym (regularly)"
+    },
+    {
+      "id": "my-edem-na-more",
+      "prompt": "мы е́дем на мо́ре",
+      "answer": "we're driving to the seaside"
+    },
+    {
+      "id": "ya-chasto-ezzhu-v",
+      "prompt": "я ча́сто е́зжу в Москву́",
+      "answer": "I often go to Moscow"
+    },
+    {
+      "id": "poydyom",
+      "prompt": "пойдём",
+      "answer": "let's go (on foot)"
+    },
+    {
+      "id": "poekhali",
+      "prompt": "пое́хали",
+      "answer": "let's go / off we go (by transport)"
+    },
+    {
+      "id": "priyti-priekhat",
+      "prompt": "прийти́ / прие́хать",
+      "answer": "to arrive (on foot / by transport)"
+    },
+    {
+      "id": "uyti-uekhat",
+      "prompt": "уйти́ / уе́хать",
+      "answer": "to leave (on foot / by transport)"
+    },
+    {
+      "id": "ya-uzhe-idu",
+      "prompt": "я уже́ иду́",
+      "answer": "I'm on my way"
+    },
+    {
+      "id": "my-letim-v-sochi",
+      "prompt": "мы лети́м в Со́чи",
+      "answer": "we're flying to Sochi"
+    },
+    {
+      "id": "vyyti",
+      "prompt": "вы́йти",
+      "answer": "to go out / to get off"
+    },
+    {
+      "id": "ya-opazdyvayu",
+      "prompt": "я опа́здываю",
+      "answer": "I'm running late"
+    }
+  ]
+}

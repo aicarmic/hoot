@@ -1,0 +1,79 @@
+{
+  "id": "ru-a2-motion-talk",
+  "title": "Going places: conversation",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 2 · Going places",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "ty-kuda",
+      "prompt": "Ты куда́?",
+      "answer": "Иду́ в апте́ку, ско́ро верну́сь.",
+      "notes": "Where are you off to? / I'm going to the pharmacy, I'll be right back."
+    },
+    {
+      "id": "ty-chasto-khodish-v",
+      "prompt": "Ты ча́сто хо́дишь в спортза́л?",
+      "answer": "Три ра́за в неде́лю.",
+      "notes": "Do you often go to the gym? / Three times a week."
+    },
+    {
+      "id": "kak-ty-ezdish-na",
+      "prompt": "Как ты е́здишь на рабо́ту?",
+      "answer": "На метро́, так быстре́е.",
+      "notes": "How do you get to work? / By metro, it's faster."
+    },
+    {
+      "id": "poydyom-gulyat",
+      "prompt": "Пойдём гуля́ть?",
+      "answer": "Пойдём, пого́да хоро́шая.",
+      "notes": "Shall we go for a walk? / Let's, the weather's nice."
+    },
+    {
+      "id": "ty-gde",
+      "prompt": "Ты где?",
+      "answer": "Уже́ иду́, бу́ду че́рез пять мину́т.",
+      "notes": "Where are you? / On my way, I'll be there in five minutes."
+    },
+    {
+      "id": "kogda-ty-priedesh",
+      "prompt": "Когда́ ты прие́дешь?",
+      "answer": "В суббо́ту ве́чером.",
+      "notes": "When will you arrive? / On Saturday evening."
+    },
+    {
+      "id": "kuda-vy-ezdili-letom",
+      "prompt": "Куда́ вы е́здили ле́том?",
+      "answer": "На Байка́л.",
+      "notes": "Where did you go in the summer? / To Lake Baikal."
+    },
+    {
+      "id": "on-uzhe-ushyol",
+      "prompt": "Он уже́ ушёл?",
+      "answer": "Да, мину́т де́сять наза́д.",
+      "notes": "Has he already left? / Yes, about ten minutes ago."
+    },
+    {
+      "id": "gde-mne-vyyti",
+      "prompt": "Где мне вы́йти?",
+      "answer": "На сле́дующей остано́вке.",
+      "notes": "Where should I get off? / At the next stop."
+    },
+    {
+      "id": "vo-skolko-ty-pridyosh",
+      "prompt": "Во ско́лько ты придёшь?",
+      "answer": "Часа́м к семи́.",
+      "notes": "What time will you come? / By about seven."
+    },
+    {
+      "id": "ty-khodil-v-magazin",
+      "prompt": "Ты ходи́л в магази́н?",
+      "answer": "Да, всё купи́л.",
+      "notes": "Did you go to the shop? / Yes, I bought everything."
+    }
+  ]
+}

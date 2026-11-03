@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-health-talk",
+  "title": "At the doctor and pharmacy",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 4 · Health",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "buongiorno-mi-dica",
+      "prompt": "Buongiorno, mi dica.",
+      "answer": "Vorrei qualcosa per la tosse.",
+      "notes": "Good morning, how can I help? / I'd like something for a cough."
+    },
+    {
+      "id": "che-cosa-si-sente",
+      "prompt": "Che cosa si sente?",
+      "answer": "Ho mal di gola e un po' di febbre.",
+      "notes": "What symptoms do you have? / I have a sore throat and a slight temperature."
+    },
+    {
+      "id": "da-quanto-tempo",
+      "prompt": "Da quanto tempo?",
+      "answer": "Da due giorni.",
+      "notes": "For how long? / For two days."
+    },
+    {
+      "id": "dove-le-fa-male",
+      "prompt": "Dove le fa male?",
+      "answer": "Qui, alla schiena.",
+      "notes": "Where does it hurt? / Here, in my back."
+    },
+    {
+      "id": "prende-qualche-medicina",
+      "prompt": "Prende qualche medicina?",
+      "answer": "No, niente.",
+      "notes": "Are you taking any medicine? / No, nothing."
+    },
+    {
+      "id": "e-allergica-a-qualcosa",
+      "prompt": "È allergica a qualcosa?",
+      "answer": "Sì, alla penicillina.",
+      "notes": "Are you allergic to anything? / Yes, to penicillin."
+    },
+    {
+      "id": "per-questo-serve-la",
+      "prompt": "Per questo serve la ricetta.",
+      "answer": "Allora devo andare dal medico?",
+      "notes": "You need a prescription for this. / So do I need to see a doctor?"
+    },
+    {
+      "id": "prenda-una-compressa-due",
+      "prompt": "Prenda una compressa due volte al giorno.",
+      "answer": "Prima o dopo i pasti?",
+      "notes": "Take one tablet twice a day. / Before or after meals?"
+    },
+    {
+      "id": "come-stai-oggi",
+      "prompt": "Come stai oggi?",
+      "answer": "Meglio, grazie, la febbre è passata.",
+      "notes": "How are you today? / Better, thanks, the fever has gone."
+    },
+    {
+      "id": "hai-una-faccia-stanca",
+      "prompt": "Hai una faccia stanca.",
+      "answer": "Sì, non ho dormito bene.",
+      "notes": "You look tired. / Yes, I didn't sleep well."
+    },
+    {
+      "id": "ti-sei-fatta-male",
+      "prompt": "Ti sei fatta male?",
+      "answer": "Un po', ho preso una botta al ginocchio.",
+      "notes": "Did you hurt yourself? / A bit, I banged my knee."
+    },
+    {
+      "id": "posso-fare-qualcosa-per",
+      "prompt": "Posso fare qualcosa per te?",
+      "answer": "Sì, mi porti un bicchiere d'acqua?",
+      "notes": "Can I do anything for you? / Yes, could you bring me a glass of water?"
+    }
+  ]
+}

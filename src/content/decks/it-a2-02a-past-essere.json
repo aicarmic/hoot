@@ -1,0 +1,96 @@
+{
+  "id": "it-a2-past-essere",
+  "title": "Where I went: key phrases",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 2 · Where I went",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "sono-andata-al-mercato",
+      "prompt": "Sono andata al mercato.",
+      "answer": "I went to the market.",
+      "notes": "A man says sono andato. Verbs of movement use essere, and the ending agrees."
+    },
+    {
+      "id": "siamo-arrivati-tardi",
+      "prompt": "Siamo arrivati tardi.",
+      "answer": "We arrived late."
+    },
+    {
+      "id": "a-che-ora-sei",
+      "prompt": "A che ora sei tornato?",
+      "answer": "What time did you get back?"
+    },
+    {
+      "id": "sono-rimasta-a-casa",
+      "prompt": "Sono rimasta a casa.",
+      "answer": "I stayed at home.",
+      "notes": "rimanere → rimasto"
+    },
+    {
+      "id": "e-uscito-con-gli",
+      "prompt": "È uscito con gli amici.",
+      "answer": "He went out with friends."
+    },
+    {
+      "id": "mia-nonna-e-nata",
+      "prompt": "Mia nonna è nata a Napoli.",
+      "answer": "My grandmother was born in Naples."
+    },
+    {
+      "id": "siamo-partiti-alle-otto",
+      "prompt": "Siamo partiti alle otto.",
+      "answer": "We left at eight."
+    },
+    {
+      "id": "il-treno-e-partito",
+      "prompt": "Il treno è partito in ritardo.",
+      "answer": "The train left late."
+    },
+    {
+      "id": "mi-sono-svegliata-presto",
+      "prompt": "Mi sono svegliata presto.",
+      "answer": "I woke up early.",
+      "notes": "Reflexive verbs also use essere."
+    },
+    {
+      "id": "ci-siamo-divertiti-molto",
+      "prompt": "Ci siamo divertiti molto.",
+      "answer": "We had a lot of fun."
+    },
+    {
+      "id": "sei-mai-stata-in",
+      "prompt": "Sei mai stata in Sicilia?",
+      "answer": "Have you ever been to Sicily?"
+    },
+    {
+      "id": "sono-stata-a-roma",
+      "prompt": "Sono stata a Roma due volte.",
+      "answer": "I've been to Rome twice."
+    },
+    {
+      "id": "e-successo-qualcosa",
+      "prompt": "È successo qualcosa?",
+      "answer": "Did something happen?"
+    },
+    {
+      "id": "sono-caduta-dalla-bici",
+      "prompt": "Sono caduta dalla bici.",
+      "answer": "I fell off my bike."
+    },
+    {
+      "id": "mi-sono-dimenticata",
+      "prompt": "Mi sono dimenticata.",
+      "answer": "I forgot."
+    },
+    {
+      "id": "siete-venuti-in-macchina",
+      "prompt": "Siete venuti in macchina?",
+      "answer": "Did you come by car?",
+      "notes": "venire → venuto"
+    }
+  ]
+}

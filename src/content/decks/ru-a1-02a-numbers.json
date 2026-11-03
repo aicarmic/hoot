@@ -1,0 +1,127 @@
+{
+  "id": "ru-a1-numbers",
+  "title": "Numbers and prices",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 2 · Numbers",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "odin",
+      "prompt": "оди́н",
+      "answer": "one (1)",
+      "hint": "odin"
+    },
+    {
+      "id": "dva",
+      "prompt": "два",
+      "answer": "two (2)",
+      "hint": "dva"
+    },
+    {
+      "id": "tri",
+      "prompt": "три",
+      "answer": "three (3)",
+      "hint": "tri"
+    },
+    {
+      "id": "chetyre",
+      "prompt": "четы́ре",
+      "answer": "four (4)",
+      "hint": "chetyre"
+    },
+    {
+      "id": "pyat",
+      "prompt": "пять",
+      "answer": "five (5)",
+      "hint": "pyat"
+    },
+    {
+      "id": "shest",
+      "prompt": "шесть",
+      "answer": "six (6)",
+      "hint": "shest"
+    },
+    {
+      "id": "sem",
+      "prompt": "семь",
+      "answer": "seven (7)",
+      "hint": "sem"
+    },
+    {
+      "id": "vosem",
+      "prompt": "во́семь",
+      "answer": "eight (8)",
+      "hint": "vosem"
+    },
+    {
+      "id": "devyat",
+      "prompt": "де́вять",
+      "answer": "nine (9)",
+      "hint": "devyat"
+    },
+    {
+      "id": "desyat",
+      "prompt": "де́сять",
+      "answer": "ten (10)",
+      "hint": "desyat"
+    },
+    {
+      "id": "odinnadtsat",
+      "prompt": "оди́ннадцать",
+      "answer": "eleven (11)",
+      "hint": "odinnadtsat"
+    },
+    {
+      "id": "dvadtsat",
+      "prompt": "два́дцать",
+      "answer": "twenty (20)",
+      "hint": "dvadtsat"
+    },
+    {
+      "id": "tridtsat",
+      "prompt": "три́дцать",
+      "answer": "thirty (30)",
+      "hint": "tridtsat"
+    },
+    {
+      "id": "sorok",
+      "prompt": "со́рок",
+      "answer": "forty (40)",
+      "hint": "sorok"
+    },
+    {
+      "id": "pyatdesyat",
+      "prompt": "пятьдеся́т",
+      "answer": "fifty (50)",
+      "hint": "pyatdesyat"
+    },
+    {
+      "id": "sto",
+      "prompt": "сто",
+      "answer": "a hundred (100)",
+      "hint": "sto"
+    },
+    {
+      "id": "tysyacha",
+      "prompt": "ты́сяча",
+      "answer": "a thousand (1,000)",
+      "hint": "tysyacha"
+    },
+    {
+      "id": "skolko-stoit",
+      "prompt": "ско́лько сто́ит?",
+      "answer": "how much does it cost?",
+      "hint": "skolko stoit?"
+    },
+    {
+      "id": "sto-rubley",
+      "prompt": "сто рубле́й",
+      "answer": "a hundred roubles",
+      "hint": "sto rubley",
+      "notes": "1 рубль, 2–4 рубля', 5 and up рубле'й."
+    }
+  ]
+}

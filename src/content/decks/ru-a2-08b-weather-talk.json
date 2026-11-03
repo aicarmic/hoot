@@ -1,0 +1,73 @@
+{
+  "id": "ru-a2-weather-talk",
+  "title": "Talking about the weather",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 8 · Weather and seasons",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "kakaya-segodnya-pogoda",
+      "prompt": "Кака́я сего́дня пого́да?",
+      "answer": "Хо́лодно, ми́нус пять.",
+      "notes": "What's the weather like today? / Cold, minus five."
+    },
+    {
+      "id": "idyot-dozhd",
+      "prompt": "Идёт дождь?",
+      "answer": "Да, возьми́ зо́нтик.",
+      "notes": "Is it raining? / Yes, take an umbrella."
+    },
+    {
+      "id": "kakoe-tvoyo-lyubimoe-vremya",
+      "prompt": "Како́е твоё люби́мое вре́мя го́да?",
+      "answer": "О́сень, когда́ всё жёлтое.",
+      "notes": "What's your favourite season? / Autumn, when everything is yellow."
+    },
+    {
+      "id": "zimoy-u-vas-kholodno",
+      "prompt": "Зимо́й у вас хо́лодно?",
+      "answer": "Не о́чень, снег быва́ет ре́дко.",
+      "notes": "Is it cold where you are in winter? / Not very, it rarely snows."
+    },
+    {
+      "id": "segodnya-tak-zharko",
+      "prompt": "Сего́дня так жа́рко.",
+      "answer": "Да, пойдём на ре́чку.",
+      "notes": "It's so hot today. / Yes, let's go to the river."
+    },
+    {
+      "id": "nu-i-pogoda",
+      "prompt": "Ну и пого́да.",
+      "answer": "Да, ве́тер ужа́сный.",
+      "notes": "What weather. / Yes, the wind is awful."
+    },
+    {
+      "id": "chto-obeshchayut-na-zavtra",
+      "prompt": "Что обеща́ют на за́втра?",
+      "answer": "Со́лнце и плюс два́дцать.",
+      "notes": "What's the forecast for tomorrow? / Sun and plus twenty."
+    },
+    {
+      "id": "ty-ne-zamyorz",
+      "prompt": "Ты не замёрз?",
+      "answer": "Немно́го, ру́ки замёрзли.",
+      "notes": "Aren't you frozen? / A little, my hands are cold."
+    },
+    {
+      "id": "kak-proshlo-leto",
+      "prompt": "Как прошло́ ле́то?",
+      "answer": "Отли́чно, бы́ло мно́го со́лнца.",
+      "notes": "How was the summer? / Great, there was lots of sun."
+    },
+    {
+      "id": "ty-lyubish-zimu",
+      "prompt": "Ты лю́бишь зи́му?",
+      "answer": "Люблю́, е́сли нет ве́тра.",
+      "notes": "Do you like winter? / I do, if there's no wind."
+    }
+  ]
+}

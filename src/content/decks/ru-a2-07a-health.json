@@ -1,0 +1,94 @@
+{
+  "id": "ru-a2-health",
+  "title": "Health and the body",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 7 · Health",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "golova",
+      "prompt": "голова́",
+      "answer": "head"
+    },
+    {
+      "id": "gorlo",
+      "prompt": "го́рло",
+      "answer": "throat"
+    },
+    {
+      "id": "zhivot",
+      "prompt": "живо́т",
+      "answer": "stomach"
+    },
+    {
+      "id": "spina",
+      "prompt": "спина́",
+      "answer": "back"
+    },
+    {
+      "id": "zub",
+      "prompt": "зуб",
+      "answer": "tooth"
+    },
+    {
+      "id": "ruka",
+      "prompt": "рука́",
+      "answer": "hand / arm"
+    },
+    {
+      "id": "noga",
+      "prompt": "нога́",
+      "answer": "leg / foot"
+    },
+    {
+      "id": "u-menya-bolit-golova",
+      "prompt": "у меня́ боли́т голова́",
+      "answer": "I have a headache"
+    },
+    {
+      "id": "u-menya-temperatura",
+      "prompt": "у меня́ температу́ра",
+      "answer": "I have a temperature"
+    },
+    {
+      "id": "ya-prostudilsya",
+      "prompt": "я просту́дился",
+      "answer": "I've caught a cold",
+      "notes": "A woman says просту'дилась."
+    },
+    {
+      "id": "kashel",
+      "prompt": "ка́шель",
+      "answer": "cough"
+    },
+    {
+      "id": "lekarstvo",
+      "prompt": "лека́рство",
+      "answer": "medicine"
+    },
+    {
+      "id": "bolnitsa",
+      "prompt": "больни́ца",
+      "answer": "hospital"
+    },
+    {
+      "id": "kak-vy-sebya-chuvstvuete",
+      "prompt": "как вы себя́ чу́вствуете?",
+      "answer": "how are you feeling?"
+    },
+    {
+      "id": "vyzdoravlivay",
+      "prompt": "выздора́вливай",
+      "answer": "get well soon"
+    },
+    {
+      "id": "bud-zdorov",
+      "prompt": "будь здоро́в",
+      "answer": "bless you",
+      "notes": "Also: stay healthy. Formal: бу'дьте здоро'вы."
+    }
+  ]
+}

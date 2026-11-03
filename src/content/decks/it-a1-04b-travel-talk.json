@@ -1,0 +1,85 @@
+{
+  "id": "it-travel-talk",
+  "title": "Getting around: conversation",
+  "subject": "Italian",
+  "level": "A1",
+  "unit": "Unit 4 · Getting around",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "posso-aiutarla",
+      "prompt": "Posso aiutarla?",
+      "answer": "Sì, grazie, cerco la stazione.",
+      "notes": "Can I help you? / Yes, thanks, I'm looking for the station."
+    },
+    {
+      "id": "vada-sempre-dritto-e",
+      "prompt": "Vada sempre dritto e poi giri a sinistra.",
+      "answer": "Grazie. È lontano?",
+      "notes": "Go straight on and then turn left. / Thanks. Is it far?"
+    },
+    {
+      "id": "no-sono-cinque-minuti",
+      "prompt": "No, sono cinque minuti a piedi.",
+      "answer": "Perfetto, grazie mille.",
+      "notes": "No, it's five minutes on foot. / Perfect, thanks very much."
+    },
+    {
+      "id": "andata-o-andata-e",
+      "prompt": "Andata o andata e ritorno?",
+      "answer": "Andata e ritorno, per favore.",
+      "notes": "Single or return? / Return, please."
+    },
+    {
+      "id": "prima-o-seconda-classe",
+      "prompt": "Prima o seconda classe?",
+      "answer": "Seconda classe.",
+      "notes": "First or second class? / Second class."
+    },
+    {
+      "id": "il-treno-e-in",
+      "prompt": "Il treno è in ritardo di venti minuti.",
+      "answer": "Accidenti. C'è un bar qui vicino?",
+      "notes": "The train is twenty minutes late. / Oh no. Is there a café nearby?"
+    },
+    {
+      "id": "dove-la-porto",
+      "prompt": "Dove la porto?",
+      "answer": "All'aeroporto, per favore.",
+      "notes": "Where can I take you? / To the airport, please."
+    },
+    {
+      "id": "deve-convalidare-il-biglietto",
+      "prompt": "Deve convalidare il biglietto.",
+      "answer": "Ah, scusi. Dove si fa?",
+      "notes": "You need to validate your ticket. / Oh, sorry. Where do I do that? On regional trains and buses you stamp the ticket before you travel."
+    },
+    {
+      "id": "biglietto-prego",
+      "prompt": "Biglietto, prego.",
+      "answer": "Eccolo.",
+      "notes": "Ticket, please. / Here it is."
+    },
+    {
+      "id": "scende-alla-prossima",
+      "prompt": "Scende alla prossima?",
+      "answer": "Sì, scendo.",
+      "notes": "Are you getting off at the next stop? / Yes, I'm getting off."
+    },
+    {
+      "id": "e-libero-questo-posto",
+      "prompt": "È libero questo posto?",
+      "answer": "Sì, prego.",
+      "notes": "Is this seat free? / Yes, go ahead."
+    },
+    {
+      "id": "sa-dov-e-la",
+      "prompt": "Sa dov'è la fermata dell'autobus?",
+      "answer": "Mi dispiace, non sono di qui.",
+      "notes": "Do you know where the bus stop is? / Sorry, I'm not from around here."
+    }
+  ]
+}

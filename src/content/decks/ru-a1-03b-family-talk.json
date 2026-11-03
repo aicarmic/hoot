@@ -1,0 +1,73 @@
+{
+  "id": "ru-a1-family-talk",
+  "title": "Talking about family",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 3 · Family",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "u-vas-est-deti",
+      "prompt": "У вас есть де́ти?",
+      "answer": "Да, у меня́ сын и дочь.",
+      "notes": "Do you have children? / Yes, I have a son and a daughter."
+    },
+    {
+      "id": "skolko-im-let",
+      "prompt": "Ско́лько им лет?",
+      "answer": "Двена́дцать и пятна́дцать.",
+      "notes": "How old are they? / Twelve and fifteen."
+    },
+    {
+      "id": "vy-zhenaty",
+      "prompt": "Вы жена́ты?",
+      "answer": "Да, жена́т.",
+      "notes": "Are you married? (to a man) / Yes, I am. A woman says заму'жем."
+    },
+    {
+      "id": "kak-zovut-vashu-zhenu",
+      "prompt": "Как зову́т ва́шу жену́?",
+      "answer": "Её зову́т Мари́я.",
+      "notes": "What's your wife's name? / Her name is Maria."
+    },
+    {
+      "id": "u-tebya-est-bratya",
+      "prompt": "У тебя́ есть бра́тья и́ли сёстры?",
+      "answer": "Да, у меня́ есть ста́рший брат.",
+      "notes": "Do you have brothers or sisters? / Yes, I have an older brother."
+    },
+    {
+      "id": "gde-zhivut-tvoi-roditeli",
+      "prompt": "Где живу́т твои́ роди́тели?",
+      "answer": "Они́ живу́т в друго́м го́роде.",
+      "notes": "Where do your parents live? / They live in another city."
+    },
+    {
+      "id": "kto-eto-na-foto",
+      "prompt": "Кто э́то на фо́то?",
+      "answer": "Э́то моя́ ба́бушка.",
+      "notes": "Who's in the photo? / That's my grandmother."
+    },
+    {
+      "id": "na-kogo-ty-pokhozh",
+      "prompt": "На кого́ ты похо́ж?",
+      "answer": "На отца́.",
+      "notes": "Who do you look like? / My father."
+    },
+    {
+      "id": "kak-vasha-semya",
+      "prompt": "Как ва́ша семья́?",
+      "answer": "Спаси́бо, всё хорошо́.",
+      "notes": "How's your family? / All good, thanks."
+    },
+    {
+      "id": "u-vas-est-sobaka",
+      "prompt": "У вас есть соба́ка?",
+      "answer": "Нет, у нас ко́шка.",
+      "notes": "Do you have a dog? / No, we have a cat."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "ru-a2-future-talk",
+  "title": "Plans: conversation",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 6 · Plans",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "chto-ty-budesh-delat",
+      "prompt": "Что ты бу́дешь де́лать за́втра?",
+      "answer": "Бу́ду рабо́тать до́ма.",
+      "notes": "What will you do tomorrow? / I'll be working from home."
+    },
+    {
+      "id": "kogda-ty-priedesh-k",
+      "prompt": "Когда́ ты прие́дешь к нам?",
+      "answer": "Наде́юсь, ле́том.",
+      "notes": "When will you come and see us? / In the summer, I hope."
+    },
+    {
+      "id": "poydyosh-s-nami-v",
+      "prompt": "Пойдёшь с на́ми в кино́?",
+      "answer": "Мо́жет быть, посмо́трим.",
+      "notes": "Will you come to the cinema with us? / Maybe, we'll see."
+    },
+    {
+      "id": "ty-pozvonish-mne-vecherom",
+      "prompt": "Ты позвони́шь мне ве́чером?",
+      "answer": "Обяза́тельно позвоню́.",
+      "notes": "Will you call me this evening? / I'll definitely call."
+    },
+    {
+      "id": "kakie-u-tebya-plany",
+      "prompt": "Каки́е у тебя́ пла́ны на ле́то?",
+      "answer": "Собира́юсь пое́хать в Петербу́рг.",
+      "notes": "What are your plans for the summer? / I'm planning to go to St Petersburg."
+    },
+    {
+      "id": "kakaya-zavtra-budet-pogoda",
+      "prompt": "Кака́я за́втра бу́дет пого́да?",
+      "answer": "Обеща́ют снег.",
+      "notes": "What will the weather be like tomorrow? / They're forecasting snow."
+    },
+    {
+      "id": "kogda-my-uvidimsya",
+      "prompt": "Когда́ мы уви́димся?",
+      "answer": "Че́рез неде́лю, в пя́тницу.",
+      "notes": "When will we see each other? / In a week, on Friday."
+    },
+    {
+      "id": "ty-budesh-uzhinat",
+      "prompt": "Ты бу́дешь у́жинать?",
+      "answer": "Да, ско́ро приду́.",
+      "notes": "Will you have dinner? / Yes, I'll be home soon."
+    },
+    {
+      "id": "chto-budesh-pit",
+      "prompt": "Что бу́дешь пить?",
+      "answer": "Я бу́ду сок.",
+      "notes": "What will you drink? / I'll have juice."
+    },
+    {
+      "id": "ty-skazhesh-emu",
+      "prompt": "Ты ска́жешь ему́?",
+      "answer": "Да, скажу́ за́втра.",
+      "notes": "Will you tell him? / Yes, I'll tell him tomorrow."
+    }
+  ]
+}

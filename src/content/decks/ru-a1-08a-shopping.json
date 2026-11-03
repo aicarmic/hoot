@@ -1,0 +1,108 @@
+{
+  "id": "ru-a1-shopping",
+  "title": "Shopping",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 8 · Shopping",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "magazin",
+      "prompt": "магази́н",
+      "answer": "shop",
+      "hint": "magazin"
+    },
+    {
+      "id": "rynok",
+      "prompt": "ры́нок",
+      "answer": "market",
+      "hint": "rynok"
+    },
+    {
+      "id": "apteka",
+      "prompt": "апте́ка",
+      "answer": "pharmacy",
+      "hint": "apteka"
+    },
+    {
+      "id": "supermarket",
+      "prompt": "суперма́ркет",
+      "answer": "supermarket",
+      "hint": "supermarket"
+    },
+    {
+      "id": "dengi",
+      "prompt": "де́ньги",
+      "answer": "money",
+      "hint": "dengi"
+    },
+    {
+      "id": "nalichnye",
+      "prompt": "нали́чные",
+      "answer": "cash",
+      "hint": "nalichnye"
+    },
+    {
+      "id": "karta",
+      "prompt": "ка́рта",
+      "answer": "card",
+      "hint": "karta"
+    },
+    {
+      "id": "dyoshevo",
+      "prompt": "дёшево",
+      "answer": "cheap",
+      "hint": "dyoshevo"
+    },
+    {
+      "id": "dorogo",
+      "prompt": "до́рого",
+      "answer": "expensive",
+      "hint": "dorogo"
+    },
+    {
+      "id": "razmer",
+      "prompt": "разме́р",
+      "answer": "size",
+      "hint": "razmer"
+    },
+    {
+      "id": "kassa",
+      "prompt": "ка́сса",
+      "answer": "till / checkout",
+      "hint": "kassa"
+    },
+    {
+      "id": "paket",
+      "prompt": "паке́т",
+      "answer": "carrier bag",
+      "hint": "paket"
+    },
+    {
+      "id": "ya-khochu-kupit",
+      "prompt": "я хочу́ купи́ть…",
+      "answer": "I want to buy…",
+      "hint": "ya khochu kupit…"
+    },
+    {
+      "id": "pokazhite-pozhaluysta",
+      "prompt": "покажи́те, пожа́луйста",
+      "answer": "show me, please",
+      "hint": "pokazhite, pozhaluysta"
+    },
+    {
+      "id": "mozhno-primerit",
+      "prompt": "мо́жно приме́рить?",
+      "answer": "can I try it on?",
+      "hint": "mozhno primerit?"
+    },
+    {
+      "id": "skolko-s-menya",
+      "prompt": "ско́лько с меня́?",
+      "answer": "how much do I owe?",
+      "hint": "skolko s menya?"
+    }
+  ]
+}

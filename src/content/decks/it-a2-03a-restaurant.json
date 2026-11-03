@@ -1,0 +1,100 @@
+{
+  "id": "it-a2-restaurant",
+  "title": "At the restaurant: words",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 3 · Eating out",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "l-antipasto",
+      "prompt": "l'antipasto",
+      "answer": "starter"
+    },
+    {
+      "id": "il-primo",
+      "prompt": "il primo",
+      "answer": "first course",
+      "notes": "Pasta, risotto or soup."
+    },
+    {
+      "id": "il-secondo",
+      "prompt": "il secondo",
+      "answer": "main course",
+      "notes": "Meat or fish, usually on its own."
+    },
+    {
+      "id": "il-contorno",
+      "prompt": "il contorno",
+      "answer": "side dish"
+    },
+    {
+      "id": "la-carta-dei-vini",
+      "prompt": "la carta dei vini",
+      "answer": "wine list"
+    },
+    {
+      "id": "il-coperto",
+      "prompt": "il coperto",
+      "answer": "cover charge"
+    },
+    {
+      "id": "la-mancia",
+      "prompt": "la mancia",
+      "answer": "tip"
+    },
+    {
+      "id": "piccante",
+      "prompt": "piccante",
+      "answer": "spicy"
+    },
+    {
+      "id": "senza-glutine",
+      "prompt": "senza glutine",
+      "answer": "gluten-free"
+    },
+    {
+      "id": "al-sangue-ben-cotto",
+      "prompt": "al sangue / ben cotto",
+      "answer": "rare / well done"
+    },
+    {
+      "id": "vorrei-prenotare-un-tavolo",
+      "prompt": "Vorrei prenotare un tavolo.",
+      "answer": "I'd like to book a table."
+    },
+    {
+      "id": "per-me-la-stessa",
+      "prompt": "Per me, la stessa cosa.",
+      "answer": "The same for me."
+    },
+    {
+      "id": "sono-allergica-alle-noci",
+      "prompt": "Sono allergica alle noci.",
+      "answer": "I'm allergic to nuts.",
+      "notes": "A man says allergico."
+    },
+    {
+      "id": "che-cosa-ci-consiglia",
+      "prompt": "Che cosa ci consiglia?",
+      "answer": "What do you recommend?"
+    },
+    {
+      "id": "possiamo-avere-dell-altra",
+      "prompt": "Possiamo avere dell'altra acqua?",
+      "answer": "Could we have some more water?"
+    },
+    {
+      "id": "il-conto-per-favore",
+      "prompt": "Il conto, per favore.",
+      "answer": "The bill, please."
+    },
+    {
+      "id": "era-tutto-squisito",
+      "prompt": "Era tutto squisito.",
+      "answer": "It was all delicious."
+    }
+  ]
+}

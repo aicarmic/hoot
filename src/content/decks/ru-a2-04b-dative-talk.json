@@ -1,0 +1,79 @@
+{
+  "id": "ru-a2-dative-talk",
+  "title": "Likes and needs: conversation",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 4 · Likes and needs",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "tebe-nravitsya-moskva",
+      "prompt": "Тебе́ нра́вится Москва́?",
+      "answer": "О́чень, осо́бенно ве́чером.",
+      "notes": "Do you like Moscow? / Very much, especially in the evening."
+    },
+    {
+      "id": "chto-tebe-nravitsya-delat",
+      "prompt": "Что тебе́ нра́вится де́лать?",
+      "answer": "Мне нра́вится рыба́чить.",
+      "notes": "What do you like doing? / I like fishing."
+    },
+    {
+      "id": "tebe-ne-kholodno",
+      "prompt": "Тебе́ не хо́лодно?",
+      "answer": "Немно́го. Закро́й окно́, пожа́луйста.",
+      "notes": "Aren't you cold? / A little. Close the window, please."
+    },
+    {
+      "id": "chay-ili-kofe",
+      "prompt": "Чай и́ли ко́фе?",
+      "answer": "Мне всё равно́.",
+      "notes": "Tea or coffee? / I don't mind."
+    },
+    {
+      "id": "tebe-pora",
+      "prompt": "Тебе́ пора́?",
+      "answer": "Да, мне на́до рабо́тать.",
+      "notes": "Do you have to go? / Yes, I need to work."
+    },
+    {
+      "id": "chto-tebe-nuzhno-v",
+      "prompt": "Что тебе́ ну́жно в магази́не?",
+      "answer": "Молоко́ и я́йца.",
+      "notes": "What do you need from the shop? / Milk and eggs."
+    },
+    {
+      "id": "kak-tebe-film",
+      "prompt": "Как тебе́ фильм?",
+      "answer": "Понра́вился, но коне́ц стра́нный.",
+      "notes": "How did you find the film? / I liked it, but the ending is strange."
+    },
+    {
+      "id": "skolko-let-tvoemu-synu",
+      "prompt": "Ско́лько лет твоему́ сы́ну?",
+      "answer": "Ему́ пятна́дцать.",
+      "notes": "How old is your son? / He's fifteen."
+    },
+    {
+      "id": "tebe-skuchno",
+      "prompt": "Тебе́ ску́чно?",
+      "answer": "Нет, мне интере́сно.",
+      "notes": "Are you bored? / No, I'm interested."
+    },
+    {
+      "id": "vam-nuzhna-pomoshch",
+      "prompt": "Вам нужна́ по́мощь?",
+      "answer": "Нет, спаси́бо, я сам.",
+      "notes": "Do you need help? / No, thanks, I can manage. A woman says я сама'."
+    },
+    {
+      "id": "tebe-ponravilsya-restoran",
+      "prompt": "Тебе́ понра́вился рестора́н?",
+      "answer": "Да, осо́бенно ку́хня.",
+      "notes": "Did you like the restaurant? / Yes, especially the food."
+    }
+  ]
+}

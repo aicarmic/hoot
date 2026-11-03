@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-town-talk",
+  "title": "Finding your way",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 5 · In town",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "si-e-persa",
+      "prompt": "Si è persa?",
+      "answer": "Un po'. Cerco piazza del Duomo.",
+      "notes": "Are you lost? / A bit. I'm looking for Piazza del Duomo."
+    },
+    {
+      "id": "prenda-la-seconda-a",
+      "prompt": "Prenda la seconda a destra.",
+      "answer": "La seconda a destra, e poi?",
+      "notes": "Take the second on the right. / The second on the right, and then?"
+    },
+    {
+      "id": "il-duomo-e-un",
+      "prompt": "Il duomo? È un po' lontano.",
+      "answer": "Ci posso andare a piedi?",
+      "notes": "The cathedral? It's a bit far. / Can I walk there?"
+    },
+    {
+      "id": "si-sono-dieci-minuti",
+      "prompt": "Sì, sono dieci minuti.",
+      "answer": "Va bene, grazie dell'aiuto.",
+      "notes": "Yes, it's ten minutes. / Okay, thanks for your help."
+    },
+    {
+      "id": "mi-dispiace-qui-non",
+      "prompt": "Mi dispiace, qui non vendiamo biglietti.",
+      "answer": "Dove li posso comprare?",
+      "notes": "Sorry, we don't sell tickets here. / Where can I buy them?"
+    },
+    {
+      "id": "dal-tabaccaio-all-angolo",
+      "prompt": "Dal tabaccaio, all'angolo.",
+      "answer": "Grazie mille, gentilissima.",
+      "notes": "At the tobacconist on the corner. / Thanks so much, that's very kind."
+    },
+    {
+      "id": "cosa-deve-spedire",
+      "prompt": "Cosa deve spedire?",
+      "answer": "Questa cartolina, all'estero.",
+      "notes": "What do you need to send? / This postcard, abroad."
+    },
+    {
+      "id": "c-e-un-bancomat",
+      "prompt": "C'è un bancomat dentro la stazione.",
+      "answer": "Perfetto. E una farmacia?",
+      "notes": "There's a cash machine inside the station. / Perfect. And a pharmacy?"
+    },
+    {
+      "id": "scusi-sa-dov-e",
+      "prompt": "Scusi, sa dov'è via Roma?",
+      "answer": "Sì, è la prima a sinistra dopo il semaforo.",
+      "notes": "Excuse me, do you know where Via Roma is? / Yes, it's the first left after the traffic lights."
+    },
+    {
+      "id": "a-che-ora-chiude",
+      "prompt": "A che ora chiude la banca?",
+      "answer": "Alle quattro, mi pare.",
+      "notes": "What time does the bank close? / At four, I think."
+    },
+    {
+      "id": "dove-ci-troviamo",
+      "prompt": "Dove ci troviamo?",
+      "answer": "Davanti alla chiesa, in piazza.",
+      "notes": "Where shall we meet? / In front of the church, in the square."
+    },
+    {
+      "id": "e-lontano-il-centro",
+      "prompt": "È lontano il centro?",
+      "answer": "No, è proprio dietro l'angolo.",
+      "notes": "Is the centre far? / No, it's just around the corner."
+    }
+  ]
+}

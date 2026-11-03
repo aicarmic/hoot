@@ -1,0 +1,111 @@
+{
+  "id": "ru-a1-cases",
+  "title": "Where, what and who: key phrases",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 10 · Where, what and who",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "ya-v-moskve",
+      "prompt": "я в Москве́",
+      "answer": "I'm in Moscow",
+      "hint": "ya v Moskve",
+      "notes": "Location: в or на, and the noun usually ends in -е."
+    },
+    {
+      "id": "my-na-rabote",
+      "prompt": "мы на рабо́те",
+      "answer": "we're at work",
+      "hint": "my na rabote"
+    },
+    {
+      "id": "on-doma",
+      "prompt": "он до́ма",
+      "answer": "he's at home",
+      "hint": "on doma"
+    },
+    {
+      "id": "v-shkole",
+      "prompt": "в шко́ле",
+      "answer": "at school",
+      "hint": "v shkole"
+    },
+    {
+      "id": "v-magazine",
+      "prompt": "в магази́не",
+      "answer": "in the shop",
+      "hint": "v magazine"
+    },
+    {
+      "id": "ya-idu-v-shkolu",
+      "prompt": "я иду́ в шко́лу",
+      "answer": "I'm going to school",
+      "hint": "ya idu v shkolu",
+      "notes": "Direction: в or на, and feminine -а becomes -у."
+    },
+    {
+      "id": "ya-idu-na-pochtu",
+      "prompt": "я иду́ на по́чту",
+      "answer": "I'm going to the post office",
+      "hint": "ya idu na pochtu"
+    },
+    {
+      "id": "ya-vizhu-mamu",
+      "prompt": "я ви́жу ма́му",
+      "answer": "I see mum",
+      "hint": "ya vizhu mamu"
+    },
+    {
+      "id": "ya-lyublyu-muzyku",
+      "prompt": "я люблю́ му́зыку",
+      "answer": "I love music",
+      "hint": "ya lyublyu muzyku"
+    },
+    {
+      "id": "day-mne-vodu",
+      "prompt": "дай мне во́ду",
+      "answer": "give me the water",
+      "hint": "day mne vodu"
+    },
+    {
+      "id": "u-menya-net-vremeni",
+      "prompt": "у меня́ нет вре́мени",
+      "answer": "I don't have time",
+      "hint": "u menya net vremeni",
+      "notes": "After нет, the noun changes: время → вре'мени."
+    },
+    {
+      "id": "u-menya-net-mashiny",
+      "prompt": "у меня́ нет маши́ны",
+      "answer": "I don't have a car",
+      "hint": "u menya net mashiny"
+    },
+    {
+      "id": "u-tebya-est-ruchka",
+      "prompt": "у тебя́ есть ру́чка?",
+      "answer": "do you have a pen?",
+      "hint": "u tebya est ruchka?"
+    },
+    {
+      "id": "chashka-chaya",
+      "prompt": "ча́шка ча́я",
+      "answer": "a cup of tea",
+      "hint": "chashka chaya"
+    },
+    {
+      "id": "mnogo-lyudey",
+      "prompt": "мно́го люде́й",
+      "answer": "a lot of people",
+      "hint": "mnogo lyudey"
+    },
+    {
+      "id": "bez-moloka",
+      "prompt": "без молока́",
+      "answer": "without milk",
+      "hint": "bez moloka"
+    }
+  ]
+}

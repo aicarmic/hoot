@@ -1,0 +1,73 @@
+{
+  "id": "ru-a1-shopping-talk",
+  "title": "Shopping: conversation",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 8 · Shopping",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "vam-pomoch",
+      "prompt": "Вам помо́чь?",
+      "answer": "Нет, спаси́бо, я про́сто смотрю́.",
+      "notes": "Can I help you? / No, thanks, I'm just looking."
+    },
+    {
+      "id": "kakoy-u-vas-razmer",
+      "prompt": "Како́й у вас разме́р?",
+      "answer": "Пятидеся́тый, ка́жется.",
+      "notes": "What size are you? / Fifty, I think."
+    },
+    {
+      "id": "khotite-primerit",
+      "prompt": "Хоти́те приме́рить?",
+      "answer": "Да, где приме́рочная?",
+      "notes": "Would you like to try it on? / Yes, where's the fitting room?"
+    },
+    {
+      "id": "nu-kak",
+      "prompt": "Ну как?",
+      "answer": "Ма́ленький. Есть побо́льше?",
+      "notes": "Well? / It's small. Do you have a bigger one?"
+    },
+    {
+      "id": "kartoy-ili-nalichnymi",
+      "prompt": "Ка́ртой и́ли нали́чными?",
+      "answer": "Ка́ртой.",
+      "notes": "Card or cash? / Card."
+    },
+    {
+      "id": "paket-nuzhen",
+      "prompt": "Паке́т ну́жен?",
+      "answer": "Нет, спаси́бо, у меня́ есть су́мка.",
+      "notes": "Do you need a bag? / No, thanks, I have a bag."
+    },
+    {
+      "id": "chto-vam",
+      "prompt": "Что вам?",
+      "answer": "Помидо́ры. Почём они́?",
+      "notes": "What can I get you? / Tomatoes. How much are they?"
+    },
+    {
+      "id": "trista-rubley-za-kilo",
+      "prompt": "Три́ста рубле́й за кило́.",
+      "answer": "Дава́йте полкило́.",
+      "notes": "Three hundred roubles a kilo. / Half a kilo, then."
+    },
+    {
+      "id": "gde-zdes-apteka",
+      "prompt": "Где здесь апте́ка?",
+      "answer": "За угло́м, ря́дом с ба́нком.",
+      "notes": "Where's a pharmacy around here? / Around the corner, next to the bank."
+    },
+    {
+      "id": "chto-ty-kupil",
+      "prompt": "Что ты купи́л?",
+      "answer": "Пода́рок для жены́.",
+      "notes": "What did you buy? / A present for my wife."
+    }
+  ]
+}

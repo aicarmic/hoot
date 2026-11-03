@@ -1,0 +1,108 @@
+{
+  "id": "it-b1-idioms",
+  "title": "Everyday idioms",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 5 · Everyday idioms",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "in-bocca-al-lupo",
+      "prompt": "In bocca al lupo.",
+      "answer": "Good luck.",
+      "notes": "Literally: into the wolf's mouth. Reply: crepi (may it die)."
+    },
+    {
+      "id": "non-vedo-l-ora",
+      "prompt": "Non vedo l'ora.",
+      "answer": "I can't wait."
+    },
+    {
+      "id": "che-figata",
+      "prompt": "Che figata.",
+      "answer": "How cool.",
+      "notes": "Very informal."
+    },
+    {
+      "id": "costa-un-occhio-della",
+      "prompt": "Costa un occhio della testa.",
+      "answer": "It costs an arm and a leg."
+    },
+    {
+      "id": "acqua-in-bocca",
+      "prompt": "Acqua in bocca.",
+      "answer": "Keep it to yourself.",
+      "notes": "Literally: water in the mouth."
+    },
+    {
+      "id": "essere-al-verde",
+      "prompt": "Essere al verde.",
+      "answer": "To be broke."
+    },
+    {
+      "id": "prendere-un-granchio",
+      "prompt": "Prendere un granchio.",
+      "answer": "To make a blunder.",
+      "notes": "Literally: to catch a crab."
+    },
+    {
+      "id": "avere-le-mani-in",
+      "prompt": "Avere le mani in pasta.",
+      "answer": "To have a finger in every pie."
+    },
+    {
+      "id": "non-e-farina-del",
+      "prompt": "Non è farina del tuo sacco.",
+      "answer": "That's not your own work."
+    },
+    {
+      "id": "ogni-morte-di-papa",
+      "prompt": "Ogni morte di papa.",
+      "answer": "Once in a blue moon."
+    },
+    {
+      "id": "fare-il-ponte",
+      "prompt": "Fare il ponte.",
+      "answer": "To take a long weekend.",
+      "notes": "Taking the day between a holiday and the weekend off."
+    },
+    {
+      "id": "meglio-tardi-che-mai",
+      "prompt": "Meglio tardi che mai.",
+      "answer": "Better late than never."
+    },
+    {
+      "id": "chi-dorme-non-piglia",
+      "prompt": "Chi dorme non piglia pesci.",
+      "answer": "The early bird catches the worm."
+    },
+    {
+      "id": "piove-a-catinelle",
+      "prompt": "Piove a catinelle.",
+      "answer": "It's raining cats and dogs."
+    },
+    {
+      "id": "dai",
+      "prompt": "Dai.",
+      "answer": "Come on.",
+      "notes": "Used everywhere: to encourage, to disbelieve, or to say goodbye."
+    },
+    {
+      "id": "boh",
+      "prompt": "Boh.",
+      "answer": "Who knows. / No idea."
+    },
+    {
+      "id": "magari",
+      "prompt": "Magari.",
+      "answer": "If only. / Maybe."
+    },
+    {
+      "id": "ci-mancherebbe",
+      "prompt": "Ci mancherebbe.",
+      "answer": "Don't mention it. / Of course not."
+    }
+  ]
+}

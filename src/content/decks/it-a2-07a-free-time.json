@@ -1,0 +1,98 @@
+{
+  "id": "it-a2-free-time",
+  "title": "Free time: words",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 7 · Free time",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "fare-una-passeggiata",
+      "prompt": "fare una passeggiata",
+      "answer": "to go for a walk"
+    },
+    {
+      "id": "andare-in-bici",
+      "prompt": "andare in bici",
+      "answer": "to go cycling"
+    },
+    {
+      "id": "nuotare",
+      "prompt": "nuotare",
+      "answer": "to swim"
+    },
+    {
+      "id": "fare-giardinaggio",
+      "prompt": "fare giardinaggio",
+      "answer": "to do some gardening"
+    },
+    {
+      "id": "suonare-la-chitarra",
+      "prompt": "suonare la chitarra",
+      "answer": "to play the guitar",
+      "notes": "Suonare for instruments, giocare for games and sports."
+    },
+    {
+      "id": "giocare-a-carte",
+      "prompt": "giocare a carte",
+      "answer": "to play cards"
+    },
+    {
+      "id": "dipingere",
+      "prompt": "dipingere",
+      "answer": "to paint"
+    },
+    {
+      "id": "ballare",
+      "prompt": "ballare",
+      "answer": "to dance"
+    },
+    {
+      "id": "andare-a-teatro",
+      "prompt": "andare a teatro",
+      "answer": "to go to the theatre"
+    },
+    {
+      "id": "guardare-la-partita",
+      "prompt": "guardare la partita",
+      "answer": "to watch the match"
+    },
+    {
+      "id": "andare-in-palestra",
+      "prompt": "andare in palestra",
+      "answer": "to go to the gym"
+    },
+    {
+      "id": "fare-yoga",
+      "prompt": "fare yoga",
+      "answer": "to do yoga"
+    },
+    {
+      "id": "nel-tempo-libero-leggo",
+      "prompt": "Nel tempo libero leggo.",
+      "answer": "In my free time I read."
+    },
+    {
+      "id": "mi-piace-molto-camminare",
+      "prompt": "Mi piace molto camminare.",
+      "answer": "I really like walking."
+    },
+    {
+      "id": "non-mi-piace-correre",
+      "prompt": "Non mi piace correre.",
+      "answer": "I don't like running."
+    },
+    {
+      "id": "sono-appassionata-di-fotografia",
+      "prompt": "Sono appassionata di fotografia.",
+      "answer": "I'm really into photography."
+    },
+    {
+      "id": "lo-faccio-una-volta",
+      "prompt": "Lo faccio una volta alla settimana.",
+      "answer": "I do it once a week."
+    }
+  ]
+}

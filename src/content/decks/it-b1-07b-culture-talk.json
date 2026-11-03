@@ -1,0 +1,85 @@
+{
+  "id": "it-b1-culture-talk",
+  "title": "Talking about Italy",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 7 · Italy up close",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "qual-e-la-tua",
+      "prompt": "Qual è la tua regione preferita?",
+      "answer": "La Toscana, per i paesaggi e il vino.",
+      "notes": "What's your favourite region? / Tuscany, for the landscape and the wine."
+    },
+    {
+      "id": "hai-mai-assaggiato-la",
+      "prompt": "Hai mai assaggiato la cucina pugliese?",
+      "answer": "Sì, le orecchiette sono buonissime.",
+      "notes": "Have you ever tried food from Puglia? / Yes, orecchiette are delicious."
+    },
+    {
+      "id": "andiamo-a-fare-l",
+      "prompt": "Andiamo a fare l'aperitivo?",
+      "answer": "Volentieri, c'è un bar carino in piazza.",
+      "notes": "Shall we go for an aperitivo? / Gladly, there's a nice bar in the square."
+    },
+    {
+      "id": "capisci-il-dialetto",
+      "prompt": "Capisci il dialetto?",
+      "answer": "Pochissimo. Me lo spieghi?",
+      "notes": "Do you understand the dialect? / Very little. Will you explain it to me?"
+    },
+    {
+      "id": "cosa-fate-a-ferragosto",
+      "prompt": "Cosa fate a Ferragosto?",
+      "answer": "Andiamo al mare con tutta la famiglia.",
+      "notes": "What are you doing for Ferragosto? / We're going to the seaside with the whole family."
+    },
+    {
+      "id": "prendi-un-cappuccino",
+      "prompt": "Prendi un cappuccino?",
+      "answer": "Alle quattro del pomeriggio? No, un caffè.",
+      "notes": "Will you have a cappuccino? / At four in the afternoon? No, an espresso."
+    },
+    {
+      "id": "questo-fine-settimana-c",
+      "prompt": "Questo fine settimana c'è la sagra del tartufo.",
+      "answer": "Che bello, ci andiamo insieme?",
+      "notes": "This weekend there's the truffle festival. / How lovely, shall we go together?"
+    },
+    {
+      "id": "che-cosa-ti-piace",
+      "prompt": "Che cosa ti piace di più dell'Italia?",
+      "answer": "La vita in piazza e il cibo, ovviamente.",
+      "notes": "What do you like most about Italy? / Life in the square, and the food, of course."
+    },
+    {
+      "id": "fai-pure-la-scarpetta",
+      "prompt": "Fai pure la scarpetta.",
+      "answer": "Grazie, il sugo è troppo buono.",
+      "notes": "Go ahead and mop up the sauce. / Thanks, the sauce is too good."
+    },
+    {
+      "id": "ti-trovi-bene-qui",
+      "prompt": "Ti trovi bene qui?",
+      "answer": "Benissimo, la gente è molto accogliente.",
+      "notes": "Are you getting on well here? / Very well, people are very welcoming."
+    },
+    {
+      "id": "sei-mai-stata-al",
+      "prompt": "Sei mai stata al Sud?",
+      "answer": "Sì, a Napoli. È una città piena di vita.",
+      "notes": "Have you ever been to the South? / Yes, to Naples. It's a city full of life."
+    },
+    {
+      "id": "cosa-porti-a-casa",
+      "prompt": "Cosa porti a casa come ricordo?",
+      "answer": "Olio d'oliva e un po' di formaggio.",
+      "notes": "What are you taking home as a souvenir? / Olive oil and some cheese."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "ru-a2-hobbies-talk",
+  "title": "Hobbies: conversation",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 9 · Hobbies",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "chem-ty-uvlekaeshsya",
+      "prompt": "Чем ты увлека́ешься?",
+      "answer": "Фотогра́фией и ша́хматами.",
+      "notes": "What are you into? / Photography and chess."
+    },
+    {
+      "id": "ty-igraesh-v-shakhmaty",
+      "prompt": "Ты игра́ешь в ша́хматы?",
+      "answer": "Да, но пло́хо. Сыгра́ем?",
+      "notes": "Do you play chess? / Yes, but badly. Shall we play?"
+    },
+    {
+      "id": "kakuyu-muzyku-ty-slushaesh",
+      "prompt": "Каку́ю му́зыку ты слу́шаешь?",
+      "answer": "Ра́зную, но бо́льше всего́ джаз.",
+      "notes": "What music do you listen to? / All sorts, but mostly jazz."
+    },
+    {
+      "id": "ty-lyubish-rybalku",
+      "prompt": "Ты лю́бишь рыба́лку?",
+      "answer": "О́чень, ле́том ча́сто е́зжу на о́зеро.",
+      "notes": "Do you like fishing? / Very much, in summer I often go to the lake."
+    },
+    {
+      "id": "chto-ty-delaesh-v",
+      "prompt": "Что ты де́лаешь в свобо́дное вре́мя?",
+      "answer": "Гуля́ю с соба́кой и чита́ю.",
+      "notes": "What do you do in your free time? / I walk the dog and read."
+    },
+    {
+      "id": "ty-smotrish-futbol",
+      "prompt": "Ты смо́тришь футбо́л?",
+      "answer": "То́лько чемпиона́т ми́ра.",
+      "notes": "Do you watch football? / Only the World Cup."
+    },
+    {
+      "id": "ty-umeesh-plavat",
+      "prompt": "Ты уме́ешь пла́вать?",
+      "answer": "Да, с де́тства.",
+      "notes": "Can you swim? / Yes, since I was a child."
+    },
+    {
+      "id": "poydyom-v-pokhod-v",
+      "prompt": "Пойдём в похо́д в суббо́ту?",
+      "answer": "С удово́льствием. А куда́?",
+      "notes": "Shall we go hiking on Saturday? / I'd love to. Where to?"
+    },
+    {
+      "id": "ty-igraesh-na-chyom",
+      "prompt": "Ты игра́ешь на чём-нибу́дь?",
+      "answer": "На гита́ре, немно́го.",
+      "notes": "Do you play anything? / The guitar, a little."
+    },
+    {
+      "id": "kakoy-tvoy-lyubimyy-pisatel",
+      "prompt": "Како́й твой люби́мый писа́тель?",
+      "answer": "Че́хов.",
+      "notes": "Who's your favourite writer? / Chekhov."
+    }
+  ]
+}

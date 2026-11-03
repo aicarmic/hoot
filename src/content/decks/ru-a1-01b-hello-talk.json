@@ -1,0 +1,85 @@
+{
+  "id": "ru-a1-hello-talk",
+  "title": "Meeting people: conversation",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 1 · Hello",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "privet-kak-dela",
+      "prompt": "Приве́т, как дела́?",
+      "answer": "Хорошо́, спаси́бо. А у тебя́?",
+      "notes": "Hi, how are you? / Fine, thanks. And you?"
+    },
+    {
+      "id": "kak-dela",
+      "prompt": "Как дела́?",
+      "answer": "Норма́льно. А у вас?",
+      "notes": "How are you? / Not bad. And you?"
+    },
+    {
+      "id": "kak-vas-zovut",
+      "prompt": "Как вас зову́т?",
+      "answer": "Меня́ зову́т Джон.",
+      "notes": "What's your name? / My name is John. Use your own name."
+    },
+    {
+      "id": "ochen-priyatno",
+      "prompt": "О́чень прия́тно.",
+      "answer": "Мне то́же.",
+      "notes": "Nice to meet you. / Likewise."
+    },
+    {
+      "id": "otkuda-vy",
+      "prompt": "Отку́да вы?",
+      "answer": "Я из Аме́рики.",
+      "notes": "Where are you from? / I'm from America. Others: из А'нглии, из Кана'ды, из Австра'лии."
+    },
+    {
+      "id": "vy-govorite-po-russki",
+      "prompt": "Вы говори́те по-ру́сски?",
+      "answer": "Немно́го. Я учу́ ру́сский.",
+      "notes": "Do you speak Russian? / A little. I'm learning Russian."
+    },
+    {
+      "id": "vy-ponimaete",
+      "prompt": "Вы понима́ете?",
+      "answer": "Не о́чень. Говори́те ме́дленнее, пожа́луйста.",
+      "notes": "Do you understand? / Not really. Please speak more slowly."
+    },
+    {
+      "id": "gde-vy-zhivyote",
+      "prompt": "Где вы живёте?",
+      "answer": "Я живу́ недалеко́.",
+      "notes": "Where do you live? / I live not far away."
+    },
+    {
+      "id": "kem-vy-rabotaete",
+      "prompt": "Кем вы рабо́таете?",
+      "answer": "Я инжене́р.",
+      "notes": "What do you do for work? / I'm an engineer. Russian drops 'am' and 'a': я врач, я учи'тель."
+    },
+    {
+      "id": "skolko-vy-uchite-russkiy",
+      "prompt": "Ско́лько вы у́чите ру́сский?",
+      "answer": "Уже́ год, но говорю́ ещё пло́хо.",
+      "notes": "How long have you been learning Russian? / A year now, but I still speak badly."
+    },
+    {
+      "id": "poka-do-zavtra",
+      "prompt": "Пока́, до за́втра.",
+      "answer": "Пока́, до за́втра.",
+      "notes": "Bye, see you tomorrow. / Bye, see you tomorrow."
+    },
+    {
+      "id": "spokoynoy-nochi",
+      "prompt": "Споко́йной но́чи.",
+      "answer": "И тебе́.",
+      "notes": "Good night. / You too."
+    }
+  ]
+}

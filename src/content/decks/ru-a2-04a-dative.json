@@ -1,0 +1,83 @@
+{
+  "id": "ru-a2-dative",
+  "title": "Likes and needs: key phrases",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 4 · Likes and needs",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "mne-nravitsya",
+      "prompt": "мне нра́вится…",
+      "answer": "I like…",
+      "notes": "Literally: it is pleasing to me."
+    },
+    {
+      "id": "mne-nravyatsya",
+      "prompt": "мне нра́вятся…",
+      "answer": "I like… (plural things)"
+    },
+    {
+      "id": "mne-ne-nravitsya",
+      "prompt": "мне не нра́вится",
+      "answer": "I don't like it"
+    },
+    {
+      "id": "mne-nado-mne-nuzhno",
+      "prompt": "мне на́до / мне ну́жно",
+      "answer": "I need to / I have to"
+    },
+    {
+      "id": "mne-nuzhen-vrach",
+      "prompt": "мне ну́жен врач",
+      "answer": "I need a doctor"
+    },
+    {
+      "id": "mne-kholodno",
+      "prompt": "мне хо́лодно",
+      "answer": "I'm cold"
+    },
+    {
+      "id": "mne-skuchno",
+      "prompt": "мне ску́чно",
+      "answer": "I'm bored"
+    },
+    {
+      "id": "mne-kazhetsya",
+      "prompt": "мне ка́жется…",
+      "answer": "it seems to me…"
+    },
+    {
+      "id": "mne-vsyo-ravno",
+      "prompt": "мне всё равно́",
+      "answer": "I don't mind / it's all the same to me"
+    },
+    {
+      "id": "tebe-ponravilos",
+      "prompt": "тебе́ понра́вилось?",
+      "answer": "did you like it?"
+    },
+    {
+      "id": "emu-dvadtsat-let",
+      "prompt": "ему́ два́дцать лет",
+      "answer": "he's twenty"
+    },
+    {
+      "id": "ey-nuzhno-otdokhnut",
+      "prompt": "ей ну́жно отдохну́ть",
+      "answer": "she needs to rest"
+    },
+    {
+      "id": "mne-pora",
+      "prompt": "мне пора́",
+      "answer": "I have to go"
+    },
+    {
+      "id": "mne-interesno",
+      "prompt": "мне интере́сно",
+      "answer": "I'm interested / it's interesting to me"
+    }
+  ]
+}

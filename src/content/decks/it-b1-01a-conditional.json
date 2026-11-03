@@ -1,0 +1,94 @@
+{
+  "id": "it-b1-conditional",
+  "title": "Asking nicely: key phrases",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 1 · Asking nicely",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "potrebbe-aiutarmi",
+      "prompt": "Potrebbe aiutarmi?",
+      "answer": "Could you help me?"
+    },
+    {
+      "id": "mi-piacerebbe-vedere-la",
+      "prompt": "Mi piacerebbe vedere la mostra.",
+      "answer": "I'd like to see the exhibition."
+    },
+    {
+      "id": "ti-dispiacerebbe-chiudere-la",
+      "prompt": "Ti dispiacerebbe chiudere la finestra?",
+      "answer": "Would you mind closing the window?"
+    },
+    {
+      "id": "avrei-una-domanda",
+      "prompt": "Avrei una domanda.",
+      "answer": "I have a question.",
+      "notes": "The conditional softens a statement."
+    },
+    {
+      "id": "dovresti-riposarti-un-po",
+      "prompt": "Dovresti riposarti un po'.",
+      "answer": "You should rest a bit."
+    },
+    {
+      "id": "al-posto-tuo-ci",
+      "prompt": "Al posto tuo, ci andrei.",
+      "answer": "If I were you, I'd go."
+    },
+    {
+      "id": "sarebbe-possibile-cambiare-camera",
+      "prompt": "Sarebbe possibile cambiare camera?",
+      "answer": "Would it be possible to change rooms?"
+    },
+    {
+      "id": "preferirei-restare-a-casa",
+      "prompt": "Preferirei restare a casa.",
+      "answer": "I'd rather stay at home."
+    },
+    {
+      "id": "mi-farebbe-un-piacere",
+      "prompt": "Mi farebbe un piacere?",
+      "answer": "Would you do me a favour?"
+    },
+    {
+      "id": "potremmo-vederci-piu-tardi",
+      "prompt": "Potremmo vederci più tardi.",
+      "answer": "We could meet later."
+    },
+    {
+      "id": "non-saprei",
+      "prompt": "Non saprei.",
+      "answer": "I wouldn't know.",
+      "notes": "A soft way to say I don't know."
+    },
+    {
+      "id": "avrei-voluto-chiamarti",
+      "prompt": "Avrei voluto chiamarti.",
+      "answer": "I would have liked to call you."
+    },
+    {
+      "id": "mi-saprebbe-dire-dove",
+      "prompt": "Mi saprebbe dire dove si trova il museo?",
+      "answer": "Could you tell me where the museum is?"
+    },
+    {
+      "id": "verrei-volentieri-ma-ho",
+      "prompt": "Verrei volentieri, ma ho da fare.",
+      "answer": "I'd love to come, but I'm busy."
+    },
+    {
+      "id": "farei-di-tutto-per",
+      "prompt": "Farei di tutto per lei.",
+      "answer": "I'd do anything for her."
+    },
+    {
+      "id": "sarebbe-meglio-partire-presto",
+      "prompt": "Sarebbe meglio partire presto.",
+      "answer": "It would be better to leave early."
+    }
+  ]
+}

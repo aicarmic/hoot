@@ -1,0 +1,102 @@
+{
+  "id": "it-a2-past-avere",
+  "title": "What I did: key phrases",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 1 · What I did",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "ho-mangiato-troppo",
+      "prompt": "Ho mangiato troppo.",
+      "answer": "I ate too much."
+    },
+    {
+      "id": "abbiamo-visto-un-bel",
+      "prompt": "Abbiamo visto un bel film.",
+      "answer": "We saw a good film.",
+      "notes": "vedere → visto"
+    },
+    {
+      "id": "hai-fatto-la-spesa",
+      "prompt": "Hai fatto la spesa?",
+      "answer": "Did you do the shopping?",
+      "notes": "fare → fatto"
+    },
+    {
+      "id": "non-ho-dormito-bene",
+      "prompt": "Non ho dormito bene.",
+      "answer": "I didn't sleep well."
+    },
+    {
+      "id": "ho-lavorato-tutto-il",
+      "prompt": "Ho lavorato tutto il giorno.",
+      "answer": "I worked all day."
+    },
+    {
+      "id": "ho-comprato-un-regalo",
+      "prompt": "Ho comprato un regalo per mia sorella.",
+      "answer": "I bought a present for my sister."
+    },
+    {
+      "id": "hai-finito",
+      "prompt": "Hai finito?",
+      "answer": "Have you finished?"
+    },
+    {
+      "id": "ho-perso-le-chiavi",
+      "prompt": "Ho perso le chiavi.",
+      "answer": "I've lost my keys.",
+      "notes": "perdere → perso"
+    },
+    {
+      "id": "abbiamo-preso-il-treno",
+      "prompt": "Abbiamo preso il treno.",
+      "answer": "We took the train.",
+      "notes": "prendere → preso"
+    },
+    {
+      "id": "ho-letto-un-libro",
+      "prompt": "Ho letto un libro interessante.",
+      "answer": "I read an interesting book.",
+      "notes": "leggere → letto"
+    },
+    {
+      "id": "che-cosa-hai-detto",
+      "prompt": "Che cosa hai detto?",
+      "answer": "What did you say?",
+      "notes": "dire → detto"
+    },
+    {
+      "id": "ho-scritto-una-mail",
+      "prompt": "Ho scritto una mail al professore.",
+      "answer": "I wrote an email to the teacher.",
+      "notes": "scrivere → scritto"
+    },
+    {
+      "id": "ho-gia-mangiato-grazie",
+      "prompt": "Ho già mangiato, grazie.",
+      "answer": "I've already eaten, thanks."
+    },
+    {
+      "id": "non-ho-ancora-deciso",
+      "prompt": "Non ho ancora deciso.",
+      "answer": "I haven't decided yet.",
+      "notes": "decidere → deciso"
+    },
+    {
+      "id": "abbiamo-aperto-una-bottiglia",
+      "prompt": "Abbiamo aperto una bottiglia di vino.",
+      "answer": "We opened a bottle of wine.",
+      "notes": "aprire → aperto"
+    },
+    {
+      "id": "ho-messo-il-latte",
+      "prompt": "Ho messo il latte in frigo.",
+      "answer": "I put the milk in the fridge.",
+      "notes": "mettere → messo"
+    }
+  ]
+}

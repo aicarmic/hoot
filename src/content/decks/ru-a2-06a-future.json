@@ -1,0 +1,87 @@
+{
+  "id": "ru-a2-future",
+  "title": "The future: key phrases",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 6 · Plans",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "ya-budu-rabotat",
+      "prompt": "я бу́ду рабо́тать",
+      "answer": "I'll be working"
+    },
+    {
+      "id": "chto-ty-budesh-delat",
+      "prompt": "что ты бу́дешь де́лать?",
+      "answer": "what will you do?"
+    },
+    {
+      "id": "zavtra-budet-dozhd",
+      "prompt": "за́втра бу́дет дождь",
+      "answer": "it will rain tomorrow"
+    },
+    {
+      "id": "ya-pozvonyu",
+      "prompt": "я позвоню́",
+      "answer": "I'll call"
+    },
+    {
+      "id": "my-uvidimsya",
+      "prompt": "мы уви́димся",
+      "answer": "we'll see each other"
+    },
+    {
+      "id": "ya-priedu-v-iyune",
+      "prompt": "я прие́ду в ию́не",
+      "answer": "I'll come in June"
+    },
+    {
+      "id": "cherez-nedelyu",
+      "prompt": "че́рез неде́лю",
+      "answer": "in a week"
+    },
+    {
+      "id": "v-sleduyushchem-godu",
+      "prompt": "в сле́дующем году́",
+      "answer": "next year"
+    },
+    {
+      "id": "skoro",
+      "prompt": "ско́ро",
+      "answer": "soon"
+    },
+    {
+      "id": "potom",
+      "prompt": "пото́м",
+      "answer": "later / afterwards"
+    },
+    {
+      "id": "ya-sobirayus",
+      "prompt": "я собира́юсь…",
+      "answer": "I'm planning to…"
+    },
+    {
+      "id": "posmotrim",
+      "prompt": "посмо́трим",
+      "answer": "we'll see"
+    },
+    {
+      "id": "nadeyus",
+      "prompt": "наде́юсь",
+      "answer": "I hope"
+    },
+    {
+      "id": "obyazatelno",
+      "prompt": "обяза́тельно",
+      "answer": "definitely"
+    },
+    {
+      "id": "mozhet-byt",
+      "prompt": "мо́жет быть",
+      "answer": "maybe"
+    }
+  ]
+}

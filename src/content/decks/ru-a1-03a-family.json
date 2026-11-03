@@ -1,0 +1,122 @@
+{
+  "id": "ru-a1-family",
+  "title": "Family",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 3 · Family",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "semya",
+      "prompt": "семья́",
+      "answer": "family",
+      "hint": "semya"
+    },
+    {
+      "id": "mama-mat",
+      "prompt": "ма́ма / мать",
+      "answer": "mum / mother",
+      "hint": "mama / mat"
+    },
+    {
+      "id": "papa-otets",
+      "prompt": "па́па / оте́ц",
+      "answer": "dad / father",
+      "hint": "papa / otets"
+    },
+    {
+      "id": "roditeli",
+      "prompt": "роди́тели",
+      "answer": "parents",
+      "hint": "roditeli"
+    },
+    {
+      "id": "muzh",
+      "prompt": "муж",
+      "answer": "husband",
+      "hint": "muzh"
+    },
+    {
+      "id": "zhena",
+      "prompt": "жена́",
+      "answer": "wife",
+      "hint": "zhena"
+    },
+    {
+      "id": "syn",
+      "prompt": "сын",
+      "answer": "son",
+      "hint": "syn"
+    },
+    {
+      "id": "doch",
+      "prompt": "дочь",
+      "answer": "daughter",
+      "hint": "doch"
+    },
+    {
+      "id": "brat",
+      "prompt": "брат",
+      "answer": "brother",
+      "hint": "brat"
+    },
+    {
+      "id": "sestra",
+      "prompt": "сестра́",
+      "answer": "sister",
+      "hint": "sestra"
+    },
+    {
+      "id": "babushka",
+      "prompt": "ба́бушка",
+      "answer": "grandmother",
+      "hint": "babushka"
+    },
+    {
+      "id": "dedushka",
+      "prompt": "де́душка",
+      "answer": "grandfather",
+      "hint": "dedushka"
+    },
+    {
+      "id": "deti",
+      "prompt": "де́ти",
+      "answer": "children",
+      "hint": "deti"
+    },
+    {
+      "id": "vnuk-vnuchka",
+      "prompt": "внук / вну́чка",
+      "answer": "grandson / granddaughter",
+      "hint": "vnuk / vnuchka"
+    },
+    {
+      "id": "dyadya-tyotya",
+      "prompt": "дя́дя / тётя",
+      "answer": "uncle / aunt",
+      "hint": "dyadya / tyotya"
+    },
+    {
+      "id": "u-menya-est",
+      "prompt": "у меня́ есть…",
+      "answer": "I have…",
+      "hint": "u menya est…",
+      "notes": "Literally: by me there is…"
+    },
+    {
+      "id": "eto-moy-syn",
+      "prompt": "э́то мой сын",
+      "answer": "this is my son",
+      "hint": "eto moy syn"
+    },
+    {
+      "id": "eto-moya-doch",
+      "prompt": "э́то моя́ дочь",
+      "answer": "this is my daughter",
+      "hint": "eto moya doch",
+      "notes": "мой for masculine words, моя' for feminine."
+    }
+  ]
+}

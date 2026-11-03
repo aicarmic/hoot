@@ -1,0 +1,79 @@
+{
+  "id": "ru-a2-travel-talk",
+  "title": "Travel: conversation",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 10 · Travel",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "zdravstvuyte-u-vas-est",
+      "prompt": "Здра́вствуйте, у вас есть бронь?",
+      "answer": "Да, на фами́лию Смит.",
+      "notes": "Hello, do you have a booking? / Yes, under the name Smith. Use your own surname."
+    },
+    {
+      "id": "vash-pasport-pozhaluysta",
+      "prompt": "Ваш па́спорт, пожа́луйста.",
+      "answer": "Вот, пожа́луйста.",
+      "notes": "Your passport, please. / Here you are."
+    },
+    {
+      "id": "na-skolko-nochey",
+      "prompt": "На ско́лько ноче́й?",
+      "answer": "На три но́чи.",
+      "notes": "For how many nights? / For three nights."
+    },
+    {
+      "id": "zavtrak-s-semi-do",
+      "prompt": "За́втрак с семи́ до десяти́.",
+      "answer": "А где рестора́н?",
+      "notes": "Breakfast is from seven to ten. / And where's the restaurant?"
+    },
+    {
+      "id": "vash-nomer-na-pyatom",
+      "prompt": "Ваш но́мер на пя́том этаже́.",
+      "answer": "Спаси́бо. Где лифт?",
+      "notes": "Your room is on the fifth floor. / Thanks. Where's the lift?"
+    },
+    {
+      "id": "chto-nibud-eshchyo",
+      "prompt": "Что-нибу́дь ещё?",
+      "answer": "Да, како́й паро́ль от вайфа́я?",
+      "notes": "Anything else? / Yes, what's the wifi password?"
+    },
+    {
+      "id": "u-vas-est-bagazh",
+      "prompt": "У вас есть бага́ж?",
+      "answer": "То́лько оди́н чемода́н.",
+      "notes": "Do you have luggage? / Just one suitcase."
+    },
+    {
+      "id": "tsel-poezdki",
+      "prompt": "Цель пое́здки?",
+      "answer": "Тури́зм.",
+      "notes": "Purpose of your trip? / Tourism."
+    },
+    {
+      "id": "reys-zaderzhivaetsya-na-chas",
+      "prompt": "Рейс заде́рживается на час.",
+      "answer": "Опя́ть? Ну ла́дно.",
+      "notes": "The flight is delayed by an hour. / Again? Oh well."
+    },
+    {
+      "id": "v-nomere-vsyo-v",
+      "prompt": "В но́мере всё в поря́дке?",
+      "answer": "Не совсе́м, не рабо́тает кондиционе́р.",
+      "notes": "Is everything all right in the room? / Not quite, the air conditioning doesn't work."
+    },
+    {
+      "id": "kak-vam-u-nas",
+      "prompt": "Как вам у нас?",
+      "answer": "Всё о́чень понра́вилось, спаси́бо.",
+      "notes": "How did you like your stay? / We liked everything very much, thanks."
+    }
+  ]
+}

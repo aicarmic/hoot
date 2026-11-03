@@ -1,0 +1,89 @@
+{
+  "id": "it-b1-hypothetical",
+  "title": "What if: key phrases",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 4 · What if",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "se-avessi-tempo-viaggerei",
+      "prompt": "Se avessi tempo, viaggerei di più.",
+      "answer": "If I had time, I'd travel more.",
+      "notes": "se + imperfect subjunctive, then the conditional."
+    },
+    {
+      "id": "se-fossi-in-te",
+      "prompt": "Se fossi in te, accetterei.",
+      "answer": "If I were you, I'd accept."
+    },
+    {
+      "id": "se-potessi-vivrei-in",
+      "prompt": "Se potessi, vivrei in Italia.",
+      "answer": "If I could, I'd live in Italy."
+    },
+    {
+      "id": "se-vincessi-alla-lotteria",
+      "prompt": "Se vincessi alla lotteria, smetterei di lavorare.",
+      "answer": "If I won the lottery, I'd stop working."
+    },
+    {
+      "id": "se-facesse-bel-tempo",
+      "prompt": "Se facesse bel tempo, andremmo al mare.",
+      "answer": "If the weather were nice, we'd go to the seaside."
+    },
+    {
+      "id": "se-sapessi-la-risposta",
+      "prompt": "Se sapessi la risposta, te la direi.",
+      "answer": "If I knew the answer, I'd tell you."
+    },
+    {
+      "id": "se-piove-restiamo-a",
+      "prompt": "Se piove, restiamo a casa.",
+      "answer": "If it rains, we'll stay home.",
+      "notes": "For real possibilities, plain present tense is fine."
+    },
+    {
+      "id": "magari",
+      "prompt": "Magari.",
+      "answer": "If only. / I wish."
+    },
+    {
+      "id": "come-se-niente-fosse",
+      "prompt": "Come se niente fosse.",
+      "answer": "As if nothing had happened."
+    },
+    {
+      "id": "se-l-avessi-saputo",
+      "prompt": "Se l'avessi saputo, sarei venuta.",
+      "answer": "If I'd known, I would have come."
+    },
+    {
+      "id": "che-faresti-se",
+      "prompt": "Che faresti se…?",
+      "answer": "What would you do if…?"
+    },
+    {
+      "id": "nel-caso-in-cui",
+      "prompt": "Nel caso in cui piova…",
+      "answer": "In case it rains…"
+    },
+    {
+      "id": "purche-tu-mi-chiami",
+      "prompt": "Purché tu mi chiami.",
+      "answer": "As long as you call me."
+    },
+    {
+      "id": "a-meno-che-non",
+      "prompt": "A meno che non sia chiuso.",
+      "answer": "Unless it's closed."
+    },
+    {
+      "id": "se-fosse-per-me",
+      "prompt": "Se fosse per me…",
+      "answer": "If it were up to me…"
+    }
+  ]
+}

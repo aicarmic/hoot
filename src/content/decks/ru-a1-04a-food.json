@@ -1,0 +1,121 @@
+{
+  "id": "ru-a1-food",
+  "title": "Food and drink",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 4 · Food and the café",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "kofe",
+      "prompt": "ко́фе",
+      "answer": "coffee",
+      "hint": "kofe",
+      "notes": "Masculine, even though it ends in -е: мой ко'фе."
+    },
+    {
+      "id": "chay",
+      "prompt": "чай",
+      "answer": "tea",
+      "hint": "chay"
+    },
+    {
+      "id": "voda",
+      "prompt": "вода́",
+      "answer": "water",
+      "hint": "voda"
+    },
+    {
+      "id": "moloko",
+      "prompt": "молоко́",
+      "answer": "milk",
+      "hint": "moloko"
+    },
+    {
+      "id": "khleb",
+      "prompt": "хлеб",
+      "answer": "bread",
+      "hint": "khleb"
+    },
+    {
+      "id": "syr",
+      "prompt": "сыр",
+      "answer": "cheese",
+      "hint": "syr"
+    },
+    {
+      "id": "myaso",
+      "prompt": "мя́со",
+      "answer": "meat",
+      "hint": "myaso"
+    },
+    {
+      "id": "ryba",
+      "prompt": "ры́ба",
+      "answer": "fish",
+      "hint": "ryba"
+    },
+    {
+      "id": "sup",
+      "prompt": "суп",
+      "answer": "soup",
+      "hint": "sup"
+    },
+    {
+      "id": "salat",
+      "prompt": "сала́т",
+      "answer": "salad",
+      "hint": "salat"
+    },
+    {
+      "id": "pivo",
+      "prompt": "пи́во",
+      "answer": "beer",
+      "hint": "pivo"
+    },
+    {
+      "id": "vino",
+      "prompt": "вино́",
+      "answer": "wine",
+      "hint": "vino"
+    },
+    {
+      "id": "menyu",
+      "prompt": "меню́",
+      "answer": "menu",
+      "hint": "menyu"
+    },
+    {
+      "id": "schyot",
+      "prompt": "счёт",
+      "answer": "the bill",
+      "hint": "schyot"
+    },
+    {
+      "id": "vkusno",
+      "prompt": "вку́сно",
+      "answer": "tasty / delicious",
+      "hint": "vkusno"
+    },
+    {
+      "id": "ya-budu",
+      "prompt": "я бу́ду…",
+      "answer": "I'll have…",
+      "hint": "ya budu…"
+    },
+    {
+      "id": "mozhno",
+      "prompt": "мо́жно…?",
+      "answer": "may I have…? / is it okay to…?",
+      "hint": "mozhno…?"
+    },
+    {
+      "id": "bez-sakhara",
+      "prompt": "без са́хара",
+      "answer": "without sugar",
+      "hint": "bez sakhara"
+    }
+  ]
+}

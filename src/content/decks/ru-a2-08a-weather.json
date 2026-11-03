@@ -1,0 +1,88 @@
+{
+  "id": "ru-a2-weather",
+  "title": "Weather and seasons",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 8 · Weather and seasons",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "pogoda",
+      "prompt": "пого́да",
+      "answer": "weather"
+    },
+    {
+      "id": "zima-zimoy",
+      "prompt": "зима́ / зимо́й",
+      "answer": "winter / in winter"
+    },
+    {
+      "id": "vesna-vesnoy",
+      "prompt": "весна́ / весно́й",
+      "answer": "spring / in spring"
+    },
+    {
+      "id": "leto-letom",
+      "prompt": "ле́то / ле́том",
+      "answer": "summer / in summer"
+    },
+    {
+      "id": "osen-osenyu",
+      "prompt": "о́сень / о́сенью",
+      "answer": "autumn / in autumn"
+    },
+    {
+      "id": "kholodno",
+      "prompt": "хо́лодно",
+      "answer": "it's cold"
+    },
+    {
+      "id": "teplo",
+      "prompt": "тепло́",
+      "answer": "it's warm"
+    },
+    {
+      "id": "zharko",
+      "prompt": "жа́рко",
+      "answer": "it's hot"
+    },
+    {
+      "id": "idyot-dozhd",
+      "prompt": "идёт дождь",
+      "answer": "it's raining"
+    },
+    {
+      "id": "idyot-sneg",
+      "prompt": "идёт снег",
+      "answer": "it's snowing"
+    },
+    {
+      "id": "solntse",
+      "prompt": "со́лнце",
+      "answer": "sun",
+      "notes": "The л is silent: sontse."
+    },
+    {
+      "id": "veter",
+      "prompt": "ве́тер",
+      "answer": "wind"
+    },
+    {
+      "id": "moroz",
+      "prompt": "моро́з",
+      "answer": "frost / hard cold"
+    },
+    {
+      "id": "minus-dvadtsat",
+      "prompt": "ми́нус два́дцать",
+      "answer": "minus twenty"
+    },
+    {
+      "id": "kakaya-segodnya-pogoda",
+      "prompt": "кака́я сего́дня пого́да?",
+      "answer": "what's the weather like today?"
+    }
+  ]
+}
