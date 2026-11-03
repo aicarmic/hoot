@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-pronouns-talk",
+  "title": "Likes and pronouns: conversation",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 10 · Likes and pronouns",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "ti-piace-la-pizza",
+      "prompt": "Ti piace la pizza napoletana?",
+      "answer": "Sì, mi piace moltissimo.",
+      "notes": "Do you like Neapolitan pizza? / Yes, I love it."
+    },
+    {
+      "id": "ti-e-piaciuto-il",
+      "prompt": "Ti è piaciuto il concerto?",
+      "answer": "Sì, mi è piaciuto tanto.",
+      "notes": "Did you enjoy the concert? / Yes, I really liked it."
+    },
+    {
+      "id": "hai-visto-giulia",
+      "prompt": "Hai visto Giulia?",
+      "answer": "Sì, l'ho vista stamattina.",
+      "notes": "Have you seen Giulia? / Yes, I saw her this morning."
+    },
+    {
+      "id": "quanti-pomodori-vuole",
+      "prompt": "Quanti pomodori vuole?",
+      "answer": "Ne vorrei mezzo chilo.",
+      "notes": "How many tomatoes would you like? / I'd like half a kilo."
+    },
+    {
+      "id": "conosci-questo-ristorante",
+      "prompt": "Conosci questo ristorante?",
+      "answer": "Sì, lo conosco bene, è ottimo.",
+      "notes": "Do you know this restaurant? / Yes, I know it well, it's excellent."
+    },
+    {
+      "id": "vai-spesso-a-roma",
+      "prompt": "Vai spesso a Roma?",
+      "answer": "Ci vado due volte all'anno.",
+      "notes": "Do you often go to Rome? / I go there twice a year."
+    },
+    {
+      "id": "ti-manca-casa",
+      "prompt": "Ti manca casa?",
+      "answer": "Un po', mi mancano soprattutto gli amici.",
+      "notes": "Do you miss home? / A bit, I mostly miss my friends."
+    },
+    {
+      "id": "mi-passi-il-sale",
+      "prompt": "Mi passi il sale?",
+      "answer": "Certo, eccolo.",
+      "notes": "Could you pass me the salt? / Of course, here it is."
+    },
+    {
+      "id": "hai-preso-i-biglietti",
+      "prompt": "Hai preso i biglietti?",
+      "answer": "Sì, li ho presi online.",
+      "notes": "Did you get the tickets? / Yes, I got them online."
+    },
+    {
+      "id": "hai-detto-a-luca",
+      "prompt": "Hai detto a Luca della cena?",
+      "answer": "No, glielo dico stasera.",
+      "notes": "Did you tell Luca about the dinner? / No, I'll tell him tonight."
+    },
+    {
+      "id": "hai-del-pane",
+      "prompt": "Hai del pane?",
+      "answer": "No, mi dispiace, non ne ho.",
+      "notes": "Do you have any bread? / No, sorry, I haven't got any."
+    },
+    {
+      "id": "quale-preferisci-questa-o",
+      "prompt": "Quale preferisci, questa o quella?",
+      "answer": "Preferisco quella blu.",
+      "notes": "Which do you prefer, this one or that one? / I prefer the blue one."
+    }
+  ]
+}

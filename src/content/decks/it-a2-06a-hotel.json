@@ -1,0 +1,98 @@
+{
+  "id": "it-a2-hotel",
+  "title": "At the hotel: words",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 6 · Hotels",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "la-camera-singola",
+      "prompt": "la camera singola",
+      "answer": "single room"
+    },
+    {
+      "id": "la-camera-doppia",
+      "prompt": "la camera doppia",
+      "answer": "twin room"
+    },
+    {
+      "id": "la-camera-matrimoniale",
+      "prompt": "la camera matrimoniale",
+      "answer": "double room",
+      "notes": "One double bed."
+    },
+    {
+      "id": "la-prenotazione",
+      "prompt": "la prenotazione",
+      "answer": "booking"
+    },
+    {
+      "id": "la-chiave",
+      "prompt": "la chiave",
+      "answer": "key"
+    },
+    {
+      "id": "l-ascensore",
+      "prompt": "l'ascensore",
+      "answer": "lift / elevator"
+    },
+    {
+      "id": "il-piano",
+      "prompt": "il piano",
+      "answer": "floor"
+    },
+    {
+      "id": "l-asciugamano",
+      "prompt": "l'asciugamano",
+      "answer": "towel"
+    },
+    {
+      "id": "l-aria-condizionata",
+      "prompt": "l'aria condizionata",
+      "answer": "air conditioning"
+    },
+    {
+      "id": "con-vista-mare",
+      "prompt": "con vista mare",
+      "answer": "with a sea view"
+    },
+    {
+      "id": "ho-una-prenotazione-a",
+      "prompt": "Ho una prenotazione a nome Rossi.",
+      "answer": "I have a booking under Rossi."
+    },
+    {
+      "id": "la-colazione-e-inclusa",
+      "prompt": "La colazione è inclusa?",
+      "answer": "Is breakfast included?"
+    },
+    {
+      "id": "a-che-ora-e",
+      "prompt": "A che ora è la colazione?",
+      "answer": "What time is breakfast?"
+    },
+    {
+      "id": "entro-che-ora-bisogna",
+      "prompt": "Entro che ora bisogna lasciare la camera?",
+      "answer": "What time is check-out?"
+    },
+    {
+      "id": "posso-lasciare-le-valigie",
+      "prompt": "Posso lasciare le valigie qui?",
+      "answer": "Can I leave my bags here?"
+    },
+    {
+      "id": "la-doccia-non-funziona",
+      "prompt": "La doccia non funziona.",
+      "answer": "The shower doesn't work."
+    },
+    {
+      "id": "c-e-troppo-rumore",
+      "prompt": "C'è troppo rumore.",
+      "answer": "It's too noisy."
+    }
+  ]
+}

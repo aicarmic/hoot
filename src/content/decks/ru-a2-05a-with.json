@@ -1,0 +1,89 @@
+{
+  "id": "ru-a2-with",
+  "title": "With: key phrases",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 5 · With",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "s-drugom",
+      "prompt": "с дру́гом",
+      "answer": "with a friend",
+      "notes": "After с (with), nouns take the instrumental: -ом, -ой, -ями."
+    },
+    {
+      "id": "s-zhenoy",
+      "prompt": "с жено́й",
+      "answer": "with my wife"
+    },
+    {
+      "id": "s-detmi",
+      "prompt": "с детьми́",
+      "answer": "with the children"
+    },
+    {
+      "id": "kofe-s-molokom",
+      "prompt": "ко́фе с молоко́м",
+      "answer": "coffee with milk"
+    },
+    {
+      "id": "chay-s-limonom",
+      "prompt": "чай с лимо́ном",
+      "answer": "tea with lemon"
+    },
+    {
+      "id": "khleb-s-maslom",
+      "prompt": "хлеб с ма́слом",
+      "answer": "bread and butter"
+    },
+    {
+      "id": "ya-rabotayu-vrachom",
+      "prompt": "я рабо́таю врачо́м",
+      "answer": "I work as a doctor"
+    },
+    {
+      "id": "ya-zanimayus-sportom",
+      "prompt": "я занима́юсь спо́ртом",
+      "answer": "I do sport"
+    },
+    {
+      "id": "ya-interesuyus-istoriey",
+      "prompt": "я интересу́юсь исто́рией",
+      "answer": "I'm interested in history"
+    },
+    {
+      "id": "pered-rabotoy",
+      "prompt": "пе́ред рабо́той",
+      "answer": "before work"
+    },
+    {
+      "id": "nad-stolom",
+      "prompt": "над столо́м",
+      "answer": "above the table"
+    },
+    {
+      "id": "pod-krovatyu",
+      "prompt": "под крова́тью",
+      "answer": "under the bed"
+    },
+    {
+      "id": "ryadom-s-domom",
+      "prompt": "ря́дом с до́мом",
+      "answer": "next to the house"
+    },
+    {
+      "id": "my-s-bratom",
+      "prompt": "мы с бра́том",
+      "answer": "my brother and I",
+      "notes": "Literally: we with brother."
+    },
+    {
+      "id": "mezhdu-nami",
+      "prompt": "ме́жду на́ми",
+      "answer": "between us"
+    }
+  ]
+}

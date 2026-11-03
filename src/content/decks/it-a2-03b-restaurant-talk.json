@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-restaurant-talk",
+  "title": "At the restaurant: conversation",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 3 · Eating out",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "buonasera-avete-prenotato",
+      "prompt": "Buonasera, avete prenotato?",
+      "answer": "No, avete un tavolo per due?",
+      "notes": "Good evening, have you booked? / No, do you have a table for two?"
+    },
+    {
+      "id": "mi-dispiace-siamo-al",
+      "prompt": "Mi dispiace, siamo al completo.",
+      "answer": "Quanto c'è da aspettare?",
+      "notes": "Sorry, we're full. / How long is the wait?"
+    },
+    {
+      "id": "volete-ordinare",
+      "prompt": "Volete ordinare?",
+      "answer": "Ancora un attimo, per favore.",
+      "notes": "Would you like to order? / Just another moment, please."
+    },
+    {
+      "id": "per-primo-cosa-prendete",
+      "prompt": "Per primo cosa prendete?",
+      "answer": "Io prendo le tagliatelle ai funghi.",
+      "notes": "What will you have as a first course? / I'll have the tagliatelle with mushrooms."
+    },
+    {
+      "id": "e-per-secondo",
+      "prompt": "E per secondo?",
+      "answer": "Per me niente, solo il primo.",
+      "notes": "And for the main course? / Nothing for me, just the first course."
+    },
+    {
+      "id": "come-vuole-la-bistecca",
+      "prompt": "Come vuole la bistecca?",
+      "answer": "Ben cotta, per favore.",
+      "notes": "How would you like the steak? / Well done, please."
+    },
+    {
+      "id": "desidera-un-contorno",
+      "prompt": "Desidera un contorno?",
+      "answer": "Sì, delle patate al forno.",
+      "notes": "Would you like a side dish? / Yes, some roast potatoes."
+    },
+    {
+      "id": "vino-rosso-o-bianco",
+      "prompt": "Vino rosso o bianco?",
+      "answer": "Mezzo litro di rosso della casa.",
+      "notes": "Red or white wine? / Half a litre of the house red."
+    },
+    {
+      "id": "ci-sono-allergie",
+      "prompt": "Ci sono allergie?",
+      "answer": "Sì, sono allergica ai frutti di mare.",
+      "notes": "Any allergies? / Yes, I'm allergic to shellfish."
+    },
+    {
+      "id": "tutto-a-posto",
+      "prompt": "Tutto a posto?",
+      "answer": "Sì, ma manca una forchetta.",
+      "notes": "Is everything all right? / Yes, but we're missing a fork."
+    },
+    {
+      "id": "vi-porto-il-conto",
+      "prompt": "Vi porto il conto?",
+      "answer": "Sì, grazie. Il servizio è compreso?",
+      "notes": "Shall I bring you the bill? / Yes, thanks. Is service included?"
+    },
+    {
+      "id": "volete-un-caffe-o",
+      "prompt": "Volete un caffè o un amaro?",
+      "answer": "Due caffè e un limoncello.",
+      "notes": "Would you like a coffee or a digestif? / Two coffees and a limoncello."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "it-b1-story",
+  "title": "Telling a story: key phrases",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 2 · Telling a story",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "era-una-giornata-come",
+      "prompt": "Era una giornata come tante.",
+      "answer": "It was a day like any other."
+    },
+    {
+      "id": "a-un-certo-punto",
+      "prompt": "A un certo punto…",
+      "answer": "At a certain point…"
+    },
+    {
+      "id": "all-improvviso-e-andata",
+      "prompt": "All'improvviso è andata via la luce.",
+      "answer": "Suddenly the power went out."
+    },
+    {
+      "id": "mentre-aspettavo-ho-incontrato",
+      "prompt": "Mentre aspettavo, ho incontrato un'amica.",
+      "answer": "While I was waiting, I ran into a friend."
+    },
+    {
+      "id": "non-ci-potevo-credere",
+      "prompt": "Non ci potevo credere.",
+      "answer": "I couldn't believe it."
+    },
+    {
+      "id": "insomma-alla-fine-e",
+      "prompt": "Insomma, alla fine è andato tutto bene.",
+      "answer": "Anyway, in the end it all went well."
+    },
+    {
+      "id": "prima-di-tutto",
+      "prompt": "Prima di tutto…",
+      "answer": "First of all…"
+    },
+    {
+      "id": "poi-dopo-un-po",
+      "prompt": "Poi, dopo un po'…",
+      "answer": "Then, after a while…"
+    },
+    {
+      "id": "per-fortuna-c-era",
+      "prompt": "Per fortuna c'era un taxi.",
+      "answer": "Luckily there was a taxi."
+    },
+    {
+      "id": "purtroppo-avevamo-perso-il",
+      "prompt": "Purtroppo avevamo perso il treno.",
+      "answer": "Unfortunately we had missed the train.",
+      "notes": "The trapassato (avevamo perso): something that had already happened."
+    },
+    {
+      "id": "quando-sono-arrivata-erano",
+      "prompt": "Quando sono arrivata, erano già usciti.",
+      "answer": "When I arrived, they had already left."
+    },
+    {
+      "id": "mi-sono-resa-conto",
+      "prompt": "Mi sono resa conto che…",
+      "answer": "I realised that…"
+    },
+    {
+      "id": "non-me-l-aspettavo",
+      "prompt": "Non me l'aspettavo.",
+      "answer": "I wasn't expecting it."
+    },
+    {
+      "id": "ti-racconto-cosa-mi",
+      "prompt": "Ti racconto cosa mi è successo.",
+      "answer": "Let me tell you what happened to me."
+    },
+    {
+      "id": "pensa-che",
+      "prompt": "Pensa che…",
+      "answer": "Just imagine…"
+    },
+    {
+      "id": "da-quel-giorno",
+      "prompt": "Da quel giorno…",
+      "answer": "From that day on…"
+    }
+  ]
+}

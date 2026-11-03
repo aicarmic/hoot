@@ -1,0 +1,85 @@
+{
+  "id": "ru-a1-food-talk",
+  "title": "At the café: conversation",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 4 · Food and the café",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "chto-vy-budete",
+      "prompt": "Что вы бу́дете?",
+      "answer": "Мне ко́фе с молоко́м, пожа́луйста.",
+      "notes": "What will you have? / A coffee with milk, please."
+    },
+    {
+      "id": "chto-budete-pit",
+      "prompt": "Что бу́дете пить?",
+      "answer": "Чёрный чай без са́хара.",
+      "notes": "What will you drink? / Black tea without sugar."
+    },
+    {
+      "id": "eshchyo-chto-nibud",
+      "prompt": "Ещё что-нибу́дь?",
+      "answer": "Нет, спаси́бо, э́то всё.",
+      "notes": "Anything else? / No, thanks, that's all."
+    },
+    {
+      "id": "zdes-ili-s-soboy",
+      "prompt": "Здесь и́ли с собо́й?",
+      "answer": "С собо́й.",
+      "notes": "For here or to take away? / To take away."
+    },
+    {
+      "id": "vot-menyu",
+      "prompt": "Вот меню́.",
+      "answer": "Спаси́бо. Что вы посове́туете?",
+      "notes": "Here's the menu. / Thanks. What do you recommend?"
+    },
+    {
+      "id": "segodnya-u-nas-borshch",
+      "prompt": "Сего́дня у нас борщ и пельме́ни.",
+      "answer": "Тогда́ борщ, пожа́луйста.",
+      "notes": "Today we have borscht and pelmeni. / Then borscht, please."
+    },
+    {
+      "id": "vy-gotovy-zakazat",
+      "prompt": "Вы гото́вы заказа́ть?",
+      "answer": "Да, мне сала́т и суп.",
+      "notes": "Are you ready to order? / Yes, a salad and soup for me."
+    },
+    {
+      "id": "vam-ponravilos",
+      "prompt": "Вам понра́вилось?",
+      "answer": "Да, о́чень вку́сно.",
+      "notes": "Did you enjoy it? / Yes, it was delicious."
+    },
+    {
+      "id": "khotite-desert",
+      "prompt": "Хоти́те десе́рт?",
+      "answer": "Нет, спаси́бо, я сыт.",
+      "notes": "Would you like dessert? / No, thanks, I'm full. A woman says я сыта'."
+    },
+    {
+      "id": "vash-schyot",
+      "prompt": "Ваш счёт.",
+      "answer": "Спаси́бо, сда́чи не на́до.",
+      "notes": "Here's your bill. / Thanks, keep the change."
+    },
+    {
+      "id": "zdes-svobodno",
+      "prompt": "Здесь свобо́дно?",
+      "answer": "Да, сади́тесь.",
+      "notes": "Is this seat free? / Yes, have a seat."
+    },
+    {
+      "id": "ty-golodnyy",
+      "prompt": "Ты голо́дный?",
+      "answer": "Да, о́чень. Пойдём пое́дим.",
+      "notes": "Are you hungry? / Yes, very. Let's go and eat."
+    }
+  ]
+}

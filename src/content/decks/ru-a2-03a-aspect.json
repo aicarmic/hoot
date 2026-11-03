@@ -1,0 +1,84 @@
+{
+  "id": "ru-a2-aspect",
+  "title": "Aspect pairs: key phrases",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 3 · Done or doing",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "delat-sdelat",
+      "prompt": "де́лать / сде́лать",
+      "answer": "to do (in progress / done)",
+      "notes": "Most verbs come in pairs: the second shows a finished result."
+    },
+    {
+      "id": "chitat-prochitat",
+      "prompt": "чита́ть / прочита́ть",
+      "answer": "to read / to finish reading"
+    },
+    {
+      "id": "pisat-napisat",
+      "prompt": "писа́ть / написа́ть",
+      "answer": "to write / to write and finish"
+    },
+    {
+      "id": "pokupat-kupit",
+      "prompt": "покупа́ть / купи́ть",
+      "answer": "to buy (regularly / once)"
+    },
+    {
+      "id": "govorit-skazat",
+      "prompt": "говори́ть / сказа́ть",
+      "answer": "to speak / to say"
+    },
+    {
+      "id": "zvonit-pozvonit",
+      "prompt": "звони́ть / позвони́ть",
+      "answer": "to call"
+    },
+    {
+      "id": "smotret-posmotret",
+      "prompt": "смотре́ть / посмотре́ть",
+      "answer": "to watch / to watch and finish"
+    },
+    {
+      "id": "gotovit-prigotovit",
+      "prompt": "гото́вить / пригото́вить",
+      "answer": "to cook / to have cooked"
+    },
+    {
+      "id": "ya-chital-knigu-ves",
+      "prompt": "я чита́л кни́гу весь ве́чер",
+      "answer": "I was reading the book all evening"
+    },
+    {
+      "id": "ya-prochital-knigu",
+      "prompt": "я прочита́л кни́гу",
+      "answer": "I finished the book"
+    },
+    {
+      "id": "ya-pozvonyu-tebe-zavtra",
+      "prompt": "я позвоню́ тебе́ за́втра",
+      "answer": "I'll call you tomorrow",
+      "notes": "Perfective verbs in the present form mean the future."
+    },
+    {
+      "id": "ya-budu-zvonit-kazhdyy",
+      "prompt": "я бу́ду звони́ть ка́ждый день",
+      "answer": "I'll call every day"
+    },
+    {
+      "id": "ty-uzhe-sdelal-uroki",
+      "prompt": "ты уже́ сде́лал уро́ки?",
+      "answer": "have you done your homework?"
+    },
+    {
+      "id": "ya-eshchyo-ne-reshil",
+      "prompt": "я ещё не реши́л",
+      "answer": "I haven't decided yet"
+    }
+  ]
+}

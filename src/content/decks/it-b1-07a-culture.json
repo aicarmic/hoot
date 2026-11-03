@@ -1,0 +1,94 @@
+{
+  "id": "it-b1-culture",
+  "title": "Italy up close: words",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 7 · Italy up close",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "la-sagra",
+      "prompt": "la sagra",
+      "answer": "village food festival"
+    },
+    {
+      "id": "il-ferragosto",
+      "prompt": "il Ferragosto",
+      "answer": "15 August holiday",
+      "notes": "Mid-August, when cities empty and everyone goes to the sea."
+    },
+    {
+      "id": "la-passeggiata",
+      "prompt": "la passeggiata",
+      "answer": "evening stroll"
+    },
+    {
+      "id": "l-aperitivo",
+      "prompt": "l'aperitivo",
+      "answer": "pre-dinner drinks and snacks"
+    },
+    {
+      "id": "il-dialetto",
+      "prompt": "il dialetto",
+      "answer": "dialect"
+    },
+    {
+      "id": "il-campanilismo",
+      "prompt": "il campanilismo",
+      "answer": "local pride",
+      "notes": "From campanile, bell tower: loyalty to your own town."
+    },
+    {
+      "id": "la-pasta-fatta-in",
+      "prompt": "la pasta fatta in casa",
+      "answer": "homemade pasta"
+    },
+    {
+      "id": "il-pranzo-della-domenica",
+      "prompt": "il pranzo della domenica",
+      "answer": "Sunday lunch"
+    },
+    {
+      "id": "la-bottega",
+      "prompt": "la bottega",
+      "answer": "small workshop or shop"
+    },
+    {
+      "id": "il-borgo",
+      "prompt": "il borgo",
+      "answer": "old village"
+    },
+    {
+      "id": "la-piazza-e-il",
+      "prompt": "la piazza è il salotto della città",
+      "answer": "the square is the town's living room"
+    },
+    {
+      "id": "il-nord-e-il",
+      "prompt": "il Nord e il Sud",
+      "answer": "the North and the South"
+    },
+    {
+      "id": "ogni-regione-ha-la",
+      "prompt": "Ogni regione ha la sua cucina.",
+      "answer": "Every region has its own cooking."
+    },
+    {
+      "id": "il-cappuccino-si-beve",
+      "prompt": "Il cappuccino si beve solo la mattina.",
+      "answer": "Cappuccino is only drunk in the morning."
+    },
+    {
+      "id": "fare-la-scarpetta",
+      "prompt": "fare la scarpetta",
+      "answer": "to mop up the sauce with bread"
+    },
+    {
+      "id": "la-vendemmia",
+      "prompt": "la vendemmia",
+      "answer": "grape harvest"
+    }
+  ]
+}

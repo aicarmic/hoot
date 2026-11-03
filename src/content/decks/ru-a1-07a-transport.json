@@ -1,0 +1,108 @@
+{
+  "id": "ru-a1-transport",
+  "title": "Getting around",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 7 · Getting around",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "metro",
+      "prompt": "метро́",
+      "answer": "metro",
+      "hint": "metro"
+    },
+    {
+      "id": "avtobus",
+      "prompt": "авто́бус",
+      "answer": "bus",
+      "hint": "avtobus"
+    },
+    {
+      "id": "poezd",
+      "prompt": "по́езд",
+      "answer": "train",
+      "hint": "poezd"
+    },
+    {
+      "id": "samolyot",
+      "prompt": "самолёт",
+      "answer": "plane",
+      "hint": "samolyot"
+    },
+    {
+      "id": "vokzal",
+      "prompt": "вокза́л",
+      "answer": "railway station",
+      "hint": "vokzal"
+    },
+    {
+      "id": "aeroport",
+      "prompt": "аэропо́рт",
+      "answer": "airport",
+      "hint": "aeroport"
+    },
+    {
+      "id": "ostanovka",
+      "prompt": "остано́вка",
+      "answer": "stop (bus, tram)",
+      "hint": "ostanovka"
+    },
+    {
+      "id": "bilet",
+      "prompt": "биле́т",
+      "answer": "ticket",
+      "hint": "bilet"
+    },
+    {
+      "id": "nalevo",
+      "prompt": "нале́во",
+      "answer": "to the left",
+      "hint": "nalevo"
+    },
+    {
+      "id": "napravo",
+      "prompt": "напра́во",
+      "answer": "to the right",
+      "hint": "napravo"
+    },
+    {
+      "id": "pryamo",
+      "prompt": "пря́мо",
+      "answer": "straight on",
+      "hint": "pryamo"
+    },
+    {
+      "id": "daleko",
+      "prompt": "далеко́",
+      "answer": "far",
+      "hint": "daleko"
+    },
+    {
+      "id": "blizko",
+      "prompt": "бли́зко",
+      "answer": "near",
+      "hint": "blizko"
+    },
+    {
+      "id": "peshkom",
+      "prompt": "пешко́м",
+      "answer": "on foot",
+      "hint": "peshkom"
+    },
+    {
+      "id": "kak-doekhat-do-tsentra",
+      "prompt": "как дое́хать до це́нтра?",
+      "answer": "how do I get to the centre?",
+      "hint": "kak doekhat do tsentra?"
+    },
+    {
+      "id": "gde-zdes",
+      "prompt": "где здесь…?",
+      "answer": "where is the … around here?",
+      "hint": "gde zdes…?"
+    }
+  ]
+}

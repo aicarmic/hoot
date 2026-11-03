@@ -1,0 +1,104 @@
+{
+  "id": "it-a2-town",
+  "title": "In town: words",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 5 · In town",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "la-piazza",
+      "prompt": "la piazza",
+      "answer": "square"
+    },
+    {
+      "id": "il-comune",
+      "prompt": "il comune",
+      "answer": "town hall"
+    },
+    {
+      "id": "l-ufficio-postale",
+      "prompt": "l'ufficio postale",
+      "answer": "post office"
+    },
+    {
+      "id": "il-bancomat",
+      "prompt": "il bancomat",
+      "answer": "cash machine"
+    },
+    {
+      "id": "la-tabaccheria",
+      "prompt": "la tabaccheria",
+      "answer": "tobacconist",
+      "notes": "Sells bus tickets and stamps as well as cigarettes. Look for the big T sign."
+    },
+    {
+      "id": "il-francobollo",
+      "prompt": "il francobollo",
+      "answer": "stamp"
+    },
+    {
+      "id": "il-semaforo",
+      "prompt": "il semaforo",
+      "answer": "traffic lights"
+    },
+    {
+      "id": "l-incrocio",
+      "prompt": "l'incrocio",
+      "answer": "crossroads"
+    },
+    {
+      "id": "all-angolo",
+      "prompt": "all'angolo",
+      "answer": "on the corner"
+    },
+    {
+      "id": "di-fronte-a",
+      "prompt": "di fronte a",
+      "answer": "opposite"
+    },
+    {
+      "id": "accanto-a",
+      "prompt": "accanto a",
+      "answer": "next to"
+    },
+    {
+      "id": "dietro",
+      "prompt": "dietro",
+      "answer": "behind"
+    },
+    {
+      "id": "in-fondo-alla-strada",
+      "prompt": "in fondo alla strada",
+      "answer": "at the end of the street"
+    },
+    {
+      "id": "attraversare",
+      "prompt": "attraversare",
+      "answer": "to cross"
+    },
+    {
+      "id": "giri-a-destra",
+      "prompt": "Giri a destra.",
+      "answer": "Turn right."
+    },
+    {
+      "id": "vada-sempre-dritto",
+      "prompt": "Vada sempre dritto.",
+      "answer": "Keep going straight."
+    },
+    {
+      "id": "mi-sa-dire-dov",
+      "prompt": "Mi sa dire dov'è il duomo?",
+      "answer": "Can you tell me where the cathedral is?"
+    },
+    {
+      "id": "mi-sono-persa",
+      "prompt": "Mi sono persa.",
+      "answer": "I'm lost.",
+      "notes": "A man says mi sono perso."
+    }
+  ]
+}

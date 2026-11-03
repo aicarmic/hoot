@@ -1,0 +1,115 @@
+{
+  "id": "ru-a1-verbs",
+  "title": "Everyday verbs",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 9 · Everyday verbs",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "ya-govoryu",
+      "prompt": "я говорю́",
+      "answer": "I speak / I say",
+      "hint": "ya govoryu"
+    },
+    {
+      "id": "ty-ponimaesh",
+      "prompt": "ты понима́ешь?",
+      "answer": "do you understand?",
+      "hint": "ty ponimaesh?"
+    },
+    {
+      "id": "on-rabotaet",
+      "prompt": "он рабо́тает",
+      "answer": "he works",
+      "hint": "on rabotaet"
+    },
+    {
+      "id": "my-zhivyom",
+      "prompt": "мы живём",
+      "answer": "we live",
+      "hint": "my zhivyom"
+    },
+    {
+      "id": "vy-znaete",
+      "prompt": "вы зна́ете?",
+      "answer": "do you know?",
+      "hint": "vy znaete?"
+    },
+    {
+      "id": "oni-chitayut",
+      "prompt": "они́ чита́ют",
+      "answer": "they read",
+      "hint": "oni chitayut"
+    },
+    {
+      "id": "ya-khochu-ty-khochesh",
+      "prompt": "я хочу́ / ты хо́чешь",
+      "answer": "I want / you want",
+      "hint": "ya khochu / ty khochesh"
+    },
+    {
+      "id": "ya-mogu-ty-mozhesh",
+      "prompt": "я могу́ / ты мо́жешь",
+      "answer": "I can / you can",
+      "hint": "ya mogu / ty mozhesh"
+    },
+    {
+      "id": "ya-lyublyu",
+      "prompt": "я люблю́",
+      "answer": "I love / I like",
+      "hint": "ya lyublyu"
+    },
+    {
+      "id": "ya-idu",
+      "prompt": "я иду́",
+      "answer": "I'm going (on foot)",
+      "hint": "ya idu"
+    },
+    {
+      "id": "ya-edu",
+      "prompt": "я е́ду",
+      "answer": "I'm going (by transport)",
+      "hint": "ya edu",
+      "notes": "Russian splits 'go' into walking (идти') and riding (е'хать)."
+    },
+    {
+      "id": "ya-dumayu-chto",
+      "prompt": "я ду́маю, что…",
+      "answer": "I think that…",
+      "hint": "ya dumayu, chto…"
+    },
+    {
+      "id": "ya-pishu",
+      "prompt": "я пишу́",
+      "answer": "I write / I'm writing",
+      "hint": "ya pishu"
+    },
+    {
+      "id": "ya-pyu",
+      "prompt": "я пью",
+      "answer": "I drink",
+      "hint": "ya pyu"
+    },
+    {
+      "id": "ya-em",
+      "prompt": "я ем",
+      "answer": "I eat",
+      "hint": "ya em"
+    },
+    {
+      "id": "ya-znayu",
+      "prompt": "я зна́ю",
+      "answer": "I know",
+      "hint": "ya znayu"
+    },
+    {
+      "id": "ya-delayu",
+      "prompt": "я де́лаю",
+      "answer": "I do / I make",
+      "hint": "ya delayu"
+    }
+  ]
+}

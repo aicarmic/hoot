@@ -1,0 +1,85 @@
+{
+  "id": "it-time-talk",
+  "title": "Making plans: conversation",
+  "subject": "Italian",
+  "level": "A1",
+  "unit": "Unit 7 · Time",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "che-ore-sono",
+      "prompt": "Che ore sono?",
+      "answer": "Sono le tre e mezza.",
+      "notes": "What time is it? / It's half past three."
+    },
+    {
+      "id": "il-museo-apre-alle",
+      "prompt": "Il museo apre alle nove.",
+      "answer": "E a che ora chiude?",
+      "notes": "The museum opens at nine. / And what time does it close?"
+    },
+    {
+      "id": "quando-ci-vediamo",
+      "prompt": "Quando ci vediamo?",
+      "answer": "Sabato mattina va bene?",
+      "notes": "When shall we meet? / Does Saturday morning work?"
+    },
+    {
+      "id": "sei-libera-domani-sera",
+      "prompt": "Sei libera domani sera?",
+      "answer": "Domani no, ma giovedì sì.",
+      "notes": "Are you free tomorrow evening? / Not tomorrow, but Thursday yes."
+    },
+    {
+      "id": "da-quanto-tempo-aspetti",
+      "prompt": "Da quanto tempo aspetti?",
+      "answer": "Da dieci minuti, non di più.",
+      "notes": "How long have you been waiting? / Ten minutes, no more."
+    },
+    {
+      "id": "che-giorno-e-oggi",
+      "prompt": "Che giorno è oggi?",
+      "answer": "Oggi è martedì.",
+      "notes": "What day is it today? / Today is Tuesday."
+    },
+    {
+      "id": "quando-e-il-tuo",
+      "prompt": "Quando è il tuo compleanno?",
+      "answer": "Il dodici marzo.",
+      "notes": "When is your birthday? / The twelfth of March."
+    },
+    {
+      "id": "che-tempo-fa",
+      "prompt": "Che tempo fa?",
+      "answer": "Fa bel tempo, ma un po' freddo.",
+      "notes": "What's the weather like? / It's nice, but a bit cold."
+    },
+    {
+      "id": "domani-piove",
+      "prompt": "Domani piove?",
+      "answer": "Sì, prendi l'ombrello.",
+      "notes": "Is it raining tomorrow? / Yes, take an umbrella."
+    },
+    {
+      "id": "sei-in-ritardo",
+      "prompt": "Sei in ritardo.",
+      "answer": "Scusa, c'era traffico.",
+      "notes": "You're late. / Sorry, there was traffic."
+    },
+    {
+      "id": "quanto-tempo-ci-vuole",
+      "prompt": "Quanto tempo ci vuole?",
+      "answer": "Circa mezz'ora in macchina.",
+      "notes": "How long does it take? / About half an hour by car."
+    },
+    {
+      "id": "cosa-fai-il-fine",
+      "prompt": "Cosa fai il fine settimana?",
+      "answer": "Vado al mare con degli amici.",
+      "notes": "What are you doing at the weekend? / I'm going to the seaside with some friends."
+    }
+  ]
+}

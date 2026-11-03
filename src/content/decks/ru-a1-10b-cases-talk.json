@@ -1,0 +1,79 @@
+{
+  "id": "ru-a1-cases-talk",
+  "title": "Where, what and who: conversation",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 10 · Where, what and who",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "gde-ty-seychas",
+      "prompt": "Где ты сейча́с?",
+      "answer": "Я на рабо́те, перезвоню́ по́зже.",
+      "notes": "Where are you now? / I'm at work, I'll call you back later."
+    },
+    {
+      "id": "gde-papa",
+      "prompt": "Где па́па?",
+      "answer": "Он в гараже́.",
+      "notes": "Where's dad? / He's in the garage."
+    },
+    {
+      "id": "kuda-vy-edete",
+      "prompt": "Куда́ вы е́дете?",
+      "answer": "На да́чу, на выходны́е.",
+      "notes": "Where are you going? / To the dacha, for the weekend."
+    },
+    {
+      "id": "u-tebya-est-vremya",
+      "prompt": "У тебя́ есть вре́мя?",
+      "answer": "Извини́, сейча́с нет вре́мени.",
+      "notes": "Do you have time? / Sorry, I don't have time right now."
+    },
+    {
+      "id": "u-tebya-est-mashina",
+      "prompt": "У тебя́ есть маши́на?",
+      "answer": "Нет, у меня́ нет маши́ны.",
+      "notes": "Do you have a car? / No, I don't have a car."
+    },
+    {
+      "id": "kogo-ty-zhdyosh",
+      "prompt": "Кого́ ты ждёшь?",
+      "answer": "Жду жену́.",
+      "notes": "Who are you waiting for? / I'm waiting for my wife."
+    },
+    {
+      "id": "chto-ty-lyubish",
+      "prompt": "Что ты лю́бишь?",
+      "answer": "Я люблю́ ру́сскую ку́хню.",
+      "notes": "What do you like? / I love Russian food."
+    },
+    {
+      "id": "gde-ty-byl-vchera",
+      "prompt": "Где ты был вчера́?",
+      "answer": "В теа́тре.",
+      "notes": "Where were you yesterday? / At the theatre."
+    },
+    {
+      "id": "gde-mozhno-kupit-bilety",
+      "prompt": "Где мо́жно купи́ть биле́ты?",
+      "answer": "В ка́ссе на вокза́ле.",
+      "notes": "Where can you buy tickets? / At the ticket office at the station."
+    },
+    {
+      "id": "ty-videl-ivana",
+      "prompt": "Ты ви́дел Ива́на?",
+      "answer": "Да, ви́дел его́ у́тром.",
+      "notes": "Have you seen Ivan? / Yes, I saw him this morning."
+    },
+    {
+      "id": "chto-tebe-nuzhno",
+      "prompt": "Что тебе́ ну́жно?",
+      "answer": "Мне ну́жно немно́го молока́.",
+      "notes": "What do you need? / I need a bit of milk."
+    }
+  ]
+}

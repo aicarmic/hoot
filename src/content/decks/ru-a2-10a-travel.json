@@ -1,0 +1,88 @@
+{
+  "id": "ru-a2-travel",
+  "title": "Travel and hotels",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 10 · Travel",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "gostinitsa",
+      "prompt": "гости́ница",
+      "answer": "hotel"
+    },
+    {
+      "id": "nomer",
+      "prompt": "но́мер",
+      "answer": "hotel room",
+      "notes": "Also means number."
+    },
+    {
+      "id": "ya-zabroniroval-nomer",
+      "prompt": "я заброни́ровал но́мер",
+      "answer": "I booked a room"
+    },
+    {
+      "id": "klyuch",
+      "prompt": "ключ",
+      "answer": "key"
+    },
+    {
+      "id": "zavtrak",
+      "prompt": "за́втрак",
+      "answer": "breakfast"
+    },
+    {
+      "id": "lift",
+      "prompt": "лифт",
+      "answer": "lift"
+    },
+    {
+      "id": "pasport",
+      "prompt": "па́спорт",
+      "answer": "passport"
+    },
+    {
+      "id": "viza",
+      "prompt": "ви́за",
+      "answer": "visa"
+    },
+    {
+      "id": "bagazh",
+      "prompt": "бага́ж",
+      "answer": "luggage"
+    },
+    {
+      "id": "chemodan",
+      "prompt": "чемода́н",
+      "answer": "suitcase"
+    },
+    {
+      "id": "reys",
+      "prompt": "рейс",
+      "answer": "flight"
+    },
+    {
+      "id": "vylet-prilyot",
+      "prompt": "вы́лет / прилёт",
+      "answer": "departure / arrival"
+    },
+    {
+      "id": "registratsiya",
+      "prompt": "регистра́ция",
+      "answer": "check-in"
+    },
+    {
+      "id": "tamozhnya",
+      "prompt": "тамо́жня",
+      "answer": "customs"
+    },
+    {
+      "id": "pasportnyy-kontrol",
+      "prompt": "па́спортный контро́ль",
+      "answer": "passport control"
+    }
+  ]
+}

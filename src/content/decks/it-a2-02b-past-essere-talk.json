@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-past-essere-talk",
+  "title": "Where did you go?",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 2 · Where I went",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "dove-sei-andata-in",
+      "prompt": "Dove sei andata in vacanza?",
+      "answer": "Sono andata in Puglia con la famiglia.",
+      "notes": "Where did you go on holiday? / I went to Puglia with the family."
+    },
+    {
+      "id": "quando-siete-arrivati",
+      "prompt": "Quando siete arrivati?",
+      "answer": "Siamo arrivati ieri sera.",
+      "notes": "When did you arrive? / We arrived last night."
+    },
+    {
+      "id": "sei-mai-stata-a",
+      "prompt": "Sei mai stata a Venezia?",
+      "answer": "Sì, ci sono stata da bambina.",
+      "notes": "Have you ever been to Venice? / Yes, I went there as a child."
+    },
+    {
+      "id": "a-che-ora-sei",
+      "prompt": "A che ora sei tornata ieri?",
+      "answer": "Verso mezzanotte.",
+      "notes": "What time did you get back yesterday? / Around midnight."
+    },
+    {
+      "id": "ti-sei-divertita-alla",
+      "prompt": "Ti sei divertita alla festa?",
+      "answer": "Sì, moltissimo.",
+      "notes": "Did you enjoy the party? / Yes, very much."
+    },
+    {
+      "id": "come-mai-sei-in",
+      "prompt": "Come mai sei in ritardo?",
+      "answer": "Mi sono svegliata tardi.",
+      "notes": "How come you're late? / I woke up late."
+    },
+    {
+      "id": "sei-uscita-ieri-sera",
+      "prompt": "Sei uscita ieri sera?",
+      "answer": "No, sono rimasta a casa.",
+      "notes": "Did you go out last night? / No, I stayed home."
+    },
+    {
+      "id": "cosa-e-successo",
+      "prompt": "Cosa è successo?",
+      "answer": "Sono caduta, ma non è niente.",
+      "notes": "What happened? / I fell, but it's nothing."
+    },
+    {
+      "id": "siete-venuti-in-treno",
+      "prompt": "Siete venuti in treno?",
+      "answer": "No, in macchina.",
+      "notes": "Did you come by train? / No, by car."
+    },
+    {
+      "id": "ti-sei-ricordata-del",
+      "prompt": "Ti sei ricordata del latte?",
+      "answer": "Oh no, me ne sono dimenticata.",
+      "notes": "Did you remember the milk? / Oh no, I forgot about it."
+    },
+    {
+      "id": "quanto-tempo-siete-rimasti",
+      "prompt": "Quanto tempo siete rimasti a Firenze?",
+      "answer": "Siamo rimasti quattro giorni.",
+      "notes": "How long did you stay in Florence? / We stayed four days."
+    },
+    {
+      "id": "com-e-andato-il",
+      "prompt": "Com'è andato il viaggio?",
+      "answer": "Bene, ma il volo è partito in ritardo.",
+      "notes": "How was the trip? / Good, but the flight left late."
+    }
+  ]
+}

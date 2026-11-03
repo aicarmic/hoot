@@ -1,0 +1,79 @@
+{
+  "id": "ru-a2-aspect-talk",
+  "title": "Done or doing: conversation",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 3 · Done or doing",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "ty-uzhe-prochital-knigu",
+      "prompt": "Ты уже́ прочита́л кни́гу?",
+      "answer": "Нет, ещё чита́ю.",
+      "notes": "Have you finished the book? / No, I'm still reading it."
+    },
+    {
+      "id": "ty-pozvonil-mame",
+      "prompt": "Ты позвони́л ма́ме?",
+      "answer": "Да, позвони́л у́тром.",
+      "notes": "Did you call mum? / Yes, I called this morning."
+    },
+    {
+      "id": "chto-ty-delal-vecherom",
+      "prompt": "Что ты де́лал ве́чером?",
+      "answer": "Смотре́л сериа́л.",
+      "notes": "What did you do in the evening? / I watched a series."
+    },
+    {
+      "id": "ty-posmotrel-film-do",
+      "prompt": "Ты посмотре́л фильм до конца́?",
+      "answer": "Нет, усну́л.",
+      "notes": "Did you watch the film to the end? / No, I fell asleep."
+    },
+    {
+      "id": "kto-prigotovil-uzhin",
+      "prompt": "Кто пригото́вил у́жин?",
+      "answer": "Я, по ба́бушкиному реце́пту.",
+      "notes": "Who made dinner? / I did, from grandma's recipe."
+    },
+    {
+      "id": "ty-kupil-bilety",
+      "prompt": "Ты купи́л биле́ты?",
+      "answer": "Ещё нет, куплю́ сего́дня.",
+      "notes": "Have you bought the tickets? / Not yet, I'll buy them today."
+    },
+    {
+      "id": "ty-mne-napishesh",
+      "prompt": "Ты мне напи́шешь?",
+      "answer": "Коне́чно, напишу́ ве́чером.",
+      "notes": "Will you write to me? / Of course, I'll write this evening."
+    },
+    {
+      "id": "chto-on-skazal",
+      "prompt": "Что он сказа́л?",
+      "answer": "Сказа́л, что опа́здывает.",
+      "notes": "What did he say? / He said he's running late."
+    },
+    {
+      "id": "ty-vsyo-sdelal",
+      "prompt": "Ты всё сде́лал?",
+      "answer": "Почти́, оста́лось чуть-чуть.",
+      "notes": "Have you done everything? / Almost, there's a little left."
+    },
+    {
+      "id": "ty-chasto-zvonish-roditelyam",
+      "prompt": "Ты ча́сто звони́шь роди́телям?",
+      "answer": "Ка́ждое воскресе́нье.",
+      "notes": "Do you often call your parents? / Every Sunday."
+    },
+    {
+      "id": "ty-reshil-kuda-poedesh",
+      "prompt": "Ты реши́л, куда́ пое́дешь?",
+      "answer": "Ещё ду́маю.",
+      "notes": "Have you decided where you'll go? / I'm still thinking."
+    }
+  ]
+}

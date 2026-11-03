@@ -1,0 +1,122 @@
+{
+  "id": "ru-a1-hello",
+  "title": "Greetings and basics",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 1 · Hello",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "zdravstvuyte",
+      "prompt": "здра́вствуйте",
+      "answer": "hello (formal)",
+      "hint": "zdravstvuyte",
+      "notes": "The first в is silent: zdrastvuyte."
+    },
+    {
+      "id": "privet",
+      "prompt": "приве́т",
+      "answer": "hi",
+      "hint": "privet"
+    },
+    {
+      "id": "do-svidaniya",
+      "prompt": "до свида́ния",
+      "answer": "goodbye",
+      "hint": "do svidaniya"
+    },
+    {
+      "id": "poka",
+      "prompt": "пока́",
+      "answer": "bye",
+      "hint": "poka"
+    },
+    {
+      "id": "dobroe-utro",
+      "prompt": "до́брое у́тро",
+      "answer": "good morning",
+      "hint": "dobroe utro"
+    },
+    {
+      "id": "dobryy-den",
+      "prompt": "до́брый день",
+      "answer": "good afternoon",
+      "hint": "dobryy den"
+    },
+    {
+      "id": "dobryy-vecher",
+      "prompt": "до́брый ве́чер",
+      "answer": "good evening",
+      "hint": "dobryy vecher"
+    },
+    {
+      "id": "spokoynoy-nochi",
+      "prompt": "споко́йной но́чи",
+      "answer": "good night",
+      "hint": "spokoynoy nochi"
+    },
+    {
+      "id": "kak-dela",
+      "prompt": "как дела́?",
+      "answer": "how are you?",
+      "hint": "kak dela?"
+    },
+    {
+      "id": "khorosho-spasibo",
+      "prompt": "хорошо́, спаси́бо",
+      "answer": "fine, thanks",
+      "hint": "khorosho, spasibo"
+    },
+    {
+      "id": "normalno",
+      "prompt": "норма́льно",
+      "answer": "okay / not bad",
+      "hint": "normalno"
+    },
+    {
+      "id": "menya-zovut",
+      "prompt": "меня́ зову́т…",
+      "answer": "my name is…",
+      "hint": "menya zovut…"
+    },
+    {
+      "id": "kak-vas-zovut",
+      "prompt": "как вас зову́т?",
+      "answer": "what's your name? (formal)",
+      "hint": "kak vas zovut?",
+      "notes": "Informal: как тебя зовут?"
+    },
+    {
+      "id": "ochen-priyatno",
+      "prompt": "о́чень прия́тно",
+      "answer": "nice to meet you",
+      "hint": "ochen priyatno"
+    },
+    {
+      "id": "izvinite",
+      "prompt": "извини́те",
+      "answer": "excuse me / sorry",
+      "hint": "izvinite"
+    },
+    {
+      "id": "ya-ne-ponimayu",
+      "prompt": "я не понима́ю",
+      "answer": "I don't understand",
+      "hint": "ya ne ponimayu"
+    },
+    {
+      "id": "povtorite-pozhaluysta",
+      "prompt": "повтори́те, пожа́луйста",
+      "answer": "could you repeat that, please",
+      "hint": "povtorite, pozhaluysta"
+    },
+    {
+      "id": "vy-govorite-po-angliyski",
+      "prompt": "вы говори́те по-англи́йски?",
+      "answer": "do you speak English?",
+      "hint": "vy govorite po-angliyski?"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-future-talk",
+  "title": "Making plans",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 9 · Plans",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "che-programmi-hai-per",
+      "prompt": "Che programmi hai per il weekend?",
+      "answer": "Sabato andrò al mare, domenica mi riposo.",
+      "notes": "What are your plans for the weekend? / On Saturday I'll go to the seaside, on Sunday I'm resting."
+    },
+    {
+      "id": "cosa-farete-quest-estate",
+      "prompt": "Cosa farete quest'estate?",
+      "answer": "Andremo in Sardegna per due settimane.",
+      "notes": "What will you do this summer? / We'll go to Sardinia for two weeks."
+    },
+    {
+      "id": "quando-torni",
+      "prompt": "Quando torni?",
+      "answer": "Tornerò giovedì sera.",
+      "notes": "When are you back? / I'll be back on Thursday evening."
+    },
+    {
+      "id": "verrai-alla-festa",
+      "prompt": "Verrai alla festa?",
+      "answer": "Credo di sì, te lo confermo domani.",
+      "notes": "Will you come to the party? / I think so, I'll confirm tomorrow."
+    },
+    {
+      "id": "pensi-di-continuare-con",
+      "prompt": "Pensi di continuare con l'italiano?",
+      "answer": "Certo, voglio parlarlo bene.",
+      "notes": "Are you planning to carry on with Italian? / Of course, I want to speak it well."
+    },
+    {
+      "id": "che-ore-saranno",
+      "prompt": "Che ore saranno?",
+      "answer": "Saranno le sette, più o meno.",
+      "notes": "What time would it be? / It must be about seven."
+    },
+    {
+      "id": "dov-e-marco",
+      "prompt": "Dov'è Marco?",
+      "answer": "Sarà ancora in ufficio.",
+      "notes": "Where's Marco? / He's probably still at the office."
+    },
+    {
+      "id": "che-tempo-fara-domani",
+      "prompt": "Che tempo farà domani?",
+      "answer": "Dicono che pioverà.",
+      "notes": "What will the weather be like tomorrow? / They say it will rain."
+    },
+    {
+      "id": "quando-partite",
+      "prompt": "Quando partite?",
+      "answer": "Fra tre giorni.",
+      "notes": "When are you leaving? / In three days."
+    },
+    {
+      "id": "hai-gia-deciso-cosa",
+      "prompt": "Hai già deciso cosa fare?",
+      "answer": "Non ancora, ci penserò.",
+      "notes": "Have you decided what to do yet? / Not yet, I'll think about it."
+    },
+    {
+      "id": "mi-mandi-un-messaggio",
+      "prompt": "Mi mandi un messaggio quando arrivi?",
+      "answer": "Sì, te lo mando appena arrivo.",
+      "notes": "Will you text me when you arrive? / Yes, I'll send it as soon as I arrive."
+    },
+    {
+      "id": "sei-pronta-per-il",
+      "prompt": "Sei pronta per il viaggio?",
+      "answer": "Quasi, non vedo l'ora di partire.",
+      "notes": "Are you ready for the trip? / Almost, I can't wait to leave."
+    }
+  ]
+}

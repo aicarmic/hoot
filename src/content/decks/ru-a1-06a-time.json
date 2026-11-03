@@ -1,0 +1,109 @@
+{
+  "id": "ru-a1-time",
+  "title": "Days and time",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 6 · Days and time",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "ponedelnik",
+      "prompt": "понеде́льник",
+      "answer": "Monday",
+      "hint": "ponedelnik"
+    },
+    {
+      "id": "vtornik",
+      "prompt": "вто́рник",
+      "answer": "Tuesday",
+      "hint": "vtornik"
+    },
+    {
+      "id": "sreda",
+      "prompt": "среда́",
+      "answer": "Wednesday",
+      "hint": "sreda"
+    },
+    {
+      "id": "chetverg",
+      "prompt": "четве́рг",
+      "answer": "Thursday",
+      "hint": "chetverg"
+    },
+    {
+      "id": "pyatnitsa",
+      "prompt": "пя́тница",
+      "answer": "Friday",
+      "hint": "pyatnitsa"
+    },
+    {
+      "id": "subbota",
+      "prompt": "суббо́та",
+      "answer": "Saturday",
+      "hint": "subbota"
+    },
+    {
+      "id": "voskresene",
+      "prompt": "воскресе́нье",
+      "answer": "Sunday",
+      "hint": "voskresene"
+    },
+    {
+      "id": "segodnya",
+      "prompt": "сего́дня",
+      "answer": "today",
+      "hint": "segodnya",
+      "notes": "The г is said like v: sevodnya."
+    },
+    {
+      "id": "zavtra",
+      "prompt": "за́втра",
+      "answer": "tomorrow",
+      "hint": "zavtra"
+    },
+    {
+      "id": "vchera",
+      "prompt": "вчера́",
+      "answer": "yesterday",
+      "hint": "vchera"
+    },
+    {
+      "id": "seychas",
+      "prompt": "сейча́с",
+      "answer": "now",
+      "hint": "seychas"
+    },
+    {
+      "id": "nedelya",
+      "prompt": "неде́ля",
+      "answer": "week",
+      "hint": "nedelya"
+    },
+    {
+      "id": "skolko-vremeni",
+      "prompt": "ско́лько вре́мени?",
+      "answer": "what time is it?",
+      "hint": "skolko vremeni?"
+    },
+    {
+      "id": "v-pyat-chasov",
+      "prompt": "в пять часо́в",
+      "answer": "at five o'clock",
+      "hint": "v pyat chasov"
+    },
+    {
+      "id": "dnyom",
+      "prompt": "днём",
+      "answer": "in the afternoon",
+      "hint": "dnyom"
+    },
+    {
+      "id": "vykhodnye",
+      "prompt": "выходны́е",
+      "answer": "the weekend",
+      "hint": "vykhodnye"
+    }
+  ]
+}

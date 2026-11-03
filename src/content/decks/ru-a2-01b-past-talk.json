@@ -1,0 +1,79 @@
+{
+  "id": "ru-a2-past-talk",
+  "title": "What did you do?",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 1 · What happened",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "chto-ty-delal-v",
+      "prompt": "Что ты де́лал в выходны́е?",
+      "answer": "Ходи́л в го́сти к друзья́м.",
+      "notes": "What did you do at the weekend? / I went to visit friends."
+    },
+    {
+      "id": "gde-ty-byl-ya",
+      "prompt": "Где ты был? Я тебе́ звони́л.",
+      "answer": "Извини́, я был в душе́.",
+      "notes": "Where were you? I called you. / Sorry, I was in the shower."
+    },
+    {
+      "id": "kak-proshyol-den",
+      "prompt": "Как прошёл день?",
+      "answer": "Норма́льно, но я о́чень уста́л.",
+      "notes": "How was your day? / Fine, but I'm very tired."
+    },
+    {
+      "id": "ty-videl-etot-film",
+      "prompt": "Ты ви́дел э́тот фильм?",
+      "answer": "Да, смотре́л в про́шлом году́.",
+      "notes": "Have you seen this film? / Yes, I watched it last year."
+    },
+    {
+      "id": "chto-sluchilos",
+      "prompt": "Что случи́лось?",
+      "answer": "Я потеря́л ключи́.",
+      "notes": "What happened? / I lost my keys."
+    },
+    {
+      "id": "ty-byl-v-peterburge",
+      "prompt": "Ты был в Петербу́рге?",
+      "answer": "Да, два ра́за.",
+      "notes": "Have you been to St Petersburg? / Yes, twice."
+    },
+    {
+      "id": "kak-vy-otdokhnuli",
+      "prompt": "Как вы отдохну́ли?",
+      "answer": "Отли́чно, бы́ло о́чень тепло́.",
+      "notes": "How was your holiday? / Great, it was very warm."
+    },
+    {
+      "id": "ty-ponyal-chto-on",
+      "prompt": "Ты по́нял, что он сказа́л?",
+      "answer": "Не всё, он говори́л сли́шком бы́стро.",
+      "notes": "Did you understand what he said? / Not all of it, he spoke too fast."
+    },
+    {
+      "id": "ty-kupil-khleb",
+      "prompt": "Ты купи́л хлеб?",
+      "answer": "Ой, забы́л.",
+      "notes": "Did you buy bread? / Oh, I forgot."
+    },
+    {
+      "id": "gde-vy-poznakomilis",
+      "prompt": "Где вы познако́мились?",
+      "answer": "На рабо́те, мно́го лет наза́д.",
+      "notes": "Where did you meet? / At work, many years ago."
+    },
+    {
+      "id": "pochemu-ty-ne-prishyol",
+      "prompt": "Почему́ ты не пришёл?",
+      "answer": "Я заболе́л.",
+      "notes": "Why didn't you come? / I got ill."
+    }
+  ]
+}

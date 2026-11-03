@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-imperfect-talk",
+  "title": "Childhood memories",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 8 · When I was young",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "dove-abitavi-da-bambina",
+      "prompt": "Dove abitavi da bambina?",
+      "answer": "In una piccola città vicino al mare.",
+      "notes": "Where did you live as a child? / In a small town near the sea."
+    },
+    {
+      "id": "com-eri-da-piccola",
+      "prompt": "Com'eri da piccola?",
+      "answer": "Ero molto vivace e curiosa.",
+      "notes": "What were you like as a little girl? / I was very lively and curious."
+    },
+    {
+      "id": "cosa-volevi-fare-da",
+      "prompt": "Cosa volevi fare da grande?",
+      "answer": "Volevo fare la maestra.",
+      "notes": "What did you want to be when you grew up? / I wanted to be a teacher."
+    },
+    {
+      "id": "ti-piaceva-la-scuola",
+      "prompt": "Ti piaceva la scuola?",
+      "answer": "Abbastanza, ma odiavo la matematica.",
+      "notes": "Did you like school? / Quite, but I hated maths."
+    },
+    {
+      "id": "cosa-facevate-d-estate",
+      "prompt": "Cosa facevate d'estate?",
+      "answer": "Andavamo sempre in campeggio.",
+      "notes": "What did you do in the summer? / We always went camping."
+    },
+    {
+      "id": "avevi-animali",
+      "prompt": "Avevi animali?",
+      "answer": "Sì, avevamo un gatto.",
+      "notes": "Did you have pets? / Yes, we had a cat."
+    },
+    {
+      "id": "com-era-la-tua",
+      "prompt": "Com'era la tua casa?",
+      "answer": "Era vecchia, con un grande giardino.",
+      "notes": "What was your house like? / It was old, with a big garden."
+    },
+    {
+      "id": "cosa-facevi-quando-ti",
+      "prompt": "Cosa facevi quando ti ho chiamato?",
+      "answer": "Stavo cucinando, scusa.",
+      "notes": "What were you doing when I called? / I was cooking, sorry. Stare + -ando/-endo: something in progress."
+    },
+    {
+      "id": "che-tempo-faceva-in",
+      "prompt": "Che tempo faceva in vacanza?",
+      "answer": "Faceva caldissimo.",
+      "notes": "What was the weather like on holiday? / It was really hot."
+    },
+    {
+      "id": "com-era-il-ristorante",
+      "prompt": "Com'era il ristorante?",
+      "answer": "Carino, ma c'era troppa gente.",
+      "notes": "What was the restaurant like? / Nice, but it was too crowded."
+    },
+    {
+      "id": "lo-sapevi",
+      "prompt": "Lo sapevi?",
+      "answer": "No, non ne sapevo niente.",
+      "notes": "Did you know? / No, I didn't know anything about it."
+    },
+    {
+      "id": "perche-non-sei-venuta",
+      "prompt": "Perché non sei venuta?",
+      "answer": "Ero stanca e non avevo voglia.",
+      "notes": "Why didn't you come? / I was tired and didn't feel like it."
+    }
+  ]
+}

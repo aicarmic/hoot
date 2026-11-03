@@ -1,0 +1,85 @@
+{
+  "id": "it-verbs-talk",
+  "title": "Everyday chat",
+  "subject": "Italian",
+  "level": "A1",
+  "unit": "Unit 5 · Everyday verbs",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "cosa-fai-stasera",
+      "prompt": "Cosa fai stasera?",
+      "answer": "Niente di speciale, resto a casa.",
+      "notes": "What are you doing tonight? / Nothing special, I'm staying home."
+    },
+    {
+      "id": "vuoi-venire-al-cinema",
+      "prompt": "Vuoi venire al cinema?",
+      "answer": "Volentieri. A che ora?",
+      "notes": "Do you want to come to the cinema? / I'd love to. What time?"
+    },
+    {
+      "id": "cosa-fai-nel-tempo",
+      "prompt": "Cosa fai nel tempo libero?",
+      "answer": "Leggo molto e cucino.",
+      "notes": "What do you do in your free time? / I read a lot and I cook."
+    },
+    {
+      "id": "dove-vai",
+      "prompt": "Dove vai?",
+      "answer": "Vado al supermercato.",
+      "notes": "Where are you going? / I'm going to the supermarket."
+    },
+    {
+      "id": "puoi-aiutarmi",
+      "prompt": "Puoi aiutarmi?",
+      "answer": "Certo, cosa devo fare?",
+      "notes": "Can you help me? / Of course, what do I need to do?"
+    },
+    {
+      "id": "hai-fame",
+      "prompt": "Hai fame?",
+      "answer": "Sì, ho una fame da lupi.",
+      "notes": "Are you hungry? / Yes, I'm starving. Literally: a wolf's hunger."
+    },
+    {
+      "id": "capisci",
+      "prompt": "Capisci?",
+      "answer": "Non del tutto. Puoi spiegare di nuovo?",
+      "notes": "Do you understand? / Not completely. Can you explain again?"
+    },
+    {
+      "id": "cosa-bevi",
+      "prompt": "Cosa bevi?",
+      "answer": "Un bicchiere di vino rosso.",
+      "notes": "What are you drinking? / A glass of red wine."
+    },
+    {
+      "id": "a-che-ora-ti",
+      "prompt": "A che ora ti alzi la mattina?",
+      "answer": "Di solito mi alzo alle sette.",
+      "notes": "What time do you get up in the morning? / I usually get up at seven."
+    },
+    {
+      "id": "sai-cucinare",
+      "prompt": "Sai cucinare?",
+      "answer": "Sì, ma solo piatti semplici.",
+      "notes": "Can you cook? / Yes, but only simple dishes."
+    },
+    {
+      "id": "devi-lavorare-domani",
+      "prompt": "Devi lavorare domani?",
+      "answer": "Sì, purtroppo.",
+      "notes": "Do you have to work tomorrow? / Yes, unfortunately."
+    },
+    {
+      "id": "andiamo",
+      "prompt": "Andiamo?",
+      "answer": "Sì, un attimo, prendo la giacca.",
+      "notes": "Shall we go? / Yes, just a moment, I'll get my jacket."
+    }
+  ]
+}

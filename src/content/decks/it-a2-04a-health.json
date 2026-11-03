@@ -1,0 +1,105 @@
+{
+  "id": "it-a2-health",
+  "title": "Health and the body: words",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 4 · Health",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "la-testa",
+      "prompt": "la testa",
+      "answer": "head"
+    },
+    {
+      "id": "la-gola",
+      "prompt": "la gola",
+      "answer": "throat"
+    },
+    {
+      "id": "la-schiena",
+      "prompt": "la schiena",
+      "answer": "back"
+    },
+    {
+      "id": "lo-stomaco",
+      "prompt": "lo stomaco",
+      "answer": "stomach"
+    },
+    {
+      "id": "il-braccio-le-braccia",
+      "prompt": "il braccio / le braccia",
+      "answer": "arm / arms",
+      "notes": "An irregular plural, like il ginocchio → le ginocchia."
+    },
+    {
+      "id": "la-gamba",
+      "prompt": "la gamba",
+      "answer": "leg"
+    },
+    {
+      "id": "il-ginocchio",
+      "prompt": "il ginocchio",
+      "answer": "knee"
+    },
+    {
+      "id": "il-piede",
+      "prompt": "il piede",
+      "answer": "foot"
+    },
+    {
+      "id": "la-febbre",
+      "prompt": "la febbre",
+      "answer": "fever / temperature"
+    },
+    {
+      "id": "il-raffreddore",
+      "prompt": "il raffreddore",
+      "answer": "cold"
+    },
+    {
+      "id": "la-tosse",
+      "prompt": "la tosse",
+      "answer": "cough"
+    },
+    {
+      "id": "la-farmacia",
+      "prompt": "la farmacia",
+      "answer": "pharmacy"
+    },
+    {
+      "id": "la-ricetta",
+      "prompt": "la ricetta",
+      "answer": "prescription",
+      "notes": "Also means recipe."
+    },
+    {
+      "id": "mi-fa-male-la",
+      "prompt": "Mi fa male la testa.",
+      "answer": "My head hurts."
+    },
+    {
+      "id": "mi-fanno-male-i",
+      "prompt": "Mi fanno male i piedi.",
+      "answer": "My feet hurt.",
+      "notes": "Plural: fanno."
+    },
+    {
+      "id": "ho-mal-di-gola",
+      "prompt": "Ho mal di gola.",
+      "answer": "I have a sore throat."
+    },
+    {
+      "id": "mi-sento-poco-bene",
+      "prompt": "Mi sento poco bene.",
+      "answer": "I don't feel well."
+    },
+    {
+      "id": "ho-bisogno-di-un",
+      "prompt": "Ho bisogno di un medico.",
+      "answer": "I need a doctor."
+    }
+  ]
+}

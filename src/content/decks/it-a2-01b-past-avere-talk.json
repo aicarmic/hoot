@@ -1,0 +1,85 @@
+{
+  "id": "it-a2-past-avere-talk",
+  "title": "What did you do?",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 1 · What I did",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "cosa-hai-fatto-ieri",
+      "prompt": "Cosa hai fatto ieri sera?",
+      "answer": "Ho guardato un film a casa.",
+      "notes": "What did you do last night? / I watched a film at home."
+    },
+    {
+      "id": "hai-mangiato",
+      "prompt": "Hai mangiato?",
+      "answer": "Sì, ho già pranzato.",
+      "notes": "Have you eaten? / Yes, I've already had lunch."
+    },
+    {
+      "id": "hai-dormito-bene",
+      "prompt": "Hai dormito bene?",
+      "answer": "Non molto, ho sentito dei rumori.",
+      "notes": "Did you sleep well? / Not really, I heard some noises."
+    },
+    {
+      "id": "hai-visto-le-mie",
+      "prompt": "Hai visto le mie chiavi?",
+      "answer": "Sì, le ho viste sul tavolo.",
+      "notes": "Have you seen my keys? / Yes, I saw them on the table. With lo/la/li/le before avere, the participle agrees: le ho viste."
+    },
+    {
+      "id": "com-e-andata-la",
+      "prompt": "Com'è andata la giornata?",
+      "answer": "Bene, ma ho lavorato tanto.",
+      "notes": "How was your day? / Good, but I worked a lot."
+    },
+    {
+      "id": "hai-finito-il-libro",
+      "prompt": "Hai finito il libro?",
+      "answer": "Non ancora, ne ho letto metà.",
+      "notes": "Have you finished the book? / Not yet, I've read half of it."
+    },
+    {
+      "id": "hai-prenotato-il-ristorante",
+      "prompt": "Hai prenotato il ristorante?",
+      "answer": "Sì, ho chiamato stamattina.",
+      "notes": "Did you book the restaurant? / Yes, I called this morning."
+    },
+    {
+      "id": "che-cosa-hai-comprato",
+      "prompt": "Che cosa hai comprato?",
+      "answer": "Del pane e un po' di frutta.",
+      "notes": "What did you buy? / Some bread and a bit of fruit."
+    },
+    {
+      "id": "hai-sentito-la-notizia",
+      "prompt": "Hai sentito la notizia?",
+      "answer": "No, cosa è successo?",
+      "notes": "Did you hear the news? / No, what happened?"
+    },
+    {
+      "id": "hai-gia-visto-questo",
+      "prompt": "Hai già visto questo film?",
+      "answer": "Sì, l'ho visto l'anno scorso.",
+      "notes": "Have you already seen this film? / Yes, I saw it last year."
+    },
+    {
+      "id": "perche-non-hai-risposto",
+      "prompt": "Perché non hai risposto?",
+      "answer": "Scusa, non ho sentito il telefono.",
+      "notes": "Why didn't you answer? / Sorry, I didn't hear the phone."
+    },
+    {
+      "id": "avete-passato-un-bel",
+      "prompt": "Avete passato un bel weekend?",
+      "answer": "Sì, abbiamo camminato in montagna.",
+      "notes": "Did you have a nice weekend? / Yes, we went walking in the mountains."
+    }
+  ]
+}

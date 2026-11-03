@@ -1,0 +1,73 @@
+{
+  "id": "ru-a1-home-talk",
+  "title": "Home and routine: conversation",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 5 · Home and routine",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "gde-ty-zhivyosh",
+      "prompt": "Где ты живёшь?",
+      "answer": "В кварти́ре в це́нтре.",
+      "notes": "Where do you live? / In a flat in the centre."
+    },
+    {
+      "id": "skolko-u-vas-komnat",
+      "prompt": "Ско́лько у вас ко́мнат?",
+      "answer": "Три ко́мнаты и ку́хня.",
+      "notes": "How many rooms do you have? / Three rooms and a kitchen."
+    },
+    {
+      "id": "vo-skolko-ty-vstayosh",
+      "prompt": "Во ско́лько ты встаёшь?",
+      "answer": "Обы́чно в семь.",
+      "notes": "What time do you get up? / Usually at seven."
+    },
+    {
+      "id": "chto-ty-delaesh-utrom",
+      "prompt": "Что ты де́лаешь у́тром?",
+      "answer": "Пью ко́фе и чита́ю но́вости.",
+      "notes": "What do you do in the morning? / I drink coffee and read the news."
+    },
+    {
+      "id": "gde-vannaya",
+      "prompt": "Где ва́нная?",
+      "answer": "Пря́мо и нале́во.",
+      "notes": "Where's the bathroom? / Straight ahead and on the left."
+    },
+    {
+      "id": "chto-ty-delaesh-vecherom",
+      "prompt": "Что ты де́лаешь ве́чером?",
+      "answer": "Отдыха́ю до́ма.",
+      "notes": "What are you doing this evening? / Relaxing at home."
+    },
+    {
+      "id": "ty-uzhe-zavtrakal",
+      "prompt": "Ты уже́ за́втракал?",
+      "answer": "Да, уже́ пое́л.",
+      "notes": "Have you had breakfast yet? / Yes, I've already eaten. A woman says за'втракала, пое'ла."
+    },
+    {
+      "id": "kogda-ty-lozhishsya-spat",
+      "prompt": "Когда́ ты ложи́шься спать?",
+      "answer": "По́здно, часо́в в двена́дцать.",
+      "notes": "When do you go to bed? / Late, around twelve. Putting the number after the noun makes it approximate."
+    },
+    {
+      "id": "mozhno-otkryt-okno",
+      "prompt": "Мо́жно откры́ть окно́?",
+      "answer": "Коне́чно, открыва́й.",
+      "notes": "Can I open the window? / Of course, go ahead."
+    },
+    {
+      "id": "tebe-nravitsya-tvoya-kvartira",
+      "prompt": "Тебе́ нра́вится твоя́ кварти́ра?",
+      "answer": "Да, она́ небольша́я, но ую́тная.",
+      "notes": "Do you like your flat? / Yes, it's not big, but it's cosy."
+    }
+  ]
+}

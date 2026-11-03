@@ -1,0 +1,73 @@
+{
+  "id": "ru-a1-numbers-talk",
+  "title": "Numbers in conversation",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 2 · Numbers",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "dvesti-rubley",
+      "prompt": "Две́сти рубле́й.",
+      "answer": "Хорошо́, я возьму́.",
+      "notes": "Two hundred roubles. / Okay, I'll take it."
+    },
+    {
+      "id": "skolko-vam-let",
+      "prompt": "Ско́лько вам лет?",
+      "answer": "Мне со́рок пять лет.",
+      "notes": "How old are you? / I'm forty-five. Literally: to me are 45 years."
+    },
+    {
+      "id": "kakoy-u-vas-nomer",
+      "prompt": "Како́й у вас но́мер телефо́на?",
+      "answer": "Сейча́с напишу́.",
+      "notes": "What's your phone number? / I'll write it down for you."
+    },
+    {
+      "id": "skolko-vas",
+      "prompt": "Ско́лько вас?",
+      "answer": "Нас дво́е.",
+      "notes": "How many of you are there? / There are two of us."
+    },
+    {
+      "id": "s-vas-pyatsot-rubley",
+      "prompt": "С вас пятьсо́т рубле́й.",
+      "answer": "Мо́жно ка́ртой?",
+      "notes": "That's five hundred roubles. / Can I pay by card?"
+    },
+    {
+      "id": "vam-skolko",
+      "prompt": "Вам ско́лько?",
+      "answer": "Килогра́мм, пожа́луйста.",
+      "notes": "How much would you like? / A kilo, please."
+    },
+    {
+      "id": "u-vas-net-melochi",
+      "prompt": "У вас нет ме́лочи?",
+      "answer": "Нет, извини́те, то́лько ты́сяча.",
+      "notes": "Don't you have any change? / No, sorry, only a thousand."
+    },
+    {
+      "id": "skolko-u-vas-detey",
+      "prompt": "Ско́лько у вас дете́й?",
+      "answer": "Дво́е: сын и дочь.",
+      "notes": "How many children do you have? / Two: a son and a daughter."
+    },
+    {
+      "id": "kakoy-u-vas-etazh",
+      "prompt": "Како́й у вас эта́ж?",
+      "answer": "Тре́тий.",
+      "notes": "Which floor are you on? / The third."
+    },
+    {
+      "id": "kakoy-u-vas-nomer-2",
+      "prompt": "Како́й у вас но́мер ко́мнаты?",
+      "answer": "Два́дцать пять.",
+      "notes": "What's your room number? / Twenty-five."
+    }
+  ]
+}

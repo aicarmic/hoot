@@ -1,0 +1,85 @@
+{
+  "id": "it-numbers-talk",
+  "title": "Numbers in conversation",
+  "subject": "Italian",
+  "level": "A1",
+  "unit": "Unit 2 · Numbers",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "quanti-anni-hai",
+      "prompt": "Quanti anni hai?",
+      "answer": "Ho trentadue anni.",
+      "notes": "How old are you? / I'm thirty-two. Italian uses avere for age: ho … anni."
+    },
+    {
+      "id": "quante-persone",
+      "prompt": "Quante persone?",
+      "answer": "Siamo in cinque.",
+      "notes": "How many people? / There are five of us."
+    },
+    {
+      "id": "quanti-ne-vuole",
+      "prompt": "Quanti ne vuole?",
+      "answer": "Ne vorrei sei, per favore.",
+      "notes": "How many would you like? / I'd like six, please."
+    },
+    {
+      "id": "le-mele-costano-due",
+      "prompt": "Le mele costano due euro al chilo.",
+      "answer": "Allora ne prendo un chilo.",
+      "notes": "Apples are two euros a kilo. / Then I'll take a kilo."
+    },
+    {
+      "id": "in-tutto-fa-ventitre",
+      "prompt": "In tutto fa ventitré euro.",
+      "answer": "Ecco trenta euro.",
+      "notes": "That's twenty-three euros altogether. / Here's thirty euros."
+    },
+    {
+      "id": "ecco-il-resto-sette",
+      "prompt": "Ecco il resto, sette euro.",
+      "answer": "Grazie, arrivederci.",
+      "notes": "Here's your change, seven euros. / Thanks, goodbye."
+    },
+    {
+      "id": "a-che-piano-abita",
+      "prompt": "A che piano abita?",
+      "answer": "Al terzo piano.",
+      "notes": "Which floor do you live on? / On the third floor."
+    },
+    {
+      "id": "quanti-figli-ha",
+      "prompt": "Quanti figli ha?",
+      "answer": "Ho due figli.",
+      "notes": "How many children do you have? / I have two children."
+    },
+    {
+      "id": "che-numero-porta",
+      "prompt": "Che numero porta?",
+      "answer": "Porto il trentotto.",
+      "notes": "What shoe size are you? / I'm a thirty-eight."
+    },
+    {
+      "id": "che-taglia-porta",
+      "prompt": "Che taglia porta?",
+      "answer": "La quarantadue, credo.",
+      "notes": "What size do you wear? / A forty-two, I think."
+    },
+    {
+      "id": "per-quante-notti",
+      "prompt": "Per quante notti?",
+      "answer": "Tre notti, da venerdì a lunedì.",
+      "notes": "For how many nights? / Three nights, Friday to Monday."
+    },
+    {
+      "id": "mi-lascia-un-numero",
+      "prompt": "Mi lascia un numero di telefono?",
+      "answer": "Certo, glielo scrivo.",
+      "notes": "Can you leave me a phone number? / Of course, I'll write it down for you."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "it-a2-pronouns",
+  "title": "Likes and pronouns: key phrases",
+  "subject": "Italian",
+  "level": "A2",
+  "unit": "Unit 10 · Likes and pronouns",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "mi-piace-il-caffe",
+      "prompt": "Mi piace il caffè.",
+      "answer": "I like coffee."
+    },
+    {
+      "id": "mi-piacciono-i-gialli",
+      "prompt": "Mi piacciono i gialli.",
+      "answer": "I like crime novels.",
+      "notes": "Plural things take piacciono."
+    },
+    {
+      "id": "le-piace-l-opera",
+      "prompt": "Le piace l'opera?",
+      "answer": "Do you like opera? (formal)"
+    },
+    {
+      "id": "non-mi-e-piaciuto",
+      "prompt": "Non mi è piaciuto il film.",
+      "answer": "I didn't like the film.",
+      "notes": "Piacere uses essere in the past."
+    },
+    {
+      "id": "mi-manca-l-italia",
+      "prompt": "Mi manca l'Italia.",
+      "answer": "I miss Italy.",
+      "notes": "Works like piacere: Italy is missing to me."
+    },
+    {
+      "id": "mi-serve-una-mano",
+      "prompt": "Mi serve una mano.",
+      "answer": "I need a hand."
+    },
+    {
+      "id": "lo-prendo",
+      "prompt": "Lo prendo.",
+      "answer": "I'll take it."
+    },
+    {
+      "id": "la-conosco",
+      "prompt": "La conosco.",
+      "answer": "I know her."
+    },
+    {
+      "id": "li-ho-visti-ieri",
+      "prompt": "Li ho visti ieri.",
+      "answer": "I saw them yesterday."
+    },
+    {
+      "id": "ne-vorrei-due",
+      "prompt": "Ne vorrei due.",
+      "answer": "I'd like two of them.",
+      "notes": "Ne replaces a quantity of something."
+    },
+    {
+      "id": "non-ne-ho",
+      "prompt": "Non ne ho.",
+      "answer": "I haven't got any."
+    },
+    {
+      "id": "ci-vado-domani",
+      "prompt": "Ci vado domani.",
+      "answer": "I'm going there tomorrow.",
+      "notes": "Ci replaces a place."
+    },
+    {
+      "id": "te-lo-do",
+      "prompt": "Te lo do.",
+      "answer": "I'll give it to you."
+    },
+    {
+      "id": "glielo-dico-io",
+      "prompt": "Glielo dico io.",
+      "answer": "I'll tell him / her."
+    },
+    {
+      "id": "me-lo-puoi-ripetere",
+      "prompt": "Me lo puoi ripetere?",
+      "answer": "Can you repeat it for me?"
+    },
+    {
+      "id": "ci-penso-io",
+      "prompt": "Ci penso io.",
+      "answer": "I'll take care of it."
+    }
+  ]
+}

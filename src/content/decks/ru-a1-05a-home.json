@@ -1,0 +1,114 @@
+{
+  "id": "ru-a1-home",
+  "title": "Home and daily routine",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 5 · Home and routine",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "dom",
+      "prompt": "дом",
+      "answer": "house / home",
+      "hint": "dom"
+    },
+    {
+      "id": "kvartira",
+      "prompt": "кварти́ра",
+      "answer": "flat / apartment",
+      "hint": "kvartira"
+    },
+    {
+      "id": "komnata",
+      "prompt": "ко́мната",
+      "answer": "room",
+      "hint": "komnata"
+    },
+    {
+      "id": "kukhnya",
+      "prompt": "ку́хня",
+      "answer": "kitchen",
+      "hint": "kukhnya"
+    },
+    {
+      "id": "vannaya",
+      "prompt": "ва́нная",
+      "answer": "bathroom",
+      "hint": "vannaya"
+    },
+    {
+      "id": "spalnya",
+      "prompt": "спа́льня",
+      "answer": "bedroom",
+      "hint": "spalnya"
+    },
+    {
+      "id": "okno",
+      "prompt": "окно́",
+      "answer": "window",
+      "hint": "okno"
+    },
+    {
+      "id": "dver",
+      "prompt": "дверь",
+      "answer": "door",
+      "hint": "dver"
+    },
+    {
+      "id": "stol",
+      "prompt": "стол",
+      "answer": "table",
+      "hint": "stol"
+    },
+    {
+      "id": "krovat",
+      "prompt": "крова́ть",
+      "answer": "bed",
+      "hint": "krovat"
+    },
+    {
+      "id": "ya-vstayu",
+      "prompt": "я встаю́",
+      "answer": "I get up",
+      "hint": "ya vstayu"
+    },
+    {
+      "id": "ya-zavtrakayu",
+      "prompt": "я за́втракаю",
+      "answer": "I have breakfast",
+      "hint": "ya zavtrakayu"
+    },
+    {
+      "id": "ya-rabotayu",
+      "prompt": "я рабо́таю",
+      "answer": "I work",
+      "hint": "ya rabotayu"
+    },
+    {
+      "id": "ya-obedayu",
+      "prompt": "я обе́даю",
+      "answer": "I have lunch",
+      "hint": "ya obedayu"
+    },
+    {
+      "id": "ya-uzhinayu",
+      "prompt": "я у́жинаю",
+      "answer": "I have dinner",
+      "hint": "ya uzhinayu"
+    },
+    {
+      "id": "ya-lozhus-spat",
+      "prompt": "я ложу́сь спать",
+      "answer": "I go to bed",
+      "hint": "ya lozhus spat"
+    },
+    {
+      "id": "utrom-vecherom",
+      "prompt": "у́тром / ве́чером",
+      "answer": "in the morning / in the evening",
+      "hint": "utrom / vecherom"
+    }
+  ]
+}

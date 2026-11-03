@@ -1,0 +1,98 @@
+{
+  "id": "it-b1-work",
+  "title": "Work and the news: words",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 6 · Work and the news",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "il-colloquio-di-lavoro",
+      "prompt": "il colloquio di lavoro",
+      "answer": "job interview"
+    },
+    {
+      "id": "lo-stipendio",
+      "prompt": "lo stipendio",
+      "answer": "salary"
+    },
+    {
+      "id": "il-collega-la-collega",
+      "prompt": "il collega / la collega",
+      "answer": "colleague"
+    },
+    {
+      "id": "la-riunione",
+      "prompt": "la riunione",
+      "answer": "meeting"
+    },
+    {
+      "id": "le-ferie",
+      "prompt": "le ferie",
+      "answer": "annual leave / holidays"
+    },
+    {
+      "id": "lavorare-da-casa",
+      "prompt": "lavorare da casa",
+      "answer": "to work from home"
+    },
+    {
+      "id": "andare-in-pensione",
+      "prompt": "andare in pensione",
+      "answer": "to retire"
+    },
+    {
+      "id": "essere-in-malattia",
+      "prompt": "essere in malattia",
+      "answer": "to be off sick"
+    },
+    {
+      "id": "il-capo",
+      "prompt": "il capo",
+      "answer": "the boss"
+    },
+    {
+      "id": "la-scadenza",
+      "prompt": "la scadenza",
+      "answer": "deadline"
+    },
+    {
+      "id": "lo-sciopero",
+      "prompt": "lo sciopero",
+      "answer": "strike",
+      "notes": "Italian transport strikes are announced in advance: look for sciopero on the news."
+    },
+    {
+      "id": "il-telegiornale",
+      "prompt": "il telegiornale",
+      "answer": "TV news"
+    },
+    {
+      "id": "le-elezioni",
+      "prompt": "le elezioni",
+      "answer": "elections"
+    },
+    {
+      "id": "il-governo",
+      "prompt": "il governo",
+      "answer": "government"
+    },
+    {
+      "id": "la-notizia",
+      "prompt": "la notizia",
+      "answer": "piece of news"
+    },
+    {
+      "id": "hai-sentito-che",
+      "prompt": "Hai sentito che…?",
+      "answer": "Did you hear that…?"
+    },
+    {
+      "id": "pare-che",
+      "prompt": "Pare che…",
+      "answer": "It seems that…"
+    }
+  ]
+}

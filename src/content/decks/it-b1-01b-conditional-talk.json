@@ -1,0 +1,85 @@
+{
+  "id": "it-b1-conditional-talk",
+  "title": "Asking nicely: conversation",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 1 · Asking nicely",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "posso-esserle-utile",
+      "prompt": "Posso esserle utile?",
+      "answer": "Sì, vorrei sapere a che ora parte l'ultimo treno.",
+      "notes": "Can I help you? / Yes, I'd like to know what time the last train leaves."
+    },
+    {
+      "id": "ti-andrebbe-di-venire",
+      "prompt": "Ti andrebbe di venire a cena sabato?",
+      "answer": "Mi piacerebbe molto, grazie.",
+      "notes": "Would you like to come for dinner on Saturday? / I'd love to, thanks."
+    },
+    {
+      "id": "mi-passeresti-il-pane",
+      "prompt": "Mi passeresti il pane?",
+      "answer": "Certo, eccolo.",
+      "notes": "Would you pass me the bread? / Of course, here it is."
+    },
+    {
+      "id": "cosa-faresti-al-posto",
+      "prompt": "Cosa faresti al posto mio?",
+      "answer": "Io parlerei direttamente con lui.",
+      "notes": "What would you do in my place? / I'd talk to him directly."
+    },
+    {
+      "id": "ti-dispiacerebbe-abbassare-la",
+      "prompt": "Ti dispiacerebbe abbassare la musica?",
+      "answer": "Scusa, non mi ero accorta.",
+      "notes": "Would you mind turning the music down? / Sorry, I hadn't noticed."
+    },
+    {
+      "id": "ci-sarebbe-un-tavolo",
+      "prompt": "Ci sarebbe un tavolo per quattro?",
+      "answer": "Fra mezz'ora sì, se potete aspettare.",
+      "notes": "Would there be a table for four? / In half an hour, yes, if you can wait. Here you play the waiter."
+    },
+    {
+      "id": "dove-ti-piacerebbe-vivere",
+      "prompt": "Dove ti piacerebbe vivere?",
+      "answer": "Mi piacerebbe vivere vicino al mare.",
+      "notes": "Where would you like to live? / I'd like to live near the sea."
+    },
+    {
+      "id": "mi-consiglieresti-questo-libro",
+      "prompt": "Mi consiglieresti questo libro?",
+      "answer": "Sì, secondo me ti piacerebbe.",
+      "notes": "Would you recommend this book? / Yes, I think you'd like it."
+    },
+    {
+      "id": "potrebbe-ripetere-il-suo",
+      "prompt": "Potrebbe ripetere il suo cognome?",
+      "answer": "Certo, glielo scrivo.",
+      "notes": "Could you repeat your surname? / Of course, I'll write it down for you."
+    },
+    {
+      "id": "vorresti-un-altro-caffe",
+      "prompt": "Vorresti un altro caffè?",
+      "answer": "No, grazie, altrimenti stanotte non dormo.",
+      "notes": "Would you like another coffee? / No, thanks, otherwise I won't sleep tonight."
+    },
+    {
+      "id": "dovresti-venire-a-trovarci",
+      "prompt": "Dovresti venire a trovarci.",
+      "answer": "Hai ragione, lo farò presto.",
+      "notes": "You should come and visit us. / You're right, I'll do it soon."
+    },
+    {
+      "id": "sarebbe-libero-domani-alle",
+      "prompt": "Sarebbe libero domani alle dieci?",
+      "answer": "Domani preferirei nel pomeriggio.",
+      "notes": "Would you be free tomorrow at ten? / Tomorrow I'd prefer the afternoon."
+    }
+  ]
+}

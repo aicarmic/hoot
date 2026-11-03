@@ -1,0 +1,79 @@
+{
+  "id": "ru-a2-with-talk",
+  "title": "With: conversation",
+  "subject": "Russian",
+  "level": "A2",
+  "unit": "Unit 5 · With",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "s-kem-ty-zhivyosh",
+      "prompt": "С кем ты живёшь?",
+      "answer": "С жено́й и детьми́.",
+      "notes": "Who do you live with? / With my wife and children."
+    },
+    {
+      "id": "kak-vy-pyote-chay",
+      "prompt": "Как вы пьёте чай?",
+      "answer": "С лимо́ном, без са́хара.",
+      "notes": "How do you take your tea? / With lemon, no sugar."
+    },
+    {
+      "id": "s-kem-ty-byl",
+      "prompt": "С кем ты был в кино́?",
+      "answer": "Со ста́рым дру́гом.",
+      "notes": "Who were you at the cinema with? / With an old friend. с becomes со before some consonant clusters."
+    },
+    {
+      "id": "kem-ty-rabotaesh",
+      "prompt": "Кем ты рабо́таешь?",
+      "answer": "Инжене́ром.",
+      "notes": "What do you work as? / As an engineer."
+    },
+    {
+      "id": "chem-ty-zanimaeshsya-v",
+      "prompt": "Чем ты занима́ешься в свобо́дное вре́мя?",
+      "answer": "Пла́ванием.",
+      "notes": "What do you do in your free time? / Swimming."
+    },
+    {
+      "id": "gde-moi-tapki",
+      "prompt": "Где мои́ та́пки?",
+      "answer": "Под крова́тью.",
+      "notes": "Where are my slippers? / Under the bed."
+    },
+    {
+      "id": "chto-ty-delaesh-pered",
+      "prompt": "Что ты де́лаешь пе́ред рабо́той?",
+      "answer": "Бе́гаю в па́рке.",
+      "notes": "What do you do before work? / I go running in the park."
+    },
+    {
+      "id": "ty-poedesh-odin",
+      "prompt": "Ты пое́дешь оди́н?",
+      "answer": "Нет, мы с бра́том.",
+      "notes": "Are you going alone? / No, my brother and I are going."
+    },
+    {
+      "id": "mozhno-s-vami",
+      "prompt": "Мо́жно с ва́ми?",
+      "answer": "Коне́чно, пойдёмте.",
+      "notes": "Can I come with you? / Of course, let's go."
+    },
+    {
+      "id": "chem-ty-interesueshsya",
+      "prompt": "Чем ты интересу́ешься?",
+      "answer": "Исто́рией и поли́тикой.",
+      "notes": "What are you interested in? / History and politics."
+    },
+    {
+      "id": "chto-ty-budesh-na",
+      "prompt": "Что ты бу́дешь на за́втрак?",
+      "answer": "Ка́шу с молоко́м.",
+      "notes": "What will you have for breakfast? / Porridge with milk."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "ru-a1-time-talk",
+  "title": "Making plans: conversation",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 6 · Days and time",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "kotoryy-chas",
+      "prompt": "Кото́рый час?",
+      "answer": "Сейча́с три часа́.",
+      "notes": "What time is it? / It's three o'clock."
+    },
+    {
+      "id": "kakoy-segodnya-den",
+      "prompt": "Како́й сего́дня день?",
+      "answer": "Сего́дня пя́тница.",
+      "notes": "What day is it today? / Today is Friday."
+    },
+    {
+      "id": "kogda-vstretimsya",
+      "prompt": "Когда́ встре́тимся?",
+      "answer": "В суббо́ту в два часа́.",
+      "notes": "When shall we meet? / On Saturday at two."
+    },
+    {
+      "id": "ty-svoboden-zavtra",
+      "prompt": "Ты свобо́ден за́втра?",
+      "answer": "За́втра нет, а в четве́рг да.",
+      "notes": "Are you free tomorrow? / Not tomorrow, but Thursday yes. To a woman: свобо'дна."
+    },
+    {
+      "id": "vo-skolko-otkryvaetsya-magazin",
+      "prompt": "Во ско́лько открыва́ется магази́н?",
+      "answer": "В де́вять утра́.",
+      "notes": "What time does the shop open? / At nine in the morning."
+    },
+    {
+      "id": "ty-opazdyvaesh",
+      "prompt": "Ты опа́здываешь.",
+      "answer": "Извини́, про́бки.",
+      "notes": "You're late. / Sorry, traffic jams."
+    },
+    {
+      "id": "skolko-ty-zhdyosh",
+      "prompt": "Ско́лько ты ждёшь?",
+      "answer": "Мину́т де́сять.",
+      "notes": "How long have you been waiting? / About ten minutes."
+    },
+    {
+      "id": "kogda-u-tebya-den",
+      "prompt": "Когда́ у тебя́ день рожде́ния?",
+      "answer": "Пя́того ма́я.",
+      "notes": "When is your birthday? / The fifth of May."
+    },
+    {
+      "id": "chto-ty-delal-vchera",
+      "prompt": "Что ты де́лал вчера́?",
+      "answer": "Рабо́тал весь день.",
+      "notes": "What did you do yesterday? / I worked all day."
+    },
+    {
+      "id": "kakie-plany-na-vykhodnye",
+      "prompt": "Каки́е пла́ны на выходны́е?",
+      "answer": "Пое́дем на да́чу.",
+      "notes": "What are your plans for the weekend? / We're going to the dacha. A да'ча is a country cottage."
+    }
+  ]
+}

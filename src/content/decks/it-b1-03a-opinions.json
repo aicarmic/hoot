@@ -1,0 +1,93 @@
+{
+  "id": "it-b1-opinions",
+  "title": "Opinions and feelings: key phrases",
+  "subject": "Italian",
+  "level": "B1",
+  "unit": "Unit 3 · Opinions and feelings",
+  "speechLang": "it-IT",
+  "promptLabel": "Italian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "secondo-me-ha-ragione",
+      "prompt": "Secondo me ha ragione.",
+      "answer": "In my opinion he's right."
+    },
+    {
+      "id": "penso-che-sia-una",
+      "prompt": "Penso che sia una buona idea.",
+      "answer": "I think it's a good idea.",
+      "notes": "After penso che, credo che, spero che, the verb goes into the subjunctive: sia, abbia, faccia."
+    },
+    {
+      "id": "credo-che-abbia-ragione",
+      "prompt": "Credo che abbia ragione lei.",
+      "answer": "I think she's right."
+    },
+    {
+      "id": "spero-che-tu-stia",
+      "prompt": "Spero che tu stia bene.",
+      "answer": "I hope you're well."
+    },
+    {
+      "id": "sono-contenta-che-tu",
+      "prompt": "Sono contenta che tu sia qui.",
+      "answer": "I'm glad you're here."
+    },
+    {
+      "id": "mi-dispiace-che-tu",
+      "prompt": "Mi dispiace che tu non possa venire.",
+      "answer": "I'm sorry you can't come."
+    },
+    {
+      "id": "non-sono-d-accordo",
+      "prompt": "Non sono d'accordo.",
+      "answer": "I don't agree."
+    },
+    {
+      "id": "dipende-dai-punti-di",
+      "prompt": "Dipende dai punti di vista.",
+      "answer": "It depends on your point of view."
+    },
+    {
+      "id": "ho-paura-che-sia",
+      "prompt": "Ho paura che sia troppo tardi.",
+      "answer": "I'm afraid it's too late."
+    },
+    {
+      "id": "mi-sembra-che-faccia",
+      "prompt": "Mi sembra che faccia freddo.",
+      "answer": "It seems cold to me."
+    },
+    {
+      "id": "e-importante-che-tutti",
+      "prompt": "È importante che tutti partecipino.",
+      "answer": "It's important that everyone takes part."
+    },
+    {
+      "id": "mi-da-fastidio-il",
+      "prompt": "Mi dà fastidio il rumore.",
+      "answer": "Noise bothers me."
+    },
+    {
+      "id": "che-peccato",
+      "prompt": "Che peccato.",
+      "answer": "What a shame."
+    },
+    {
+      "id": "che-bello",
+      "prompt": "Che bello.",
+      "answer": "How lovely."
+    },
+    {
+      "id": "sono-stufa-di-aspettare",
+      "prompt": "Sono stufa di aspettare.",
+      "answer": "I'm fed up with waiting."
+    },
+    {
+      "id": "non-vedo-perche-no",
+      "prompt": "Non vedo perché no.",
+      "answer": "I don't see why not."
+    }
+  ]
+}

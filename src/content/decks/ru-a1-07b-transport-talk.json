@@ -1,0 +1,73 @@
+{
+  "id": "ru-a1-transport-talk",
+  "title": "Getting around: conversation",
+  "subject": "Russian",
+  "level": "A1",
+  "unit": "Unit 7 · Getting around",
+  "kind": "dialogue",
+  "speechLang": "ru-RU",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "vam-pomoch",
+      "prompt": "Вам помо́чь?",
+      "answer": "Да, где здесь метро́?",
+      "notes": "Can I help you? / Yes, where's the metro around here?"
+    },
+    {
+      "id": "idite-pryamo-potom-napravo",
+      "prompt": "Иди́те пря́мо, пото́м напра́во.",
+      "answer": "Спаси́бо. Э́то далеко́?",
+      "notes": "Go straight on, then right. / Thanks. Is it far?"
+    },
+    {
+      "id": "net-pyat-minut-peshkom",
+      "prompt": "Нет, пять мину́т пешко́м.",
+      "answer": "Отли́чно, спаси́бо.",
+      "notes": "No, five minutes on foot. / Great, thanks."
+    },
+    {
+      "id": "kuda-edem",
+      "prompt": "Куда́ е́дем?",
+      "answer": "В аэропо́рт, пожа́луйста.",
+      "notes": "Where are we going? / To the airport, please."
+    },
+    {
+      "id": "vam-kakoy-bilet",
+      "prompt": "Вам како́й биле́т?",
+      "answer": "Туда́ и обра́тно, пожа́луйста.",
+      "notes": "What kind of ticket? / A return, please."
+    },
+    {
+      "id": "vy-vykhodite-na-sleduyushchey",
+      "prompt": "Вы выхо́дите на сле́дующей?",
+      "answer": "Да, выхожу́.",
+      "notes": "Are you getting off at the next stop? / Yes, I am."
+    },
+    {
+      "id": "poezd-opazdyvaet-na-polchasa",
+      "prompt": "По́езд опа́здывает на полчаса́.",
+      "answer": "Ну что ж, подождём.",
+      "notes": "The train is half an hour late. / Oh well, we'll wait."
+    },
+    {
+      "id": "kak-doekhat-do-vokzala",
+      "prompt": "Как дое́хать до вокза́ла?",
+      "answer": "Извини́те, я не отсю́да.",
+      "notes": "How do I get to the station? / Sorry, I'm not from around here."
+    },
+    {
+      "id": "skolko-ekhat-do-tsentra",
+      "prompt": "Ско́лько е́хать до це́нтра?",
+      "answer": "Мину́т два́дцать на авто́бусе.",
+      "notes": "How long does it take to the centre? / About twenty minutes by bus."
+    },
+    {
+      "id": "gde-ostanovka-avtobusa",
+      "prompt": "Где остано́вка авто́буса?",
+      "answer": "Вон там, за угло́м.",
+      "notes": "Where's the bus stop? / Over there, around the corner."
+    }
+  ]
+}
