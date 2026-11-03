@@ -15,7 +15,6 @@ function weekCount(): number {
 
 export function Home({ decks }: { decks: Deck[] }) {
   const week = weekCount()
-  const bySubject = decksBySubject(decks)
   return (
     <>
       <p className="lede">
@@ -24,10 +23,10 @@ export function Home({ decks }: { decks: Deck[] }) {
       <Nudges decks={decks} />
       <section className="stack">
         <h2 className="h-section">Subjects</h2>
-        {[...bySubject].map(([subject, list]) => (
+        {[...decksBySubject(decks)].map(([subject, list]) => (
           <SubjectCard key={subject} subject={subject} decks={list} />
         ))}
-        {COMING_SOON.filter((s) => !bySubject.has(s.name)).map((s) => (
+        {COMING_SOON.map((s) => (
           <div key={s.name} className="deck subject soon" aria-disabled="true">
             <span className="body">
               <span className="unit">Coming soon</span>
