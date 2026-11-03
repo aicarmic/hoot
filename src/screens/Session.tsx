@@ -87,7 +87,7 @@ export function Session({ deck, mode }: { deck: Deck; mode: ModeId }) {
           </div>
           <h1 className="h-page">Nice work</h1>
           <p className="lede">
-            You practised <strong>{grades.length}</strong> cards. {solid} felt solid
+            You practiced <strong>{grades.length}</strong> cards. {solid} felt solid
             {sooner ? `, and ${sooner} will come back sooner` : ''}.
           </p>
           <div className="tally">

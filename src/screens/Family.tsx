@@ -21,7 +21,7 @@ export function Family() {
       <>
         <div className="stack">
           <h1 className="h-page">Family</h1>
-          <p className="lede">See what everyone has been practising, and send each other phrases to try.</p>
+          <p className="lede">See what everyone has been practicing, and send each other phrases to try.</p>
         </div>
         <a className="uy-btn uy-state uy-btn--filled start" href="#me">
           {acct.session ? 'Join or start a family' : 'Sign in to get started'}
@@ -33,7 +33,7 @@ export function Family() {
     <>
       <div className="stack">
         <h1 className="h-page">{acct.family.name}</h1>
-        <p className="lede">What everyone has been practising this week.</p>
+        <p className="lede">What everyone has been practicing this week.</p>
       </div>
       {error && (
         <p className="error">
@@ -60,14 +60,14 @@ export function Family() {
                     {m.today_cards > 0 && (
                       <span className="today">
                         <Icon name="check" />
-                        Practised today
+                        Practiced today
                       </span>
                     )}
                   </span>
                   <span className="meta">
                     {m.week_cards} cards this week · {m.known_cards} known · {m.learning_cards} learning
                   </span>
-                  <span className="meta">Last practised {timeAgo(m.last_practised)}</span>
+                  <span className="meta">Last practiced {timeAgo(m.last_practised)}</span>
                 </span>
               </div>
             )
