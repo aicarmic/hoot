@@ -57,3 +57,34 @@ export function check(given: string, answer: string): MatchResult {
   }
   return best
 }
+
+const CYRILLIC: Record<string, string> = {
+  а: 'a', б: 'b', в: 'v', г: 'g', д: 'd', е: 'e', ё: 'yo', ж: 'zh', з: 'z', и: 'i', й: 'y', к: 'k', л: 'l',
+  м: 'm', н: 'n', о: 'o', п: 'p', р: 'r', с: 's', т: 't', у: 'u', ф: 'f', х: 'kh', ц: 'ts', ч: 'ch',
+  ш: 'sh', щ: 'shch', ъ: '', ы: 'y', ь: '', э: 'e', ю: 'yu', я: 'ya',
+}
+
+/** A rough sound spelling for comparing, not for showing: Latin letters, no accents, few doubled sounds. */
+function soundKey(s: string): string {
+  return stripAccents(stripStress(s).toLowerCase())
+    .replace(/\p{Script=Cyrillic}/gu, (ch) => CYRILLIC[ch] ?? ch)
+    .replace(/[^a-z]/g, '')
+    .replace(/kh/g, 'h')
+    .replace(/y(?=[aeiou])/g, '')
+    .replace(/(.)\1+/g, '$1')
+}
+
+/**
+ * Drops a pronunciation aid like "topic (tyema)" from an answer when the brackets just spell out
+ * the prompt's sound. In multiple choice that aid points straight at the right option.
+ */
+export function hideSoundAid(answer: string, prompt: string): string {
+  const key = soundKey(prompt)
+  if (!key) return answer
+  const out = answer.replace(/\s*\(([^)]*)\)/g, (whole, inner: string) => {
+    if (/[^\p{Script=Latin}\s'’-]/u.test(inner)) return whole
+    const k = soundKey(inner)
+    return k && similarity(k, key) >= 0.7 ? '' : whole
+  })
+  return out.trim() || answer
+}
