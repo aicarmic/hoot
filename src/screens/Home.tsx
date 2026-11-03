@@ -3,7 +3,7 @@ import type { Deck } from '../content/types'
 import { deckStats, today } from '../lib/srs'
 import { store } from '../lib/store'
 import type { CSSProperties } from 'react'
-import { COMING_SOON, subjectSlug } from '../content/subjects'
+import { COMING_SOON, isLanguage, subjectSlug } from '../content/subjects'
 import { Icon } from '../ui/Icon'
 import { SubjectBadge } from '../ui/SubjectBadge'
 import { Nudges } from './Nudges'
@@ -18,7 +18,9 @@ function weekCount(): number {
 export function Home({ decks }: { decks: Deck[] }) {
   const week = weekCount()
   const bySubject = decksBySubject(decks)
-  // A coming-soon class disappears once real decks for it exist (e.g. an imported Math deck).
+  const languages = [...bySubject].filter(([, list]) => isLanguage(list))
+  const others = [...bySubject].filter(([, list]) => !isLanguage(list))
+  // A coming-soon subject keeps its heading and card until real decks for it exist.
   const soon = COMING_SOON.filter((name) => !bySubject.has(name))
   return (
     <>
@@ -26,14 +28,31 @@ export function Home({ decks }: { decks: Deck[] }) {
         {week ? `You’ve practiced ${week} cards this week.` : 'Pick something to practice. No points, no pressure.'}
       </p>
       <Nudges decks={decks} />
-      <section className="stack">
-        <h2 className="h-section">Your classes</h2>
-        <div className="classes">
-          {[...bySubject].map(([subject, list]) => (
-            <ClassCard key={subject} subject={subject} decks={list} />
-          ))}
-          {soon.map((name) => (
-            <div key={name} className="class-card soon" aria-label={`${name}, coming soon`}>
+      {languages.length > 0 && (
+        <section className="stack">
+          <h2 className="h-section">Languages</h2>
+          <div className="classes">
+            {languages.map(([subject, list]) => (
+              <ClassCard key={subject} subject={subject} decks={list} />
+            ))}
+          </div>
+        </section>
+      )}
+      {others.map(([subject, list]) => (
+        <section key={subject} className="stack">
+          <h2 className="h-section">{subject}</h2>
+          <div className="classes">
+            {list.map((d) => (
+              <ModuleCard key={d.id} deck={d} />
+            ))}
+          </div>
+        </section>
+      ))}
+      {soon.map((name) => (
+        <section key={name} className="stack">
+          <h2 className="h-section">{name}</h2>
+          <div className="classes">
+            <div className="class-card soon" aria-label={`${name}, coming soon`}>
               <span className="head">
                 <SubjectBadge subject={name} />
               </span>
@@ -42,17 +61,37 @@ export function Home({ decks }: { decks: Deck[] }) {
                 <span className="meta">Coming soon</span>
               </span>
             </div>
-          ))}
-          <a href="#import" className="class-card add uy-state">
-            <Icon name="add" />
-            <span>Add a class or deck</span>
-            <span className="meta" style={{ fontWeight: 400 }}>
-              From Gemini or a spreadsheet
-            </span>
-          </a>
-        </div>
-      </section>
+          </div>
+        </section>
+      ))}
+      <a href="#import" className="add-row uy-state">
+        <Icon name="add" />
+        Add a class or deck
+      </a>
     </>
+  )
+}
+
+/** One focused study deck outside the languages, e.g. a test-review set. Opens the deck directly. */
+function ModuleCard({ deck: d }: { deck: Deck }) {
+  const t = totals([d])
+  const meta = [d.level, plural(t.total, 'card')].filter(Boolean).join(' · ')
+  const label = `${d.title}, ${meta}, ${t.pctLabel.toLowerCase()}${t.due ? `, ${t.due} to review` : ''}`
+  return (
+    <a href={`#deck/${d.id}`} className="class-card module uy-state" aria-label={label}>
+      <span className="head">
+        <SubjectBadge subject={d.subject} />
+        {t.due > 0 && <span className="due-pill">{t.due} to review</span>}
+      </span>
+      <span className="stack" style={{ gap: 2 }}>
+        <span className="class-name">{d.title}</span>
+        <span className="meta">{meta}</span>
+      </span>
+      <span className="foot">
+        <span className="pct">{t.pctLabel}</span>
+        <ProgressBar {...t} />
+      </span>
+    </a>
   )
 }
 

@@ -1,5 +1,15 @@
-/** Subjects on the way. They show on the Learn tab as classes that can't be opened yet. */
+import type { Deck } from './types'
+
+/** Subjects on the way. Each gets its own Learn heading with a "Coming soon" card until real decks exist. */
 export const COMING_SOON: string[] = ['Math']
+
+/**
+ * Language classes are grouped under one "Languages" heading, one card per language.
+ * Any other subject gets its own heading, with one card per deck (a focused study module).
+ */
+export function isLanguage(decks: Deck[]): boolean {
+  return decks.some((d) => !!d.speechLang)
+}
 
 /** URL-safe id for a subject, used in #class/<slug>. */
 export function subjectSlug(subject: string): string {
