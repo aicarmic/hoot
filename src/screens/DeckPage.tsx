@@ -40,7 +40,8 @@ export function DeckPage({ deck }: { deck: Deck }) {
         <h1 className="h-page">{deck.title}</h1>
         <p className="meta">
           {deck.subject}
-          {deck.level ? ` · ${deck.level}` : ''} · {s.total} cards
+          {deck.level ? ` · ${deck.level}` : ''}
+          {deck.unit ? ` · ${deck.unit}` : ''} · {s.total} cards
         </p>
       </div>
 

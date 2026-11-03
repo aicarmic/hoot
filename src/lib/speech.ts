@@ -1,10 +1,12 @@
+import { stripStress } from './match'
+
 /** Speech helpers. Feature-detected so unsupported browsers just hide the controls. */
 export const canSpeak = typeof window !== 'undefined' && 'speechSynthesis' in window
 
 export function speak(text: string, lang: string, slow = false): void {
   if (!canSpeak) return
   window.speechSynthesis.cancel()
-  const u = new SpeechSynthesisUtterance(text.replace(/…/g, ''))
+  const u = new SpeechSynthesisUtterance(stripStress(text).replace(/…/g, ''))
   u.lang = lang
   u.rate = slow ? 0.6 : 0.95
   const voice = window.speechSynthesis.getVoices().find((v) => v.lang.replace('_', '-').startsWith(lang))

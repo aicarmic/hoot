@@ -1,0 +1,95 @@
+{
+  "id": "ru-alphabet-3",
+  "title": "New letters, part 1",
+  "subject": "Russian",
+  "level": "Alphabet",
+  "unit": "Step 3",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "da",
+      "prompt": "да",
+      "answer": "yes (da)",
+      "hint": "Д = d"
+    },
+    {
+      "id": "dom",
+      "prompt": "дом",
+      "answer": "house / home (dom)"
+    },
+    {
+      "id": "bank",
+      "prompt": "банк",
+      "answer": "bank (bank)",
+      "hint": "Б = b"
+    },
+    {
+      "id": "papa",
+      "prompt": "па́па",
+      "answer": "dad (papa)",
+      "hint": "П = p"
+    },
+    {
+      "id": "park",
+      "prompt": "парк",
+      "answer": "park (park)"
+    },
+    {
+      "id": "gazeta",
+      "prompt": "газе́та",
+      "answer": "newspaper (gazeta)",
+      "hint": "Г = g as in go, З = z"
+    },
+    {
+      "id": "zont",
+      "prompt": "зонт",
+      "answer": "umbrella (zont)"
+    },
+    {
+      "id": "lampa",
+      "prompt": "ла́мпа",
+      "answer": "lamp (lampa)",
+      "hint": "Л = l"
+    },
+    {
+      "id": "foto",
+      "prompt": "фо́то",
+      "answer": "photo (foto)",
+      "hint": "Ф = f"
+    },
+    {
+      "id": "i",
+      "prompt": "и",
+      "answer": "and (i)",
+      "hint": "И = ee"
+    },
+    {
+      "id": "mir",
+      "prompt": "мир",
+      "answer": "world / peace (mir)"
+    },
+    {
+      "id": "limon",
+      "prompt": "лимо́н",
+      "answer": "lemon (limon)"
+    },
+    {
+      "id": "moy",
+      "prompt": "мой",
+      "answer": "my (moy)",
+      "hint": "Й = y, as in boy"
+    },
+    {
+      "id": "may",
+      "prompt": "май",
+      "answer": "May (may)"
+    },
+    {
+      "id": "gorod",
+      "prompt": "го́род",
+      "answer": "city / town (gorod)"
+    }
+  ]
+}

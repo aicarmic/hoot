@@ -10,7 +10,9 @@ import type { ModeProps } from './types'
 
 /** Multiple choice for newer cards; typing once a card has been seen twice. */
 export function Quiz(props: ModeProps) {
-  return props.reps >= 2 && props.deck.cards.length > 1 ? <TypeIt {...props} /> : <Choose {...props} />
+  // Dialogue replies are whole sentences with many right answers, so they stay multiple choice.
+  const canType = props.deck.kind !== 'dialogue'
+  return canType && props.reps >= 2 && props.deck.cards.length > 1 ? <TypeIt {...props} /> : <Choose {...props} />
 }
 
 function Choose({ deck, card, onAnswer }: ModeProps) {
@@ -32,7 +34,7 @@ function Choose({ deck, card, onAnswer }: ModeProps) {
         <span className="big-text">{card.prompt}</span>
         <SpeakButton text={card.prompt} lang={deck.speechLang} tonal />
       </div>
-      <p className="ask">Which one means this?</p>
+      <p className="ask">{deck.kind === 'dialogue' ? 'What could you say back?' : 'Which one means this?'}</p>
       <div className="choices">
         {options.map((o) => {
           const isRight = o === card.answer

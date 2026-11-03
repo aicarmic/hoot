@@ -151,6 +151,8 @@ export function parseDeck(text: string, meta: ImportMeta): Deck {
     title,
     subject: str(deck.subject) ?? (meta.subject.trim() || 'My decks'),
     level: str(deck.level),
+    unit: str(deck.unit),
+    kind: deck.kind === 'dialogue' ? 'dialogue' : undefined,
     speechLang: str(deck.speechLang) ?? meta.speechLang,
     promptLabel: str(deck.promptLabel),
     answerLabel: str(deck.answerLabel),

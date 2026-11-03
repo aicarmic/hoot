@@ -1,0 +1,97 @@
+{
+  "id": "it-cafe-talk",
+  "title": "At the café: conversation",
+  "subject": "Italian",
+  "level": "A1",
+  "unit": "Unit 3 · Café and food",
+  "kind": "dialogue",
+  "speechLang": "it-IT",
+  "promptLabel": "They say",
+  "answerLabel": "You say",
+  "cards": [
+    {
+      "id": "prende",
+      "prompt": "Buongiorno, cosa prende?",
+      "answer": "Un cappuccino e un cornetto, per favore.",
+      "notes": "Good morning, what will you have? / A cappuccino and a croissant, please."
+    },
+    {
+      "id": "banco",
+      "prompt": "Al banco o al tavolo?",
+      "answer": "Al banco, grazie.",
+      "notes": "At the counter or at a table? / At the counter, thanks. Standing at the counter is cheaper than sitting down."
+    },
+    {
+      "id": "altro",
+      "prompt": "Vuole altro?",
+      "answer": "No, basta così, grazie.",
+      "notes": "Anything else? / No, that's all, thanks."
+    },
+    {
+      "id": "pagare",
+      "prompt": "Sono tre euro e cinquanta.",
+      "answer": "Ecco a lei.",
+      "notes": "That's 3.50. / Here you are."
+    },
+    {
+      "id": "prenotato",
+      "prompt": "Avete prenotato?",
+      "answer": "Sì, a nome Rossi, per due.",
+      "notes": "Have you booked? / Yes, under Rossi, for two."
+    },
+    {
+      "id": "quanti",
+      "prompt": "Quanti siete?",
+      "answer": "Siamo in quattro.",
+      "notes": "How many of you are there? / There are four of us."
+    },
+    {
+      "id": "bere",
+      "prompt": "Cosa vi porto da bere?",
+      "answer": "Una bottiglia d'acqua frizzante, per favore.",
+      "notes": "What can I bring you to drink? / A bottle of sparkling water, please."
+    },
+    {
+      "id": "scelto",
+      "prompt": "Avete scelto?",
+      "answer": "Sì, io prendo la pasta al pomodoro.",
+      "notes": "Have you decided? / Yes, I'll have the pasta with tomato sauce."
+    },
+    {
+      "id": "consiglia",
+      "prompt": "Vi serve aiuto con il menù?",
+      "answer": "Sì, cosa ci consiglia?",
+      "notes": "Do you need help with the menu? / Yes, what do you recommend?"
+    },
+    {
+      "id": "com-era",
+      "prompt": "Tutto bene?",
+      "answer": "Sì, era tutto buonissimo.",
+      "notes": "Is everything all right? / Yes, it was all delicious."
+    },
+    {
+      "id": "dolce",
+      "prompt": "Desiderate un dolce o un caffè?",
+      "answer": "Per me un tiramisù, grazie.",
+      "notes": "Would you like a dessert or a coffee? / A tiramisù for me, thanks."
+    },
+    {
+      "id": "conto",
+      "prompt": "Ecco il conto.",
+      "answer": "Possiamo pagare con la carta?",
+      "notes": "Here's the bill. / Can we pay by card?"
+    },
+    {
+      "id": "separati",
+      "prompt": "Pagate insieme?",
+      "answer": "No, paghiamo separatamente.",
+      "notes": "Are you paying together? / No, we're paying separately."
+    },
+    {
+      "id": "arrivederci",
+      "prompt": "Grazie, arrivederci.",
+      "answer": "Grazie a lei, buona giornata.",
+      "notes": "Thanks, goodbye. / Thank you, have a good day."
+    }
+  ]
+}

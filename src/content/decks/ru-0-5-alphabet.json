@@ -1,0 +1,100 @@
+{
+  "id": "ru-alphabet-5",
+  "title": "Signs and easy words",
+  "subject": "Russian",
+  "level": "Alphabet",
+  "unit": "Step 5",
+  "speechLang": "ru-RU",
+  "promptLabel": "Russian",
+  "answerLabel": "English",
+  "cards": [
+    {
+      "id": "mat",
+      "prompt": "мать",
+      "answer": "mother (mat')",
+      "hint": "Ь has no sound of its own; it softens the letter before it"
+    },
+    {
+      "id": "den",
+      "prompt": "день",
+      "answer": "day (dyen')"
+    },
+    {
+      "id": "sol",
+      "prompt": "соль",
+      "answer": "salt (sol')"
+    },
+    {
+      "id": "podezd",
+      "prompt": "подъе́зд",
+      "answer": "building entrance (podyezd)",
+      "hint": "Ъ is a tiny pause before the next vowel"
+    },
+    {
+      "id": "taksi",
+      "prompt": "такси́",
+      "answer": "taxi (taksi)"
+    },
+    {
+      "id": "kafe",
+      "prompt": "кафе́",
+      "answer": "café (kafe)"
+    },
+    {
+      "id": "teatr",
+      "prompt": "теа́тр",
+      "answer": "theatre (teatr)"
+    },
+    {
+      "id": "muzey",
+      "prompt": "музе́й",
+      "answer": "museum (muzey)"
+    },
+    {
+      "id": "internet",
+      "prompt": "интерне́т",
+      "answer": "internet (internet)"
+    },
+    {
+      "id": "telefon",
+      "prompt": "телефо́н",
+      "answer": "phone (telefon)"
+    },
+    {
+      "id": "kompyuter",
+      "prompt": "компью́тер",
+      "answer": "computer (kompyuter)"
+    },
+    {
+      "id": "futbol",
+      "prompt": "футбо́л",
+      "answer": "football (futbol)"
+    },
+    {
+      "id": "doktor",
+      "prompt": "до́ктор",
+      "answer": "doctor (doktor)"
+    },
+    {
+      "id": "shokolad",
+      "prompt": "шокола́д",
+      "answer": "chocolate (shokolad)"
+    },
+    {
+      "id": "aeroport",
+      "prompt": "аэропо́рт",
+      "answer": "airport (aeroport)"
+    },
+    {
+      "id": "spasibo",
+      "prompt": "спаси́бо",
+      "answer": "thank you (spasibo)"
+    },
+    {
+      "id": "pozhaluysta",
+      "prompt": "пожа́луйста",
+      "answer": "please / you're welcome (pozhaluysta)",
+      "notes": "In everyday speech it shrinks to pa-ZHAL-sta."
+    }
+  ]
+}

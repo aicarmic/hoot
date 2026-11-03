@@ -17,6 +17,13 @@ export interface Deck {
   title: string
   subject: string
   level?: string
+  /** Groups decks inside a level on the home screen, e.g. "Unit 3 · Family". */
+  unit?: string
+  /**
+   * "dialogue": the prompt is a line someone says to you (in the target language)
+   * and the answer is a natural reply, also in the target language.
+   */
+  kind?: 'dialogue'
   /** BCP-47 language code; enables audio and Listen & speak. */
   speechLang?: string
   promptLabel?: string
