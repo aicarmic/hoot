@@ -17,6 +17,9 @@ function weekCount(): number {
 
 export function Home({ decks }: { decks: Deck[] }) {
   const week = weekCount()
+  const bySubject = decksBySubject(decks)
+  // A coming-soon class disappears once real decks for it exist (e.g. an imported Math deck).
+  const soon = COMING_SOON.filter((name) => !bySubject.has(name))
   return (
     <>
       <p className="lede">
@@ -26,10 +29,10 @@ export function Home({ decks }: { decks: Deck[] }) {
       <section className="stack">
         <h2 className="h-section">Your classes</h2>
         <div className="classes">
-          {[...decksBySubject(decks)].map(([subject, list]) => (
+          {[...bySubject].map(([subject, list]) => (
             <ClassCard key={subject} subject={subject} decks={list} />
           ))}
-          {COMING_SOON.map((name) => (
+          {soon.map((name) => (
             <div key={name} className="class-card soon" aria-label={`${name}, coming soon`}>
               <span className="head">
                 <SubjectBadge subject={name} />
