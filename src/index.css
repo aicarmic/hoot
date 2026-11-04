@@ -338,6 +338,11 @@ form { margin: 0; }
 .member-body { display: flex; flex-direction: column; gap: var(--space-1); }
 .avatar { flex: none; width: 44px; height: 44px; border-radius: var(--shape-full); display: grid; place-items: center;
   background: var(--primary-container); color: var(--on-primary-container); font-family: var(--font-serif); font-size: 20px; font-weight: 500; }
+.avatar.tertiary-soft { background: var(--tertiary-container); color: var(--on-tertiary-container); }
+.avatar.secondary-soft { background: var(--secondary-container); color: var(--on-secondary-container); }
+.avatar.primary { background: var(--primary); color: var(--on-primary); }
+.avatar.tertiary { background: var(--tertiary); color: var(--on-tertiary); }
+.avatar.secondary { background: var(--secondary); color: var(--on-secondary); }
 .today { display: inline-flex; align-items: center; gap: var(--space-1); height: 24px; padding: 0 var(--space-2) 0 var(--space-1);
   border-radius: var(--shape-sm); background: var(--secondary-container); color: var(--on-secondary-container); font-size: 12px; font-weight: 500; }
 .today .uy-icon { font-size: 16px; }

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { check, variants } from '../match'
 import { DIFFICULTY, schedule, today } from '../srs'
+import { avatarTone } from '../../ui/avatarTone'
 import { parseDeck } from '../userDecks'
 
 describe('check', () => {
@@ -106,5 +107,14 @@ describe('difficulty scale', () => {
   })
   it('labels the ends and the middle', () => {
     expect(DIFFICULTY.map((d) => d.label ?? '')).toEqual(['Easy', '', 'Moderate', '', 'Hard'])
+  })
+})
+
+describe('avatarTone', () => {
+  it('gives each of up to six people their own color, the same on any device', () => {
+    const ids = ['d', 'a', 'c', 'b']
+    const tones = ids.map((id) => avatarTone(id, ids))
+    expect(new Set(tones).size).toBe(4)
+    expect(avatarTone('c', ['c', 'b', 'a', 'd'])).toBe(avatarTone('c', ids))
   })
 })
