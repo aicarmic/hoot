@@ -8,6 +8,7 @@ import { pickSession, schedule, shuffle, type Grade } from '../lib/srs'
 import { store } from '../lib/store'
 import { syncNow } from '../lib/sync'
 import { Icon } from '../ui/Icon'
+import { wentWell } from '../lib/srs'
 
 const COMPONENTS = { flashcards: Flashcards, quiz: Quiz, speak: ListenSpeak }
 
@@ -78,7 +79,7 @@ export function Session({ deck, mode, focus, preview = false }: { deck: Deck; mo
 
   if (!card) {
     const grades = Object.values(results)
-    const solid = grades.filter((g) => g === 'good' || g === 'easy').length
+    const solid = grades.filter(wentWell).length
     const sooner = grades.length - solid
     return (
       <>
@@ -89,18 +90,18 @@ export function Session({ deck, mode, focus, preview = false }: { deck: Deck; mo
           </div>
           <h1 className="h-page">Nice work</h1>
           <p className="lede">
-            You practiced <strong>{grades.length}</strong> cards. {solid} felt solid
-            {sooner ? `, and ${sooner} will come back sooner` : ''}.
+            You practiced <strong>{grades.length}</strong> cards. {solid} went well
+            {sooner ? `, and ${sooner} will come back sooner for more practice` : ''}.
           </p>
           {preview && <p className="meta">This was a preview, so nothing was saved. Enroll to keep your progress.</p>}
           <div className="tally">
             <div className="stat">
               <b>{solid}</b>
-              <span className="label">Felt solid</span>
+              <span className="label">Went well</span>
             </div>
             <div className="stat">
               <b>{sooner}</b>
-              <span className="label">Coming back sooner</span>
+              <span className="label">Need more practice</span>
             </div>
           </div>
           <div className="row center">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useAccount } from '../lib/account'
+import { Avatar } from '../ui/Avatar'
 import { Icon } from '../ui/Icon'
 import { familySummary, timeAgo, type MemberSummary } from '../lib/family'
 
@@ -48,9 +49,7 @@ export function Family() {
             const me = m.user_id === acct.session?.user.id
             return (
               <div key={m.user_id} className="member">
-                <span className="avatar" aria-hidden="true">
-                  {m.display_name.slice(0, 1).toUpperCase()}
-                </span>
+                <Avatar id={m.user_id} name={m.display_name} allIds={rows.map((r) => r.user_id)} />
                 <span className="grow member-body">
                   <span className="row">
                     <span className="title-m">

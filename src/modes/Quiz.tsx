@@ -70,7 +70,7 @@ function Choose({ deck, card, onAnswer }: ModeProps) {
         })}
       </div>
       {picked && (
-        <Feedback ok={right} text={right ? 'Yes, that’s it.' : `It’s “${card.answer}”. It will come back sooner.`}>
+        <Feedback ok={right} text={right ? 'Yes, that’s it.' : `It’s “${card.answer}”. You’ll see it again soon.`}>
           <Extra card={card} />
           <button type="button" className="uy-btn uy-state uy-btn--filled block" autoFocus onClick={() => onAnswer(right ? 'good' : 'again')}>
             Next

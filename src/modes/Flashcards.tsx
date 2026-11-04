@@ -1,17 +1,10 @@
 import { useEffect, useState } from 'react'
-import { nextReviewLabel, type Grade } from '../lib/srs'
+import { DIFFICULTY } from '../lib/srs'
 import { Extra } from './Extra'
 import { SpeakButton } from './SpeakButton'
 import type { ModeProps } from './types'
 
-const GRADES: { g: Grade; label: string }[] = [
-  { g: 'again', label: 'Again' },
-  { g: 'hard', label: 'Hard' },
-  { g: 'good', label: 'Good' },
-  { g: 'easy', label: 'Easy' },
-]
-
-export function Flashcards({ deck, card, progress, onAnswer }: ModeProps) {
+export function Flashcards({ deck, card, onAnswer }: ModeProps) {
   const [flipped, setFlipped] = useState(false)
   const problem = deck.kind === 'problem'
 
@@ -20,7 +13,7 @@ export function Flashcards({ deck, card, progress, onAnswer }: ModeProps) {
       if (e.key === ' ' || e.key === 'Enter') {
         e.preventDefault()
         setFlipped(true)
-      } else if (flipped && ['1', '2', '3', '4'].includes(e.key)) onAnswer(GRADES[Number(e.key) - 1].g)
+      } else if (flipped && ['1', '2', '3', '4', '5'].includes(e.key)) onAnswer(DIFFICULTY[Number(e.key) - 1].grade)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -51,23 +44,22 @@ export function Flashcards({ deck, card, progress, onAnswer }: ModeProps) {
       {flipped && (
         <div className="stack-3">
           <Extra card={card} />
-          <p className="ask">How well did you know it?</p>
-          <div className="grades">
-            {GRADES.map(({ g, label }) => {
-              const when = nextReviewLabel(progress, g)
-              return (
-                <button
-                  key={g}
-                  type="button"
-                  className={`grade ${g} uy-state`}
-                  aria-label={`${label}, comes back ${when === 'today' ? 'today' : `in ${when}`}`}
-                  onClick={() => onAnswer(g)}
-                >
-                  {label}
-                  <small aria-hidden="true">{when}</small>
-                </button>
-              )
-            })}
+          <p className="ask" id="difficulty-q">
+            Difficulty?
+          </p>
+          <div className="scale" role="group" aria-labelledby="difficulty-q">
+            {DIFFICULTY.map(({ n, grade, label }) => (
+              <button
+                key={n}
+                type="button"
+                className="scale-step uy-state"
+                aria-label={label ? `${n}, ${label.toLowerCase()}` : String(n)}
+                onClick={() => onAnswer(grade)}
+              >
+                <b>{n}</b>
+                <small aria-hidden="true">{label ?? '\u00a0'}</small>
+              </button>
+            ))}
           </div>
         </div>
       )}

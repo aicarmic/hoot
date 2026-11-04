@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { check, variants } from '../match'
-import { nextReviewLabel, schedule, today } from '../srs'
+import { DIFFICULTY, schedule, today } from '../srs'
+import { avatarTone } from '../../ui/avatarTone'
 import { parseDeck } from '../userDecks'
 
 describe('check', () => {
@@ -94,14 +95,26 @@ describe('parseDeck', () => {
   })
 })
 
-describe('nextReviewLabel', () => {
-  it('follows schedule() for each grade', () => {
-    expect(nextReviewLabel(undefined, 'again')).toBe('today')
-    expect(nextReviewLabel(undefined, 'hard')).toBe('1 day')
-    expect(nextReviewLabel(undefined, 'good')).toBe('1 day')
-    expect(nextReviewLabel(undefined, 'easy')).toBe('2 days')
-    const seen = schedule(schedule(undefined, 'good'), 'good')
-    expect(nextReviewLabel(seen, 'good')).toBe(`${schedule(seen, 'good').intervalDays} days`)
-    expect(nextReviewLabel({ ...seen, intervalDays: 50, reps: 5 }, 'easy')).toMatch(/months$/)
+describe('difficulty scale', () => {
+  it('maps 1 (easy) to 5 (hard) onto shorter and shorter gaps', () => {
+    let seen = schedule(undefined, 'good')
+    for (let i = 0; i < 3; i++) seen = schedule(seen, 'good')
+    const gaps = DIFFICULTY.map((d) => schedule(seen, d.grade).intervalDays)
+    expect(gaps[4]).toBe(0)
+    for (let i = 1; i < gaps.length; i++) expect(gaps[i]).toBeLessThanOrEqual(gaps[i - 1])
+    expect(gaps[2]).toBeGreaterThan(gaps[3])
+    expect(gaps[2]).toBeLessThan(gaps[1])
+  })
+  it('labels the ends and the middle', () => {
+    expect(DIFFICULTY.map((d) => d.label ?? '')).toEqual(['Easy', '', 'Moderate', '', 'Hard'])
+  })
+})
+
+describe('avatarTone', () => {
+  it('gives each of up to six people their own color, the same on any device', () => {
+    const ids = ['d', 'a', 'c', 'b']
+    const tones = ids.map((id) => avatarTone(id, ids))
+    expect(new Set(tones).size).toBe(4)
+    expect(avatarTone('c', ['c', 'b', 'a', 'd'])).toBe(avatarTone('c', ids))
   })
 })

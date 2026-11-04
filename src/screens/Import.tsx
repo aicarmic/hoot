@@ -8,6 +8,7 @@ import { TextField } from '../ui/TextField'
 const LANGS = [
   ['', 'No audio'],
   ['it-IT', 'Italian'],
+  ['ru-RU', 'Russian'],
   ['es-ES', 'Spanish'],
   ['fr-FR', 'French'],
   ['de-DE', 'German'],
