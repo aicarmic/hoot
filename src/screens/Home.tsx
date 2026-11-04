@@ -8,6 +8,7 @@ import { Icon } from '../ui/Icon'
 import { SubjectBadge } from '../ui/SubjectBadge'
 import { Nudges } from './Nudges'
 import { SAT_DECK_ID, satDay, satTodayDone } from '../content/sat'
+import { loadPrefs } from '../lib/reminderPrefs'
 
 function weekCount(): number {
   const a = store.activity()
@@ -79,7 +80,8 @@ function ModuleCard({ deck: d }: { deck: Deck }) {
   // SAT Prep Words grows by two words a day, so it counts words out of the whole list.
   const sat = d.id === SAT_DECK_ID ? satDay() : undefined
   const meta = sat ? `${sat.introduced} of ${sat.total} words` : [d.level, plural(t.total, 'card')].filter(Boolean).join(' · ')
-  const pill = sat?.sunday && sat.week.length ? 'Sunday quiz' : sat?.today.length && !satTodayDone(sat.today) ? `${sat.today.length} new today` : t.due ? `${t.due} to review` : ''
+  const quizDay = !!sat && !sat.finished && sat.quiz.length > 0 && (sat.sunday || sat.weekday === loadPrefs().quizDay)
+  const pill = quizDay ? 'Quiz today' : sat?.today.length && !satTodayDone(sat.today) ? `${sat.today.length} new today` : t.due ? `${t.due} to review` : ''
   const label = `${d.title}, ${meta}, ${t.pctLabel.toLowerCase()}${pill ? `, ${pill.toLowerCase()}` : ''}`
   return (
     <a href={`#deck/${d.id}`} className="class-card module uy-state" aria-label={label}>

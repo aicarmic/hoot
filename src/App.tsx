@@ -12,6 +12,7 @@ import { Import } from './screens/Import'
 import { Me } from './screens/Me'
 import { SatPage } from './screens/SatPage'
 import { Session } from './screens/Session'
+import { Settings } from './screens/Settings'
 import { Icon } from './ui/Icon'
 import type { IconName } from './ui/icons'
 import { Wordmark } from './ui/Wordmark'
@@ -47,6 +48,7 @@ export default function App() {
   if (view === 'import') body = <Import />
   else if (view === 'family') body = <Family />
   else if (view === 'me') body = <Me />
+  else if (view === 'settings') body = <Settings />
   else if (deck && validMode)
     body = <Session key={`${deck.id}-${validMode}-${focusName ?? ''}`} deck={deck} mode={validMode} focus={focus} />
   else if (deck?.id === SAT_DECK_ID) body = <SatPage deck={deck} />
@@ -60,7 +62,7 @@ export default function App() {
   // Language decks live in a class page; other subjects' decks sit straight on Learn.
   const deckInClass = !!deck && isLanguage(bySubject.get(deck.subject) ?? [])
   const back = deckInClass ? { href: `#class/${subjectSlug(deck.subject)}`, label: deck.subject } : { href: '#', label: 'Learn' }
-  const backHeader = view === 'import' || !!subject || !!deck
+  const backHeader = view === 'import' || view === 'settings' || !!subject || !!deck
 
   if (inSession) return <div className="app">{body}</div>
 
@@ -79,6 +81,9 @@ export default function App() {
         <header className="top">
           <a href="#" className="brand" aria-label="Hoot, home">
             <Wordmark />
+          </a>
+          <a href="#settings" className="icon-btn uy-state settings-btn" aria-label="Settings">
+            <Icon name="settings" />
           </a>
         </header>
       )}

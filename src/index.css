@@ -386,6 +386,16 @@ form { margin: 0; }
 .error-text { color: var(--error); }
 .mode-pick.reminder .uy-btn { flex: none; }
 
+/* Settings */
+.settings-grid { display: flex; flex-direction: column; gap: var(--space-4); }
+.settings-grid .row.two { align-items: flex-end; gap: var(--space-3); }
+.settings-grid .row.two > * { flex: 1; }
+.uy-field__control.select { position: relative; }
+.uy-field__control.select select { appearance: none; -webkit-appearance: none; cursor: pointer; padding-right: var(--space-6); font: inherit; }
+.uy-field__control.select .uy-icon { position: absolute; right: var(--space-3); pointer-events: none; }
+.uy-field__control select option { color: var(--on-surface); background: var(--surface); }
+.top .settings-btn { margin-right: calc(var(--space-2) * -1); }
+
 /* Small helpers */
 .row.nowrap-center { flex-wrap: nowrap; }
 .stack-tight { display: flex; flex-direction: column; gap: 2px; }

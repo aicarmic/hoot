@@ -1,7 +1,7 @@
 import { today } from '../../lib/srs'
 import { dayKey, store } from '../../lib/store'
 import type { Card, Deck } from '../types'
-import { introducedBy, isSunday, newOn, popQuiz, weekSoFar, type Range, type SatWord } from './schedule'
+import { CATCH_UP_WEEK, introducedBy, isSunday, mondayOf, newOn, popQuiz, quizRange, weekSoFar, weekday, type Range, type SatWord } from './schedule'
 import wordList from './words.json'
 
 export const SAT_DECK_ID = 'sat-words'
@@ -43,13 +43,17 @@ export function satDay(date = today()) {
     today: words.slice(newOn(date, TOTAL).from, newOn(date, TOTAL).to),
     popQuiz: words.slice(popQuiz(date, TOTAL).from, popQuiz(date, TOTAL).to),
     week: words.slice(weekSoFar(date, TOTAL).from, weekSoFar(date, TOTAL).to),
+    /** What the weekly quiz covers today (everything so far in the catch-up week). */
+    quiz: words.slice(quizRange(date, TOTAL).from, quizRange(date, TOTAL).to),
+    catchUp: mondayOf(date) === CATCH_UP_WEEK,
+    weekday: weekday(date),
   }
 }
 
-/** Cards for a focused session: "today" (today's new words) or "week" (this week's words). */
+/** Cards for a focused session: "today" (today's new words) or "week" (the weekly quiz). */
 export function satFocusCards(focus: string, date = today()): Card[] | undefined {
   if (focus === 'today') return cardsIn(newOn(date, TOTAL))
-  if (focus === 'week') return cardsIn(weekSoFar(date, TOTAL))
+  if (focus === 'week') return cardsIn(quizRange(date, TOTAL))
   return undefined
 }
 

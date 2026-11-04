@@ -1,9 +1,11 @@
+import { loadPrefs, timeZone, type ReminderPrefs } from './reminderPrefs'
 import { supabase } from './supabase'
 
 /**
  * Daily reminders by Web Push. This device subscribes through the service worker and saves the
  * subscription in Supabase (push_subscriptions). A GitHub Actions job (.github/workflows/sat-nudge.yml)
- * sends the 5 pm reminder to every saved subscription. See docs/SETUP-reminders.md.
+ * runs every hour and sends each subscription its reminders at the times saved with it
+ * (see lib/reminderPrefs.ts). Setup: docs/SETUP-reminders.md.
  */
 
 /** The VAPID public key, set as a repository variable at build time. Public by design. */
@@ -62,6 +64,7 @@ export async function turnOn(userId: string): Promise<PushState> {
     user_id: userId,
     p256dh: json.keys?.p256dh,
     auth: json.keys?.auth,
+    ...prefColumns(loadPrefs()),
   })
   if (error) {
     await sub.unsubscribe()
@@ -78,4 +81,17 @@ export async function turnOff(): Promise<PushState> {
     await sub.unsubscribe()
   }
   return 'off'
+}
+
+function prefColumns(p: ReminderPrefs) {
+  return { tz: timeZone(), daily_hour: p.dailyHour, quiz_day: p.quizDay, quiz_hour: p.quizHour }
+}
+
+/** Copy new reminder times onto this device's subscription, if reminders are on here. */
+export async function savePrefsToServer(p: ReminderPrefs): Promise<void> {
+  const reg = await registration()
+  const sub = await reg?.pushManager.getSubscription()
+  if (!sub) return
+  const { error } = await supabase.from('push_subscriptions').update(prefColumns(p)).eq('endpoint', sub.endpoint)
+  if (error) throw new Error(error.message)
 }

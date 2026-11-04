@@ -33,6 +33,7 @@ export const ICONS = [
   'replay',
   'school',
   'send',
+  'settings',
   'slow_motion_video',
   'spellcheck',
   'style',

@@ -77,6 +77,18 @@ export function weekSoFar(date: string, total: number): Range {
   return { from: introducedBy(addDays(mondayOf(date), -1), total), to: introducedBy(date, total) }
 }
 
+/**
+ * The first week in Hoot (Monday 2026-11-02) has a catch-up quiz: it covers every word so far,
+ * including the ones that only went out on WhatsApp.
+ */
+export const CATCH_UP_WEEK = '2026-11-02'
+
+/** What the weekly quiz on `date` covers: this week's words so far, or everything in the catch-up week. */
+export function quizRange(date: string, total: number): Range {
+  const r = weekSoFar(date, total)
+  return mondayOf(date) === CATCH_UP_WEEK ? { from: 0, to: r.to } : r
+}
+
 /** The pop quiz: the two words that went out before today's. */
 export function popQuiz(date: string, total: number): Range {
   const to = introducedBy(addDays(date, -1), total)
@@ -100,20 +112,10 @@ export interface Nudge {
 
 const list = (ws: string[]) => (ws.length <= 2 ? ws.join(' and ') : `${ws.slice(0, -1).join(', ')} and ${ws.at(-1)}`)
 
-/** The 5 pm reminder for `date`, or null when there is nothing to say. */
-export function nudgeFor(date: string, words: SatWord[]): Nudge | null {
+/** The daily reminder for `date` (Monday to Saturday), or null when no words go out. */
+export function dailyNudge(date: string, words: SatWord[]): Nudge | null {
   const total = words.length
   const pick = (r: Range) => words.slice(r.from, r.to).map((w) => w.word)
-  if (isSunday(date)) {
-    const week = pick(weekSoFar(date, total))
-    if (!week.length) return null
-    return {
-      title: 'Sunday SAT quiz',
-      body: `This week’s ${week.length} words. See how many you remember.`,
-      url: '#deck/sat-words/quiz/week',
-      tag: 'sat-words',
-    }
-  }
   const today = pick(newOn(date, total))
   if (!today.length) return null
   const last = introducedBy(date, total) === total
@@ -122,6 +124,20 @@ export function nudgeFor(date: string, words: SatWord[]): Nudge | null {
     title: last ? 'The last SAT words' : 'Today’s SAT words',
     body: `${list(today)}.${quiz.length ? ` Pop quiz: who remembers ${list(quiz)}?` : ''}${last ? ` That makes all ${total}.` : ''}`,
     url: '#deck/sat-words',
-    tag: 'sat-words',
+    tag: 'sat-daily',
+  }
+}
+
+/** The weekly quiz reminder for `date`, or null when there is nothing to quiz on. */
+export function quizNudge(date: string, words: SatWord[]): Nudge | null {
+  const r = quizRange(date, words.length)
+  const n = r.to - r.from
+  if (!n) return null
+  const catchUp = r.from === 0 && mondayOf(date) === CATCH_UP_WEEK
+  return {
+    title: catchUp ? 'SAT catch-up quiz' : 'SAT quiz time',
+    body: catchUp ? `All ${n} words so far. See how many you remember.` : `This week’s ${n} words. See how many you remember.`,
+    url: '#deck/sat-words/quiz/week',
+    tag: 'sat-quiz',
   }
 }

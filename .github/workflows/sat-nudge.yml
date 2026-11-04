@@ -1,15 +1,14 @@
-name: SAT daily reminder
+name: SAT reminders
 
-# 5 pm in Denver is 00:00 UTC in winter and 23:00 UTC in summer, so this runs at both
-# and the script sends only from the run that lands on 5 pm. Setup: docs/SETUP-reminders.md.
+# Runs every hour. Each device chose when it wants reminders (in Hoot's Settings), in its own
+# time zone, and the script sends to the devices whose hour this is. Setup: docs/SETUP-reminders.md.
 on:
   schedule:
-    - cron: '3 23 * * *'
-    - cron: '3 0 * * *'
+    - cron: '3 * * * *'
   workflow_dispatch:
     inputs:
       force:
-        description: Send today's reminder now, whatever the time
+        description: Send every device today's reminder now, whatever the time
         type: boolean
         default: true
 

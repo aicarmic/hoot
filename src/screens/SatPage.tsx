@@ -1,10 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { SAT_DECK_ID, satDay, satTodayDone } from '../content/sat'
 import type { SatWord } from '../content/sat/schedule'
 import type { Deck } from '../content/types'
 import { SpeakButton } from '../modes/SpeakButton'
-import { useAccount } from '../lib/account'
-import { pushState, turnOff, turnOn, type PushState } from '../lib/push'
+import { DAYS, hourLabel, loadPrefs } from '../lib/reminderPrefs'
 import { deckStats, statusOf } from '../lib/srs'
 import { store } from '../lib/store'
 import { Icon } from '../ui/Icon'
@@ -17,12 +16,15 @@ export function SatPage({ deck }: { deck: Deck }) {
   const s = deckStats(deck, store)
   const done = satTodayDone(day.today)
   const pct = ((day.introduced / day.total) * 100).toFixed(1)
+  const prefs = loadPrefs()
+  // Quiz day: Sunday always (no new words), plus the day this person picked in Settings.
+  const quizDay = !day.finished && day.quiz.length > 0 && (day.sunday || day.weekday === prefs.quizDay)
 
   return (
     <>
       <div className="stack">
         <h1 className="h-page">{deck.title}</h1>
-        <p className="meta">Two new words a day, and a quiz on Sunday</p>
+        <p className="meta">Two new words a day, Monday to Saturday, and a weekly quiz</p>
       </div>
 
       <div className="stack" style={{ gap: 6 }}>
@@ -46,21 +48,27 @@ export function SatPage({ deck }: { deck: Deck }) {
           <p className="title-m">You did it, that’s {day.total} words.</p>
           <p className="uy-card__body">Every word in the SAT list has gone out. Keep practicing below so they stick.</p>
         </article>
-      ) : day.sunday ? (
-        <article className="uy-card uy-card--warm">
-          <div className="uy-card__eyebrow">Sunday quiz</div>
-          <p className="title-m">This week’s {day.week.length} words</p>
-          <p className="uy-card__body">No new words today. See how many of this week’s you remember.</p>
-          <div className="uy-card__actions">
-            {day.week.length > 0 && (
+      ) : (
+        quizDay && (
+          <article className="uy-card uy-card--warm">
+            <div className="uy-card__eyebrow">{day.catchUp ? 'Catch-up quiz' : 'Weekly quiz'}</div>
+            <p className="title-m">{day.catchUp ? `All ${day.quiz.length} words so far` : `This week’s ${day.quiz.length} words`}</p>
+            <p className="uy-card__body">
+              {day.catchUp
+                ? 'Including the ones that went out on WhatsApp. See how many you remember.'
+                : `${day.sunday ? 'No new words today. ' : ''}See how many of this week’s you remember.`}
+            </p>
+            <div className="uy-card__actions">
               <a className="uy-btn uy-state uy-btn--filled uy-btn--with-icon" href={`#deck/${SAT_DECK_ID}/quiz/week`}>
                 <Icon name="quiz" />
                 Start the quiz
               </a>
-            )}
-          </div>
-        </article>
-      ) : (
+            </div>
+          </article>
+        )
+      )}
+
+      {!day.finished && !day.sunday && (
         <section className="stack">
           <div className="row split">
             <h2 className="h-section">Today’s words</h2>
@@ -84,7 +92,7 @@ export function SatPage({ deck }: { deck: Deck }) {
         </section>
       )}
 
-      {!day.sunday && day.popQuiz.length > 0 && <PopQuiz words={day.popQuiz} />}
+      {!day.finished && !day.sunday && day.popQuiz.length > 0 && <PopQuiz words={day.popQuiz} />}
 
       <section className="stack">
         <h2 className="h-section">Practice every word so far</h2>
@@ -110,7 +118,19 @@ export function SatPage({ deck }: { deck: Deck }) {
         </a>
       </section>
 
-      <Reminder />
+      <a href="#settings" className="mode-pick uy-state">
+        <span className="lead">
+          <Icon name="notifications" />
+        </span>
+        <span className="grow mode-body">
+          <span className="title-m">Reminders</span>
+          <span className="meta">
+            {prefs.dailyHour === null ? 'No daily reminder' : `New words at ${hourLabel(prefs.dailyHour)}`} ·{' '}
+            {prefs.quizHour === null ? 'no quiz reminder' : `quiz ${DAYS[prefs.quizDay]} at ${hourLabel(prefs.quizHour)}`}
+          </span>
+        </span>
+        <Icon name="chevron_right" className="chev" />
+      </a>
 
       {day.week.length > 0 && <WordList title={day.sunday ? 'This week' : 'This week so far'} words={day.week} lang={deck.speechLang} />}
     </>
@@ -194,68 +214,6 @@ function WordList({ title, words, lang }: { title: string; words: SatWord[]; lan
             </div>
           )
         })}
-      </div>
-    </section>
-  )
-}
-
-const REMINDER_NOTE: Partial<Record<PushState, string>> = {
-  'install-first': 'On iPhone, add Hoot to your Home Screen from Safari (Share, then Add to Home Screen), open it from there and turn this on.',
-  unsupported: 'This browser can’t show reminders. Try Chrome on Android, or the Home Screen app on iPhone.',
-  blocked: 'Notifications are blocked for Hoot. Allow them in your browser’s site settings, then come back.',
-  'not-set-up': 'Reminders aren’t set up yet.',
-}
-
-/** "Remind me at 5 pm" switch for this device. */
-function Reminder() {
-  const acct = useAccount()
-  const uid = acct.session?.user.id
-  const [state, setState] = useState<PushState | null>(null)
-  const [busy, setBusy] = useState(false)
-  const [error, setError] = useState('')
-
-  useEffect(() => {
-    pushState().then(setState, () => setState('unsupported'))
-  }, [])
-
-  if (!state) return null
-  const toggle = async () => {
-    if (!uid) return
-    setBusy(true)
-    setError('')
-    try {
-      setState(state === 'on' ? await turnOff() : await turnOn(uid))
-    } catch (e) {
-      setError((e as Error).message)
-    } finally {
-      setBusy(false)
-    }
-  }
-  const canToggle = state === 'on' || state === 'off'
-  const note = !uid && canToggle ? 'Sign in on the Me tab to get reminders.' : REMINDER_NOTE[state]
-
-  return (
-    <section className="stack">
-      <h2 className="h-section">Reminder</h2>
-      <div className="mode-pick reminder">
-        <span className="lead">
-          <Icon name="notifications" />
-        </span>
-        <span className="grow mode-body">
-          <span className="title-m">Daily at 5 pm</span>
-          <span className="meta">{note ?? 'Today’s two words, and the quiz on Sunday. On this device.'}</span>
-          {error && <span className="meta error-text">{error}</span>}
-        </span>
-        {canToggle && uid && (
-          <button
-            type="button"
-            className={`uy-btn uy-state ${state === 'on' ? 'uy-btn--outlined' : 'uy-btn--tonal'}`}
-            disabled={busy}
-            onClick={() => void toggle()}
-          >
-            {state === 'on' ? 'Turn off' : 'Turn on'}
-          </button>
-        )}
       </div>
     </section>
   )

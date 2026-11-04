@@ -67,6 +67,11 @@ create table if not exists public.push_subscriptions (
   user_id uuid not null references auth.users on delete cascade,
   p256dh text not null,
   auth text not null,
+  -- When this device wants its reminders, in its own time zone. A null hour means off.
+  tz text not null default 'America/Denver',
+  daily_hour int default 17 check (daily_hour between 0 and 23),
+  quiz_day int not null default 0 check (quiz_day between 0 and 6), -- 0 = Sunday
+  quiz_hour int default 17 check (quiz_hour between 0 and 23),
   created_at timestamptz not null default now()
 );
 
