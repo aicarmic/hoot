@@ -4,15 +4,17 @@ import { Flashcards } from '../modes/Flashcards'
 import { ListenSpeak } from '../modes/ListenSpeak'
 import { Quiz } from '../modes/Quiz'
 import { MODES, type ModeId } from '../modes/types'
-import { pickSession, schedule, type Grade } from '../lib/srs'
+import { pickSession, schedule, shuffle, type Grade } from '../lib/srs'
 import { store } from '../lib/store'
 import { syncNow } from '../lib/sync'
 import { Icon } from '../ui/Icon'
 
 const COMPONENTS = { flashcards: Flashcards, quiz: Quiz, speak: ListenSpeak }
 
-export function Session({ deck, mode }: { deck: Deck; mode: ModeId }) {
-  const [queue, setQueue] = useState<Card[]>(() => pickSession(deck, store))
+/** `focus`: practice exactly these cards (e.g. today's new words) instead of the usual pick. */
+export function Session({ deck, mode, focus }: { deck: Deck; mode: ModeId; focus?: Card[] }) {
+  const pick = () => (focus ? shuffle(focus) : pickSession(deck, store))
+  const [queue, setQueue] = useState<Card[]>(pick)
   const [index, setIndex] = useState(0)
   const [results, setResults] = useState<Record<string, Grade>>({})
   const [retried, setRetried] = useState<Set<string>>(new Set())
@@ -41,8 +43,7 @@ export function Session({ deck, mode }: { deck: Deck; mode: ModeId }) {
   )
 
   const restart = () => {
-    const next = pickSession(deck, store)
-    setQueue(next)
+    setQueue(pick())
     setIndex(0)
     setResults({})
     setRetried(new Set())
@@ -66,7 +67,7 @@ export function Session({ deck, mode }: { deck: Deck; mode: ModeId }) {
   if (!queue.length) {
     return (
       <main className="done">
-        <p className="lede">This deck has no cards yet.</p>
+        <p className="lede">{focus ? 'Nothing to practice here today.' : 'This deck has no cards yet.'}</p>
         <a className="uy-btn uy-state uy-btn--filled" href={`#deck/${deck.id}`}>
           Back
         </a>

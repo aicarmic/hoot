@@ -10,6 +10,7 @@ const FLAGS: Record<string, { colors: string[]; vertical: boolean }> = {
 const ICONS: Record<string, IconName> = {
   Math: 'calculate',
   Biology: 'eco',
+  'Test prep': 'spellcheck',
 }
 
 /** A class's flag (languages) or a round subject icon (everything else). */

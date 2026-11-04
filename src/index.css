@@ -377,6 +377,15 @@ form { margin: 0; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 
+/* SAT Prep Words */
+.sat-word { gap: var(--space-1); }
+.sat-word .word { font-family: var(--font-serif); font-size: 24px; line-height: 32px; font-weight: 500; overflow-wrap: anywhere; }
+.sat-word .word em { font-family: var(--font-sans); font-style: italic; font-size: 14px; line-height: 20px; font-weight: 400; color: var(--on-surface-variant); }
+.sat-word .def { margin: 0; font-size: 16px; line-height: 24px; letter-spacing: 0.15px; }
+.badge .uy-icon { font-size: 14px; margin-right: 2px; }
+.error-text { color: var(--error); }
+.mode-pick.reminder .uy-btn { flex: none; }
+
 /* Small helpers */
 .row.nowrap-center { flex-wrap: nowrap; }
 .stack-tight { display: flex; flex-direction: column; gap: 2px; }

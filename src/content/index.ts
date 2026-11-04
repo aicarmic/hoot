@@ -1,4 +1,5 @@
 import { loadUserDecks } from '../lib/userDecks'
+import { satDeck } from './sat'
 import type { Deck } from './types'
 
 const modules = import.meta.glob<{ default: Deck }>('./decks/*.json', { eager: true })
@@ -8,9 +9,9 @@ export const builtInDecks: Deck[] = Object.entries(modules)
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, m]) => m.default)
 
-/** Built-in plus imported decks. */
+/** Built-in plus imported decks, plus the date-driven SAT Prep Words. */
 export function allDecks(): Deck[] {
-  return [...builtInDecks, ...loadUserDecks()]
+  return [...builtInDecks, satDeck(), ...loadUserDecks()]
 }
 
 export function isUserDeck(d: Deck) {

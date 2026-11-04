@@ -1,0 +1,38 @@
+name: SAT daily reminder
+
+# 5 pm in Denver is 00:00 UTC in winter and 23:00 UTC in summer, so this runs at both
+# and the script sends only from the run that lands on 5 pm. Setup: docs/SETUP-reminders.md.
+on:
+  schedule:
+    - cron: '3 23 * * *'
+    - cron: '3 0 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Send today's reminder now, whatever the time
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sat-nudge
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/sat-nudge.mjs
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          VAPID_PUBLIC_KEY: ${{ vars.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}

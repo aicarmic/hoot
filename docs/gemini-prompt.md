@@ -42,6 +42,7 @@ Rules:
 - Use the same `subject` spelling for every deck in that subject, so they group together.
 - For a language deck, add `"speechLang": "it-IT"` (or the right code, e.g. `"ru-RU"`) so Hoot can read cards aloud.
 - For math or any problems to work out on paper, add `"kind": "problem"`. Then each `prompt` is one problem (put each equation of a system on its own line with `\n`), each `answer` is the final answer only, `choices` are answers a student gets from common mistakes (a sign error, swapped x and y, dividing wrong), `hint` is the first move, and each card has a `"steps"` list with the worked solution, one short step per item. Order the cards from easiest to hardest.
+- For vocabulary in your own language (SAT words, science terms), add `"kind": "vocab"` and `"speechLang": "en-US"`. Then each `prompt` is one word, each `answer` its short definition, `hint` the part of speech, and `example` a sentence that uses it.
 - For conversation practice, add `"kind": "dialogue"`. Then each `prompt` is something a person says (in the language being learnt), each `answer` is a natural short reply in the same language, and `notes` gives the English for both.
 
 ---
@@ -58,7 +59,7 @@ What the importer in `src/lib/userDecks.ts` reads:
 | `level`, `unit` | no | Shown as labels; decks in a subject are grouped by level. |
 | `promptLabel`, `answerLabel` | no | Labels for the two sides, e.g. "Term" / "Definition". |
 | `speechLang` | no | BCP-47 code. Turns on audio and Listen & speak. |
-| `kind` | no | `"dialogue"` or `"problem"`. |
+| `kind` | no | `"dialogue"`, `"problem"` or `"vocab"`. |
 | `cards` | yes, at least 2 | Each needs `prompt` and `answer`. |
 | card `id` | no | Progress is keyed on it, so keep ids stable when you fix a deck and re-import. |
 | card `hint`, `notes`, `example` | no | Shown after answering. |

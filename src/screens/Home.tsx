@@ -7,6 +7,7 @@ import { COMING_SOON, isLanguage, subjectSlug } from '../content/subjects'
 import { Icon } from '../ui/Icon'
 import { SubjectBadge } from '../ui/SubjectBadge'
 import { Nudges } from './Nudges'
+import { SAT_DECK_ID, satDay, satTodayDone } from '../content/sat'
 
 function weekCount(): number {
   const a = store.activity()
@@ -75,13 +76,16 @@ export function Home({ decks }: { decks: Deck[] }) {
 /** One focused study deck outside the languages, e.g. a test-review set. Opens the deck directly. */
 function ModuleCard({ deck: d }: { deck: Deck }) {
   const t = totals([d])
-  const meta = [d.level, plural(t.total, 'card')].filter(Boolean).join(' · ')
-  const label = `${d.title}, ${meta}, ${t.pctLabel.toLowerCase()}${t.due ? `, ${t.due} to review` : ''}`
+  // SAT Prep Words grows by two words a day, so it counts words out of the whole list.
+  const sat = d.id === SAT_DECK_ID ? satDay() : undefined
+  const meta = sat ? `${sat.introduced} of ${sat.total} words` : [d.level, plural(t.total, 'card')].filter(Boolean).join(' · ')
+  const pill = sat?.sunday && sat.week.length ? 'Sunday quiz' : sat?.today.length && !satTodayDone(sat.today) ? `${sat.today.length} new today` : t.due ? `${t.due} to review` : ''
+  const label = `${d.title}, ${meta}, ${t.pctLabel.toLowerCase()}${pill ? `, ${pill.toLowerCase()}` : ''}`
   return (
     <a href={`#deck/${d.id}`} className="class-card module uy-state" aria-label={label}>
       <span className="head">
         <SubjectBadge subject={d.subject} />
-        {t.due > 0 && <span className="due-pill">{t.due} to review</span>}
+        {pill && <span className="due-pill">{pill}</span>}
       </span>
       <span className="stack" style={{ gap: 2 }}>
         <span className="class-name">{d.title}</span>

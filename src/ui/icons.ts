@@ -23,6 +23,7 @@ export const ICONS = [
   'menu_book',
   'mic',
   'nights_stay',
+  'notifications',
   'person',
   'person_add',
   'quiz',
@@ -33,6 +34,7 @@ export const ICONS = [
   'school',
   'send',
   'slow_motion_video',
+  'spellcheck',
   'style',
   'volume_up',
 ] as const

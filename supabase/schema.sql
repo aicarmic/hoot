@@ -60,6 +60,16 @@ create table if not exists public.nudges (
 );
 create index if not exists nudges_to_user on public.nudges (to_user, seen_at);
 
+-- Devices that turned on the daily reminder (Web Push). The GitHub Actions job reads these
+-- with the secret key, which bypasses row level security. See docs/SETUP-reminders.md.
+create table if not exists public.push_subscriptions (
+  endpoint text primary key,
+  user_id uuid not null references auth.users on delete cascade,
+  p256dh text not null,
+  auth text not null,
+  created_at timestamptz not null default now()
+);
+
 -- ── Helpers ──────────────────────────────────────────────────────────────────
 
 -- The caller's family. SECURITY DEFINER so policies can use it without recursion.
@@ -141,6 +151,7 @@ alter table public.progress enable row level security;
 alter table public.activity enable row level security;
 alter table public.family_decks enable row level security;
 alter table public.nudges enable row level security;
+alter table public.push_subscriptions enable row level security;
 
 drop policy if exists "see my family" on public.families;
 create policy "see my family" on public.families for select using (id = public.my_family());
@@ -179,6 +190,10 @@ create policy "nudges send" on public.nudges for insert
 drop policy if exists "nudges mark seen" on public.nudges;
 create policy "nudges mark seen" on public.nudges for update
   using (to_user = auth.uid()) with check (to_user = auth.uid());
+
+drop policy if exists "own push subscriptions" on public.push_subscriptions;
+create policy "own push subscriptions" on public.push_subscriptions for all
+  using (user_id = auth.uid()) with check (user_id = auth.uid());
 
 -- ── Grants ───────────────────────────────────────────────────────────────────
 

@@ -26,8 +26,10 @@ export interface Deck {
    * and the answer is a natural reply, also in the target language.
    * "problem": the prompt is a problem to work out on paper (math, physics…). Line breaks in
    * the prompt are kept, Quiz is always multiple choice, and `steps` show the worked solution.
+   * "vocab": words in the learner's own language (e.g. SAT words). The prompt is the word, the
+   * answer its meaning. Audio says the word, but the deck is not a language class.
    */
-  kind?: 'dialogue' | 'problem'
+  kind?: 'dialogue' | 'problem' | 'vocab'
   /** BCP-47 language code; enables audio and Listen & speak. */
   speechLang?: string
   promptLabel?: string

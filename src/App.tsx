@@ -1,5 +1,6 @@
 import { useEffect, useReducer, useState } from 'react'
 import { allDecks, decksBySubject } from './content'
+import { SAT_DECK_ID, satFocusCards } from './content/sat'
 import { isLanguage, subjectFromSlug, subjectSlug } from './content/subjects'
 import { useAccount } from './lib/account'
 import { onSynced } from './lib/sync'
@@ -9,6 +10,7 @@ import { Family } from './screens/Family'
 import { ClassPage, Home } from './screens/Home'
 import { Import } from './screens/Import'
 import { Me } from './screens/Me'
+import { SatPage } from './screens/SatPage'
 import { Session } from './screens/Session'
 import { Icon } from './ui/Icon'
 import type { IconName } from './ui/icons'
@@ -28,7 +30,7 @@ function useHashRoute(): string[] {
 }
 
 export default function App() {
-  const [view, id, mode] = useHashRoute()
+  const [view, id, mode, focusName] = useHashRoute()
   const [, rerender] = useReducer((n: number) => n + 1, 0)
   useEffect(() => onSynced(rerender), [])
   const acct = useAccount()
@@ -39,12 +41,15 @@ export default function App() {
   const inSession = !!(deck && validMode)
   const bySubject = decksBySubject(decks)
   const subject = view === 'class' && id ? subjectFromSlug(id, bySubject.keys()) : undefined
+  const focus = deck?.id === SAT_DECK_ID && focusName ? satFocusCards(focusName) : undefined
 
   let body
   if (view === 'import') body = <Import />
   else if (view === 'family') body = <Family />
   else if (view === 'me') body = <Me />
-  else if (deck && validMode) body = <Session key={`${deck.id}-${validMode}`} deck={deck} mode={validMode} />
+  else if (deck && validMode)
+    body = <Session key={`${deck.id}-${validMode}-${focusName ?? ''}`} deck={deck} mode={validMode} focus={focus} />
+  else if (deck?.id === SAT_DECK_ID) body = <SatPage deck={deck} />
   else if (deck) body = <DeckPage deck={deck} />
   else if (subject) body = <ClassPage subject={subject} decks={bySubject.get(subject) ?? []} />
   else body = <Home decks={decks} />
