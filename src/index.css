@@ -377,6 +377,41 @@ form { margin: 0; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 
+/* SAT Prep Words */
+.sat-word { gap: var(--space-1); }
+.sat-word .word { font-family: var(--font-serif); font-size: 24px; line-height: 32px; font-weight: 500; overflow-wrap: anywhere; }
+.sat-word .word em { font-family: var(--font-sans); font-style: italic; font-size: 14px; line-height: 20px; font-weight: 400; color: var(--on-surface-variant); }
+.sat-word .def { margin: 0; font-size: 16px; line-height: 24px; letter-spacing: 0.15px; }
+.badge .uy-icon { font-size: 14px; margin-right: 2px; }
+.error-text { color: var(--error); }
+.mode-pick.reminder .uy-btn { flex: none; }
+
+/* Enrollment */
+.preview-bar { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-2) var(--space-2) var(--space-4);
+  border-radius: var(--shape-md); background: var(--surface-container-high); font-size: 14px; line-height: 20px; }
+.preview-bar .uy-btn { flex: none; }
+.switch { flex: none; position: relative; width: 52px; height: 32px; border-radius: var(--shape-full); border: 2px solid var(--outline);
+  background: var(--surface-container-highest); cursor: pointer; padding: 0; transition: background 150ms var(--ease); }
+.switch::after { content: ""; position: absolute; top: 6px; left: 6px; width: 16px; height: 16px; border-radius: var(--shape-full);
+  background: var(--outline); transition: all 150ms var(--ease); }
+.switch[aria-checked="true"] { background: var(--primary); border-color: var(--primary); }
+.switch[aria-checked="true"]::after { left: 24px; top: 2px; width: 24px; height: 24px; background: var(--on-primary); }
+.switch:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.class-row { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-4); }
+.class-row + .class-row { border-top: 1px solid var(--outline-variant); }
+.class-row .uy-btn--text { padding: 0 var(--space-2); }
+.class-row .mode-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+
+/* Settings */
+.settings-grid { display: flex; flex-direction: column; gap: var(--space-4); }
+.settings-grid .row.two { align-items: flex-end; gap: var(--space-3); }
+.settings-grid .row.two > * { flex: 1; }
+.uy-field__control.select { position: relative; }
+.uy-field__control.select select { appearance: none; -webkit-appearance: none; cursor: pointer; padding-right: var(--space-6); font: inherit; }
+.uy-field__control.select .uy-icon { position: absolute; right: var(--space-3); pointer-events: none; }
+.uy-field__control select option { color: var(--on-surface); background: var(--surface); }
+.top .settings-btn { margin-right: calc(var(--space-2) * -1); }
+
 /* Small helpers */
 .row.nowrap-center { flex-wrap: nowrap; }
 .stack-tight { display: flex; flex-direction: column; gap: 2px; }

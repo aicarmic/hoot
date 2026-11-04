@@ -12,10 +12,13 @@ import type { ModeProps } from './types'
 /** Multiple choice for newer cards; typing once a card has been seen twice. */
 export function Quiz(props: ModeProps) {
   // Dialogue replies have many right answers, and problem answers like "(−4, −6)" are fiddly
-  // to type and to match, so both stay multiple choice.
-  const canType = !props.deck.kind
+  // to type and to match, so both stay multiple choice. Vocab words are easy to type.
+  const canType = !props.deck.kind || props.deck.kind === 'vocab'
   return canType && props.reps >= 2 && props.deck.cards.length > 1 ? <TypeIt {...props} /> : <Choose {...props} />
 }
+
+/** Language decks may write a sound aid after the meaning; own-language vocab never does. */
+const hasSoundAids = (deck: ModeProps['deck']) => !!deck.speechLang && deck.kind !== 'vocab'
 
 const ASK: Record<string, string> = {
   dialogue: 'What could you say back?',
@@ -25,7 +28,7 @@ const ASK: Record<string, string> = {
 function Choose({ deck, card, onAnswer }: ModeProps) {
   // Language answers can carry a sound aid, "topic (tyema)". It matches the prompt, so it would
   // give the right option away; options leave it out and the feedback shows it.
-  const label = (c: Card) => (deck.speechLang ? hideSoundAid(c.answer, c.prompt) : c.answer)
+  const label = (c: Card) => (hasSoundAids(deck) ? hideSoundAid(c.answer, c.prompt) : c.answer)
   const answer = label(card)
   const options = useMemo(() => {
     const pool = card.choices?.length
@@ -81,7 +84,7 @@ function Choose({ deck, card, onAnswer }: ModeProps) {
 function TypeIt({ deck, card, onAnswer }: ModeProps) {
   // Language decks: see the meaning, type the target language. Otherwise: answer the prompt.
   const reverse = !!deck.speechLang
-  const shown = reverse ? hideSoundAid(card.answer, card.prompt) : card.prompt
+  const shown = reverse ? (hasSoundAids(deck) ? hideSoundAid(card.answer, card.prompt) : card.answer) : card.prompt
   const expected = reverse ? card.prompt : card.answer
   const [value, setValue] = useState('')
   const [result, setResult] = useState<MatchResult | null>(null)
@@ -110,7 +113,7 @@ function TypeIt({ deck, card, onAnswer }: ModeProps) {
         }}
       >
         <TextField
-          label={`Type it${reverse && deck.promptLabel ? ` in ${deck.promptLabel}` : ''}`}
+          label={deck.kind === 'vocab' ? 'Type the word' : `Type it${reverse && deck.promptLabel ? ` in ${deck.promptLabel}` : ''}`}
           ref={input}
           autoFocus
           value={value}

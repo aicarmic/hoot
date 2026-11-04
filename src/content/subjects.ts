@@ -8,7 +8,7 @@ export const COMING_SOON: string[] = ['Math']
  * Any other subject gets its own heading, with one card per deck (a focused study module).
  */
 export function isLanguage(decks: Deck[]): boolean {
-  return decks.some((d) => !!d.speechLang)
+  return decks.some((d) => !!d.speechLang && d.kind !== 'vocab')
 }
 
 /** URL-safe id for a subject, used in #class/<slug>. */

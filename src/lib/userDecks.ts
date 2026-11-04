@@ -173,7 +173,7 @@ export function parseDeck(text: string, meta: ImportMeta): Deck {
     subject: str(deck.subject) ?? (meta.subject.trim() || 'My decks'),
     level: str(deck.level),
     unit: str(deck.unit),
-    kind: deck.kind === 'dialogue' || deck.kind === 'problem' ? deck.kind : undefined,
+    kind: deck.kind === 'dialogue' || deck.kind === 'problem' || deck.kind === 'vocab' ? deck.kind : undefined,
     speechLang: str(deck.speechLang) ?? meta.speechLang,
     promptLabel: str(deck.promptLabel),
     answerLabel: str(deck.answerLabel),

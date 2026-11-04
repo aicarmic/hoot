@@ -12,6 +12,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
+        // Push notifications (daily reminders). The file lives in public/.
+        importScripts: ['push-sw.js'],
         // Google Fonts (Literata, Golos Text, Material Symbols) so Hoot keeps its look offline.
         runtimeCaching: [
           {
@@ -30,7 +32,7 @@ export default defineConfig({
           },
         ],
       },
-      includeAssets: ['favicon.svg', 'icons/apple-touch-icon.png'],
+      includeAssets: ['favicon.svg', 'icons/apple-touch-icon.png', 'icons/badge-96.png'],
       manifest: {
         name: 'Hoot',
         short_name: 'Hoot',
