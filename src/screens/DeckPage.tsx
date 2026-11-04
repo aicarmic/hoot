@@ -32,7 +32,6 @@ export function DeckPage({ deck }: { deck: Deck }) {
   const progress = store.deck(deck.id)
   const modes = MODES.filter((m) => !m.needsSpeech || (deck.speechLang && canSpeak))
   const lastUsed = lastUsedMode()
-  const pref = lastUsed || 'flashcards'
 
   return (
     <>
@@ -59,6 +58,7 @@ export function DeckPage({ deck }: { deck: Deck }) {
           <span className="label">New</span>
         </div>
       </div>
+      <p className="meta">Known cards come back a week or more apart. Learning cards come back sooner.</p>
 
       <section className="stack">
         <h2 className="h-section">Practice</h2>
@@ -66,7 +66,7 @@ export function DeckPage({ deck }: { deck: Deck }) {
           <a
             key={m.id}
             href={`#deck/${deck.id}/${m.id}`}
-            className={`mode-pick uy-state${m.id === pref ? ' pref' : ''}`}
+            className={`mode-pick uy-state${m.id === lastUsed ? ' pref' : ''}`}
             onClick={() => {
               try {
                 localStorage.setItem(PREF, m.id)

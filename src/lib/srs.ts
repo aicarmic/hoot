@@ -1,7 +1,20 @@
 import type { Card, Deck } from '../content/types'
 import type { CardProgress, ProgressStore } from './store'
 
-export type Grade = 'again' | 'hard' | 'good' | 'easy'
+/** How a card went, hardest last. Flashcards ask "Difficulty?" from 1 (easy) to 5 (hard). */
+export type Grade = 'again' | 'hard' | 'ok' | 'good' | 'easy'
+
+/** The flashcard difficulty scale: 1 = easy, 3 = moderate, 5 = hard (didn't know it). */
+export const DIFFICULTY: { n: number; grade: Grade; label?: string }[] = [
+  { n: 1, grade: 'easy', label: 'Easy' },
+  { n: 2, grade: 'good' },
+  { n: 3, grade: 'ok', label: 'Moderate' },
+  { n: 4, grade: 'hard' },
+  { n: 5, grade: 'again', label: 'Hard' },
+]
+
+/** Grades that mean the card went well enough; the rest come back sooner. */
+export const wentWell = (g: Grade) => g === 'easy' || g === 'good' || g === 'ok'
 
 /** Local calendar date as YYYY-MM-DD. */
 export function today(offsetDays = 0): string {
@@ -22,9 +35,14 @@ export function schedule(prev: CardProgress | undefined, grade: Grade): CardProg
     ease = Math.max(1.3, ease - 0.2)
   } else {
     const base = reps === 0 ? 1 : reps === 1 ? 3 : Math.round(interval * ease)
+    const hard = Math.max(1, Math.round(Math.max(interval, 1) * 1.2))
     if (grade === 'hard') {
-      interval = Math.max(1, Math.round(Math.max(interval, 1) * 1.2))
+      interval = hard
       ease = Math.max(1.3, ease - 0.15)
+    } else if (grade === 'ok') {
+      // Moderate: halfway between hard and good.
+      interval = Math.max(hard, Math.round((hard + base) / 2))
+      ease = Math.max(1.3, ease - 0.05)
     } else if (grade === 'good') {
       interval = base
     } else {
@@ -34,15 +52,6 @@ export function schedule(prev: CardProgress | undefined, grade: Grade): CardProg
     reps += 1
   }
   return { ease, intervalDays: interval, reps, due: today(interval), lastSeen: new Date().toISOString() }
-}
-
-/** When a card comes back if answered with `grade` now: "today", "1 day", "3 days", "2 months". */
-export function nextReviewLabel(prev: CardProgress | undefined, grade: Grade): string {
-  const days = schedule(prev, grade).intervalDays
-  if (days <= 0) return 'today'
-  if (days === 1) return '1 day'
-  if (days < 60) return `${days} days`
-  return `${Math.round(days / 30)} months`
 }
 
 export type CardStatus = 'new' | 'learning' | 'known'

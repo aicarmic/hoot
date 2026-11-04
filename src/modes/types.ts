@@ -16,7 +16,7 @@ export interface ModeProps {
 }
 
 export const MODES: { id: ModeId; name: string; blurb: string; icon: IconName; needsSpeech?: boolean }[] = [
-  { id: 'flashcards', name: 'Flashcards', blurb: 'Flip, then say how well you knew it.', icon: 'style' },
+  { id: 'flashcards', name: 'Flashcards', blurb: 'Flip it, then rate the difficulty from 1 to 5.', icon: 'style' },
   { id: 'quiz', name: 'Quiz', blurb: 'Pick the right answer, or type it once you know it.', icon: 'quiz' },
   { id: 'speak', name: 'Listen & speak', blurb: 'Hear it, say it, get gentle feedback.', icon: 'record_voice_over', needsSpeech: true },
 ]

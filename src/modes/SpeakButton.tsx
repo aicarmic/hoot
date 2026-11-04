@@ -15,15 +15,29 @@ export function SpeakButton({
   small?: boolean
 }) {
   if (!lang || !canSpeak) return null
+  const play = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    speak(text, lang, slow)
+  }
+  // The big buttons under a prompt say what they do; the small ones in lists stay icon-only.
+  if (tonal)
+    return (
+      <button
+        type="button"
+        className="uy-btn uy-state uy-btn--tonal uy-btn--with-icon"
+        aria-label={slow ? `Hear “${text}” slowly` : `Hear “${text}”`}
+        onClick={play}
+      >
+        <Icon name={slow ? 'slow_motion_video' : 'volume_up'} />
+        {slow ? 'Slowly' : 'Listen'}
+      </button>
+    )
   return (
     <button
       type="button"
-      className={`icon-btn uy-state${tonal ? ' tonal' : ''}${small ? ' sm' : ''}`}
+      className={`icon-btn uy-state${small ? ' sm' : ''}`}
       aria-label={slow ? `Hear “${text}” slowly` : `Hear “${text}”`}
-      onClick={(e) => {
-        e.stopPropagation()
-        speak(text, lang, slow)
-      }}
+      onClick={play}
     >
       <Icon name={slow ? 'slow_motion_video' : 'volume_up'} />
     </button>
