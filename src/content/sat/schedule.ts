@@ -116,13 +116,17 @@ const list = (ws: string[]) => (ws.length <= 2 ? ws.join(' and ') : `${ws.slice(
 export function dailyNudge(date: string, words: SatWord[]): Nudge | null {
   const total = words.length
   const pick = (r: Range) => words.slice(r.from, r.to).map((w) => w.word)
-  const today = pick(newOn(date, total))
+  const today = words.slice(newOn(date, total).from, newOn(date, total).to)
   if (!today.length) return null
   const last = introducedBy(date, total) === total
   const quiz = pick(popQuiz(date, total))
+  // A preview of the words themselves, one per line, so the notification teaches on its own.
+  const lines = today.map((w) => `${w.word}: ${w.definition}`)
+  if (quiz.length) lines.push(`Pop quiz: who remembers ${list(quiz)}?`)
+  if (last) lines.push(`That makes all ${total}.`)
   return {
-    title: last ? 'The last SAT words' : 'Today’s SAT words',
-    body: `${list(today)}.${quiz.length ? ` Pop quiz: who remembers ${list(quiz)}?` : ''}${last ? ` That makes all ${total}.` : ''}`,
+    title: `${last ? 'The last SAT words' : 'Today’s SAT words'}: ${list(today.map((w) => w.word))}`,
+    body: lines.join('\n'),
     url: '#deck/sat-words',
     tag: 'sat-daily',
   }

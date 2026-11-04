@@ -12,7 +12,8 @@ import { Icon } from '../ui/Icon'
 const COMPONENTS = { flashcards: Flashcards, quiz: Quiz, speak: ListenSpeak }
 
 /** `focus`: practice exactly these cards (e.g. today's new words) instead of the usual pick. */
-export function Session({ deck, mode, focus }: { deck: Deck; mode: ModeId; focus?: Card[] }) {
+/** `preview`: not enrolled in this class, so nothing is saved. */
+export function Session({ deck, mode, focus, preview = false }: { deck: Deck; mode: ModeId; focus?: Card[]; preview?: boolean }) {
   const pick = () => (focus ? shuffle(focus) : pickSession(deck, store))
   const [queue, setQueue] = useState<Card[]>(pick)
   const [index, setIndex] = useState(0)
@@ -22,8 +23,8 @@ export function Session({ deck, mode, focus }: { deck: Deck; mode: ModeId; focus
   const card = queue[index]
   const finished = queue.length > 0 && !card
   useEffect(() => {
-    if (finished) void syncNow()
-  }, [finished])
+    if (finished && !preview) void syncNow()
+  }, [finished, preview])
   const Mode = COMPONENTS[mode]
   const name = MODES.find((m) => m.id === mode)?.name
 
@@ -31,7 +32,7 @@ export function Session({ deck, mode, focus }: { deck: Deck; mode: ModeId; focus
     (grade: Grade) => {
       if (!card) return
       // Only the first answer in a session counts for scheduling.
-      if (!(card.id in results)) store.set(deck.id, card.id, schedule(store.get(deck.id, card.id), grade))
+      if (!preview && !(card.id in results)) store.set(deck.id, card.id, schedule(store.get(deck.id, card.id), grade))
       setResults((r) => (card.id in r ? r : { ...r, [card.id]: grade }))
       if (grade === 'again' && !retried.has(card.id)) {
         setQueue((q) => [...q, card])
@@ -39,7 +40,7 @@ export function Session({ deck, mode, focus }: { deck: Deck; mode: ModeId; focus
       }
       setIndex((i) => i + 1)
     },
-    [card, deck.id, results, retried],
+    [card, deck.id, results, retried, preview],
   )
 
   const restart = () => {
@@ -91,6 +92,7 @@ export function Session({ deck, mode, focus }: { deck: Deck; mode: ModeId; focus
             You practiced <strong>{grades.length}</strong> cards. {solid} felt solid
             {sooner ? `, and ${sooner} will come back sooner` : ''}.
           </p>
+          {preview && <p className="meta">This was a preview, so nothing was saved. Enroll to keep your progress.</p>}
           <div className="tally">
             <div className="stat">
               <b>{solid}</b>
@@ -118,7 +120,7 @@ export function Session({ deck, mode, focus }: { deck: Deck; mode: ModeId; focus
   const progress = store.get(deck.id, card.id)
   return (
     <>
-      {top(`${deck.title} · ${name}`, `${Math.min(index + 1, queue.length)}/${queue.length}`, (index / queue.length) * 100, 'End session')}
+      {top(`${deck.title} · ${preview ? 'Preview' : name}`, `${Math.min(index + 1, queue.length)}/${queue.length}`, (index / queue.length) * 100, 'End session')}
       <main className="session-main">
         <Mode key={`${card.id}-${index}`} deck={deck} card={card} reps={progress?.reps ?? 0} progress={progress} onAnswer={onAnswer} />
       </main>

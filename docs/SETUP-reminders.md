@@ -1,9 +1,17 @@
-# Daily reminders (SAT Prep Words)
+# Classes and daily reminders
 
-Hoot sends a push notification to every phone that turned reminders on: today's two SAT words and
-a pop quiz on the last two (Monday to Saturday), and a weekly quiz reminder. Each person picks the
-times in Settings (the gear on Learn); the defaults are new words at 5 pm and the quiz on Sunday at
-5 pm, in the phone's own time zone. Tapping it opens SAT Prep Words (or the quiz).
+**Enrollment.** A class is a language (all its decks) or one study module (one deck, like SAT Prep
+Words). The first time someone opens a class, and every time after until they enroll, Hoot asks:
+**Enroll** or **Preview**. A preview saves no progress. Enrolling saves progress and turns on a
+daily reminder for that class. Anyone who already had progress in a class is enrolled in it
+automatically. Settings (the gear on Learn) lists your classes, each with a reminder switch and a
+Leave button.
+
+**Reminders.** Every phone that turns reminders on gets, at the daily reminder time it picked, one
+notification for each enrolled class with reminders on. SAT Prep Words shows the day's two words
+and their meanings, plus a pop quiz on the last two. Other classes say how many cards are ready to
+review. SAT also has a weekly quiz reminder. The defaults are 5 pm daily and the quiz on Sunday at
+5 pm, in the phone's own time zone. Tapping a notification opens that class.
 
 The first week in Hoot (the week of 2026-11-02) has a catch-up quiz covering every word so far,
 including the ones that only went out on WhatsApp.
@@ -32,7 +40,14 @@ on Home Assistant or the Mac mini.
    allow notifications. Each person needs to be signed in. Pick the times there too.
 6. **Test.** Actions → SAT reminders → Run workflow. Every phone that turned it on should
    get today's reminder within a minute.
-7. **Retire the Home Assistant automation** (`automation.notifications_daily_sat_words_to_learning_hub`)
+7. **Enroll someone yourself** (optional; for example, the kids in SAT Prep Words once they have
+   accounts). In the SQL Editor, put their Hoot display names in the list:
+   ```sql
+   insert into public.enrollments (user_id, class_id)
+   select id, 'sat-words' from public.profiles where display_name in ('Name one', 'Name two')
+   on conflict do nothing;
+   ```
+8. **Retire the Home Assistant automation** (`automation.notifications_daily_sat_words_to_learning_hub`)
    so the family doesn't get the words twice.
 
 ## Phones

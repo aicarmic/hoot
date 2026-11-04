@@ -95,8 +95,8 @@ describe('SAT deck', () => {
 describe('reminders', () => {
   it('match the old daily post', () => {
     expect(dailyNudge('2026-11-03', words)).toMatchObject({
-      title: 'Today’s SAT words',
-      body: 'swarthy and allay. Pop quiz: who remembers utilitarian and spurious?',
+      title: 'Today’s SAT words: swarthy and allay',
+      body: `swarthy: ${words[18].definition}\nallay: ${words[19].definition}\nPop quiz: who remembers utilitarian and spurious?`,
       url: '#deck/sat-words',
     })
     expect(dailyNudge('2026-11-08', words)).toBeNull()
@@ -104,7 +104,18 @@ describe('reminders', () => {
   it('announce the catch-up quiz, then weekly quizzes, and stop when the list is done', () => {
     expect(quizNudge('2026-11-08', words)).toMatchObject({ title: 'SAT catch-up quiz', body: 'All 28 words so far. See how many you remember.' })
     expect(quizNudge('2026-11-15', words)).toMatchObject({ title: 'SAT quiz time', url: '#deck/sat-words/quiz/week' })
-    expect(dailyNudge(lastDay(TOTAL), words)?.title).toBe('The last SAT words')
+    expect(dailyNudge(lastDay(TOTAL), words)?.title).toMatch(/^The last SAT words: /)
     expect(dailyNudge('2099-01-05', words)).toBeNull()
+  })
+})
+
+describe('classes', () => {
+  it('make one class per language and one per study module', async () => {
+    const { classIdOf } = await import('../../../lib/enrollment')
+    const { builtInDecks } = await import('../..')
+    expect(classIdOf(satDeck())).toBe('sat-words')
+    expect(classIdOf(builtInDecks.find((d) => d.subject === 'Italian')!)).toBe('lang:Italian')
+    const math = builtInDecks.find((d) => d.subject === 'Math')!
+    expect(classIdOf(math)).toBe(math.id)
   })
 })

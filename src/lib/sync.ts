@@ -1,5 +1,7 @@
+import { allDecks } from '../content'
 import type { Deck } from '../content/types'
 import { getAccount, onSessionChange } from './account'
+import { migrateFromProgress, onEnrollmentChange, resetEnrollments, syncEnrollments } from './enrollment'
 import { dayKey, store, type CardProgress } from './store'
 import { supabase } from './supabase'
 import { localOnlyDecks, setFamilyDecks, setLocalOnlyDecks } from './userDecks'
@@ -45,6 +47,7 @@ function claimDevice(userId: string) {
   if (prev && prev !== userId) {
     store.reset()
     setFamilyDecks([])
+    resetEnrollments()
   } else if (!prev) {
     store.markAllDirty() // progress made before signing in becomes theirs
   }
@@ -143,10 +146,17 @@ async function doSync() {
     setFamilyDecks((decks ?? []).map((r) => r.deck as Deck))
   }
 
+  // 5. Classes: enrollments both ways, and enroll in classes started before enrollment existed.
+  await syncEnrollments(uid)
+  migrateFromProgress(allDecks(), uid)
+  await syncEnrollments(uid)
+
   listeners.forEach((l) => l())
 }
 
 export function initSync() {
+  if (!owner()) migrateFromProgress(allDecks(), 'anon')
+  onEnrollmentChange(() => void syncNow())
   onSessionChange((s) => {
     if (s) {
       claimDevice(s.user.id)

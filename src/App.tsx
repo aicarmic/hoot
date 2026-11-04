@@ -3,9 +3,11 @@ import { allDecks, decksBySubject } from './content'
 import { SAT_DECK_ID, satFocusCards } from './content/sat'
 import { isLanguage, subjectFromSlug, subjectSlug } from './content/subjects'
 import { useAccount } from './lib/account'
+import { classIdOf, classTitle, endPreview, enroll, previewing, useEnrollments } from './lib/enrollment'
 import { onSynced } from './lib/sync'
 import { MODES, type ModeId } from './modes/types'
 import { DeckPage } from './screens/DeckPage'
+import { EnrollSheet } from './screens/EnrollSheet'
 import { Family } from './screens/Family'
 import { ClassPage, Home } from './screens/Home'
 import { Import } from './screens/Import'
@@ -44,13 +46,36 @@ export default function App() {
   const subject = view === 'class' && id ? subjectFromSlug(id, bySubject.keys()) : undefined
   const focus = deck?.id === SAT_DECK_ID && focusName ? satFocusCards(focusName) : undefined
 
+  // Enrollment: progress is saved only in classes you're enrolled in. Opening any other class
+  // asks "Enroll or preview?" each time; a preview lasts until you leave the class.
+  const { enrollments, preview: previewed } = useEnrollments()
+  const classId = deck ? classIdOf(deck) : subject ? `lang:${subject}` : undefined
+  useEffect(() => {
+    if (previewing() !== classId) endPreview()
+  }, [classId])
+  const enrolled = !!classId && !!enrollments[classId]
+  const preview = !!classId && !enrolled
+  const ask = preview && previewed !== classId
+  const sheet = ask && classId ? <EnrollSheet classId={classId} title={classTitle(classId, decks)} /> : null
+  const previewBar =
+    preview && !ask && classId ? (
+      <div className="preview-bar" role="status">
+        <span className="grow">Previewing. Progress isn’t saved.</span>
+        <button type="button" className="uy-btn uy-state uy-btn--tonal" onClick={() => enroll(classId)}>
+          Enroll
+        </button>
+      </div>
+    ) : null
+
   let body
   if (view === 'import') body = <Import />
   else if (view === 'family') body = <Family />
   else if (view === 'me') body = <Me />
   else if (view === 'settings') body = <Settings />
   else if (deck && validMode)
-    body = <Session key={`${deck.id}-${validMode}-${focusName ?? ''}`} deck={deck} mode={validMode} focus={focus} />
+    body = (
+      <Session key={`${deck.id}-${validMode}-${focusName ?? ''}`} deck={deck} mode={validMode} focus={focus} preview={preview} />
+    )
   else if (deck?.id === SAT_DECK_ID) body = <SatPage deck={deck} />
   else if (deck) body = <DeckPage deck={deck} />
   else if (subject) body = <ClassPage subject={subject} decks={bySubject.get(subject) ?? []} />
@@ -64,7 +89,13 @@ export default function App() {
   const back = deckInClass ? { href: `#class/${subjectSlug(deck.subject)}`, label: deck.subject } : { href: '#', label: 'Learn' }
   const backHeader = view === 'import' || view === 'settings' || !!subject || !!deck
 
-  if (inSession) return <div className="app">{body}</div>
+  if (inSession)
+    return (
+      <div className="app">
+        {body}
+        {sheet}
+      </div>
+    )
 
   return (
     <div className="app">
@@ -87,7 +118,11 @@ export default function App() {
           </a>
         </header>
       )}
-      <main className={`main${backHeader ? ' tight' : ''}`}>{body}</main>
+      <main className={`main${backHeader ? ' tight' : ''}`}>
+        {previewBar}
+        {body}
+      </main>
+      {sheet}
       <nav className="nav" aria-label="Main">
         <NavTab href="#" icon="menu_book" label="Learn" on={tab === 'learn'} />
         <NavTab href="#family" icon="group" label="Family" on={tab === 'family'} />

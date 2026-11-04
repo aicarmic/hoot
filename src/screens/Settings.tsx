@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
+import { allDecks } from '../content'
+import { SAT_DECK_ID } from '../content/sat'
 import { useAccount } from '../lib/account'
+import { classTitle, leave, setReminders, useEnrollments } from '../lib/enrollment'
 import { pushState, savePrefsToServer, turnOff, turnOn, type PushState } from '../lib/push'
 import { DAYS, hourLabel, loadPrefs, storePrefs, timeZone, type ReminderPrefs } from '../lib/reminderPrefs'
 import { Icon } from '../ui/Icon'
@@ -18,6 +21,7 @@ export function Settings() {
     <>
       <h1 className="h-page">Settings</h1>
       <Reminders />
+      <Classes />
       <section className="stack">
         <h2 className="h-section">Account</h2>
         <a href="#me" className="mode-pick uy-state">
@@ -43,6 +47,7 @@ function Reminders() {
   const [prefs, setPrefs] = useState<ReminderPrefs>(loadPrefs)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
+  const satEnrolled = !!useEnrollments().enrollments[SAT_DECK_ID]
 
   useEffect(() => {
     pushState().then(setState, () => setState('unsupported'))
@@ -71,7 +76,7 @@ function Reminders() {
 
   return (
     <section className="stack">
-      <h2 className="h-section">SAT reminders</h2>
+      <h2 className="h-section">Reminders</h2>
       <div className="mode-pick reminder">
         <span className="lead">
           <Icon name="notifications" />
@@ -95,29 +100,79 @@ function Reminders() {
 
       <div className="settings-grid">
         <Select
-          label="New words (Monday to Saturday)"
+          label="Daily reminder time"
           value={prefs.dailyHour === null ? 'off' : String(prefs.dailyHour)}
           onChange={(v) => change({ dailyHour: v === 'off' ? null : Number(v) })}
-          options={[['off', 'No reminder'], ...HOURS.map((h): [string, string] => [String(h), hourLabel(h)])]}
+          options={[['off', 'No daily reminders'], ...HOURS.map((h): [string, string] => [String(h), hourLabel(h)])]}
         />
-        <div className="row nowrap two">
-          <Select
-            label="Weekly quiz"
-            value={String(prefs.quizDay)}
-            onChange={(v) => change({ quizDay: Number(v) })}
-            options={DAYS.map((d, i): [string, string] => [String(i), d])}
-          />
-          <Select
-            label="at"
-            value={prefs.quizHour === null ? 'off' : String(prefs.quizHour)}
-            onChange={(v) => change({ quizHour: v === 'off' ? null : Number(v) })}
-            options={[['off', 'No reminder'], ...HOURS.map((h): [string, string] => [String(h), hourLabel(h)])]}
-          />
-        </div>
+        {satEnrolled && (
+          <div className="row nowrap two">
+            <Select
+              label="SAT weekly quiz"
+              value={String(prefs.quizDay)}
+              onChange={(v) => change({ quizDay: Number(v) })}
+              options={DAYS.map((d, i): [string, string] => [String(i), d])}
+            />
+            <Select
+              label="at"
+              value={prefs.quizHour === null ? 'off' : String(prefs.quizHour)}
+              onChange={(v) => change({ quizHour: v === 'off' ? null : Number(v) })}
+              options={[['off', 'No reminder'], ...HOURS.map((h): [string, string] => [String(h), hourLabel(h)])]}
+            />
+          </div>
+        )}
       </div>
       <p className="meta">
-        The weekly quiz covers that week’s words up to the day you pick. Times are in this phone’s time zone ({timeZone()}).
+        One reminder a day for each class you’re enrolled in{satEnrolled ? '. SAT Prep Words shows the day’s two words, and the weekly quiz covers that week’s words up to the day you pick' : ''}. Times are in
+        this phone’s time zone ({timeZone()}).
       </p>
+    </section>
+  )
+}
+
+/** Enrolled classes, each with its own reminder switch. */
+function Classes() {
+  const { enrollments } = useEnrollments()
+  const decks = allDecks()
+  const ids = Object.keys(enrollments).sort((a, b) => classTitle(a, decks).localeCompare(classTitle(b, decks)))
+  return (
+    <section className="stack">
+      <h2 className="h-section">Your classes</h2>
+      {ids.length === 0 ? (
+        <p className="meta">Open a class on Learn and enroll, and it shows up here.</p>
+      ) : (
+        <div className="cards">
+          {ids.map((id) => {
+            const title = classTitle(id, decks)
+            const on = enrollments[id].reminders
+            return (
+              <div key={id} className="class-row">
+                <span className="grow mode-body">
+                  <span className="title-m">{title}</span>
+                  <span className="meta">{on ? 'Daily reminder on' : 'No reminder'}</span>
+                </span>
+                <button
+                  type="button"
+                  className="uy-btn uy-state uy-btn--text"
+                  onClick={() => {
+                    if (confirm(`Leave ${title}? Your progress stays, but it stops being saved until you enroll again.`)) leave(id)
+                  }}
+                >
+                  Leave
+                </button>
+                <button
+                  type="button"
+                  role="switch"
+                  className="switch"
+                  aria-checked={on}
+                  aria-label={`Daily reminder for ${title}`}
+                  onClick={() => setReminders(id, !on)}
+                />
+              </div>
+            )
+          })}
+        </div>
+      )}
     </section>
   )
 }

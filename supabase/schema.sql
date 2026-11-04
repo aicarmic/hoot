@@ -60,6 +60,16 @@ create table if not exists public.nudges (
 );
 create index if not exists nudges_to_user on public.nudges (to_user, seen_at);
 
+-- Classes each person is enrolled in: "lang:Italian" for a language, or a deck id for a study
+-- module (e.g. "sat-words"). `reminders`: whether that class sends a daily reminder.
+create table if not exists public.enrollments (
+  user_id uuid not null references auth.users on delete cascade,
+  class_id text not null,
+  reminders boolean not null default true,
+  enrolled_at timestamptz not null default now(),
+  primary key (user_id, class_id)
+);
+
 -- Devices that turned on the daily reminder (Web Push). The GitHub Actions job reads these
 -- with the secret key, which bypasses row level security. See docs/SETUP-reminders.md.
 create table if not exists public.push_subscriptions (
@@ -157,6 +167,7 @@ alter table public.activity enable row level security;
 alter table public.family_decks enable row level security;
 alter table public.nudges enable row level security;
 alter table public.push_subscriptions enable row level security;
+alter table public.enrollments enable row level security;
 
 drop policy if exists "see my family" on public.families;
 create policy "see my family" on public.families for select using (id = public.my_family());
@@ -199,6 +210,13 @@ create policy "nudges mark seen" on public.nudges for update
 drop policy if exists "own push subscriptions" on public.push_subscriptions;
 create policy "own push subscriptions" on public.push_subscriptions for all
   using (user_id = auth.uid()) with check (user_id = auth.uid());
+
+drop policy if exists "own enrollments" on public.enrollments;
+create policy "own enrollments" on public.enrollments for all
+  using (user_id = auth.uid()) with check (user_id = auth.uid());
+drop policy if exists "see family enrollments" on public.enrollments;
+create policy "see family enrollments" on public.enrollments for select
+  using (user_id in (select id from public.profiles where family_id is not null and family_id = public.my_family()));
 
 -- ── Grants ───────────────────────────────────────────────────────────────────
 
