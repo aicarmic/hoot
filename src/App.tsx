@@ -4,6 +4,7 @@ import { SAT_DECK_ID, satFocusCards } from './content/sat'
 import { isLanguage, subjectFromSlug, subjectSlug } from './content/subjects'
 import { useAccount } from './lib/account'
 import { classIdOf, classTitle, endPreview, enroll, previewing, useEnrollments } from './lib/enrollment'
+import { resyncPush } from './lib/push'
 import { onSynced } from './lib/sync'
 import { MODES, type ModeId } from './modes/types'
 import { DeckPage } from './screens/DeckPage'
@@ -37,6 +38,10 @@ export default function App() {
   const [, rerender] = useReducer((n: number) => n + 1, 0)
   useEffect(() => onSynced(rerender), [])
   const acct = useAccount()
+  const uid = acct.session?.user.id
+  useEffect(() => {
+    if (uid) void resyncPush(uid)
+  }, [uid])
 
   const decks = allDecks()
   const deck = view === 'deck' ? decks.find((d) => d.id === id) : undefined

@@ -18,9 +18,11 @@ including the ones that only went out on WhatsApp.
 
 How it works: each phone subscribes with Web Push and saves the subscription in Supabase
 (`push_subscriptions`), together with the times it wants. A GitHub Actions job,
-`.github/workflows/sat-nudge.yml`, runs `scripts/sat-nudge.mjs` every hour, which sends to the
-devices whose hour it is. Nothing runs
-on Home Assistant or the Mac mini.
+`.github/workflows/sat-nudge.yml`, runs `scripts/sat-nudge.mjs`, which sends each device what it
+is owed: a reminder goes out on the first run at or after its time (up to 5 hours late), once a
+day. GitHub's own hourly schedule turned out to skip most runs (about 3 a day in November 2026),
+so Supabase starts the job every 20 minutes too (step 9). Nothing runs on Home Assistant or the
+Mac mini.
 
 ## One-time setup (about 10 minutes)
 
@@ -50,6 +52,17 @@ on Home Assistant or the Mac mini.
 8. **Retire the Home Assistant automation** (`automation.notifications_daily_sat_words_to_learning_hub`)
    so the family doesn't get the words twice.
 
+9. **Make reminders reliable** (about 5 minutes).
+   - GitHub → your picture → Settings → Developer settings → Personal access tokens →
+     Fine-grained tokens → Generate new token. Name it "Hoot reminders", pick the longest
+     expiration, Repository access → Only select repositories → `hoot`, and under Repository
+     permissions set **Actions: Read and write**. Generate it and copy it.
+   - Supabase → SQL Editor → paste all of `supabase/reminder-cron.sql`, replace both
+     `PASTE_GITHUB_TOKEN_HERE` with the token, and Run.
+   - Check it a few minutes later: Actions → SAT reminders should show runs marked
+     "workflow_dispatch" every 20 minutes.
+   - When the token expires, reminders stop again. Make a new one and rerun the same SQL.
+
 ## Phones
 
 - **Android (Chrome):** works in the browser or the installed app. Install it anyway (menu →
@@ -60,9 +73,12 @@ on Home Assistant or the Mac mini.
 
 ## Good to know
 
-- GitHub's scheduler can run a few minutes late, so a 5 pm reminder may come at 5:05 or so.
-- GitHub pauses scheduled jobs in a repo with no commits for 60 days. If reminders stop, open
-  Actions → SAT reminders and turn it back on.
+- A 5 pm reminder usually comes between 5:00 and 5:25.
+- If reminders stop: check Actions → SAT reminders. No recent runs means the Supabase job or its
+  token stopped (see the check at the end of `supabase/reminder-cron.sql`), or GitHub disabled the
+  workflow (it does that to scheduled jobs after 60 days with no commits; turn it back on there).
+  Runs that say "sent 0" at the reminder time mean no device is subscribed: on each phone, open
+  Hoot once with notifications allowed, or turn reminders off and on in Settings.
 - Words follow the calendar, not who practiced: everyone gets the same two words each day, as with
   the old WhatsApp post. Someone who misses days catches up in Flashcards.
 - The schedule lives in `src/content/sat/schedule.ts` and the words, in teaching order, in
