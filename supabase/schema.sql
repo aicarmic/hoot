@@ -84,6 +84,10 @@ create table if not exists public.push_subscriptions (
   quiz_hour int default 17 check (quiz_hour between 0 and 23),
   created_at timestamptz not null default now()
 );
+-- The local date this device last got its daily and quiz reminders, so a late run of the
+-- reminder job still sends them, once (scripts/sat-nudge.mjs).
+alter table public.push_subscriptions add column if not exists last_daily date;
+alter table public.push_subscriptions add column if not exists last_quiz date;
 
 -- ── Helpers ──────────────────────────────────────────────────────────────────
 

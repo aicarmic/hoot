@@ -1,6 +1,7 @@
 name: SAT reminders
 
-# Runs every hour. Each device chose when it wants reminders (in Hoot's Settings), in its own
+# Runs every hour, and every 20 minutes from Supabase (supabase/reminder-cron.sql), since GitHub
+# skips most scheduled runs. Each device chose when it wants reminders (in Hoot's Settings), in its own
 # time zone, and the script sends to the devices whose hour this is. Setup: docs/SETUP-reminders.md.
 on:
   schedule:

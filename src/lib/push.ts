@@ -73,6 +73,27 @@ export async function turnOn(userId: string): Promise<PushState> {
   return 'on'
 }
 
+/**
+ * On app start: if this device has reminders on, save its subscription again. The reminder job
+ * forgets a subscription the push service says has expired, and the browser may have replaced it
+ * with a new one; this puts it back, so reminders keep coming without turning them off and on.
+ */
+export async function resyncPush(userId: string): Promise<void> {
+  if (!VAPID_PUBLIC_KEY || !supported() || Notification.permission !== 'granted') return
+  const reg = await registration()
+  const sub = await reg?.pushManager.getSubscription()
+  if (!sub) return
+  const json = sub.toJSON()
+  const { error } = await supabase.from('push_subscriptions').upsert({
+    endpoint: sub.endpoint,
+    user_id: userId,
+    p256dh: json.keys?.p256dh,
+    auth: json.keys?.auth,
+    ...prefColumns(loadPrefs()),
+  })
+  if (error) console.warn('Could not refresh the reminder subscription:', error.message)
+}
+
 export async function turnOff(): Promise<PushState> {
   const reg = await registration()
   const sub = await reg?.pushManager.getSubscription()
